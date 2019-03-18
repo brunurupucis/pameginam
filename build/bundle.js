@@ -5196,14 +5196,16 @@ function cssSubmit() { /* function for html submit button*/
 
     if (cssRandomValue == 0 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][0].A0) { /* checking if cssRandomValue is 0 and if putting answer the same as cssAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`; /* creating next button with cssBtn()function*/
         cssRemoveValue.innerHTML = "";/* removing in html answer*/
 
 
 
     } else if (cssRandomValue == 0 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][0].A0) {/*  if random value not == then giving then display the answere.*/
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             color: red;
           }
           </textarea>`;
@@ -5215,12 +5217,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 1 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][1].A1) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 1 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][1].A1) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">.colortext {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        .colortext {
             color: red;
           }
           </textarea>`;
@@ -5232,12 +5236,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 2 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][2].A2) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 2 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][2].A2) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1, p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1, p {
             color: red;
           }
           </textarea>`;
@@ -5249,12 +5255,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 3 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][3].A3) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 3 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][3].A3) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">&ltlink rel="stylesheet" type="text/css" href="mystyle.css"&gt</textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        &ltlink rel="stylesheet" type="text/css" href="mystyle.css"&gt</textarea>`;
         cssIncorrectValue.innerHTML = "Incorrect..";
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
@@ -5263,12 +5271,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 4 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][4].A4) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 4 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][4].A4) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">&ltstyle&gt
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        &ltstyle&gt
         body {
           background-color: linen;
         }
@@ -5282,12 +5292,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 5 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][5].A5) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 5 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][5].A5) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">&ltbody style="background-color: linen"&gt</textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        &ltbody style="background-color: linen"&gt</textarea>`;
         cssIncorrectValue.innerHTML = "Incorrect..";
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
@@ -5296,12 +5308,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 6 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][6].A6) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 6 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][6].A6) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">body {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        body {
             background-color: linen;
           }
           h1 {
@@ -5316,12 +5330,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 7 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][7].A7) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 7 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][7].A7) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">body {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        body {
             background-image: url("paper.gif");
           }
           </textarea>`;
@@ -5333,12 +5349,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 8 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][8].A8) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 8 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][8].A8) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">body {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        body {
             background-image: url("gradient_bg_vertical.png");
         background-repeat: repeat-y;
         }
@@ -5351,12 +5369,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 9 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][9].A9) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 9 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][9].A9) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">body {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        body {
             background-image: url("img_tree.png");
             background-repeat: no-repeat;
             background-position: top right;
@@ -5370,12 +5390,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 10 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][10].A10) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 10 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][10].A10) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">body {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        body {
             background: url("img_tree.png") no-repeat top right;
           }
           </textarea>`;
@@ -5387,12 +5409,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 11 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][11].A11) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 11 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][11].A11) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             border-style: dotted;
             border-width: 4px;
           }
@@ -5405,12 +5429,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 12 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][12].A12) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 12 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][12].A12) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             border-style: dotted;
             border-width: 4px;
             border-color: red;
@@ -5424,12 +5450,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 13 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][13].A13) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 13 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][13].A13) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             border-top-style: dotted;
             border-top-width: 4px;
             border-top-color: red;
@@ -5443,12 +5471,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 14 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][14].A14) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 14 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][14].A14) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             border: 10px solid green;
           }
           </textarea>`;
@@ -5460,12 +5490,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 15 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][15].A15) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 15 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][15].A15) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             margin-left: 20px;
           }
           </textarea>`;
@@ -5477,12 +5509,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 16 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][16].A16) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 16 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][16].A16) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             
             margin: 25px;
           }
@@ -5495,12 +5529,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 17 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][17].A17) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 17 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][17].A17) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             
             margin: 50px 25px;
           }
@@ -5513,12 +5549,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 18 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][18].A18) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 18 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][18].A18) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             margin: auto;
           }
           </textarea>`;
@@ -5530,12 +5568,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 19 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][19].A19) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 19 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][19].A19) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             padding-top: 30px;
           }
           </textarea>`;
@@ -5547,12 +5587,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 20 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][20].A20) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 20 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][20].A20) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             background-color: lightblue;
             padding: 50px;
           }
@@ -5565,12 +5607,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 21 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][21].A21) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 21 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][21].A21) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             background-color: lightblue;
             padding: 25px 50px;
           }
@@ -5583,12 +5627,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 22 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][22].A22) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 22 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][22].A22) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             height: 100px;
           }
           </textarea>`;
@@ -5600,12 +5646,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 23 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][23].A23) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 23 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][23].A23) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             width: 50%;
           }
           </textarea>`;
@@ -5617,12 +5665,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 24 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][24].A24) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 24 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][24].A24) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input"> div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+         div {
             width: 200px;
           }
           </textarea>`;
@@ -5634,12 +5684,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 25 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][25].A25) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 25 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][25].A25) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             padding: 25px;
           }
           </textarea>`;
@@ -5651,12 +5703,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 26 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][26].A26) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 26 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][26].A26) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             border: 25px solid navy;
           }
           </textarea>`;
@@ -5668,12 +5722,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 27 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][27].A27) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 27 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][27].A27) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             margin: 25px;
           }
           </textarea>`;
@@ -5685,12 +5741,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 28 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][28].A28) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 28 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][28].A28) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             outline-style: solid;
             outline-width: 5px;
           }
@@ -5703,12 +5761,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 29 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][29].A29) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 29 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][29].A29) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             outline-style: solid;
             outline-width: 5px;
             outline-color: green;
@@ -5722,12 +5782,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 30 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][30].A30) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 30 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][30].A30) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             outline: red dotted 10px;
           }
           </textarea>`;
@@ -5739,12 +5801,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 31 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][31].A31) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 31 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][31].A31) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">body {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        body {
             color: red;
           }
           
@@ -5760,12 +5824,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 32 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][32].A32) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 32 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][32].A32) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             text-align: center;
           }
           </textarea>`;
@@ -5777,12 +5843,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 33 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][33].A33) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 33 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][33].A33) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">a {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        a {
             text-decoration: none;
           }
           </textarea>`;
@@ -5794,12 +5862,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 34 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][34].A34) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 34 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][34].A34) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             text-transform: uppercase;
           }
           p {
@@ -5814,12 +5884,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 35 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][35].A35) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 35 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][35].A35) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             text-indent: 20px;
           }
           </textarea>`;
@@ -5831,12 +5903,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 36 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][36].A36) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 36 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][36].A36) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">body {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        body {
             font-family: "Courier New";
           }
           
@@ -5852,12 +5926,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 37 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][37].A37) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 37 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][37].A37) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             font-style: italic;
           }
           </textarea>`;
@@ -5869,12 +5945,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 38 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][38].A38) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 38 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][38].A38) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">body {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        body {
             font-size: 20px;
           }
           
@@ -5890,12 +5968,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 39 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][39].A39) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 39 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][39].A39) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             font-weight: bold;
           }
           </textarea>`;
@@ -5907,12 +5987,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 40 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][40].A40) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 40 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][40].A40) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             font: italic 20px Verdana;
           }
           </textarea>`;
@@ -5924,12 +6006,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 41 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][41].A41) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 41 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][41].A41) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">a {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        a {
             color: green;
           }
           </textarea>`;
@@ -5941,12 +6025,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 42 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][42].A42) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 42 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][42].A42) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">a:link {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        a:link {
             color: red;
           }
           
@@ -5968,12 +6054,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 43 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][43].A43) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 43 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][43].A43) {
         cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        
         a:link {
           text-decoration: none;
         }
@@ -5995,12 +6083,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 44 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][44].A44) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 44 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][44].A44) {
         cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        
         a:link {
           background-color: lightblue;
         }
@@ -6022,12 +6112,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 45 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][45].A45) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 45 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][45].A45) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">ul {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        ul {
             list-style-type: square;
           }
           
@@ -6043,12 +6135,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 46 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][46].A46) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 46 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][46].A46) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">ul {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        ul {
             list-style-image: url('sqpurple.gif');
           }
           </textarea>`;
@@ -6060,12 +6154,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 47 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][47].A47) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 47 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][47].A47) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">ul {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        ul {
             list-style: circle inside url('img_marker.png');
           }
           </textarea>`;
@@ -6077,12 +6173,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 48 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][48].A48) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 48 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][48].A48) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">ul {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        ul {
             list-style-type: none;
           }
           </textarea>`;
@@ -6094,12 +6192,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 49 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][49].A49) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 49 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][49].A49) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">table, th, td {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        table, th, td {
             border: 2px solid green;
           }
           </textarea>`;
@@ -6111,12 +6211,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 50 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][50].A50) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 50 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][50].A50) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">table {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        table {
             border-collapse: collapse;
           }
           </textarea>`;
@@ -6128,12 +6230,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 51 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][51].A51) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 51 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][51].A51) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">table {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        table {
             width: 100%;
           }
           </textarea>`;
@@ -6145,12 +6249,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 52 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][52].A52) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 52 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][52].A52) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">td {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        td {
             text-align: right;
           }
           </textarea>`;
@@ -6162,12 +6268,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 53 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][53].A53) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 53 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][53].A53) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">th {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        th {
             background-color: lightblue;
           }
           </textarea>`;
@@ -6179,12 +6287,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 54 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][54].A54) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 54 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][54].A54) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             visibility: hidden;
           }
           </textarea>`;
@@ -6196,12 +6306,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 55 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][55].A55) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 55 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][55].A55) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             display: none;
           }
           </textarea>`;
@@ -6213,12 +6325,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 56 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][56].A56) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 56 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][56].A56) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">li {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        li {
             display: inline;
           }
           </textarea>`;
@@ -6230,12 +6344,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 57 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][57].A57) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 57 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][57].A57) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">strong {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        strong {
             display:block;
           }
           </textarea>`;
@@ -6247,12 +6363,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 58 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][58].A58) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 58 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][58].A58) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             position: fixed;
             top: 50px;
             right: 50px;
@@ -6266,12 +6384,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 59 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][59].A59) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 59 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][59].A59) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             position: relative;
             top: 30px;
             left: -20px;
@@ -6284,12 +6404,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 60 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][60].A60) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 60 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][60].A60) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             position: absolute;
             top: 100px;
             left: 50px;
@@ -6303,12 +6425,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 61 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][61].A61) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 61 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][61].A61) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">img {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        img {
             position: absolute;
             left: 0px;
             top: 0px;
@@ -6323,12 +6447,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 62 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][62].A62) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 62 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][62].A62) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">.container {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        .container {
             position: relative;
           }
           
@@ -6346,12 +6472,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 63 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][63].A63) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 63 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][63].A63) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             background-color: #eee;
             width: 200px;
             height: 70px;
@@ -6367,12 +6495,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 64 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][64].A64) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 64 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][64].A64) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             background-color: lightblue;
             width: 200px;
             height: 200px;
@@ -6387,12 +6517,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 65 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][65].A65) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 65 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][65].A65) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             background-color: #eee;
             width: 150px;
             height: 70px;
@@ -6409,12 +6541,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 66 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][66].A66) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 66 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][66].A66) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             margin-left: auto;
             margin-right: auto;
             width: 300px;
@@ -6429,12 +6563,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 67 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][67].A67) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 67 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][67].A67) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             position: absolute;
             right: 0px;
             width: 300px;
@@ -6449,12 +6585,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 68 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][68].A68) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 68 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][68].A68) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div p {
             color: red;
           }
           </textarea>`;
@@ -6466,12 +6604,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 69 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][69].A69) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 69 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][69].A69) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div &gt p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div &gt p {
             color: red;
           }
           </textarea>`;
@@ -6483,12 +6623,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 70 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][70].A70) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 70 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][70].A70) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div + p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div + p {
             color: red;
           }
           </textarea>`;
@@ -6500,12 +6642,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 71 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][71].A71) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 71 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][71].A71) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div ~ p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div ~ p {
             color: red;
           }
           </textarea>`;
@@ -6517,12 +6661,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 72 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][72].A72) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 72 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][72].A72) {
         cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        
         a:link {
           background-color: lightblue;
         }
@@ -6544,12 +6690,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 73 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][73].A73) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 73 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][73].A73) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p.highlight:hover {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p.highlight:hover {
             background-color: lightblue;
           }
           </textarea>`;
@@ -6561,12 +6709,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 74 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][74].A74) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 74 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][74].A74) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p:first-child {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p:first-child {
             background-color: lightblue;
           }
           </textarea>`;
@@ -6578,12 +6728,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 75 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][75].A75) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 75 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][75].A75) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">input:focus {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        input:focus {
             background-color: lightblue;
           }
           </textarea>`;
@@ -6595,12 +6747,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 76 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][76].A76) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 76 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][76].A76) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p::first-line {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p::first-line {
             color: red;
           }
           </textarea>`;
@@ -6612,12 +6766,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 77 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][77].A77) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 77 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][77].A77) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p::first-letter {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p::first-letter {
             color: red;
             font-size: xx-large;
           }
@@ -6630,12 +6786,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 78 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][78].A78) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 78 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][78].A78) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p::before{
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p::before{
             content: url(smiley.gif);
           }
           p::after{
@@ -6650,12 +6808,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 79 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][79].A79) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 79 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][79].A79) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">img {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        img {
             opacity: 0.4;
           }
           </textarea>`;
@@ -6667,12 +6827,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 80 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][80].A80) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 80 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][80].A80) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">img {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        img {
             opacity: 0.4;
           }
           img:hover {
@@ -6687,12 +6849,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 81 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][81].A81) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 81 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][81].A81) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">a[target] {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        a[target] {
             background-color: lightblue;
           }
           </textarea>`;
@@ -6704,12 +6868,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 82 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][82].A82) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 82 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][82].A82) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">[title~="red"] {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        [title~="red"] {
             border: 5px solid red;
           }
           </textarea>`;
@@ -6721,12 +6887,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 83 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][83].A83) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 83 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][83].A83) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">[title^="red"] {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        [title^="red"] {
             border: 5px solid red;
           }
           </textarea>`;
@@ -6738,12 +6906,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 84 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][84].A84) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 84 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][84].A84) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">[title$="flower"] {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        [title$="flower"] {
             border: 5px solid red;
           }
           </textarea>`;
@@ -6755,12 +6925,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 85 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][85].A85) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 85 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][85].A85) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">[title*="flow"] {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        [title*="flow"] {
             border: 5px solid red;
           }
           </textarea>`;
@@ -6772,12 +6944,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 86 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][86].A86) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 86 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][86].A86) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             border-radius: 25px;
             background: #73AD21;
             padding: 20px; 
@@ -6793,12 +6967,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 87 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][87].A87) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 87 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][87].A87) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             border-bottom-left-radius: 25px;
             background: #73AD21;
             padding: 20px; 
@@ -6813,12 +6989,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 88 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][88].A88) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 88 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][88].A88) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div { 
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div { 
             border: 10px solid transparent;
             border-image: url(border.png) 30 round;
           }
@@ -6831,12 +7009,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 89 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][89].A89) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 89 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][89].A89) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div { 
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div { 
             border: 10px solid transparent;
             border-image: url(border.png) 30 stretch;
           }
@@ -6849,12 +7029,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 90 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][90].A90) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 90 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][90].A90) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">body {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        body {
             background-image: url(img_flwr.gif), url(paper.gif);
           }
           </textarea>`;
@@ -6866,12 +7048,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 91 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][91].A91) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 91 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][91].A91) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">body {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        body {
             background:url(img_flwr.gif);
             background-size: 100px 80px;
             background-repeat: no-repeat;
@@ -6885,12 +7069,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 92 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][92].A92) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 92 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][92].A92) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">html { 
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        html { 
             background: url(img_flower.jpg) no-repeat center center fixed;
             background-size: cover;
           }
@@ -6903,12 +7089,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 93 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][93].A93) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 93 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][93].A93) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div { 
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div { 
             border: 10px solid black;
             padding: 35px;
             background: url(img_flwr.gif);
@@ -6924,12 +7112,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 94 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][94].A94) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 94 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][94].A94) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div { 
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div { 
             border: 10px dotted black;
             padding: 35px;
             background: lightblue;
@@ -6944,12 +7134,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 95 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][95].A95) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 95 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][95].A95) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             background-color: rgba(0,255,0,0.3);
           }
           </textarea>`;
@@ -6961,12 +7153,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 96 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][96].A96) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 96 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][96].A96) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             background-color: hsl(0,100%,50%);
           }
           </textarea>`;
@@ -6978,12 +7172,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 97 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][97].A97) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 97 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][97].A97) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             background-color: hsla(0,100%,50%,0.3);
           }
           </textarea>`;
@@ -6995,12 +7191,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 98 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][98].A98) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 98 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][98].A98) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             background-color: red;
             opacity: 0.4;
           }
@@ -7013,12 +7211,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 99 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][99].A99) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 99 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][99].A99) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             background-image: linear-gradient(white, green);
           }
           </textarea>`;
@@ -7030,12 +7230,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 100 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][100].A100) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 100 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][100].A100) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             background-image: linear-gradient(to bottom right, white, green);
           }
           </textarea>`;
@@ -7047,12 +7249,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 101 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][101].A101) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 101 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][101].A101) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             background-image: linear-gradient(70deg, white, green);
           }
           </textarea>`;
@@ -7064,12 +7268,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 102 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][102].A102) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 102 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][102].A102) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             background-image: linear-gradient(white, red, blue, green);
           }
           </textarea>`;
@@ -7081,12 +7287,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 103 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][103].A103) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 103 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][103].A103) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             background-image: linear-gradient(rgba(0,255,0,0.2), rgba(0,255,0,1));
           }
           </textarea>`;
@@ -7098,12 +7306,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 104 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][104].A104) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 104 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][104].A104) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             background-image: radial-gradient(white, green);
           }
           </textarea>`;
@@ -7115,12 +7325,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 105 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][105].A105) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 105 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][105].A105) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             background-image: radial-gradient(circle, white, green);
           }
           </textarea>`;
@@ -7132,12 +7344,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 106 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][106].A106) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 106 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][106].A106) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             text-shadow: 2px 2px;
           }
           </textarea>`;
@@ -7149,12 +7363,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 107 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][107].A107) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 107 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][107].A107) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             text-shadow: 2px 2px 5px green;
           }
           </textarea>`;
@@ -7166,12 +7382,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 108 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][108].A108) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 108 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][108].A108) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">h1 {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        h1 {
             text-shadow: 2px 2px 5px green, 0 0 10px red;
           }
           </textarea>`;
@@ -7183,12 +7401,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 109 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][109].A109) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 109 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][109].A109) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             box-shadow: 10px 10px;
           }
           </textarea>`;
@@ -7200,12 +7420,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 110 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][110].A110) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 110 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][110].A110) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             box-shadow: 10px 10px 5px grey;
           }
           </textarea>`;
@@ -7217,12 +7439,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 111 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][111].A111) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 111 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][111].A111) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             white-space: nowrap; 
             width: 200px; 
             border: 1px solid #000000;
@@ -7238,12 +7462,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 112 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][112].A112) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 112 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][112].A112) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             width: 150px; 
             border: 1px solid #000000;
             word-wrap: break-word;
@@ -7257,12 +7483,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 113 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][113].A113) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 113 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][113].A113) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">p {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        p {
             width: 150px; 
             border: 1px solid #000000;
             word-break: break-all;
@@ -7276,12 +7504,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 114 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][114].A114) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 114 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][114].A114) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">@font-face {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        @font-face {
             font-family: sansation;
             src: url(sansation_light.woff);
           }
@@ -7294,12 +7524,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 115 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][115].A115) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 115 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][115].A115) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">@font-face {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        @font-face {
             font-family: sansation;
             src: url(sansation_bold.woff);
             font-weight: bold;
@@ -7313,12 +7545,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 116 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][116].A116) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 116 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][116].A116) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             background-color: lightblue;
@@ -7334,12 +7568,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 117 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][117].A117) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 117 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][117].A117) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             margin: 50px;
@@ -7356,12 +7592,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 118 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][118].A118) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 118 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][118].A118) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             margin: 50px;
@@ -7378,12 +7616,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 119 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][119].A119) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 119 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][119].A119) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             margin: 50px;
@@ -7400,12 +7640,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 120 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][120].A120) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 120 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][120].A120) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             background-color: lightblue;
@@ -7421,12 +7663,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 121 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][121].A121) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 121 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][121].A121) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             background-color: lightblue;
@@ -7442,12 +7686,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 122 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][122].A122) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 122 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][122].A122) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             background-color: lightblue;
@@ -7463,12 +7709,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 123 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][123].A123) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 123 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][123].A123) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             background: red;
@@ -7487,12 +7735,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 124 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][124].A124) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 124 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][124].A124) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             background: red;
@@ -7512,12 +7762,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 125 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][125].A125) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 125 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][125].A125) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             background: red;
@@ -7537,12 +7789,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 126 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][126].A126) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 126 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][126].A126) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             background: red;
@@ -7562,12 +7816,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 127 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][127].A127) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 127 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][127].A127) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             background: red;
@@ -7586,12 +7842,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 128 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][128].A128) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 128 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][128].A128) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             background-color: red;
@@ -7612,12 +7870,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 129 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][129].A129) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 129 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][129].A129) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             position: relative;
@@ -7642,12 +7902,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 130 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][130].A130) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 130 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][130].A130) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             position: relative;
@@ -7671,12 +7933,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 131 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][131].A131) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 131 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][131].A131) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             position: relative;
@@ -7700,12 +7964,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 132 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][132].A132) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 132 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][132].A132) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             position: relative;
@@ -7732,12 +7998,14 @@ function cssSubmit() { /* function for html submit button*/
 
     } else if (cssRandomValue == 133 && cssInputAnswer == __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][133].A133) {
         cssCorrectValue.innerHTML = "Correct..";
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">Good Job :) </textarea>`;
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        Good Job :) </textarea>`;
         cssNextButton.innerHTML = `<button id="cssNextButton" onclick=cssBtn()>Next</button>`;
         cssRemoveValue.innerHTML = "";
 
     } else if (cssRandomValue == 133 && cssInputAnswer !== __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__["a" /* cssAnswerArr */][133].A133) {
-        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">div {
+        cssDisplayAnswer.innerHTML = `<textarea name="text" id="input">
+        div {
             width: 100px;
             height: 100px;
             position: relative;
