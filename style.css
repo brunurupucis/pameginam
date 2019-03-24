@@ -8,13 +8,6 @@
   background-attachment: fixed;
   background-size: cover;
 }
-p,
-#message,  /* showing the size of question ans answer */
-#showingAnswer {
-  width: auto;
-  margin: auto;
-}
-
 #htmlBodyBackground {/* html background question */
   background-image: url("questionBackground.jpg");
   background-repeat: no-repeat;
@@ -38,6 +31,14 @@ p,
   background-size: cover;
   margin: auto;
 }
+p,
+#message,  /* showing the size of question ans answer */
+#showingAnswer {
+  width: auto;
+  margin: auto;
+}
+
+
 
 
 
