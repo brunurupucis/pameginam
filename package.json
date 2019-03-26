@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "^2.2.0-rc.0"
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0"
   }
 }
