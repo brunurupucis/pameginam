@@ -1,5 +1,492 @@
-$colorred:red;
+/*works*/
+*:focus {outline:none !important} /* take off blue lines*/
+/*<<<<<<<<<<<<<<<<<<<< background >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-.test {
-    color: $colorred;
+#bodyBackground { /* background for start*/
+  position: relative;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#htmlBodyBackground {/* html background question */
+  background-image: url("questionBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+}
+
+
+#cssBodyBackground {/* css background question */
+  background-image: url("cssQuestionBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+}
+#javascriptBodyBackground {/* javascript background question */
+  background-image: url("javascriptQuestionBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+}
+p,
+#message,  /* showing the size of question ans answer */
+#showingAnswer {
+  width: auto;
+  margin: auto;
+}
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<to hide input text area>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+#remove,
+#cssRemove,
+#javascriptRemove {/* to hide input text area*/
+  display: none;
+}
+
+body, html {
+  height: 100%;
+font-weight: bold;
+font-size: 1.1rem;
+
+}
+
+textarea {
+  width: 95%;
+  height: 20rem;
+}
+
+
+#htmlNextButton,
+#cssNextButton,
+#javascriptNextButton{
+  margin: 19.5rem;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<< buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#cssCheckingAnswer,
+#cssShowingAnswer,
+#cssElementButton{
+  z-index: -1;
+}
+
+.containerFlex{
+  display: flex;
+  margin: auto 1rem ;
+}
+.container,
+.container{
+  margin-top: 10rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 700px;
+  height: 150px;
+
+}
+.container2 {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate( -50%);
+} 
+.container4 {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate( -50%);
+} 
+.indexContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+}
+
+.container3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+  
+.button{
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 2em;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  font-weight: bold;
+  height: 65px;
+  line-height: 65px;
+  padding: 0 32.5px;
+  display: inline-block;
+  width: auto;
+  border-radius: 5px;
+  top: 0;
+  position: relative;
+}
+
+#addedQuestion,
+#checkingAnswer,
+#cssAddedQuestion,
+#cssCheckingAnswer,
+#javascriptAddedQuestion,
+#javascriptCheckingAnswer{
+  height: 80px;
+  margin: auto;
+}
+#elementButton,
+#showingAnswer,
+#cssElementButton,
+#cssShowingAnswer,
+#javascriptElementButton,
+#javascriptShowingAnswer{
+  height: 20px;
+ 
+}
+
+.button::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 6px;
+  border-radius: 5px;
+  height: 64px;
+
+}
+
+#javascriptGoHome,
+#cssGoHome,
+#htmlGoHome,
+#htmlStart,
+#cssStart,
+#javascriptStart {
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  font-size: 2em;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  font-weight: bold;
+  height: 65px;
+  line-height: 65px;
+  padding: 0 32.5px;
+  width: auto;
+  border-radius: 5px;
+  top: 0;
+  position: relative;
+}
+#javascriptGoHome::before,
+#cssGoHome::before,
+#htmlGoHome::before,
+#htmlStart::before,
+#cssStart::before,
+#javascriptStart::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 6px;
+  border-radius: 5px;
+  height: 65px;
+}
+ 
+.whiteText{
+  display: block;
+  color: rgb(7, 0, 17);
+  font-size: 1.5em;
+  background: #a7def5;
+  border-radius: 5px;
+  padding:0.5rem;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.whiteText:hover{
+  display: block;
+  color: #a7def5;
+  font-size: 1.5em;
+  background: rgb(7, 0, 17);
+  border-radius: 5px;
+  padding:0.5rem;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+
+.button:active:after,
+#javascriptGoHome:active:after,
+#cssGoHome:active:after,
+#htmlGoHome:active:after,
+#htmlStart:active:after,
+#cssStart:active:after,
+#javascriptStart:active:after,
+#htmlStartButton:active:after,
+#cssStartButton:active:after,
+#javascriptStartButton:active:after,
+#htmlNextButton:active:after,
+#cssNextButton:active:after,
+#javascriptNextButton:active:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: -10px;
+  left: 0;
+  z-index: 1;
+}
+
+
+
+
+
+#htmlStartButton,
+#cssStartButton,
+#javascriptStartButton,
+#htmlNextButton,
+#cssNextButton,
+#javascriptNextButton {
+  cursor: pointer;
+  margin-left: 2px;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  font-weight: bold;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 12.8px;
+  width: auto;
+  border-radius: 2px;
+  top: 0;
+  position: relative;
+}
+
+
+#htmlStartButton::before,
+#cssStartButton::before,
+#javascriptStartButton::before,
+#htmlNextButton::before,
+#cssNextButton::before,
+#javascriptNextButton::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 2.4px;
+  border-radius: 2px;
+  height: 26px;
+}
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<< buttons colors >>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.html,
+#htmlGoHome,
+#htmlStart{
+color: #e34c26;
+text-shadow: 0 -2px 0 #d6421d, 0 1px 1px #ec6847;
+background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
+border-top: 1px solid #fcbbab;
+border-bottom: 1px solid #f7c8bd;
+}
+#htmlStartButton,
+#htmlNextButton{
+color: #942f16;
+background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
+border-top: 1px solid #fcbbab;
+border-bottom: 1px solid #f7c8bd;
+}
+
+.html:visited,
+#htmlGoHome:visited,
+#htmlStart:visited,
+#htmlStartButton:visited,
+#htmlNextButton:visited {
+  color: #e34c26;
+}
+.html:hover,
+#htmlGoHome:hover,
+#htmlStart:hover,
+#htmlStartButton:hover,
+#htmlNextButton:hover {
+  background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%);
+}
+.html:active,
+#htmlGoHome:active,
+#htmlStart:active,
+#htmlStartButton:active,
+#htmlNextButton:active {
+  top: 6px;
+  text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
+  color: #ECEDEE;
+}
+.html:active::before,
+#htmlGoHome:active::before,
+#htmlStart:active::before,
+#htmlStartButton:active::before,
+#htmlNextButton:active::before{
+  top: 0;
+  box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f;
+}
+.html::before,
+#htmlGoHome::before,
+#htmlStart::before,
+#htmlStartButton::before,
+#htmlNextButton::before {
+ 
+  background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
+  box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702;
+}
+
+
+
+
+
+
+
+.css,
+#cssStart,
+#cssGoHome{
+  color: #0C73B8;
+text-shadow: 0 -2px 0 rgb(22, 110, 168), 0 1px 1px rgb(94, 170, 221);
+background: linear-gradient(to bottom, #44aad6 0%, #30a9dc 26%, #2399cc 100%);
+border-top: 1px solid #9cd1e7;
+border-bottom: 1px solid #95d0e9;
+}
+#cssStartButton,
+#cssNextButton{
+color: rgb(7, 66, 105);
+background: linear-gradient(to bottom, #44aad6 0%, #30a9dc 26%, #2399cc 100%);
+border-top: 1px solid #9cd1e7;
+border-bottom: 1px solid #95d0e9;
+}
+.css:visited,
+#cssStart:visited,
+#cssStartButton:visited,
+#cssNextButton:visited,
+#cssGoHome:visited {
+  color: #0C73B8;
+}
+
+.css:hover,
+#cssStart:hover,
+#cssStartButton:hover,
+#cssNextButton:hover,
+#cssGoHome:hover {
+  background: linear-gradient(to bottom, #66c5ee 0%, #53b8e4 26%, #39b8ee 100%);
+}
+
+.css:active,
+#cssStart:active,
+#cssStartButton:active,
+#cssNextButton:active,
+#cssGoHome:active {
+  top: 6px;
+  text-shadow: 0 -2px 0 rgb(96, 165, 211), 0 1px 1px rgb(175, 209, 231), 0 0 4px white;
+  color: #ECEDEE;
+}
+.css:active::before,
+#cssStart:active::before,
+#cssStartButton:active::before,
+#cssNextButton:active::before,
+#cssGoHome:active::before {
+  top: 0;
+  box-shadow: 0 3px 3px #1c333d, 0 3px 9px #173542;
+}
+
+.css::before,
+#cssStart::before,
+#cssStartButton::before,
+#cssNextButton::before,
+#cssGoHome::before {
+  background: linear-gradient(to top, #244350 0%, #163d4e 6px);
+  box-shadow: 0 1px 0 2px #081216, 0 5px 2.4px #040c0f, 0 10.8px 9px #042736;
+}
+
+
+
+
+
+.javascript,
+#javascriptStart,
+#javascriptGoHome{
+  color: #E5A228;
+  text-shadow: 0 -2px 0 rgb(214, 150, 30), 0 1px 1px rgb(243, 178, 57);
+  background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
+  border-top: 1px solid #f1da8d;
+  border-bottom: 1px solid #f0d270;
+}
+#javascriptStartButton,
+#javascriptNextButton{
+  color: rgb(153, 109, 27);
+  background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
+  border-top: 1px solid #f1da8d;
+  border-bottom: 1px solid #f0d270;
+}
+
+.javascript:visited,
+#javascriptStart:visited,
+#javascriptStartButton:visited,
+#javascriptNextButton:visited,
+#javascriptGoHome:visited {
+  color: #E5A228;
+}
+.javascript:hover,
+#javascriptStart:hover,
+#javascriptStartButton:hover,
+#javascriptNextButton:hover,
+#javascriptGoHome:hover {
+  background: linear-gradient(to bottom, #eec94f 0%, #f0c743 26%, #f1c120 100%);
+}
+
+.javascript:active,
+#javascriptStart:active,
+#javascriptStartButton:active,
+#javascriptNextButton:active,
+#javascriptGoHome:active {
+  top: 6px;
+  text-shadow: 0 -2px 0 #f5d262, 0 1px 1px #f1da8d, 0 0 4px white;
+  color: #ECEDEE;
+}
+.javascript:active::before,
+#javascriptStart:active::before,
+#javascriptStartButton:active::before,
+#javascriptNextButton:active::before,
+#javascriptGoHome:active::before {
+  top: 0;
+  box-shadow: 0 3px 3px #473c15, 0 3px 9px #493a08;
+}
+
+.javascript::before,
+#javascriptStart::before,
+#javascriptStartButton::before,
+#javascriptNextButton::before,
+#javascriptGoHome::before {
+ 
+  background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
+  box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810;
 }
