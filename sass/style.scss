@@ -1,40 +1,305 @@
+/*mixins*/
+
+/*pirmers:
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@include respond(tab-port) {
+  width: 100%;
+}*/
+
+/*finishmixins*/
+
+
+/* starting changes to scss. Start with html*/
+body {/* html background question */
+  background-image: url("/images/questionBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+}
+
+.goHome{
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate( -50%);
+  &_button{
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    font-weight: bold;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 32.5px;
+    width: auto;
+    border-radius: 5px;
+    top: 0;
+    position: relative;
+    /*htmlcolor*/
+    color: #e34c26;
+    text-shadow: 0 -2px 0 #d6421d, 0 1px 1px #ec6847;
+    background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
+    border-top: 1px solid #fcbbab;
+    border-bottom: 1px solid #f7c8bd;
+    &:visited {
+      color: #e34c26;
+    }
+    &:hover {
+      background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%);
+    }
+    &:active {
+      top: 6px;
+      text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
+      color: #ECEDEE;
+    }
+    &:active::before{
+      top: 0;
+      box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f;
+    }
+    &::before {
+ 
+      background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
+      box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      top: 6px;
+      border-radius: 5px;
+      height: 65px;
+    }
+    &:active:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      top: -10px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+
+.checkingAnswer {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate( -50%);
+
+  height: 80px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  margin: auto 1rem ;
+}
+
+.answer{
+  margin-top: 10rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 700px;
+  height: 150px;
+  &_textarea{
+    width: 95%;
+    height: 20rem;
+  }
+  &_submit{
+    cursor: pointer;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    font-weight: bold;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 12.8px;
+    width: auto;
+    border-radius: 2px;
+    top: 0;
+    position: relative;
+
+
+    color: #942f16;
+    background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
+    border-top: 1px solid #fcbbab;
+    border-bottom: 1px solid #f7c8bd;
+    &:active:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      top: -10px;
+      left: 0;
+      z-index: 1;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      top: 2.4px;
+      border-radius: 2px;
+      height: 26px;
+    }
+    &:visited{
+      color: #e34c26;
+    }
+    &:hover {
+      background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%);
+    }
+    &:active {
+      top: 6px;
+      text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
+      color: #ECEDEE;
+    }
+    &:active::before{
+      top: 0;
+      box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f;
+    }
+    &::before{
+ 
+      background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
+      box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702;
+    }
+  }
+  &_displayAnswer{
+    width: auto;
+    margin: auto;
+    height: 20px;
+  }
+  &_nextButton{
+    height: 20px;
+  }
+}
+
+.question {
+  margin-top: 10rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 700px;
+  height: 150px;
+  &_display{
+    height: 80px;
+    margin: auto;
+  }
+}
+
+.startButton{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  &_remove{
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    font-weight: bold;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 32.5px;
+    width: auto;
+    border-radius: 5px;
+    top: 0;
+    position: relative;
+
+    color: #e34c26;
+    text-shadow: 0 -2px 0 #d6421d, 0 1px 1px #ec6847;
+    background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
+    border-top: 1px solid #fcbbab;
+    border-bottom: 1px solid #f7c8bd;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      top: 6px;
+      border-radius: 5px;
+      height: 65px;
+    }
+    &:active::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      top: -10px;
+      left: 0;
+      z-index: 1;
+    }
+    &:visited{
+      color: #e34c26;
+    }
+    &:hover {
+      background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%);
+    }
+    &:active {
+      top: 6px;
+      text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
+      color: #ECEDEE;
+    }
+    &:active::before{
+      top: 0;
+      box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f;
+    }
+    &::before{
+  
+      background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
+      box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702;
+    }
+    
+  }
+}
+
+
 /*works*/
 *:focus {outline:none !important} /* take off blue lines*/
 /*<<<<<<<<<<<<<<<<<<<< background >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 #bodyBackground { /* background for start*/
   position: relative;
-  background-image: url("background.jpg");
+  background-image: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-#htmlBodyBackground {/* html background question */
-  background-image: url("questionBackground.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: auto;
-}
+
 
 
 #cssBodyBackground {/* css background question */
-  background-image: url("cssQuestionBackground.jpg");
+  background-image: url("/images/cssQuestionBackground.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   margin: auto;
 }
 #javascriptBodyBackground {/* javascript background question */
-  background-image: url("javascriptQuestionBackground.jpg");
+  background-image: url("/images/javascriptQuestionBackground.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   margin: auto;
 }
 p,
-#message,  /* showing the size of question ans answer */
-#showingAnswer {
+#message /* showing the size of question ans answer */
+ {
   width: auto;
   margin: auto;
 }
@@ -51,6 +316,7 @@ p,
   display: none;
 }
 
+
 body, html {
   height: 100%;
 font-weight: bold;
@@ -58,10 +324,7 @@ font-size: 1.1rem;
 
 }
 
-textarea {
-  width: 95%;
-  height: 20rem;
-}
+
 
 
 #htmlNextButton,
@@ -77,31 +340,7 @@ textarea {
   z-index: -1;
 }
 
-.containerFlex{
-  display: flex;
-  margin: auto 1rem ;
-}
-.container,
-.container{
-  margin-top: 10rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 700px;
-  height: 150px;
-
-}
-.container2 {
-  position: absolute;
-  left: 50%;
-  top: 5%;
-  transform: translate( -50%);
-} 
-.container4 {
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  transform: translate( -50%);
-} 
+ 
 .indexContainer {
   position: absolute;
   left: 50%;
@@ -110,14 +349,6 @@ textarea {
   max-width: 600px;
 }
 
-.container3 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  
-  
-}
   
 .button{
   cursor: pointer;
@@ -138,8 +369,7 @@ textarea {
   position: relative;
 }
 
-#addedQuestion,
-#checkingAnswer,
+
 #cssAddedQuestion,
 #cssCheckingAnswer,
 #javascriptAddedQuestion,
@@ -147,8 +377,7 @@ textarea {
   height: 80px;
   margin: auto;
 }
-#elementButton,
-#showingAnswer,
+
 #cssElementButton,
 #cssShowingAnswer,
 #javascriptElementButton,
@@ -172,8 +401,6 @@ textarea {
 
 #javascriptGoHome,
 #cssGoHome,
-#htmlGoHome,
-#htmlStart,
 #cssStart,
 #javascriptStart {
   cursor: pointer;
@@ -193,8 +420,6 @@ textarea {
 }
 #javascriptGoHome::before,
 #cssGoHome::before,
-#htmlGoHome::before,
-#htmlStart::before,
 #cssStart::before,
 #javascriptStart::before {
   content: '';
@@ -237,16 +462,13 @@ textarea {
 .button:active:after,
 #javascriptGoHome:active:after,
 #cssGoHome:active:after,
-#htmlGoHome:active:after,
-#htmlStart:active:after,
 #cssStart:active:after,
 #javascriptStart:active:after,
-#htmlStartButton:active:after,
 #cssStartButton:active:after,
 #javascriptStartButton:active:after,
 #htmlNextButton:active:after,
 #cssNextButton:active:after,
-#javascriptNextButton:active:after {
+#javascriptNextButton:active::after{
   content: '';
   position: absolute;
   width: 100%;
@@ -260,7 +482,7 @@ textarea {
 
 
 
-#htmlStartButton,
+
 #cssStartButton,
 #javascriptStartButton,
 #htmlNextButton,
@@ -283,7 +505,7 @@ textarea {
 }
 
 
-#htmlStartButton::before,
+
 #cssStartButton::before,
 #javascriptStartButton::before,
 #htmlNextButton::before,
@@ -304,16 +526,14 @@ textarea {
 
 
 /*<<<<<<<<<<<<<<<<<<<<<< buttons colors >>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-.html,
-#htmlGoHome,
-#htmlStart{
+.html{
 color: #e34c26;
 text-shadow: 0 -2px 0 #d6421d, 0 1px 1px #ec6847;
 background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
 border-top: 1px solid #fcbbab;
 border-bottom: 1px solid #f7c8bd;
 }
-#htmlStartButton,
+
 #htmlNextButton{
 color: #942f16;
 background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
@@ -322,41 +542,26 @@ border-bottom: 1px solid #f7c8bd;
 }
 
 .html:visited,
-#htmlGoHome:visited,
-#htmlStart:visited,
-#htmlStartButton:visited,
-#htmlNextButton:visited {
+#htmlNextButton:visited{
   color: #e34c26;
 }
 .html:hover,
-#htmlGoHome:hover,
-#htmlStart:hover,
-#htmlStartButton:hover,
 #htmlNextButton:hover {
   background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%);
 }
 .html:active,
-#htmlGoHome:active,
-#htmlStart:active,
-#htmlStartButton:active,
 #htmlNextButton:active {
   top: 6px;
   text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
   color: #ECEDEE;
 }
 .html:active::before,
-#htmlGoHome:active::before,
-#htmlStart:active::before,
-#htmlStartButton:active::before,
 #htmlNextButton:active::before{
   top: 0;
   box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f;
 }
 .html::before,
-#htmlGoHome::before,
-#htmlStart::before,
-#htmlStartButton::before,
-#htmlNextButton::before {
+#htmlNextButton::before{
  
   background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
   box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702;

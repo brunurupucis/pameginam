@@ -4,39 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <title>Random Questions</title>
 </head>
-<body id="htmlBodyBackground">
-    <div class="container2">
-    <a href="./../index.html"><button id="htmlGoHome">Go Home</button></a>
+<body>
+    <!--id "htmlBodyBackground" -->
+    <div class="goHome">
+      <!--class="container2" -->
+    <a href="./../index.html"><button class="goHome_button">Go Home</button></a>
+    <!--id="htmlGoHome" -->
   </div>
-  <p class="container4" id="checkingAnswer"></p>
-  <div class="containerFlex">
-  <div class="container" >
+  <p class="checkingAnswer" id="checkingAnswer"></p>
+  <!--class="container4" id="checkingAnswer" -->
+  <div class="flex">
+    <!-- class="containerFlex" -->
+  <div class="answer" >
+     <!--class="container" -->
       <div id="remove">
-          
-        <textarea name="text" id="input"></textarea>
-      </br>
-        <button  id = "htmlStartButton" onclick="submit()" >Submit</button>
+         <!--id="htmlGoHome" -->  
+        <textarea name="text" class="answer_textarea" id="input"></textarea>
+      </br><!--id="input"-->
+        <button  class="answer_submit" id = "htmlStartButton" onclick="submit()" >Submit</button>
+        <!--id = "htmlStartButton" can remove -->
         <script src="../build/bundle.js"></script>
       </div>
       
-      <p id="showingAnswer"></p>
-      <p id="elementButton"></p>
+      <p class="answer_displayAnswer" id="showingAnswer"></p>
+      <!--id="showingAnswer" -->
+      <p class="answer_nextButton" id="elementButton"></p><!--next button -->
+      <!--id="elementButton" -->
   </div>
 
-  <div class="container" >
- 
-  <div id="addedQuestion"></div> <!--displaying question -->
+  <div class="question" >
+  <!--class="container" -->
+  <div class="question_display" id="addedQuestion"></div> <!--displaying question -->
+  <!--id="addedQuestion" -->
   </div>
   
 </div>
-<div class="container3">
-    <button id ="htmlStart" onclick="[showTest()];this.style.visibility= 'hidden';[htmlButton()];">start</button><!-- start test--><!-- remove start button -->
+<div class="startButton">
+  <!--class="container3" -->
+    <button class="startButton_remove" id ="htmlStart" onclick="[showTest()];this.style.visibility= 'hidden';[htmlButton()];">start</button><!-- start test--><!-- remove start button -->
+    <!-- id ="htmlStart" -->
 </div>
     
     
 </body>
 </html>
+
+
 
