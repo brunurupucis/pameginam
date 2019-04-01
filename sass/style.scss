@@ -15,261 +15,13 @@
 
 
 /* starting changes to scss. Start with html*/
-body {/* html background question */
-  background-image: url("/images/questionBackground.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: auto;
-}
-
-.goHome{
-  position: absolute;
-  left: 50%;
-  top: 5%;
-  transform: translate( -50%);
-  &_button{
-    cursor: pointer;
-    margin-left: 5px;
-    margin-bottom: 15px;
-    font-size: 2em;
-    font-family: Helvetica, Arial, Sans-Serif;
-    text-decoration: none;
-    font-weight: bold;
-    height: 65px;
-    line-height: 65px;
-    padding: 0 32.5px;
-    width: auto;
-    border-radius: 5px;
-    top: 0;
-    position: relative;
-    /*htmlcolor*/
-    color: #e34c26;
-    text-shadow: 0 -2px 0 #d6421d, 0 1px 1px #ec6847;
-    background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
-    border-top: 1px solid #fcbbab;
-    border-bottom: 1px solid #f7c8bd;
-    &:visited {
-      color: #e34c26;
-    }
-    &:hover {
-      background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%);
-    }
-    &:active {
-      top: 6px;
-      text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
-      color: #ECEDEE;
-    }
-    &:active::before{
-      top: 0;
-      box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f;
-    }
-    &::before {
- 
-      background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
-      box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      z-index: -1;
-      top: 6px;
-      border-radius: 5px;
-      height: 65px;
-    }
-    &:active:after{
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 10px;
-      top: -10px;
-      left: 0;
-      z-index: 1;
-    }
-  }
-}
-
-.checkingAnswer {
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  transform: translate( -50%);
-
-  height: 80px;
-  margin: auto;
-}
-
-.flex {
-  display: flex;
-  margin: auto 1rem ;
-}
-
-.answer{
-  margin-top: 10rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 700px;
-  height: 150px;
-  &_textarea{
-    width: 95%;
-    height: 20rem;
-  }
-  &_submit{
-    cursor: pointer;
-    margin-left: 2px;
-    margin-bottom: 5px;
-    font-size: 0.8em;
-    font-family: Helvetica, Arial, Sans-Serif;
-    text-decoration: none;
-    font-weight: bold;
-    height: 26px;
-    line-height: 26px;
-    padding: 0 12.8px;
-    width: auto;
-    border-radius: 2px;
-    top: 0;
-    position: relative;
-
-
-    color: #942f16;
-    background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
-    border-top: 1px solid #fcbbab;
-    border-bottom: 1px solid #f7c8bd;
-    &:active:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 10px;
-      top: -10px;
-      left: 0;
-      z-index: 1;
-    }
-    &::before{
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      z-index: -1;
-      top: 2.4px;
-      border-radius: 2px;
-      height: 26px;
-    }
-    &:visited{
-      color: #e34c26;
-    }
-    &:hover {
-      background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%);
-    }
-    &:active {
-      top: 6px;
-      text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
-      color: #ECEDEE;
-    }
-    &:active::before{
-      top: 0;
-      box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f;
-    }
-    &::before{
- 
-      background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
-      box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702;
-    }
-  }
-  &_displayAnswer{
-    width: auto;
-    margin: auto;
-    height: 20px;
-  }
-  &_nextButton{
-    height: 20px;
-  }
-}
-
-.question {
-  margin-top: 10rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 700px;
-  height: 150px;
-  &_display{
-    height: 80px;
-    margin: auto;
-  }
-}
-
-.startButton{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  &_remove{
-    cursor: pointer;
-    margin-left: 5px;
-    margin-bottom: 15px;
-    font-size: 2em;
-    font-family: Helvetica, Arial, Sans-Serif;
-    text-decoration: none;
-    font-weight: bold;
-    height: 65px;
-    line-height: 65px;
-    padding: 0 32.5px;
-    width: auto;
-    border-radius: 5px;
-    top: 0;
-    position: relative;
-
-    color: #e34c26;
-    text-shadow: 0 -2px 0 #d6421d, 0 1px 1px #ec6847;
-    background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
-    border-top: 1px solid #fcbbab;
-    border-bottom: 1px solid #f7c8bd;
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      z-index: -1;
-      top: 6px;
-      border-radius: 5px;
-      height: 65px;
-    }
-    &:active::after{
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 10px;
-      top: -10px;
-      left: 0;
-      z-index: 1;
-    }
-    &:visited{
-      color: #e34c26;
-    }
-    &:hover {
-      background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%);
-    }
-    &:active {
-      top: 6px;
-      text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
-      color: #ECEDEE;
-    }
-    &:active::before{
-      top: 0;
-      box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f;
-    }
-    &::before{
-  
-      background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
-      box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702;
-    }
-    
-  }
-}
-
 
 /*works*/
+@import "html";
+@import "htmlColors";
+  
+
+
 *:focus {outline:none !important} /* take off blue lines*/
 /*<<<<<<<<<<<<<<<<<<<< background >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -327,7 +79,7 @@ font-size: 1.1rem;
 
 
 
-#htmlNextButton,
+
 #cssNextButton,
 #javascriptNextButton{
   margin: 19.5rem;
@@ -466,7 +218,6 @@ font-size: 1.1rem;
 #javascriptStart:active:after,
 #cssStartButton:active:after,
 #javascriptStartButton:active:after,
-#htmlNextButton:active:after,
 #cssNextButton:active:after,
 #javascriptNextButton:active::after{
   content: '';
@@ -485,7 +236,6 @@ font-size: 1.1rem;
 
 #cssStartButton,
 #javascriptStartButton,
-#htmlNextButton,
 #cssNextButton,
 #javascriptNextButton {
   cursor: pointer;
@@ -507,8 +257,7 @@ font-size: 1.1rem;
 
 
 #cssStartButton::before,
-#javascriptStartButton::before,
-#htmlNextButton::before,
+#javascriptStartButton::before
 #cssNextButton::before,
 #javascriptNextButton::before{
   content: '';
@@ -534,34 +283,24 @@ border-top: 1px solid #fcbbab;
 border-bottom: 1px solid #f7c8bd;
 }
 
-#htmlNextButton{
-color: #942f16;
-background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
-border-top: 1px solid #fcbbab;
-border-bottom: 1px solid #f7c8bd;
-}
 
-.html:visited,
-#htmlNextButton:visited{
+
+.html:visited{
   color: #e34c26;
 }
-.html:hover,
-#htmlNextButton:hover {
+.html:hover {
   background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%);
 }
-.html:active,
-#htmlNextButton:active {
+.html:active{
   top: 6px;
   text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
   color: #ECEDEE;
 }
-.html:active::before,
-#htmlNextButton:active::before{
+.html:active::before{
   top: 0;
   box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f;
 }
-.html::before,
-#htmlNextButton::before{
+.html::before{
  
   background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
   box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702;

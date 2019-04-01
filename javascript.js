@@ -19,7 +19,7 @@ function submit() { /* function for html submit button*/
     if (randomValue == 0 && inputAnswer == htmlAnswerArr[0].A0) { /* checking if randomValue is 0 and if putting answer the same as htmlAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`; /* creating next button with btn()function*/
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`; /* creating next button with btn()function*/
         removeValue.innerHTML = "";/* removing in html answer*/
 
 
@@ -27,7 +27,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 0 && inputAnswer !== htmlAnswerArr[0].A0) {/*  if random value not == then giving then display the answere.*/
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp title="tooltip"&gtAnswer&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -35,13 +35,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 1 && inputAnswer == htmlAnswerArr[1].A1) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 1 && inputAnswer !== htmlAnswerArr[1].A1) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltimg src="answer.jpg" width="250" height="400"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -49,13 +49,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 2 && inputAnswer == htmlAnswerArr[2].A2) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 2 && inputAnswer !== htmlAnswerArr[2].A2) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&lta href="https://www.google.com"&gtThis is a link&lt/a&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -63,13 +63,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 3 && inputAnswer == htmlAnswerArr[3].A3) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 3 && inputAnswer !== htmlAnswerArr[3].A3) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&lta href="http://www.wwf.org.uk"&gtThis is a link&lt/a&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -77,13 +77,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 4 && inputAnswer == htmlAnswerArr[4].A4) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 4 && inputAnswer !== htmlAnswerArr[4].A4) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltimg src="test.jpg" alt="answer.com" width="135" height="50"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -91,13 +91,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 5 && inputAnswer == htmlAnswerArr[5].A5) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 5 && inputAnswer !== htmlAnswerArr[5].A5) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&lth1&gtLondon&lt/h1&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -105,7 +105,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 6 && inputAnswer == htmlAnswerArr[6].A6) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 6 && inputAnswer !== htmlAnswerArr[6].A6) {
@@ -113,7 +113,7 @@ function submit() { /* function for html submit button*/
          &lthr&gt 
          &ltp&gtTest&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -121,7 +121,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 7 && inputAnswer == htmlAnswerArr[7].A7) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 7 && inputAnswer !== htmlAnswerArr[7].A7) {
@@ -132,7 +132,7 @@ function submit() { /* function for html submit button*/
         &lth5&gtHello&lt/h5&gt 
         &lth6&gtHello&lt/h6&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -140,7 +140,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 8 && inputAnswer == htmlAnswerArr[8].A8) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 8 && inputAnswer !== htmlAnswerArr[8].A8) {
@@ -149,7 +149,7 @@ function submit() { /* function for html submit button*/
         &lth3&gtAbout&lt/h3&gt 
         &ltp&gtOn the Island of Isla Nublar, a new park has been built: Jurassic Park is a theme park of cloned dinosaurs!!&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -157,13 +157,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 9 && inputAnswer == htmlAnswerArr[9].A9) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 9 && inputAnswer !== htmlAnswerArr[9].A9) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp&gtHello World!&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -171,7 +171,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 10 && inputAnswer == htmlAnswerArr[10].A10) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 10 && inputAnswer !== htmlAnswerArr[10].A10) {
@@ -180,7 +180,7 @@ function submit() { /* function for html submit button*/
         My Bonnie lies over the ocean.&ltbr&gt 
         Oh, bring back my Bonnie to me.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -188,7 +188,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 11 && inputAnswer == htmlAnswerArr[11].A11) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 11 && inputAnswer !== htmlAnswerArr[11].A11) {
@@ -197,7 +197,7 @@ function submit() { /* function for html submit button*/
         My Bonnie lies over the ocean.&ltbr&gt 
         Oh, bring back my Bonnie to me.&lt/pre&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -205,13 +205,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 12 && inputAnswer == htmlAnswerArr[12].A12) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 12 && inputAnswer !== htmlAnswerArr[12].A12) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp style="color:blue"&gtThis is a paragraph.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -219,13 +219,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 13 && inputAnswer == htmlAnswerArr[13].A13) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 13 && inputAnswer !== htmlAnswerArr[13].A13) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp style="font-family:courier"&gtThis is a paragraph.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -233,13 +233,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 14 && inputAnswer == htmlAnswerArr[14].A14) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 14 && inputAnswer !== htmlAnswerArr[14].A14) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp style="text-align:center"&gtThis is a paragraph.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -247,13 +247,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 15 && inputAnswer == htmlAnswerArr[15].A15) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 15 && inputAnswer !== htmlAnswerArr[15].A15) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp style="font-size:50px"&gtThis is a paragraph.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -261,7 +261,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 16 && inputAnswer == htmlAnswerArr[16].A16) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 16 && inputAnswer !== htmlAnswerArr[16].A16) {
@@ -269,7 +269,7 @@ function submit() { /* function for html submit button*/
         &ltp&gtThis is a paragraph.&lt/p&gt
         &lt/body&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -277,7 +277,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 17 && inputAnswer == htmlAnswerArr[17].A17) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 17 && inputAnswer !== htmlAnswerArr[17].A17) {
@@ -290,7 +290,7 @@ function submit() { /* function for html submit button*/
         &lt/body&gt
         &lt/html&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -298,13 +298,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 18 && inputAnswer == htmlAnswerArr[18].A18) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 18 && inputAnswer !== htmlAnswerArr[18].A18) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp&gtThis mission is to stop the &ltstrong&gt degradation &lt/strong&gt of our planets natural environment.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -312,7 +312,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 19 && inputAnswer == htmlAnswerArr[19].A19) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 19 && inputAnswer !== htmlAnswerArr[19].A19) {
@@ -320,7 +320,7 @@ function submit() { /* function for html submit button*/
         the center of the Greater Tokyo Area, 
         and the most populous &ltem&gtmetropolitan&lt/em&gt area in the world.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -328,13 +328,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 20 && inputAnswer == htmlAnswerArr[20].A20) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 20 && inputAnswer !== htmlAnswerArr[20].A20) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp&gtHTML is &ltmark&gtFUN&lt/mark&gt to learn!&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -342,13 +342,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 21 && inputAnswer == htmlAnswerArr[21].A21) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 21 && inputAnswer !== htmlAnswerArr[21].A21) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp&gtH&ltsub&gt2&lt/sub&gtO is the scientific term for water.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -356,13 +356,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 22 && inputAnswer == htmlAnswerArr[22].A22) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 22 && inputAnswer !== htmlAnswerArr[22].A22) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp&gtI am so &ltq&gtcool&lt/q&gt.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -370,7 +370,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 23 && inputAnswer == htmlAnswerArr[23].A23) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 23 && inputAnswer !== htmlAnswerArr[23].A23) {
@@ -378,7 +378,7 @@ function submit() { /* function for html submit button*/
         For 50 years, WWF has been protecting the future of nature. 
         &lt/blockquote&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -386,13 +386,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 24 && inputAnswer == htmlAnswerArr[24].A24) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 24 && inputAnswer !== htmlAnswerArr[24].A24) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltbdo dir="rtl"&gtWhat a beautiful day!&lt/bdo&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -400,13 +400,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 25 && inputAnswer == htmlAnswerArr[25].A25) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 25 && inputAnswer !== htmlAnswerArr[25].A25) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp&gtThe &ltabbr title="World Health Organization"&gtWHO&lt/abbr&gt was founded in 1948.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -414,13 +414,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 26 && inputAnswer == htmlAnswerArr[26].A26) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 26 && inputAnswer !== htmlAnswerArr[26].A26) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&lt!-- Do not display this text in the browser --&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -428,13 +428,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 27 && inputAnswer == htmlAnswerArr[27].A27) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 27 && inputAnswer !== htmlAnswerArr[27].A27) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltstyle&gt body {background-color:yellow;}&lt/style&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -442,13 +442,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 28 && inputAnswer == htmlAnswerArr[28].A28) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 28 && inputAnswer !== htmlAnswerArr[28].A28) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp id="special"&gtI want to be a special paragraph!&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -456,14 +456,14 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 29 && inputAnswer == htmlAnswerArr[29].A29) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 29 && inputAnswer !== htmlAnswerArr[29].A29) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp class="intro"&gtThis is a paragraph.&lt/p&gt 
         &ltp class="intro"&gtThis is a paragraph.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -471,13 +471,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 30 && inputAnswer == htmlAnswerArr[30].A30) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 30 && inputAnswer !== htmlAnswerArr[30].A30) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&lta href="https://www.google.com"&gtVisit our HTML tutorial.&lt/a&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -485,13 +485,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 31 && inputAnswer == htmlAnswerArr[31].A31) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 31 && inputAnswer !== htmlAnswerArr[31].A31) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&lta href="html_images.asp"&gtHTML Images&lt/a&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -499,13 +499,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 32 && inputAnswer == htmlAnswerArr[32].A32) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 32 && inputAnswer !== htmlAnswerArr[32].A32) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&lta href="html_images.asp" target="_blank"&gtHTML Images&lt/a&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -513,13 +513,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 33 && inputAnswer == htmlAnswerArr[33].A33) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 33 && inputAnswer !== htmlAnswerArr[33].A33) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&lta href="html_images.asp" target="_blank" style="text-decoration:none"&gtHTML Images&lt/a&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -527,7 +527,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 34 && inputAnswer == htmlAnswerArr[34].A34) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 34 && inputAnswer !== htmlAnswerArr[34].A34) {
@@ -535,7 +535,7 @@ function submit() { /* function for html submit button*/
         &ltimg src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0"&gt
         &lt/a&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -543,13 +543,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 35 && inputAnswer == htmlAnswerArr[35].A35) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 35 && inputAnswer !== htmlAnswerArr[35].A35) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltimg src="programming.gif" alt="Computer Man" width="96" height="96"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -557,13 +557,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 36 && inputAnswer == htmlAnswerArr[36].A36) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 36 && inputAnswer !== htmlAnswerArr[36].A36) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltimg src="html5.gif" alt="HTML5 Icon" style="width:256px;height:256px;"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
         
@@ -572,13 +572,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 37 && inputAnswer == htmlAnswerArr[37].A37) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 37 && inputAnswer !== htmlAnswerArr[37].A37) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltimg src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -586,13 +586,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 38 && inputAnswer == htmlAnswerArr[38].A38) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 38 && inputAnswer !== htmlAnswerArr[38].A38) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltimg src="pic_trulli.jpg" style="width:304px;height:228px;"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -600,13 +600,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 39 && inputAnswer == htmlAnswerArr[39].A39) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 39 && inputAnswer !== htmlAnswerArr[39].A39) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltimg src="google.jpg" alt="google.com" width="135" height="50"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -614,13 +614,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 40 && inputAnswer == htmlAnswerArr[40].A40) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 40 && inputAnswer !== htmlAnswerArr[40].A40) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltcaption&gtNames&lt/caption&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -628,7 +628,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 41 && inputAnswer == htmlAnswerArr[41].A41) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 41 && inputAnswer !== htmlAnswerArr[41].A41) {
@@ -639,7 +639,7 @@ function submit() { /* function for html submit button*/
         &ltdd&gt- white cold drink&lt/dd&gt 
         &lt/dl&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -647,13 +647,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 42 && inputAnswer == htmlAnswerArr[42].A42) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 42 && inputAnswer !== htmlAnswerArr[42].A42) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltinput type="text" name="firstname" value="John" disabled&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -661,13 +661,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 43 && inputAnswer == htmlAnswerArr[43].A43) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 43 && inputAnswer !== htmlAnswerArr[43].A43) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltinput type="button" value="OK"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -675,7 +675,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 44 && inputAnswer == htmlAnswerArr[44].A44) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 44 && inputAnswer !== htmlAnswerArr[44].A44) {
@@ -684,7 +684,7 @@ function submit() { /* function for html submit button*/
         &ltinput type="radio" name="gender" value="female"&gt Female 
         &lt/form&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -692,7 +692,7 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 45 && inputAnswer == htmlAnswerArr[45].A45) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 45 && inputAnswer !== htmlAnswerArr[45].A45) {
@@ -703,7 +703,7 @@ function submit() { /* function for html submit button*/
         &ltoption value="audi"&gtAudi&lt/option&gt 
         &lt/select&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -711,13 +711,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 46 && inputAnswer == htmlAnswerArr[46].A46) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 46 && inputAnswer !== htmlAnswerArr[46].A46) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&lttextarea name="note"&gt&lt/textarea&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -725,13 +725,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 47 && inputAnswer == htmlAnswerArr[47].A47) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 47 && inputAnswer !== htmlAnswerArr[47].A47) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltbutton type="button" onclick="alert("Hello World!")"&gt Click Me!&lt/button&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -739,13 +739,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 48 && inputAnswer == htmlAnswerArr[48].A48) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 48 && inputAnswer !== htmlAnswerArr[48].A48) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltinput type="text"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -753,13 +753,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 49 && inputAnswer == htmlAnswerArr[49].A49) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 49 && inputAnswer !== htmlAnswerArr[49].A49) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltinput type="submit"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -767,13 +767,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 50 && inputAnswer == htmlAnswerArr[50].A50) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 50 && inputAnswer !== htmlAnswerArr[50].A50) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltinput type="text" name="firstname" value="John"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -781,13 +781,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 51 && inputAnswer == htmlAnswerArr[51].A51) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 51 && inputAnswer !== htmlAnswerArr[51].A51) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltinput type="text" name="firstname" value="John" size="40"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -795,13 +795,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 52 && inputAnswer == htmlAnswerArr[52].A52) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 52 && inputAnswer !== htmlAnswerArr[52].A52) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltinput type="text" name="fname" placeholder="First name"&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -809,13 +809,13 @@ function submit() { /* function for html submit button*/
     } else if (randomValue == 53 && inputAnswer == htmlAnswerArr[53].A53) {
         correctValue.innerHTML = "Correct..";
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
     } else if (randomValue == 53 && inputAnswer !== htmlAnswerArr[53].A53) {
         displayAnswer.innerHTML = `<textarea name="text" class="answer_textarea" id="input">&ltp&gtThis is a paragraph.&lt/p&gt</textarea>`;
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
 
 
@@ -824,7 +824,7 @@ function submit() { /* function for html submit button*/
 
     else {
         incorrectValue.innerHTML = "Incorrect..";
-        nextButton.innerHTML = `<button id="htmlNextButton" onclick=btn()>Next</button>`;
+        nextButton.innerHTML = `<button class="nextButton htmlColor1" onclick=btn()>Next</button>`;
         removeValue.innerHTML = "";
     }
 
@@ -854,7 +854,7 @@ function btn() {
     document.getElementById("elementButton").innerHTML = "";/* to clean elementButton*/
     document.getElementById("remove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea>
     </br><!--id="input"-->
-      <button  class="answer_submit" id = "htmlStartButton" onclick="submit()" >Submit</button>`;/* to create next text area and Submit button. */
+      <button  class="answer_submit htmlColor1" id = "htmlStartButton" onclick="submit()" >Submit</button>`;/* to create next text area and Submit button. */
     document.getElementById("checkingAnswer").innerHTML = "";
     document.getElementById("showingAnswer").innerHTML = "";
 }

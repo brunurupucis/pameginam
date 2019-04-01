@@ -1,0 +1,213 @@
+#htmlBodyBackground {
+  /* html background question */
+  background-image: url("/images/questionBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+}
+
+
+.goHome {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%);
+  &_button {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    font-weight: bold;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 32.5px;
+    width: auto;
+    border-radius: 5px;
+    top: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      top: 6px;
+      border-radius: 5px;
+      height: 65px;
+    }
+    &:active:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      top: -10px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+.nextButton {
+  margin: 19.5rem;
+  cursor: pointer;
+  margin-left: 2px;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  font-weight: bold;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 12.8px;
+  width: auto;
+  border-radius: 2px;
+  top: 0;
+  position: relative;
+  &:active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: -10px;
+    left: 0;
+    z-index: 1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 2.4px;
+    border-radius: 2px;
+    height: 26px;
+  }
+}
+
+.checkingAnswer {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%);
+
+  height: 80px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  margin: auto 1rem;
+}
+
+.answer {
+  margin-top: 10rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 700px;
+  height: 150px;
+  &_textarea {
+    width: 95%;
+    height: 20rem;
+  }
+  &_submit {
+    cursor: pointer;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    font-weight: bold;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 12.8px;
+    width: auto;
+    border-radius: 2px;
+    top: 0;
+    position: relative;
+    &:active:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      top: -10px;
+      left: 0;
+      z-index: 1;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      top: 2.4px;
+      border-radius: 2px;
+      height: 26px;
+    }
+  }
+  &_displayAnswer {
+    width: auto;
+    margin: auto;
+    height: 20px;
+  }
+  &_nextButton {
+    height: 20px;
+  }
+}
+
+.question {
+  margin-top: 10rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 700px;
+  height: 150px;
+  &_display {
+    height: 80px;
+    margin: auto;
+  }
+}
+
+.startButton {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  &_remove {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    font-weight: bold;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 32.5px;
+    width: auto;
+    border-radius: 5px;
+    top: 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      top: 6px;
+      border-radius: 5px;
+      height: 65px;
+    }
+    &:active::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      top: -10px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+
