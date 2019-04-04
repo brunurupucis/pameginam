@@ -1,0 +1,55 @@
+.javascriptColor {
+    color: #E5A228;
+    text-shadow: 0 -2px 0 rgb(214, 150, 30), 0 1px 1px rgb(243, 178, 57);
+    background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
+    border-top: 1px solid #f1da8d;
+    border-bottom: 1px solid #f0d270;
+    &:visited {
+        color: #E5A228;
+    }
+    &:hover {
+        background: linear-gradient(to bottom, #eec94f 0%, #f0c743 26%, #f1c120 100%);
+    }
+    &:active {
+        top: 6px;
+        text-shadow: 0 -2px 0 #f5d262, 0 1px 1px #f1da8d, 0 0 4px white;
+        color: #ECEDEE;
+    }
+    &:active::before {
+        top: 0;
+        box-shadow: 0 3px 3px #473c15, 0 3px 9px #493a08;
+    }
+    &::before {
+        background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
+        box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810;
+    }
+}
+  
+
+  .javascriptColor1 {
+    color: rgb(153, 109, 27);
+    background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
+    border-top: 1px solid #f1da8d;
+    border-bottom: 1px solid #f0d270;
+    &:visited {
+        color: #E5A228;
+    }
+    &:hover {
+        background: linear-gradient(to bottom, #eec94f 0%, #f0c743 26%, #f1c120 100%);
+    }
+    
+    &:active {
+        top: 6px;
+        text-shadow: 0 -2px 0 #f5d262, 0 1px 1px #f1da8d, 0 0 4px white;
+        color: #ECEDEE;
+    }
+    &:active::before {
+        top: 0;
+        box-shadow: 0 3px 3px #473c15, 0 3px 9px #493a08;
+    }
+    &::before {
+        background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
+        box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810;
+    }
+}
+  

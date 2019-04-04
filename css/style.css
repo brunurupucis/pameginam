@@ -241,11 +241,47 @@
     background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
     box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702; }
 
-*:focus {
-  outline: none !important; }
+.javascriptColor {
+  color: #E5A228;
+  text-shadow: 0 -2px 0 #d6961e, 0 1px 1px #f3b239;
+  background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
+  border-top: 1px solid #f1da8d;
+  border-bottom: 1px solid #f0d270; }
+  .javascriptColor:visited {
+    color: #E5A228; }
+  .javascriptColor:hover {
+    background: linear-gradient(to bottom, #eec94f 0%, #f0c743 26%, #f1c120 100%); }
+  .javascriptColor:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #f5d262, 0 1px 1px #f1da8d, 0 0 4px white;
+    color: #ECEDEE; }
+  .javascriptColor:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #473c15, 0 3px 9px #493a08; }
+  .javascriptColor::before {
+    background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
+    box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810; }
 
-/* take off blue lines*/
-/*<<<<<<<<<<<<<<<<<<<< background >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.javascriptColor1 {
+  color: #996d1b;
+  background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
+  border-top: 1px solid #f1da8d;
+  border-bottom: 1px solid #f0d270; }
+  .javascriptColor1:visited {
+    color: #E5A228; }
+  .javascriptColor1:hover {
+    background: linear-gradient(to bottom, #eec94f 0%, #f0c743 26%, #f1c120 100%); }
+  .javascriptColor1:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #f5d262, 0 1px 1px #f1da8d, 0 0 4px white;
+    color: #ECEDEE; }
+  .javascriptColor1:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #473c15, 0 3px 9px #493a08; }
+  .javascriptColor1::before {
+    background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
+    box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810; }
+
 #bodyBackground {
   /* background for start*/
   position: relative;
@@ -254,6 +290,139 @@
   background-attachment: fixed;
   background-size: cover; }
 
+.index {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px; }
+  .index_button {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 2em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    font-weight: bold;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 32.5px;
+    display: inline-block;
+    width: auto;
+    border-radius: 5px;
+    top: 0;
+    position: relative; }
+    .index_button::before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      top: 6px;
+      border-radius: 5px;
+      height: 64px; }
+    .index_button:active::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      top: -10px;
+      left: 0;
+      z-index: 1; }
+
+.html {
+  color: #e34c26;
+  text-shadow: 0 -2px 0 #d6421d, 0 1px 1px #ec6847;
+  background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
+  border-top: 1px solid #fcbbab;
+  border-bottom: 1px solid #f7c8bd; }
+  .html:visited {
+    color: #e34c26; }
+  .html:hover {
+    background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%); }
+  .html:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
+    color: #ECEDEE; }
+  .html:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f; }
+  .html::before {
+    background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
+    box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702; }
+
+.css {
+  color: #0C73B8;
+  text-shadow: 0 -2px 0 #166ea8, 0 1px 1px #5eaadd;
+  background: linear-gradient(to bottom, #44aad6 0%, #30a9dc 26%, #2399cc 100%);
+  border-top: 1px solid #9cd1e7;
+  border-bottom: 1px solid #95d0e9; }
+  .css:visited {
+    color: #0C73B8; }
+  .css:hover {
+    background: linear-gradient(to bottom, #66c5ee 0%, #53b8e4 26%, #39b8ee 100%); }
+  .css:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #60a5d3, 0 1px 1px #afd1e7, 0 0 4px white;
+    color: #ECEDEE; }
+  .css:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #1c333d, 0 3px 9px #173542; }
+  .css::before {
+    background: linear-gradient(to top, #244350 0%, #163d4e 6px);
+    box-shadow: 0 1px 0 2px #081216, 0 5px 2.4px #040c0f, 0 10.8px 9px #042736; }
+
+.javascript {
+  color: #E5A228;
+  text-shadow: 0 -2px 0 #d6961e, 0 1px 1px #f3b239;
+  background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
+  border-top: 1px solid #f1da8d;
+  border-bottom: 1px solid #f0d270; }
+  .javascript:visited {
+    color: #E5A228; }
+  .javascript:hover {
+    background: linear-gradient(to bottom, #eec94f 0%, #f0c743 26%, #f1c120 100%); }
+  .javascript:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #f5d262, 0 1px 1px #f1da8d, 0 0 4px white;
+    color: #ECEDEE; }
+  .javascript:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #473c15, 0 3px 9px #493a08; }
+  .javascript::before {
+    background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
+    box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810; }
+
+.whiteText {
+  display: block;
+  color: #070011;
+  font-size: 1.5em;
+  background: #a7def5;
+  border-radius: 5px;
+  padding: 0.5rem;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%); }
+  .whiteText:hover {
+    display: block;
+    color: #a7def5;
+    font-size: 1.5em;
+    background: #070011;
+    border-radius: 5px;
+    padding: 0.5rem;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%); }
+
+*:focus {
+  outline: none !important; }
+
+/* take off blue lines*/
+/*<<<<<<<<<<<<<<<<<<<< background >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 #cssBodyBackground {
   /* css background question */
   background-image: url("/images/cssQuestionBackground.jpg");
@@ -297,31 +466,6 @@ body, html {
 #cssElementButton {
   z-index: -1; }
 
-.indexContainer {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 600px; }
-
-.button {
-  cursor: pointer;
-  margin-left: 5px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-  font-size: 2em;
-  font-family: Helvetica, Arial, Sans-Serif;
-  text-decoration: none;
-  font-weight: bold;
-  height: 65px;
-  line-height: 65px;
-  padding: 0 32.5px;
-  display: inline-block;
-  width: auto;
-  border-radius: 5px;
-  top: 0;
-  position: relative; }
-
 #cssAddedQuestion,
 #cssCheckingAnswer,
 #javascriptAddedQuestion,
@@ -334,17 +478,6 @@ body, html {
 #javascriptElementButton,
 #javascriptShowingAnswer {
   height: 20px; }
-
-.button::before {
-  display: inline-block;
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  top: 6px;
-  border-radius: 5px;
-  height: 64px; }
 
 #javascriptGoHome,
 #cssGoHome,
@@ -378,31 +511,6 @@ body, html {
   border-radius: 5px;
   height: 65px; }
 
-.whiteText {
-  display: block;
-  color: #070011;
-  font-size: 1.5em;
-  background: #a7def5;
-  border-radius: 5px;
-  padding: 0.5rem;
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  transform: translate(-50%, -50%); }
-
-.whiteText:hover {
-  display: block;
-  color: #a7def5;
-  font-size: 1.5em;
-  background: #070011;
-  border-radius: 5px;
-  padding: 0.5rem;
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  transform: translate(-50%, -50%); }
-
-.button:active:after,
 #javascriptGoHome:active:after,
 #cssGoHome:active:after,
 #cssStart:active:after,
@@ -452,33 +560,6 @@ body, html {
   height: 26px; }
 
 /*<<<<<<<<<<<<<<<<<<<<<< buttons colors >>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-.html {
-  color: #e34c26;
-  text-shadow: 0 -2px 0 #d6421d, 0 1px 1px #ec6847;
-  background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
-  border-top: 1px solid #fcbbab;
-  border-bottom: 1px solid #f7c8bd; }
-
-.html:visited {
-  color: #e34c26; }
-
-.html:hover {
-  background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%); }
-
-.html:active {
-  top: 6px;
-  text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
-  color: #ECEDEE; }
-
-.html:active::before {
-  top: 0;
-  box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f; }
-
-.html::before {
-  background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
-  box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702; }
-
-.css,
 #cssStart,
 #cssGoHome {
   color: #0C73B8;
@@ -494,21 +575,18 @@ body, html {
   border-top: 1px solid #9cd1e7;
   border-bottom: 1px solid #95d0e9; }
 
-.css:visited,
 #cssStart:visited,
 #cssStartButton:visited,
 #cssNextButton:visited,
 #cssGoHome:visited {
   color: #0C73B8; }
 
-.css:hover,
 #cssStart:hover,
 #cssStartButton:hover,
 #cssNextButton:hover,
 #cssGoHome:hover {
   background: linear-gradient(to bottom, #66c5ee 0%, #53b8e4 26%, #39b8ee 100%); }
 
-.css:active,
 #cssStart:active,
 #cssStartButton:active,
 #cssNextButton:active,
@@ -517,7 +595,6 @@ body, html {
   text-shadow: 0 -2px 0 #60a5d3, 0 1px 1px #afd1e7, 0 0 4px white;
   color: #ECEDEE; }
 
-.css:active::before,
 #cssStart:active::before,
 #cssStartButton:active::before,
 #cssNextButton:active::before,
@@ -525,65 +602,9 @@ body, html {
   top: 0;
   box-shadow: 0 3px 3px #1c333d, 0 3px 9px #173542; }
 
-.css::before,
 #cssStart::before,
 #cssStartButton::before,
 #cssNextButton::before,
 #cssGoHome::before {
   background: linear-gradient(to top, #244350 0%, #163d4e 6px);
   box-shadow: 0 1px 0 2px #081216, 0 5px 2.4px #040c0f, 0 10.8px 9px #042736; }
-
-.javascript,
-#javascriptStart,
-#javascriptGoHome {
-  color: #E5A228;
-  text-shadow: 0 -2px 0 #d6961e, 0 1px 1px #f3b239;
-  background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
-  border-top: 1px solid #f1da8d;
-  border-bottom: 1px solid #f0d270; }
-
-#javascriptStartButton,
-#javascriptNextButton {
-  color: #996d1b;
-  background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
-  border-top: 1px solid #f1da8d;
-  border-bottom: 1px solid #f0d270; }
-
-.javascript:visited,
-#javascriptStart:visited,
-#javascriptStartButton:visited,
-#javascriptNextButton:visited,
-#javascriptGoHome:visited {
-  color: #E5A228; }
-
-.javascript:hover,
-#javascriptStart:hover,
-#javascriptStartButton:hover,
-#javascriptNextButton:hover,
-#javascriptGoHome:hover {
-  background: linear-gradient(to bottom, #eec94f 0%, #f0c743 26%, #f1c120 100%); }
-
-.javascript:active,
-#javascriptStart:active,
-#javascriptStartButton:active,
-#javascriptNextButton:active,
-#javascriptGoHome:active {
-  top: 6px;
-  text-shadow: 0 -2px 0 #f5d262, 0 1px 1px #f1da8d, 0 0 4px white;
-  color: #ECEDEE; }
-
-.javascript:active::before,
-#javascriptStart:active::before,
-#javascriptStartButton:active::before,
-#javascriptNextButton:active::before,
-#javascriptGoHome:active::before {
-  top: 0;
-  box-shadow: 0 3px 3px #473c15, 0 3px 9px #493a08; }
-
-.javascript::before,
-#javascriptStart::before,
-#javascriptStartButton::before,
-#javascriptNextButton::before,
-#javascriptGoHome::before {
-  background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
-  box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810; }

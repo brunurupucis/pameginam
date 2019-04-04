@@ -8155,18 +8155,18 @@ function javascriptSubmit() { /* function for html submit button*/
     if (javascriptRandomValue == 0 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][0].A0) { /* checking if javascriptRandomValue is 0 and if putting answer the same as javascriptAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`; /* creating next button with javascriptBtn()function*/
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`; /* creating next button with javascriptBtn()function*/
         javascriptRemoveValue.innerHTML = "";/* removing in html answer*/
 
 
 
     } else if (javascriptRandomValue == 0 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][0].A0) {/*  if random value not == then giving then display the answere.*/
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         varyNae;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8174,19 +8174,19 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 1 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][1].A1) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 1 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][1].A1) {
         javascriptDisplayAnswer.innerHTML = `
         
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var a = 7;
         var b = a;
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8194,17 +8194,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 2 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][2].A2) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 2 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][2].A2) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
             var a = 9;
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8212,13 +8212,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 3 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][3].A3) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 3 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][3].A3) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var a = 5;
         var b = 10;
         var c = "I am a";
@@ -8226,7 +8226,7 @@ function javascriptSubmit() { /* function for html submit button*/
         b = b + 5;
         c = c + " String!";</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8234,13 +8234,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 4 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][4].A4) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 4 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][4].A4) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var studlyCapVar ;
         var properCamelCase;
         var titleCaseOver;
@@ -8249,7 +8249,7 @@ function javascriptSubmit() { /* function for html submit button*/
         var properCamelCase = "A String";
         var titleCaseOver = 9000;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8257,16 +8257,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 5 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][5].A5) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 5 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][5].A5) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var sum = 10 + 10;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8274,16 +8274,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 6 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][6].A6) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 6 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][6].A6) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         variffrence = 45 - 33;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8291,16 +8291,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 7 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][7].A7) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 7 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][7].A7) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         varrodct = 8 * 10;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8308,17 +8308,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 8 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][8].A8) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 8 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][8].A8) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
           v qutient = 66 / 33;
         </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8326,17 +8326,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 9 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][9].A9) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 9 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][9].A9) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myVar = 87;
         myVar++;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8344,17 +8344,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 10 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][10].A10) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 10 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][10].A10) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myVar = 11;
         myVar--;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8362,16 +8362,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 11 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][11].A11) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 11 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][11].A11) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myDecimal = 5.7;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8379,16 +8379,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 12 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][12].A12) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 12 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][12].A12) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var product = 2.0 * 2.5;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8396,16 +8396,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 13 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][13].A13) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 13 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][13].A13) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var quotient = 4.4 / 2.0;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8413,16 +8413,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 14 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][14].A14) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 14 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][14].A14) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var remainder = 11 % 3;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8430,13 +8430,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 15 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][15].A15) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 15 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][15].A15) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var a = 3;
         var b = 17;
         var c = 12;
@@ -8445,7 +8445,7 @@ function javascriptSubmit() { /* function for html submit button*/
         b += 9;
         c +=7;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8453,13 +8453,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 16 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][16].A16) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 16 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][16].A16) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var a = 11;
         var b = 9;
         var c = 3;
@@ -8468,7 +8468,7 @@ function javascriptSubmit() { /* function for html submit button*/
         b -= 15;
         c -= 1;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8476,13 +8476,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 17 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][17].A17) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 17 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][17].A17) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var a = 5;
         var b = 12;
         var c = 4.6;
@@ -8491,7 +8491,7 @@ function javascriptSubmit() { /* function for html submit button*/
         b *= 3;
         c *=10;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8499,13 +8499,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 18 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][18].A18) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 18 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][18].A18) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var a = 48;
         var b = 108;
         var c = 33;
@@ -8514,7 +8514,7 @@ function javascriptSubmit() { /* function for html submit button*/
         b /=4;
         c /=11;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8522,17 +8522,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 19 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][19].A19) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 19 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][19].A19) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myFirstName = "first name"; var myLastName = "last name";
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8540,16 +8540,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 20 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][20].A20) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 20 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][20].A20) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myStr = "I am a \"double quoted\" string inside \"double quotes\".";</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8557,16 +8557,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 21 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][21].A21) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 21 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][21].A21) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8574,16 +8574,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 22 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][22].A22) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 22 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][22].A22) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myStr = "\'FirstLine\n\t\SecondLine\nThirdLine";</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8591,17 +8591,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 23 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][23].A23) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 23 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][23].A23) {
         javascriptDisplayAnswer.innerHTML = `
 
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
               ar myStr="This is the start. " + "This is the end.";</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8609,17 +8609,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 24 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][24].A24) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 24 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][24].A24) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myStr = "This is the first sentence. ";
         myStr += "This is the second sentence.";</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8627,17 +8627,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 25 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][25].A25) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 25 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][25].A25) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myName  = "your name";
         var myStr = "My name is " + myName +  " and I am well!";</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8645,18 +8645,18 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 26 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][26].A26) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 26 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][26].A26) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var someAdjective = "awesome!";
         var myStr = "Learning to code is ";
          myStr +=someAdjective; </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8664,18 +8664,18 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 27 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][27].A27) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 27 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][27].A27) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var lastNameLength = 0;
         var lastName = "Lovelace";
         lastNameLength = lastName.length;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8683,18 +8683,18 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 28 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][28].A28) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 28 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][28].A28) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var firstLetterOfLastName = "";
         var lastName = "Lovelace";
         firstLetterOfLastName = lastName[0];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8702,17 +8702,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 29 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][29].A29) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 29 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][29].A29) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myStr = "Jello World";
         myStr = "Hello World";</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8720,17 +8720,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 30 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][30].A30) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 30 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][30].A30) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var lastName = "Lovelace";
         var thirdLetterOfLastName = lastName[2];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8738,17 +8738,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 31 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][31].A31) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 31 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][31].A31) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var lastName = "Lovelace";
         var lastLetterOfLastName = lastName[lastName.length - 1];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8756,17 +8756,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 32 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][32].A32) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 32 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][32].A32) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var lastName = "Lovelace";
         var secondToLastLetterOfLastName = lastName[lastName.length - 2];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8774,13 +8774,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 33 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][33].A33) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 33 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][33].A33) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
             var result = "";
             result+= "My "+myAdjective+" "+myNoun+" "+myVerb+" very "+myAdverb+".";
@@ -8788,7 +8788,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           wordBlanks("dog", "big", "ran", "quickly");</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8796,16 +8796,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 34 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][34].A34) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 34 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][34].A34) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         varyAray = ["test", 0];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8813,16 +8813,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 35 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][35].A35) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 35 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][35].A35) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [["the universe", 42], ["everything", 101010]];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8830,17 +8830,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 36 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][36].A36) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 36 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][36].A36) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [50,60,70];
         var myData = myArray[0];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8848,17 +8848,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 37 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][37].A37) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 37 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][37].A37) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [18,64,99];
         myArray[0] = 45;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8866,17 +8866,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 38 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][38].A38) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 38 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][38].A38) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
         var myData = myArray[2][1];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8884,17 +8884,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 39 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][39].A39) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 39 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][39].A39) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [["John", 23], ["cat", 2]];
         myArray.push(["dog", 3]);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8902,17 +8902,17 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 40 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][40].A40) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 40 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][40].A40) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [["John", 23], ["cat", 2]];
         var removedFromMyArray = myArray.pop();</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8920,18 +8920,18 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 41 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][41].A41) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 41 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][41].A41) {
         javascriptDisplayAnswer.innerHTML = `
 
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
               ar myArray = [["John", 23], ["dog", 3]];
         var removedFromMyArray = myArray.shift();</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8939,18 +8939,18 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 42 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][42].A42) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 42 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][42].A42) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [["John", 23], ["dog", 3]];
         myArray.shift();
         myArray.unshift( ["Paul",35]);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8958,16 +8958,16 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 43 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][43].A43) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 43 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][43].A43) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myList = [["Canned Beans", 3],["Milk Galon", 1],["Cereal", 2],["Toilet Paper", 12],["Sack of Rice", 1]];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8975,20 +8975,20 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 44 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][44].A44) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 44 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][44].A44) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function reusableFunction() {
             console.log("Hi World");
           }
           
           reusableFunction();</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -8996,19 +8996,19 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 45 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][45].A45) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 45 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][45].A45) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function functionWithArgs(a, b) {
             console.log(a + b);
           }
           functionWithArgs(10, 5);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9016,14 +9016,14 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 46 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][46].A46) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 46 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][46].A46) {
         javascriptDisplayAnswer.innerHTML = `
 
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
               ar myGlobal = 10;
         
         function fun1() {
@@ -9040,7 +9040,7 @@ function javascriptSubmit() { /* function for html submit button*/
           console.log(output);
         }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9048,22 +9048,22 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 47 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][47].A47) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     }
 
     else if (javascriptRandomValue == 47 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][47].A47) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function myLocalScope() {
             var myVar;
             console.log(myVar);
           }
           myLocalScope();</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9071,13 +9071,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 48 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][48].A48) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 48 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][48].A48) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var outerWear = "T-Shirt";
         function myOutfit() {
           var outerWear = "sweater";
@@ -9085,7 +9085,7 @@ function javascriptSubmit() { /* function for html submit button*/
         }
         myOutfit();</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9093,18 +9093,18 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 49 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][49].A49) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 49 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][49].A49) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function timesFive(num) {
             return num * 5;
           }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9112,18 +9112,18 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 50 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][50].A50) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 50 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][50].A50) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function addFive() {
             sum += 5;
           }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9131,13 +9131,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 51 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][51].A51) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 51 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][51].A51) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var processed = 0;
         
         function processArg(num) {
@@ -9146,7 +9146,7 @@ function javascriptSubmit() { /* function for html submit button*/
         processed = processArg(7);
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9154,13 +9154,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 52 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][52].A52) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 52 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][52].A52) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function nextInLine(arr, item) {
             arr.push(item);
             var removed = arr.shift();
@@ -9173,7 +9173,7 @@ function javascriptSubmit() { /* function for html submit button*/
           console.log("After: " + JSON.stringify(testArr));
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9181,19 +9181,19 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 53 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][53].A53) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 53 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][53].A53) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function welcomeToBooleans() {
             return true; 
             }
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9201,13 +9201,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 54 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][54].A54) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 54 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][54].A54) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function trueOrFalse(wasThatTrue) {
             if (wasThatTrue) 
              {
@@ -9218,7 +9218,7 @@ function javascriptSubmit() { /* function for html submit button*/
            }
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9226,13 +9226,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 55 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][55].A55) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 55 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][55].A55) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testEqual(val) {
             if (val == 12) { 
               return "Equal";
@@ -9242,7 +9242,7 @@ function javascriptSubmit() { /* function for html submit button*/
           testEqual(10);
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9250,13 +9250,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 56 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][56].A56) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 56 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][56].A56) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testStrict(val) {
             if (val === 7) { 
               return "Equal";
@@ -9266,7 +9266,7 @@ function javascriptSubmit() { /* function for html submit button*/
           testStrict(10);
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9274,13 +9274,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 57 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][57].A57) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 57 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][57].A57) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function compareEquality(a, b) {
             if (a === b) {
                 return  "Equal";
@@ -9290,7 +9290,7 @@ function javascriptSubmit() { /* function for html submit button*/
         compareEquality(10, "10");
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9298,13 +9298,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 58 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][58].A58) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 58 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][58].A58) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testNotEqual(val) {
             if (val != 99) 
               return "Not Equal";
@@ -9313,7 +9313,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9321,13 +9321,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 59 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][59].A59) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 59 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][59].A59) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testStrictNotEqual(val) {
             if (val !== 17) {
               return "Not Equal";
@@ -9336,7 +9336,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           testStrictNotEqual(10);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9344,13 +9344,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 60 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][60].A60) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 60 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][60].A60) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testGreaterThan(val) {
             if (val > 100) {
               return "Over 100";
@@ -9362,7 +9362,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9370,13 +9370,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 61 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][61].A61) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 61 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][61].A61) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testGreaterOrEqual(val) {
             if (val >= 20){
               return "20 or Over";
@@ -9387,7 +9387,7 @@ function javascriptSubmit() { /* function for html submit button*/
             return "Less than 10";
           }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9395,13 +9395,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 62 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][62].A62) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 62 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][62].A62) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testLessThan(val) {
             if (val < 25){
               return "Under 25";
@@ -9412,7 +9412,7 @@ function javascriptSubmit() { /* function for html submit button*/
             return "55 or Over";
           }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9420,13 +9420,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 63 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][63].A63) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 63 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][63].A63) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testLessOrEqual(val) {
             if (val <= 12){
               return "Smaller Than or Equal to 12";
@@ -9437,7 +9437,7 @@ function javascriptSubmit() { /* function for html submit button*/
             return "More Than 24";
           }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9445,13 +9445,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 64 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][64].A64) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 64 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][64].A64) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testLogicalAnd(val) {
             if (val <= 50 && val >= 25) {
                 return "Yes";
@@ -9461,7 +9461,7 @@ function javascriptSubmit() { /* function for html submit button*/
           testLogicalAnd(10);
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9469,13 +9469,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 65 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][65].A65) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 65 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][65].A65) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testLogicalOr(val) {
             if ( val < 10 || val > 20 ) {
                 return "Outside";
@@ -9485,7 +9485,7 @@ function javascriptSubmit() { /* function for html submit button*/
             testLogicalOr(15);
             </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9493,13 +9493,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 66 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][66].A66) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 66 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][66].A66) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testElse(val) {
             var result = "";
             if (val > 5) {
@@ -9512,7 +9512,7 @@ function javascriptSubmit() { /* function for html submit button*/
             }
             testElse(4);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9520,13 +9520,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 67 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][67].A67) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 67 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][67].A67) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testElseIf(val) {
             if (val > 10) {
               return "Greater than 10";
@@ -9540,7 +9540,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           testElseIf(7);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9548,13 +9548,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 68 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][68].A68) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 68 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][68].A68) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function orderMyLogic(val) {
             if (val < 5) {
             return "Less than 5";
@@ -9565,7 +9565,7 @@ function javascriptSubmit() { /* function for html submit button*/
             }
             }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9573,13 +9573,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 69 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][69].A69) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 69 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][69].A69) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function testSize(num) {
             if (num < 5){
               return "Tiny";
@@ -9599,7 +9599,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           testSize(7);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9607,13 +9607,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 70 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][70].A70) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 70 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][70].A70) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function golfScore(par, strokes) {
             if (strokes == 1){
               return "Hole-in-one!";
@@ -9633,7 +9633,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           golfScore(5, 4);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9641,13 +9641,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 71 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][71].A71) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 71 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][71].A71) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function caseInSwitch(val) {
             var answer = "";
             switch(val) {
@@ -9668,7 +9668,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           caseInSwitch(1);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9676,13 +9676,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 72 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][72].A72) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 72 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][72].A72) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function switchOfStuff(val) {
             var answer = "";
             
@@ -9700,7 +9700,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           switchOfStuff(1);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9708,13 +9708,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 73 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][73].A73) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 73 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][73].A73) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function sequentialSizes(val) {
             var answer = "";
             switch(val){
@@ -9731,7 +9731,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           sequentialSizes(1);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9739,13 +9739,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 74 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][74].A74) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 74 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][74].A74) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function chainToSwitch(val) {
             var answer = "";
             
@@ -9769,7 +9769,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           chainToSwitch(7);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9777,19 +9777,19 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 75 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][75].A75) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 75 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][75].A75) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function isLess(a, b) {
             return a <= b;
           }
           isLess(10, 15);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9797,13 +9797,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 76 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][76].A76) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 76 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][76].A76) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function abTest(a, b) {
             if (a < 0 || b < 0) return undefined;
           
@@ -9811,7 +9811,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           abTest(2,2);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9819,13 +9819,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 77 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][77].A77) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 77 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][77].A77) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var count = 0;
         
         function cc(card) {
@@ -9839,7 +9839,7 @@ function javascriptSubmit() { /* function for html submit button*/
         }
         cc(2); cc(3); cc(7); cc('K'); cc('A');</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9847,13 +9847,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 78 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][78].A78) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 78 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][78].A78) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myDog = {
             "name": "Camper",
           "legs": 4,
@@ -9861,7 +9861,7 @@ function javascriptSubmit() { /* function for html submit button*/
           "friends": ["everything!"]
         };</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9869,13 +9869,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 79 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][79].A79) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 79 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][79].A79) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var testObj = {
             "hat": "ballcap",
             "shirt": "jersey",
@@ -9884,7 +9884,7 @@ function javascriptSubmit() { /* function for html submit button*/
           var hatValue = testObj.hat;  
           var shirtValue = testObj.shirt;</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9892,13 +9892,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 80 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][80].A80) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 80 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][80].A80) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var testObj = {
             "an entree": "hamburger",
             "my side": "veggies",
@@ -9907,7 +9907,7 @@ function javascriptSubmit() { /* function for html submit button*/
           var entreeValue = testObj["an entree"];  
           var drinkValue = testObj["the drink"];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9915,13 +9915,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 81 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][81].A81) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 81 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][81].A81) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var testObj = {
             12: "Namath",
             16: "Montana",
@@ -9930,7 +9930,7 @@ function javascriptSubmit() { /* function for html submit button*/
           var playerNumber = 16; 
           var player = testObj[playerNumber]; </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9938,13 +9938,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 82 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][82].A82) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 82 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][82].A82) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myDog = {
             "name": "Coder",
             "legs": 4,
@@ -9953,7 +9953,7 @@ function javascriptSubmit() { /* function for html submit button*/
           };
           myDog.name = "Happy Coder";</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9961,13 +9961,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 83 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][83].A83) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 83 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][83].A83) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myDog = {
             "name": "Happy Coder",
             "legs": 4,
@@ -9976,7 +9976,7 @@ function javascriptSubmit() { /* function for html submit button*/
           };
           myDog.bark = "woof";</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -9984,13 +9984,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 84 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][84].A84) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 84 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][84].A84) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myDog = {
             "name": "Happy Coder",
             "legs": 4,
@@ -10001,7 +10001,7 @@ function javascriptSubmit() { /* function for html submit button*/
           delete myDog.tails;
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10009,13 +10009,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 85 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][85].A85) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 85 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][85].A85) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function phoneticLookup(val) {
             var result ="";
             
@@ -10041,7 +10041,7 @@ function javascriptSubmit() { /* function for html submit button*/
             
             phoneticLookup("charlie");</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10049,13 +10049,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 86 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][86].A86) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 86 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][86].A86) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         // Setup
         var myObj = {
           gift: "pony",
@@ -10072,7 +10072,7 @@ function javascriptSubmit() { /* function for html submit button*/
         }
         checkObj("gift");</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10080,13 +10080,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 87 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][87].A87) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 87 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][87].A87) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myMusic = [
             {
               "artist": "Billy Joel",
@@ -10111,7 +10111,7 @@ function javascriptSubmit() { /* function for html submit button*/
             }
            ];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10119,13 +10119,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 88 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][88].A88) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 88 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][88].A88) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myStorage = {
             "car": {
               "inside": {
@@ -10141,7 +10141,7 @@ function javascriptSubmit() { /* function for html submit button*/
           var gloveBoxContents = myStorage.car.inside['glove box'];
           </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10149,13 +10149,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 89 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][89].A89) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 89 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][89].A89) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myPlants = [
             { 
               type: "flowers",
@@ -10177,7 +10177,7 @@ function javascriptSubmit() { /* function for html submit button*/
           
           var secondTree = myPlants[1].list[1];</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10185,13 +10185,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 90 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][90].A90) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 90 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][90].A90) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var collection = {
             "2548": {
               "album": "Slippery When Wet",
@@ -10238,7 +10238,7 @@ function javascriptSubmit() { /* function for html submit button*/
         updateRecords(5439, "artist", "ABBA");
         </textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10246,13 +10246,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 91 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][91].A91) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 91 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][91].A91) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [];
         var i = 0;
         while (i <= 4){
@@ -10260,7 +10260,7 @@ function javascriptSubmit() { /* function for html submit button*/
             i++;
         }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10268,19 +10268,19 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 92 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][92].A92) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 92 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][92].A92) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [];
         for(var i=1; i<=5; i++){
         myArray.push(i);
         }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10288,19 +10288,19 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 93 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][93].A93) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 93 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][93].A93) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [];
         for (var i = 1; i < 10; i += 2) {
         myArray.push(i);
         }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10308,20 +10308,20 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 94 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][94].A94) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 94 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][94].A94) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [];
         
         for (var i = 9; i > 0; i-=2){
           myArray.push(i)
         }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10329,13 +10329,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 95 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][95].A95) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 95 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][95].A95) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArr = [ 2, 3, 4, 5, 6];
         var total = 0;
         
@@ -10343,7 +10343,7 @@ function javascriptSubmit() { /* function for html submit button*/
           total += myArr[i];
         }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10351,13 +10351,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 96 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][96].A96) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 96 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][96].A96) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function multiplyAll(arr) {
             var product = 1;
             for(var i=0; i < arr.length; i++){
@@ -10369,7 +10369,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           multiplyAll([[1,2],[3,4],[5,6,7]]);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10377,13 +10377,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 97 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][97].A97) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 97 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][97].A97) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var myArray = [];
         var i = 10;
         do {
@@ -10391,7 +10391,7 @@ function javascriptSubmit() { /* function for html submit button*/
           i++;
         } while (i < 5)</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10399,13 +10399,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 98 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][98].A98) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 98 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][98].A98) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var contacts = [
             {
                 "firstName": "Akira",
@@ -10449,7 +10449,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           lookUpProfile("Akira", "likes");</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10457,13 +10457,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 99 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][99].A99) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 99 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][99].A99) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function randomFraction() {
             var result = 0;
             while (result === 0) {
@@ -10474,7 +10474,7 @@ function javascriptSubmit() { /* function for html submit button*/
             
           }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10482,13 +10482,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 100 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][100].A100) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 100 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][100].A100) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
         
         function randomWholeNum() {
@@ -10496,7 +10496,7 @@ function javascriptSubmit() { /* function for html submit button*/
           return Math.floor(Math.random() * 10);
         }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10504,13 +10504,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 101 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][101].A101) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 101 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][101].A101) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function randomRange(myMin, myMax) {
             
             return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
@@ -10518,7 +10518,7 @@ function javascriptSubmit() { /* function for html submit button*/
           }
           var myRandom = randomRange(5, 15);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10526,13 +10526,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 102 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][102].A102) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 102 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][102].A102) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function convertToInteger(str) {
             
             return parseInt(str);
@@ -10540,7 +10540,7 @@ function javascriptSubmit() { /* function for html submit button*/
             
             convertToInteger("10011");</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10548,13 +10548,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 103 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][103].A103) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 103 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][103].A103) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function convertToInteger(str) {
             var radix = 2;
             return parseInt(str, radix);
@@ -10562,7 +10562,7 @@ function javascriptSubmit() { /* function for html submit button*/
             
             convertToInteger("10011");</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10570,19 +10570,19 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 104 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][104].A104) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 104 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][104].A104) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function checkEqual(a, b) {
             return a === b ? true : false;
           }
           checkEqual(1, 2);</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10590,13 +10590,13 @@ function javascriptSubmit() { /* function for html submit button*/
     } else if (javascriptRandomValue == 105 && javascriptInputAnswer == __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][105].A105) {
         javascriptCorrectValue.innerHTML = "Correct..";
         javascriptDisplayAnswer.innerHTML = `
-        <textarea name="text" id="input">Good Job :) </textarea>`;
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
     } else if (javascriptRandomValue == 105 && javascriptInputAnswer !== __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__["a" /* javascriptAnswerArr */][105].A105) {
         javascriptDisplayAnswer.innerHTML = `
-    <textarea name="text" id="input">
+    <textarea name="text" class="answer_textarea" id="input">
         function checkSign(num) {
             return (
               num > 0 ? "positive" :
@@ -10605,7 +10605,7 @@ function javascriptSubmit() { /* function for html submit button*/
             );
           }</textarea>`;
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
 
 
@@ -10614,7 +10614,7 @@ function javascriptSubmit() { /* function for html submit button*/
 
     else {
         javascriptIncorrectValue.innerHTML = "Incorrect..";
-        javascriptNextButton.innerHTML = `<button id = "javascriptNextButton" onclick=javascriptBtn()>Next</button>`;
+        javascriptNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBtn()>Next</button>`;
         javascriptRemoveValue.innerHTML = "";
     }
 
@@ -10637,8 +10637,8 @@ function javascriptBtn() {
     javascriptRandomValue = Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_5__questionsAndAnswers_javascriptQuestions__["a" /* javascriptQuestionArr */].length); /* buton next in html to make a next random question*/
     document.getElementById("javascriptAddedQuestion").innerHTML = __WEBPACK_IMPORTED_MODULE_5__questionsAndAnswers_javascriptQuestions__["a" /* javascriptQuestionArr */][javascriptRandomValue]; /* giving random question to html */
     document.getElementById("javascriptElementButton").innerHTML = "";/* to clean javascriptElementButton*/
-    document.getElementById("javascriptRemove").innerHTML = `<textarea name="text" cols="40" rows="5"id="input"></textarea></br>
-      <button id = "javascriptStartButton"onclick="javascriptSubmit()">Submit</button>`;/* to create next text area and Submit button. */
+    document.getElementById("javascriptRemove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
+      <button class="answer_submit javascriptColor1" id = "javascriptStartButton"onclick="javascriptSubmit()">Submit</button>`;/* to create next text area and Submit button. */
     document.getElementById("javascriptCheckingAnswer").innerHTML = "";
     document.getElementById("javascriptShowingAnswer").innerHTML = "";
 }
