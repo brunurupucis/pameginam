@@ -1,23 +1,46 @@
-/*mixins*/
-/*pirmers:
-@mixin absCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-@include respond(tab-port) {
-  width: 100%;
-}*/
-/*finishmixins*/
-/* starting changes to scss. Start with html*/
-/*works*/
 #htmlBodyBackground {
   /* html background question */
   background-image: url("/images/questionBackground.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  margin: auto; }
+
+*:focus {
+  outline: none !important; }
+
+/* take off blue lines*/
+/*<<<<<<<<<<<<<<<<<<<< background >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#cssBodyBackground {
+  /* css background question */
+  background-image: url("/images/cssQuestionBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto; }
+
+#javascriptBodyBackground {
+  /* javascript background question */
+  background-image: url("/images/javascriptQuestionBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto; }
+
+#remove,
+#cssRemove,
+#javascriptRemove {
+  /* to hide input text area*/
+  display: none; }
+
+body, html {
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.1rem; }
+
+p,
+#message {
+  width: auto;
   margin: auto; }
 
 .goHome {
@@ -282,6 +305,47 @@
     background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
     box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810; }
 
+.cssColor {
+  color: #0C73B8;
+  text-shadow: 0 -2px 0 #166ea8, 0 1px 1px #5eaadd;
+  background: linear-gradient(to bottom, #44aad6 0%, #30a9dc 26%, #2399cc 100%);
+  border-top: 1px solid #9cd1e7;
+  border-bottom: 1px solid #95d0e9; }
+  .cssColor:visited {
+    color: #0C73B8; }
+  .cssColor:hover {
+    background: linear-gradient(to bottom, #66c5ee 0%, #53b8e4 26%, #39b8ee 100%); }
+  .cssColor:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #60a5d3, 0 1px 1px #afd1e7, 0 0 4px white;
+    color: #ECEDEE; }
+  .cssColor:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #1c333d, 0 3px 9px #173542; }
+  .cssColor::before {
+    background: linear-gradient(to top, #244350 0%, #163d4e 6px);
+    box-shadow: 0 1px 0 2px #081216, 0 5px 2.4px #040c0f, 0 10.8px 9px #042736; }
+
+.cssColor1 {
+  color: #074269;
+  background: linear-gradient(to bottom, #44aad6 0%, #30a9dc 26%, #2399cc 100%);
+  border-top: 1px solid #9cd1e7;
+  border-bottom: 1px solid #95d0e9; }
+  .cssColor1:visited {
+    color: #0C73B8; }
+  .cssColor1:hover {
+    background: linear-gradient(to bottom, #66c5ee 0%, #53b8e4 26%, #39b8ee 100%); }
+  .cssColor1:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #60a5d3, 0 1px 1px #afd1e7, 0 0 4px white;
+    color: #ECEDEE; }
+  .cssColor1:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #1c333d, 0 3px 9px #173542; }
+  .cssColor1::before {
+    background: linear-gradient(to top, #244350 0%, #163d4e 6px);
+    box-shadow: 0 1px 0 2px #081216, 0 5px 2.4px #040c0f, 0 10.8px 9px #042736; }
+
 #bodyBackground {
   /* background for start*/
   position: relative;
@@ -417,194 +481,3 @@
     left: 50%;
     top: 70%;
     transform: translate(-50%, -50%); }
-
-*:focus {
-  outline: none !important; }
-
-/* take off blue lines*/
-/*<<<<<<<<<<<<<<<<<<<< background >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-#cssBodyBackground {
-  /* css background question */
-  background-image: url("/images/cssQuestionBackground.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: auto; }
-
-#javascriptBodyBackground {
-  /* javascript background question */
-  background-image: url("/images/javascriptQuestionBackground.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: auto; }
-
-p,
-#message {
-  width: auto;
-  margin: auto; }
-
-/*<<<<<<<<<<<<<<<<<<<<<<to hide input text area>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-#remove,
-#cssRemove,
-#javascriptRemove {
-  /* to hide input text area*/
-  display: none; }
-
-body, html {
-  height: 100%;
-  font-weight: bold;
-  font-size: 1.1rem; }
-
-#cssNextButton,
-#javascriptNextButton {
-  margin: 19.5rem; }
-
-/*<<<<<<<<<<<<<<<<<<<<<< buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-#cssCheckingAnswer,
-#cssShowingAnswer,
-#cssElementButton {
-  z-index: -1; }
-
-#cssAddedQuestion,
-#cssCheckingAnswer,
-#javascriptAddedQuestion,
-#javascriptCheckingAnswer {
-  height: 80px;
-  margin: auto; }
-
-#cssElementButton,
-#cssShowingAnswer,
-#javascriptElementButton,
-#javascriptShowingAnswer {
-  height: 20px; }
-
-#javascriptGoHome,
-#cssGoHome,
-#cssStart,
-#javascriptStart {
-  cursor: pointer;
-  margin-left: 5px;
-  margin-bottom: 15px;
-  font-size: 2em;
-  font-family: Helvetica, Arial, Sans-Serif;
-  text-decoration: none;
-  font-weight: bold;
-  height: 65px;
-  line-height: 65px;
-  padding: 0 32.5px;
-  width: auto;
-  border-radius: 5px;
-  top: 0;
-  position: relative; }
-
-#javascriptGoHome::before,
-#cssGoHome::before,
-#cssStart::before,
-#javascriptStart::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  top: 6px;
-  border-radius: 5px;
-  height: 65px; }
-
-#javascriptGoHome:active:after,
-#cssGoHome:active:after,
-#cssStart:active:after,
-#javascriptStart:active:after,
-#cssStartButton:active:after,
-#javascriptStartButton:active:after,
-#cssNextButton:active:after,
-#javascriptNextButton:active::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  top: -10px;
-  left: 0;
-  z-index: 1; }
-
-#cssStartButton,
-#javascriptStartButton,
-#cssNextButton,
-#javascriptNextButton {
-  cursor: pointer;
-  margin-left: 2px;
-  margin-bottom: 5px;
-  font-size: 0.8em;
-  font-family: Helvetica, Arial, Sans-Serif;
-  text-decoration: none;
-  font-weight: bold;
-  height: 26px;
-  line-height: 26px;
-  padding: 0 12.8px;
-  width: auto;
-  border-radius: 2px;
-  top: 0;
-  position: relative; }
-
-#cssStartButton::before,
-#javascriptStartButton::before
-#cssNextButton::before,
-#javascriptNextButton::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  top: 2.4px;
-  border-radius: 2px;
-  height: 26px; }
-
-/*<<<<<<<<<<<<<<<<<<<<<< buttons colors >>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-#cssStart,
-#cssGoHome {
-  color: #0C73B8;
-  text-shadow: 0 -2px 0 #166ea8, 0 1px 1px #5eaadd;
-  background: linear-gradient(to bottom, #44aad6 0%, #30a9dc 26%, #2399cc 100%);
-  border-top: 1px solid #9cd1e7;
-  border-bottom: 1px solid #95d0e9; }
-
-#cssStartButton,
-#cssNextButton {
-  color: #074269;
-  background: linear-gradient(to bottom, #44aad6 0%, #30a9dc 26%, #2399cc 100%);
-  border-top: 1px solid #9cd1e7;
-  border-bottom: 1px solid #95d0e9; }
-
-#cssStart:visited,
-#cssStartButton:visited,
-#cssNextButton:visited,
-#cssGoHome:visited {
-  color: #0C73B8; }
-
-#cssStart:hover,
-#cssStartButton:hover,
-#cssNextButton:hover,
-#cssGoHome:hover {
-  background: linear-gradient(to bottom, #66c5ee 0%, #53b8e4 26%, #39b8ee 100%); }
-
-#cssStart:active,
-#cssStartButton:active,
-#cssNextButton:active,
-#cssGoHome:active {
-  top: 6px;
-  text-shadow: 0 -2px 0 #60a5d3, 0 1px 1px #afd1e7, 0 0 4px white;
-  color: #ECEDEE; }
-
-#cssStart:active::before,
-#cssStartButton:active::before,
-#cssNextButton:active::before,
-#cssGoHome:active::before {
-  top: 0;
-  box-shadow: 0 3px 3px #1c333d, 0 3px 9px #173542; }
-
-#cssStart::before,
-#cssStartButton::before,
-#cssNextButton::before,
-#cssGoHome::before {
-  background: linear-gradient(to top, #244350 0%, #163d4e 6px);
-  box-shadow: 0 1px 0 2px #081216, 0 5px 2.4px #040c0f, 0 10.8px 9px #042736; }

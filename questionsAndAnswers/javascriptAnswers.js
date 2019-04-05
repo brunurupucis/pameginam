@@ -1,184 +1,284 @@
 export var javascriptAnswerArr = [
-{A0:`var myName;
-  `.replace(/\s+/g, '')}, 
+  {
+    A0: `var myName;
+  `.replace(/\s+/g, "")
+  },
 
-{A1:`var a = 7;
-var b = a;`.replace(/\s+/g, '')},
+  {
+    A1: `var a = 7;
+var b = a;`.replace(/\s+/g, "")
+  },
 
-{A2:`var a = 9;`.replace(/\s+/g, '')},
+  { A2: `var a = 9;`.replace(/\s+/g, "") },
 
-{A3:`var a = 5;
+  {
+    A3: `var a = 5;
 var b = 10;
 var c = "I am a";
 a = a + 1;
 b = b + 5;
 c = c + " String!";
-`.replace(/\s+/g, '')},
+`.replace(/\s+/g, "")
+  },
 
-
-{A4:`
+  {
+    A4: `
 var studlyCapVar ;
 var properCamelCase;
 var titleCaseOver;
 
 var studlyCapVar = 10;
 var properCamelCase = "A String";
-var titleCaseOver = 9000;`.replace(/\s+/g, '')},
+var titleCaseOver = 9000;`.replace(/\s+/g, "")
+  },
 
-{A5:`var sum = 10 + 10;
-`.replace(/\s+/g, '')},
+  {
+    A5: `var sum = 10 + 10;
+`.replace(/\s+/g, "")
+  },
 
-{A6:`var difference = 45 - 33;
+  {
+    A6: `var difference = 45 - 33;
 
-`.replace(/\s+/g, '')},
+`.replace(/\s+/g, "")
+  },
 
-{A7:`var product = 8 * 10;
+  {
+    A7: `var product = 8 * 10;
 
-`.replace(/\s+/g, '')},
+`.replace(/\s+/g, "")
+  },
 
-{A8:`var quotient = 66 / 33;
+  {
+    A8: `var quotient = 66 / 33;
 
-`.replace(/\s+/g, '')},
+`.replace(/\s+/g, "")
+  },
 
-{A9:`var myVar = 87;
-myVar++;`.replace(/\s+/g, '')},
+  {
+    A9: `var myVar = 87;
+myVar++;`.replace(/\s+/g, "")
+  },
 
-{A10:`var myVar = 11;
-myVar--;`.replace(/\s+/g, '')},
+  {
+    A10: `var myVar = 11;
+myVar--;`.replace(/\s+/g, "")
+  },
 
-{A11:`var myDecimal = 5.7;`.replace(/\s+/g, '')},
+  { A11: `var myDecimal = 5.7;`.replace(/\s+/g, "") },
 
-{A12:`var product = 2.0 * 2.5;`.replace(/\s+/g, '')},
+  { A12: `var product = 2.0 * 2.5;`.replace(/\s+/g, "") },
 
-{A13:`var quotient = 4.4 / 2.0;`.replace(/\s+/g, '')},
+  { A13: `var quotient = 4.4 / 2.0;`.replace(/\s+/g, "") },
 
-{A14:`var remainder = 11 % 3;`.replace(/\s+/g, '')},
+  { A14: `var remainder = 11 % 3;`.replace(/\s+/g, "") },
 
-{A15:`var a = 3;
+  {
+    A15: `var a = 3;
 var b = 17;
 var c = 12;
 
 a +=12;
 b += 9;
-c +=7;`.replace(/\s+/g, '')},
+c +=7;`.replace(/\s+/g, "")
+  },
 
-{A16:`var a = 11;
+  {
+    A16: `var a = 11;
 var b = 9;
 var c = 3;
 
 a -= 6;
 b -= 15;
-c -= 1;`.replace(/\s+/g, '')},
+c -= 1;`.replace(/\s+/g, "")
+  },
 
-{A17:`var a = 5;
+  {
+    A17: `var a = 5;
 var b = 12;
 var c = 4.6;
 
 a *=5;
 b *= 3;
 c *=10;
-`.replace(/\s+/g, '')},
+`.replace(/\s+/g, "")
+  },
 
-{A18:`var a = 48;
+  {
+    A18: `var a = 48;
 var b = 108;
 var c = 33;
 
 a /=12;
 b /=4;
 c /=11;
-`.replace(/\s+/g, '')},
+`.replace(/\s+/g, "")
+  },
 
-{A19:`var myFirstName = "first name";
+  {
+    A19: `var myFirstName = "first name";
 var myLastName = "last name";
-`.replace(/\s+/g, '')},
+`.replace(/\s+/g, "")
+  },
 
-{A20:`var myStr = "I am a \"double quoted\" string inside \"double quotes\".";`.replace(/\s+/g, '')},
+  {
+    A20: `var myStr = "I am a \"double quoted\" string inside \"double quotes\".";`.replace(
+      /\s+/g,
+      ""
+    )
+  },
 
-{A21:`var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';`.replace(/\s+/g, '')},
+  {
+    A21: `var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';`.replace(
+      /\s+/g,
+      ""
+    )
+  },
 
-{A22:`var myStr = "\'FirstLine\n\t\SecondLine\nThirdLine";`.replace(/\s+/g, '')},
+  {
+    A22: `var myStr = "\'FirstLine\n\t\SecondLine\nThirdLine";`.replace(
+      /\s+/g,
+      ""
+    )
+  },
 
-{A23:`var myStr="This is the start. " + "This is the end.";`.replace(/\s+/g, '')},
+  {
+    A23: `var myStr="This is the start. " + "This is the end.";`.replace(
+      /\s+/g,
+      ""
+    )
+  },
 
+  {
+    A24: `var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";`.replace(/\s+/g, "")
+  },
 
-{A24:`var myStr = "This is the first sentence. ";
-myStr += "This is the second sentence.";`.replace(/\s+/g, '')},
+  {
+    A25: `var myName  = "your name";
+var myStr = "My name is " + myName +  " and I am well!";`.replace(/\s+/g, "")
+  },
 
-{A25:`var myName  = "your name";
-var myStr = "My name is " + myName +  " and I am well!";`.replace(/\s+/g, '')},
-
-{A26:`var someAdjective = "awesome!";
+  {
+    A26: `var someAdjective = "awesome!";
 var myStr = "Learning to code is ";
- myStr +=someAdjective; `.replace(/\s+/g, '')},
+ myStr +=someAdjective; `.replace(/\s+/g, "")
+  },
 
-{A27:`var lastNameLength = 0;
+  {
+    A27: `var lastNameLength = 0;
 var lastName = "Lovelace";
-lastNameLength = lastName.length;`.replace(/\s+/g, '')},
+lastNameLength = lastName.length;`.replace(/\s+/g, "")
+  },
 
-{A28:`var firstLetterOfLastName = "";
+  {
+    A28: `var firstLetterOfLastName = "";
 var lastName = "Lovelace";
-firstLetterOfLastName = lastName[0];`.replace(/\s+/g, '')},
+firstLetterOfLastName = lastName[0];`.replace(/\s+/g, "")
+  },
 
-{A29:`
+  {
+    A29: `
 var myStr = "Jello World";
-myStr = "Hello World";`.replace(/\s+/g, '')},
+myStr = "Hello World";`.replace(/\s+/g, "")
+  },
 
-{A30:`var lastName = "Lovelace";
-var thirdLetterOfLastName = lastName[2];`.replace(/\s+/g, '')},
+  {
+    A30: `var lastName = "Lovelace";
+var thirdLetterOfLastName = lastName[2];`.replace(/\s+/g, "")
+  },
 
-{A31:`var lastName = "Lovelace";
-var lastLetterOfLastName = lastName[lastName.length - 1];`.replace(/\s+/g, '')},
+  {
+    A31: `var lastName = "Lovelace";
+var lastLetterOfLastName = lastName[lastName.length - 1];`.replace(/\s+/g, "")
+  },
 
-{A32:`var lastName = "Lovelace";
-var secondToLastLetterOfLastName = lastName[lastName.length - 2];`.replace(/\s+/g, '')},
+  {
+    A32: `var lastName = "Lovelace";
+var secondToLastLetterOfLastName = lastName[lastName.length - 2];`.replace(
+      /\s+/g,
+      ""
+    )
+  },
 
-{A33:`function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  {
+    A33: `function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
   var result = "";
   result+= "My "+myAdjective+" "+myNoun+" "+myVerb+" very "+myAdverb+".";
 return result;
 }
-wordBlanks("dog", "big", "ran", "quickly");`.replace(/\s+/g, '')},
+wordBlanks("dog", "big", "ran", "quickly");`.replace(/\s+/g, "")
+  },
 
-{A34:`var myArray = ["test", 0];`.replace(/\s+/g, '')},
+  { A34: `var myArray = ["test", 0];`.replace(/\s+/g, "") },
 
-{A35:`var myArray = [["the universe", 42], ["everything", 101010]];`.replace(/\s+/g, '')},
+  {
+    A35: `var myArray = [["the universe", 42], ["everything", 101010]];`.replace(
+      /\s+/g,
+      ""
+    )
+  },
 
-{A36:`var myArray = [50,60,70];
-var myData = myArray[0];`.replace(/\s+/g, '')},
+  {
+    A36: `var myArray = [50,60,70];
+var myData = myArray[0];`.replace(/\s+/g, "")
+  },
 
-{A37:`var myArray = [18,64,99];
-myArray[0] = 45;`.replace(/\s+/g, '')},
+  {
+    A37: `var myArray = [18,64,99];
+myArray[0] = 45;`.replace(/\s+/g, "")
+  },
 
-{A38:`var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
-var myData = myArray[2][1];`.replace(/\s+/g, '')},
+  {
+    A38: `var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+var myData = myArray[2][1];`.replace(/\s+/g, "")
+  },
 
-{A39:`var myArray = [["John", 23], ["cat", 2]];
-myArray.push(["dog", 3]);`.replace(/\s+/g, '')},
+  {
+    A39: `var myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]);`.replace(/\s+/g, "")
+  },
 
-{A40:`var myArray = [["John", 23], ["cat", 2]];
-var removedFromMyArray = myArray.pop();`.replace(/\s+/g, '')},
+  {
+    A40: `var myArray = [["John", 23], ["cat", 2]];
+var removedFromMyArray = myArray.pop();`.replace(/\s+/g, "")
+  },
 
-{A41:`var myArray = [["John", 23], ["dog", 3]];
-var removedFromMyArray = myArray.shift();`.replace(/\s+/g, '')},
+  {
+    A41: `var myArray = [["John", 23], ["dog", 3]];
+var removedFromMyArray = myArray.shift();`.replace(/\s+/g, "")
+  },
 
-{A42:`var myArray = [["John", 23], ["dog", 3]];
+  {
+    A42: `var myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
-myArray.unshift( ["Paul",35]);`.replace(/\s+/g, '')},
+myArray.unshift( ["Paul",35]);`.replace(/\s+/g, "")
+  },
 
-{A43:`var myList = [["Canned Beans", 3],["Milk Galon", 1],["Cereal", 2],["Toilet Paper", 12],["Sack of Rice", 1]];`.replace(/\s+/g, '')},
+  {
+    A43: `var myList = [["Canned Beans", 3],["Milk Galon", 1],["Cereal", 2],["Toilet Paper", 12],["Sack of Rice", 1]];`.replace(
+      /\s+/g,
+      ""
+    )
+  },
 
-{A44:`function reusableFunction() {
+  {
+    A44: `function reusableFunction() {
   console.log("Hi World");
 }
 
-reusableFunction();`.replace(/\s+/g, '')},
+reusableFunction();`.replace(/\s+/g, "")
+  },
 
-{A45:`function functionWithArgs(a, b) {
+  {
+    A45: `function functionWithArgs(a, b) {
   console.log(a + b);
 }
-functionWithArgs(10, 5);`.replace(/\s+/g, '')},
+functionWithArgs(10, 5);`.replace(/\s+/g, "")
+  },
 
-{A46:`
+  {
+    A46: `
 var myGlobal = 10;
 
 function fun1() {
@@ -195,38 +295,48 @@ function fun2() {
     output += " oopsGlobal: " + oopsGlobal;
   }
   console.log(output);
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-
-{A47:`function myLocalScope() {
+  {
+    A47: `function myLocalScope() {
   var myVar;
   console.log(myVar);
 }
-myLocalScope();`.replace(/\s+/g, '')},
+myLocalScope();`.replace(/\s+/g, "")
+  },
 
-{A48:`var outerWear = "T-Shirt";
+  {
+    A48: `var outerWear = "T-Shirt";
 function myOutfit() {
   var outerWear = "sweater";
   return outerWear;
 }
-myOutfit();`.replace(/\s+/g, '')},
+myOutfit();`.replace(/\s+/g, "")
+  },
 
-{A49:`function timesFive(num) {
+  {
+    A49: `function timesFive(num) {
   return num * 5;
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A50:`function addFive() {
+  {
+    A50: `function addFive() {
   sum += 5;
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-
-{A51:`var processed = 0;
+  {
+    A51: `var processed = 0;
 
 function processArg(num) {
   return (num + 3) / 5;
 }
-processed = processArg(7);`.replace(/\s+/g, '')},
-{A52:`function nextInLine(arr, item) {
+processed = processArg(7);`.replace(/\s+/g, "")
+  },
+  {
+    A52: `function nextInLine(arr, item) {
   arr.push(item);
   var removed = arr.shift();
   return removed;  
@@ -235,13 +345,17 @@ var testArr = [1,2,3,4,5];
 
 console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
-console.log("After: " + JSON.stringify(testArr));`.replace(/\s+/g, '')},
+console.log("After: " + JSON.stringify(testArr));`.replace(/\s+/g, "")
+  },
 
-{A53:`function welcomeToBooleans() {
+  {
+    A53: `function welcomeToBooleans() {
   return true; 
-  }`.replace(/\s+/g, '')},
+  }`.replace(/\s+/g, "")
+  },
 
-{A54:`
+  {
+    A54: `
 function trueOrFalse(wasThatTrue) {
   if (wasThatTrue) 
    {
@@ -249,50 +363,62 @@ function trueOrFalse(wasThatTrue) {
     }
   return "No, that was false";
  
- }`.replace(/\s+/g, '')},
+ }`.replace(/\s+/g, "")
+  },
 
-{A55:`function testEqual(val) {
+  {
+    A55: `function testEqual(val) {
   if (val == 12) { 
     return "Equal";
   }
   return "Not Equal";
 }
-testEqual(10);`.replace(/\s+/g, '')},
+testEqual(10);`.replace(/\s+/g, "")
+  },
 
-{A56:`
+  {
+    A56: `
 function testStrict(val) {
   if (val === 7) { 
     return "Equal";
   }
   return "Not Equal";
 }
-testStrict(10);`.replace(/\s+/g, '')},
+testStrict(10);`.replace(/\s+/g, "")
+  },
 
-{A57:`
+  {
+    A57: `
 function compareEquality(a, b) {
 	if (a === b) {
 		return  "Equal";
 	}
 	return  "Not Equal";
 }
-compareEquality(10, "10");`.replace(/\s+/g, '')},
+compareEquality(10, "10");`.replace(/\s+/g, "")
+  },
 
-{A58:`function testNotEqual(val) {
+  {
+    A58: `function testNotEqual(val) {
   if (val != 99) 
     return "Not Equal";
   
   return "Equal";
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A59:`function testStrictNotEqual(val) {
+  {
+    A59: `function testStrictNotEqual(val) {
   if (val !== 17) {
     return "Not Equal";
   }
   return "Equal";
 }
-testStrictNotEqual(10);`.replace(/\s+/g, '')},
+testStrictNotEqual(10);`.replace(/\s+/g, "")
+  },
 
-{A60:`function testGreaterThan(val) {
+  {
+    A60: `function testGreaterThan(val) {
   if (val > 100) { 
     return "Over 100";
   }
@@ -305,9 +431,11 @@ testStrictNotEqual(10);`.replace(/\s+/g, '')},
 }
 
 // Change this value to test
-testGreaterThan(10);`.replace(/\s+/g, '')},
+testGreaterThan(10);`.replace(/\s+/g, "")
+  },
 
-{A61:`function testGreaterOrEqual(val) {
+  {
+    A61: `function testGreaterOrEqual(val) {
   if (val >= 20){
     return "20 or Over";
   }
@@ -315,9 +443,11 @@ testGreaterThan(10);`.replace(/\s+/g, '')},
     return "10 or Over";
   }
   return "Less than 10";
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A62:`function testLessThan(val) {
+  {
+    A62: `function testLessThan(val) {
   if (val < 25){
     return "Under 25";
   }
@@ -325,9 +455,11 @@ testGreaterThan(10);`.replace(/\s+/g, '')},
     return "Under 55";
   }
   return "55 or Over";
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A63:`function testLessOrEqual(val) {
+  {
+    A63: `function testLessOrEqual(val) {
   if (val <= 12){
     return "Smaller Than or Equal to 12";
   }
@@ -335,25 +467,31 @@ testGreaterThan(10);`.replace(/\s+/g, '')},
     return "Smaller Than or Equal to 24";
   }
   return "More Than 24";
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A64:`function testLogicalAnd(val) {
+  {
+    A64: `function testLogicalAnd(val) {
   if (val <= 50 && val >= 25) {
       return "Yes";
   }
   return "No";
 }
-testLogicalAnd(10);`.replace(/\s+/g, '')},
+testLogicalAnd(10);`.replace(/\s+/g, "")
+  },
 
-{A65:`function testLogicalOr(val) {
+  {
+    A65: `function testLogicalOr(val) {
 if ( val < 10 || val > 20 ) {
     return "Outside";
 }
   return "Inside";
 }
-testLogicalOr(15);`.replace(/\s+/g, '')},
+testLogicalOr(15);`.replace(/\s+/g, "")
+  },
 
-{A66:`function testElse(val) {
+  {
+    A66: `function testElse(val) {
   var result = "";
   if (val > 5) {
   return "Bigger than 5";
@@ -363,9 +501,11 @@ testLogicalOr(15);`.replace(/\s+/g, '')},
   }
   return result;
   }
-  testElse(4);`.replace(/\s+/g, '')},
+  testElse(4);`.replace(/\s+/g, "")
+  },
 
-{A67:`function testElseIf(val) {
+  {
+    A67: `function testElseIf(val) {
   if (val > 10) {
     return "Greater than 10";
   }
@@ -376,9 +516,11 @@ testLogicalOr(15);`.replace(/\s+/g, '')},
   return "Between 5 and 10";
   }
 }
-testElseIf(7);`.replace(/\s+/g, '')},
+testElseIf(7);`.replace(/\s+/g, "")
+  },
 
-{A68:`function orderMyLogic(val) {
+  {
+    A68: `function orderMyLogic(val) {
   if (val < 5) {
   return "Less than 5";
   } else if (val < 10) {
@@ -386,9 +528,11 @@ testElseIf(7);`.replace(/\s+/g, '')},
   } else {
   return "Greater than or equal to 10";
   }
-  }`.replace(/\s+/g, '')},
+  }`.replace(/\s+/g, "")
+  },
 
-{A69:`function testSize(num) {
+  {
+    A69: `function testSize(num) {
   if (num < 5){
     return "Tiny";
   }
@@ -405,9 +549,11 @@ testElseIf(7);`.replace(/\s+/g, '')},
     return "Huge";
   }
 }
-testSize(7);`.replace(/\s+/g, '')},
+testSize(7);`.replace(/\s+/g, "")
+  },
 
-{A70:`function golfScore(par, strokes) {
+  {
+    A70: `function golfScore(par, strokes) {
   if (strokes == 1){
     return "Hole-in-one!";
   } else if (strokes <= par -2){
@@ -424,10 +570,11 @@ testSize(7);`.replace(/\s+/g, '')},
     return "Go Home!";
   }
 }
-golfScore(5, 4);`.replace(/\s+/g, '')},
+golfScore(5, 4);`.replace(/\s+/g, "")
+  },
 
-
-{A71:`function caseInSwitch(val) {
+  {
+    A71: `function caseInSwitch(val) {
   var answer = "";
   switch(val) {
     case 1:
@@ -445,9 +592,11 @@ golfScore(5, 4);`.replace(/\s+/g, '')},
   }
   return answer;  
 }
-caseInSwitch(1);`.replace(/\s+/g, '')},
+caseInSwitch(1);`.replace(/\s+/g, "")
+  },
 
-{A72:`function switchOfStuff(val) {
+  {
+    A72: `function switchOfStuff(val) {
   var answer = "";
   
   switch(val){
@@ -463,9 +612,11 @@ caseInSwitch(1);`.replace(/\s+/g, '')},
   return answer;  
 }
 switchOfStuff(1);
-`.replace(/\s+/g, '')},
+`.replace(/\s+/g, "")
+  },
 
-{A73:`function sequentialSizes(val) {
+  {
+    A73: `function sequentialSizes(val) {
   var answer = "";
   switch(val){
     case 1: case 2: case 3:
@@ -479,9 +630,11 @@ switchOfStuff(1);
   } 
   return answer;  
 }
-sequentialSizes(1);`.replace(/\s+/g, '')},
+sequentialSizes(1);`.replace(/\s+/g, "")
+  },
 
-{A74:`function chainToSwitch(val) {
+  {
+    A74: `function chainToSwitch(val) {
   var answer = "";
 
   switch(val) {
@@ -502,23 +655,28 @@ sequentialSizes(1);`.replace(/\s+/g, '')},
   }
   return answer;
 }
-chainToSwitch(7);`.replace(/\s+/g, '')},
+chainToSwitch(7);`.replace(/\s+/g, "")
+  },
 
-{A75:`function isLess(a, b) {
+  {
+    A75: `function isLess(a, b) {
   return a <= b;
 }
-isLess(10, 15);`.replace(/\s+/g, '')},
+isLess(10, 15);`.replace(/\s+/g, "")
+  },
 
-{A76:`
+  {
+    A76: `
 function abTest(a, b) {
   if (a < 0 || b < 0) return undefined;
 
 return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 }
-abTest(2,2);`.replace(/\s+/g, '')},
+abTest(2,2);`.replace(/\s+/g, "")
+  },
 
-
-{A77:`var count = 0;
+  {
+    A77: `var count = 0;
 
 function cc(card) {
   var regex = /[JQKA]/;
@@ -529,59 +687,73 @@ function cc(card) {
   return count + " Hold";
 
 }
-cc(2); cc(3); cc(7); cc('K'); cc('A');`.replace(/\s+/g, '')},
+cc(2); cc(3); cc(7); cc('K'); cc('A');`.replace(/\s+/g, "")
+  },
 
-{A78:`
+  {
+    A78: `
 var myDog = {
     "name": "Camper",
   "legs": 4,
   "tails": 1,
   "friends": ["everything!"]
-};`.replace(/\s+/g, '')},
+};`.replace(/\s+/g, "")
+  },
 
-{A79:`var testObj = {
+  {
+    A79: `var testObj = {
   "hat": "ballcap",
   "shirt": "jersey",
   "shoes": "cleats"
 };
 var hatValue = testObj.hat;  
-var shirtValue = testObj.shirt; `.replace(/\s+/g, '')},
+var shirtValue = testObj.shirt; `.replace(/\s+/g, "")
+  },
 
-{A80:`var testObj = {
+  {
+    A80: `var testObj = {
   "an entree": "hamburger",
   "my side": "veggies",
   "the drink": "water"
 };
 var entreeValue = testObj["an entree"];  
-var drinkValue = testObj["the drink"];`.replace(/\s+/g, '')},
+var drinkValue = testObj["the drink"];`.replace(/\s+/g, "")
+  },
 
-{A81:`
+  {
+    A81: `
 var testObj = {
   12: "Namath",
   16: "Montana",
   19: "Unitas"
 };
 var playerNumber = 16; 
-var player = testObj[playerNumber];   `.replace(/\s+/g, '')},
+var player = testObj[playerNumber];   `.replace(/\s+/g, "")
+  },
 
-{A82:`
+  {
+    A82: `
 var myDog = {
   "name": "Coder",
   "legs": 4,
   "tails": 1,
   "friends": ["freeCodeCamp Campers"]
 };
-myDog.name = "Happy Coder";`.replace(/\s+/g, '')},
+myDog.name = "Happy Coder";`.replace(/\s+/g, "")
+  },
 
-{A83:`var myDog = {
+  {
+    A83: `var myDog = {
   "name": "Happy Coder",
   "legs": 4,
   "tails": 1,
   "friends": ["freeCodeCamp Campers"]
 };
-myDog.bark = "woof";`.replace(/\s+/g, '')},
+myDog.bark = "woof";`.replace(/\s+/g, "")
+  },
 
-{A84:`
+  {
+    A84: `
 var myDog = {
   "name": "Happy Coder",
   "legs": 4,
@@ -590,9 +762,11 @@ var myDog = {
   "bark": "woof"
 };
 delete myDog.tails;
-`.replace(/\s+/g, '')},
+`.replace(/\s+/g, "")
+  },
 
-{A85:`function phoneticLookup(val) {
+  {
+    A85: `function phoneticLookup(val) {
   var result ="";
   
   var lookup= {
@@ -615,25 +789,29 @@ delete myDog.tails;
   return result;
   }
   
-  phoneticLookup("charlie");`.replace(/\s+/g, '')},
+  phoneticLookup("charlie");`.replace(/\s+/g, "")
+  },
 
-{A86:`// Setup
+  {
+    A86: `
 var myObj = {
   gift: "pony",
   pet: "kitten",
   bed: "sleigh"
 };
 function checkObj(checkProp) {
-  // Your Code Here
+
   if (myObj.hasOwnProperty(checkProp) === true) {
     return myObj[checkProp];
   } else {
     return "Not Found";
   }
 }
-checkObj("gift");`.replace(/\s+/g, '')},
+checkObj("gift");`.replace(/\s+/g, "")
+  },
 
-{A87:`var myMusic = [
+  {
+    A87: `var myMusic = [
   {
     "artist": "Billy Joel",
     "title": "Piano Man",
@@ -655,9 +833,11 @@ checkObj("gift");`.replace(/\s+/g, '')},
       "LP"
     ],
   }
- ];`.replace(/\s+/g, '')},
+ ];`.replace(/\s+/g, "")
+  },
 
-{A88:`
+  {
+    A88: `
 var myStorage = {
   "car": {
     "inside": {
@@ -671,9 +851,11 @@ var myStorage = {
 };
 
 var gloveBoxContents = myStorage.car.inside['glove box'];
-`.replace(/\s+/g, '')},
+`.replace(/\s+/g, "")
+  },
 
-{A89:`
+  {
+    A89: `
 var myPlants = [
   { 
     type: "flowers",
@@ -693,9 +875,11 @@ var myPlants = [
   }  
 ];
 
-var secondTree = myPlants[1].list[1];`.replace(/\s+/g, '')},
+var secondTree = myPlants[1].list[1];`.replace(/\s+/g, "")
+  },
 
-{A90:`
+  {
+    A90: `
 var collection = {
     "2548": {
       "album": "Slippery When Wet",
@@ -740,39 +924,51 @@ function updateRecords(id, prop, value) {
   return collection;
 }
 updateRecords(5439, "artist", "ABBA");
-`.replace(/\s+/g, '')},
+`.replace(/\s+/g, "")
+  },
 
-{A91:`var myArray = [];
+  {
+    A91: `var myArray = [];
 var i = 0;
 while (i <= 4){
     myArray.push(i);
     i++;
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A92:`var myArray = [];
+  {
+    A92: `var myArray = [];
 for(var i=1; i<=5; i++){
 myArray.push(i);
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A93:`var myArray = [];
+  {
+    A93: `var myArray = [];
 for (var i = 1; i < 10; i += 2) {
 myArray.push(i);
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A94:`var myArray = [];
+  {
+    A94: `var myArray = [];
 
 for (var i = 9; i > 0; i-=2){
   myArray.push(i)
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A95:`var myArr = [ 2, 3, 4, 5, 6];
+  {
+    A95: `var myArr = [ 2, 3, 4, 5, 6];
 var total = 0;
 
 for (var i = 0; i < myArr.length; i++) {
   total += myArr[i];
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A96:`function multiplyAll(arr) {
+  {
+    A96: `function multiplyAll(arr) {
   var product = 1;
   for(var i=0; i < arr.length; i++){
     for (var j=0; j < arr[i].length; j++){
@@ -781,16 +977,20 @@ for (var i = 0; i < myArr.length; i++) {
   }
   return product;
 }
-multiplyAll([[1,2],[3,4],[5,6,7]]);`.replace(/\s+/g, '')},
+multiplyAll([[1,2],[3,4],[5,6,7]]);`.replace(/\s+/g, "")
+  },
 
-{A97:`var myArray = [];
+  {
+    A97: `var myArray = [];
 var i = 10;
 do {
   myArray.push(i);
   i++;
-} while (i < 5)`.replace(/\s+/g, '')},
+} while (i < 5)`.replace(/\s+/g, "")
+  },
 
-{A98:`var contacts = [
+  {
+    A98: `var contacts = [
   {
       "firstName": "Akira",
       "lastName": "Laine",
@@ -831,9 +1031,11 @@ for (var x = 0; x < contacts.length; x++){
 return "No such contact";
 
 }
-lookUpProfile("Akira", "likes");`.replace(/\s+/g, '')},
+lookUpProfile("Akira", "likes");`.replace(/\s+/g, "")
+  },
 
-{A99:`function randomFraction() {
+  {
+    A99: `function randomFraction() {
   var result = 0;
   while (result === 0) {
     result = Math.random();
@@ -841,47 +1043,59 @@ lookUpProfile("Akira", "likes");`.replace(/\s+/g, '')},
 
   return result;  
 
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A100:`var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+  {
+    A100: `var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
 
 function randomWholeNum() {
 
   return Math.floor(Math.random() * 10);
-}`.replace(/\s+/g, '')},
+}`.replace(/\s+/g, "")
+  },
 
-{A101:`function randomRange(myMin, myMax) {
+  {
+    A101: `function randomRange(myMin, myMax) {
 
   return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
 
 }
-var myRandom = randomRange(5, 15);`.replace(/\s+/g, '')},
+var myRandom = randomRange(5, 15);`.replace(/\s+/g, "")
+  },
 
-{A102:`function convertToInteger(str) {
+  {
+    A102: `function convertToInteger(str) {
 
   return parseInt(str);
   }
   
-  convertToInteger("10011");`.replace(/\s+/g, '')},
+  convertToInteger("10011");`.replace(/\s+/g, "")
+  },
 
-{A103:`function convertToInteger(str) {
+  {
+    A103: `function convertToInteger(str) {
   var radix = 2;
   return parseInt(str, radix);
   }
   
-  convertToInteger("10011");`.replace(/\s+/g, '')},
+  convertToInteger("10011");`.replace(/\s+/g, "")
+  },
 
-{A104:`function checkEqual(a, b) {
+  {
+    A104: `function checkEqual(a, b) {
   return a === b ? true : false;
 }
-checkEqual(1, 2);`.replace(/\s+/g, '')},
+checkEqual(1, 2);`.replace(/\s+/g, "")
+  },
 
-{A105:`function checkSign(num) {
+  {
+    A105: `function checkSign(num) {
   return (
     num > 0 ? "positive" :
     num < 0 ? "negative" :
     "zero"
   );
-}`.replace(/\s+/g, '')},
-
+}`.replace(/\s+/g, "")
+  }
 ];

@@ -1,0 +1,45 @@
+#htmlBodyBackground {
+    /* html background question */
+    background-image: url("/images/questionBackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: auto;
+  }
+  *:focus {outline:none !important} /* take off blue lines*/
+/*<<<<<<<<<<<<<<<<<<<< background >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+#cssBodyBackground {/* css background question */
+  background-image: url("/images/cssQuestionBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+}
+#javascriptBodyBackground {/* javascript background question */
+  background-image: url("/images/javascriptQuestionBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+}
+#remove,
+#cssRemove,
+#javascriptRemove {/* to hide input text area*/
+  display: none;
+}
+
+
+
+body, html {
+  height: 100%;
+font-weight: bold;
+font-size: 1.1rem;
+
+}
+p,
+#message /* showing the size of question and answer */
+ {
+  width: auto;
+  margin: auto;
+}
