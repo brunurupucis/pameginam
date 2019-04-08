@@ -12,6 +12,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     max-width: 600px;
+    
     &_button{
         cursor: pointer;
         margin-left: 5px;
@@ -29,6 +30,10 @@
         border-radius: 5px;
         top: 0;
         position: relative;
+        @include respond(phone) {
+            width: 15rem;
+          }
+        
         &::before {
             display: inline-block;
             content: '';
@@ -62,6 +67,7 @@
     background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
     border-top: 1px solid #fcbbab;
     border-bottom: 1px solid #f7c8bd;
+    
     &:visited{
         color: #e34c26;
     }
