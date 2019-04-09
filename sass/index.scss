@@ -151,6 +151,13 @@
     left: 50%;
     top: 70%;
     transform: translate(-50%, -50%);
+    @include respond(phone) {
+        width: 14rem;
+        font-size: 1em;
+        left: 50%;
+        top: 85%;
+        transform: translate(-50%, -50%);
+      }
     &:hover{
         display: block;
         color: #a7def5;
@@ -162,5 +169,12 @@
         left: 50%;
         top: 70%;
         transform: translate(-50%, -50%);
+        @include respond(phone) {
+            width: 14rem;
+            font-size: 1em;
+            left: 50%;
+            top: 85%;
+            transform: translate(-50%, -50%);
+          }
     }
 }
