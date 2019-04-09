@@ -1,6 +1,6 @@
 #htmlBodyBackground {
     /* html background question */
-    background-image: url("images/questionBackground.jpg");
+    background-image: url("../images/questionBackground.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -11,20 +11,20 @@
 /*<<<<<<<<<<<<<<<<<<<< background >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 #cssBodyBackground {/* css background question */
-  background-image: url("images/cssQuestionBackground.jpg");
+  background-image: url("../images/cssQuestionBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+}
+#javascriptBodyBackground {/* javascript background question */
+  background-image: url("../images/javascriptQuestionBackground.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   margin: auto;
 }
 
-#javascriptBodyBackground {/* javascript background question */
-  background-image: url("images/javascriptQuestionBackground.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: auto;
-}
 #remove,
 #cssRemove,
 #javascriptRemove {/* to hide input text area*/
