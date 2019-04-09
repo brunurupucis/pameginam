@@ -286,129 +286,6 @@ p,
       left: 0;
       z-index: 1; }
 
-.htmlColor {
-  color: #e34c26;
-  text-shadow: 0 -2px 0 #d6421d, 0 1px 1px #ec6847;
-  background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
-  border-top: 1px solid #fcbbab;
-  border-bottom: 1px solid #f7c8bd; }
-  .htmlColor:visited {
-    color: #e34c26; }
-  .htmlColor:hover {
-    background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%); }
-  .htmlColor:active {
-    top: 6px;
-    text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
-    color: #ecedee; }
-  .htmlColor:active::before {
-    top: 0;
-    box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f; }
-  .htmlColor::before {
-    background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
-    box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702; }
-
-.htmlColor1 {
-  color: #942f16;
-  background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
-  border-top: 1px solid #fcbbab;
-  border-bottom: 1px solid #f7c8bd; }
-  .htmlColor1:visited {
-    color: #e34c26; }
-  .htmlColor1:hover {
-    background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%); }
-  .htmlColor1:active {
-    top: 6px;
-    text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
-    color: #ecedee; }
-  .htmlColor1:active::before {
-    top: 0;
-    box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f; }
-  .htmlColor1::before {
-    background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
-    box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702; }
-
-.javascriptColor {
-  color: #E5A228;
-  text-shadow: 0 -2px 0 #d6961e, 0 1px 1px #f3b239;
-  background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
-  border-top: 1px solid #f1da8d;
-  border-bottom: 1px solid #f0d270; }
-  .javascriptColor:visited {
-    color: #E5A228; }
-  .javascriptColor:hover {
-    background: linear-gradient(to bottom, #eec94f 0%, #f0c743 26%, #f1c120 100%); }
-  .javascriptColor:active {
-    top: 6px;
-    text-shadow: 0 -2px 0 #f5d262, 0 1px 1px #f1da8d, 0 0 4px white;
-    color: #ECEDEE; }
-  .javascriptColor:active::before {
-    top: 0;
-    box-shadow: 0 3px 3px #473c15, 0 3px 9px #493a08; }
-  .javascriptColor::before {
-    background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
-    box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810; }
-
-.javascriptColor1 {
-  color: #996d1b;
-  background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
-  border-top: 1px solid #f1da8d;
-  border-bottom: 1px solid #f0d270; }
-  .javascriptColor1:visited {
-    color: #E5A228; }
-  .javascriptColor1:hover {
-    background: linear-gradient(to bottom, #eec94f 0%, #f0c743 26%, #f1c120 100%); }
-  .javascriptColor1:active {
-    top: 6px;
-    text-shadow: 0 -2px 0 #f5d262, 0 1px 1px #f1da8d, 0 0 4px white;
-    color: #ECEDEE; }
-  .javascriptColor1:active::before {
-    top: 0;
-    box-shadow: 0 3px 3px #473c15, 0 3px 9px #493a08; }
-  .javascriptColor1::before {
-    background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
-    box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810; }
-
-.cssColor {
-  color: #0C73B8;
-  text-shadow: 0 -2px 0 #166ea8, 0 1px 1px #5eaadd;
-  background: linear-gradient(to bottom, #44aad6 0%, #30a9dc 26%, #2399cc 100%);
-  border-top: 1px solid #9cd1e7;
-  border-bottom: 1px solid #95d0e9; }
-  .cssColor:visited {
-    color: #0C73B8; }
-  .cssColor:hover {
-    background: linear-gradient(to bottom, #66c5ee 0%, #53b8e4 26%, #39b8ee 100%); }
-  .cssColor:active {
-    top: 6px;
-    text-shadow: 0 -2px 0 #60a5d3, 0 1px 1px #afd1e7, 0 0 4px white;
-    color: #ECEDEE; }
-  .cssColor:active::before {
-    top: 0;
-    box-shadow: 0 3px 3px #1c333d, 0 3px 9px #173542; }
-  .cssColor::before {
-    background: linear-gradient(to top, #244350 0%, #163d4e 6px);
-    box-shadow: 0 1px 0 2px #081216, 0 5px 2.4px #040c0f, 0 10.8px 9px #042736; }
-
-.cssColor1 {
-  color: #074269;
-  background: linear-gradient(to bottom, #44aad6 0%, #30a9dc 26%, #2399cc 100%);
-  border-top: 1px solid #9cd1e7;
-  border-bottom: 1px solid #95d0e9; }
-  .cssColor1:visited {
-    color: #0C73B8; }
-  .cssColor1:hover {
-    background: linear-gradient(to bottom, #66c5ee 0%, #53b8e4 26%, #39b8ee 100%); }
-  .cssColor1:active {
-    top: 6px;
-    text-shadow: 0 -2px 0 #60a5d3, 0 1px 1px #afd1e7, 0 0 4px white;
-    color: #ECEDEE; }
-  .cssColor1:active::before {
-    top: 0;
-    box-shadow: 0 3px 3px #1c333d, 0 3px 9px #173542; }
-  .cssColor1::before {
-    background: linear-gradient(to top, #244350 0%, #163d4e 6px);
-    box-shadow: 0 1px 0 2px #081216, 0 5px 2.4px #040c0f, 0 10.8px 9px #042736; }
-
 #bodyBackground {
   /* background for start*/
   position: relative;
@@ -564,3 +441,126 @@ p,
         left: 50%;
         top: 85%;
         transform: translate(-50%, -50%); } }
+
+.htmlColor {
+  color: #e34c26;
+  text-shadow: 0 -2px 0 #d6421d, 0 1px 1px #ec6847;
+  background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
+  border-top: 1px solid #fcbbab;
+  border-bottom: 1px solid #f7c8bd; }
+  .htmlColor:visited {
+    color: #e34c26; }
+  .htmlColor:hover {
+    background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%); }
+  .htmlColor:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
+    color: #ecedee; }
+  .htmlColor:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f; }
+  .htmlColor::before {
+    background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
+    box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702; }
+
+.htmlColor1 {
+  color: #942f16;
+  background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
+  border-top: 1px solid #fcbbab;
+  border-bottom: 1px solid #f7c8bd; }
+  .htmlColor1:visited {
+    color: #e34c26; }
+  .htmlColor1:hover {
+    background: linear-gradient(to bottom, #fd7d46 0%, #ff783e 26%, #fa692a 100%); }
+  .htmlColor1:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #fd8958, 0 1px 1px #fca27c, 0 0 4px white;
+    color: #ecedee; }
+  .htmlColor1:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #69321b, 0 3px 9px #91411f; }
+  .htmlColor1::before {
+    background: linear-gradient(to top, #b34719 0%, #c9460e 6px);
+    box-shadow: 0 1px 0 2px #531a02, 0 5px 2.4px #6d2203, 0 10.8px 9px #802702; }
+
+.javascriptColor {
+  color: #E5A228;
+  text-shadow: 0 -2px 0 #d6961e, 0 1px 1px #f3b239;
+  background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
+  border-top: 1px solid #f1da8d;
+  border-bottom: 1px solid #f0d270; }
+  .javascriptColor:visited {
+    color: #E5A228; }
+  .javascriptColor:hover {
+    background: linear-gradient(to bottom, #eec94f 0%, #f0c743 26%, #f1c120 100%); }
+  .javascriptColor:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #f5d262, 0 1px 1px #f1da8d, 0 0 4px white;
+    color: #ECEDEE; }
+  .javascriptColor:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #473c15, 0 3px 9px #493a08; }
+  .javascriptColor::before {
+    background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
+    box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810; }
+
+.javascriptColor1 {
+  color: #996d1b;
+  background: linear-gradient(to bottom, #dfb631 0%, #e8ba26 26%, #e4b51b 100%);
+  border-top: 1px solid #f1da8d;
+  border-bottom: 1px solid #f0d270; }
+  .javascriptColor1:visited {
+    color: #E5A228; }
+  .javascriptColor1:hover {
+    background: linear-gradient(to bottom, #eec94f 0%, #f0c743 26%, #f1c120 100%); }
+  .javascriptColor1:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #f5d262, 0 1px 1px #f1da8d, 0 0 4px white;
+    color: #ECEDEE; }
+  .javascriptColor1:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #473c15, 0 3px 9px #493a08; }
+  .javascriptColor1::before {
+    background: linear-gradient(to top, #5e4904 0%, #755f15 6px);
+    box-shadow: 0 1px 0 2px #302502, 0 5px 2.4px #3d310a, 0 10.8px 9px #443810; }
+
+.cssColor {
+  color: #0C73B8;
+  text-shadow: 0 -2px 0 #166ea8, 0 1px 1px #5eaadd;
+  background: linear-gradient(to bottom, #44aad6 0%, #30a9dc 26%, #2399cc 100%);
+  border-top: 1px solid #9cd1e7;
+  border-bottom: 1px solid #95d0e9; }
+  .cssColor:visited {
+    color: #0C73B8; }
+  .cssColor:hover {
+    background: linear-gradient(to bottom, #66c5ee 0%, #53b8e4 26%, #39b8ee 100%); }
+  .cssColor:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #60a5d3, 0 1px 1px #afd1e7, 0 0 4px white;
+    color: #ECEDEE; }
+  .cssColor:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #1c333d, 0 3px 9px #173542; }
+  .cssColor::before {
+    background: linear-gradient(to top, #244350 0%, #163d4e 6px);
+    box-shadow: 0 1px 0 2px #081216, 0 5px 2.4px #040c0f, 0 10.8px 9px #042736; }
+
+.cssColor1 {
+  color: #074269;
+  background: linear-gradient(to bottom, #44aad6 0%, #30a9dc 26%, #2399cc 100%);
+  border-top: 1px solid #9cd1e7;
+  border-bottom: 1px solid #95d0e9; }
+  .cssColor1:visited {
+    color: #0C73B8; }
+  .cssColor1:hover {
+    background: linear-gradient(to bottom, #66c5ee 0%, #53b8e4 26%, #39b8ee 100%); }
+  .cssColor1:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #60a5d3, 0 1px 1px #afd1e7, 0 0 4px white;
+    color: #ECEDEE; }
+  .cssColor1:active::before {
+    top: 0;
+    box-shadow: 0 3px 3px #1c333d, 0 3px 9px #173542; }
+  .cssColor1::before {
+    background: linear-gradient(to top, #244350 0%, #163d4e 6px);
+    box-shadow: 0 1px 0 2px #081216, 0 5px 2.4px #040c0f, 0 10.8px 9px #042736; }
