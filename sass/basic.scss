@@ -17,6 +17,7 @@
   background-size: cover;
   margin: auto;
 }
+
 #javascriptBodyBackground {/* javascript background question */
   background-image: url("../images/javascriptQuestionBackground.jpg");
   background-repeat: no-repeat;
@@ -27,7 +28,8 @@
 
 #remove,
 #cssRemove,
-#javascriptRemove {/* to hide input text area*/
+#javascriptRemove,
+#javascriptEs6Remove {/* to hide input text area*/
   display: none;
 }
 
@@ -44,7 +46,7 @@ p,
  {
   width: auto;
   margin: auto;
-  
+
 }
 
 @mixin respond($breakpoint) { /* mixings for changing screns sizes*/

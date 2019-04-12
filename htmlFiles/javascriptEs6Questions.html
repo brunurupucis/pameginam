@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <title>Random Questions</title>
+</head>
+
+<body id="javascriptBodyBackground">
+  <div class="goHome">
+    <a href="./../index.html"><button class="goHome_button javascriptColor">Go Home</button></a>
+  </div>
+  <p class="checkingAnswer" id="javascriptEs6CheckingAnswer"></p>
+  <div class="flex">
+    <div class="answer">
+      <div id="javascriptEs6Remove">
+        <textarea name="text" class="answer_textarea" id="input"></textarea></br>
+        <button class="answer_submit javascriptColor1" id="javascriptEs6StartButton"
+          onclick="javascriptEs6Submit()">Submit</button>
+      </div>
+
+      <p class="answer_displayAnswer" id="javascriptEs6ShowingAnswer"></p>
+      <p class="answer_nextButton" id="javascriptEs6ElementButton"></p>
+    </div>
+
+    <div class="question">
+      <div class="question_display" id="javascriptEs6AddedQuestion"></div>
+    </div>
+  </div>
+  <div class="startButton">
+    <button class="startButton_remove javascriptColor" id="javascriptEs6Start"
+      onclick="[javascriptEs6ShowTest()];this.style.visibility= 'hidden';[javascriptEs6Button()];">start</button>
+    <!-- remove start button and start test -->
+  </div>
+
+</body>
+<script src="../build/bundle.js"></script>
+</html>

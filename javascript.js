@@ -5,6 +5,14 @@ import { htmlAnswerArr } from './questionsAndAnswers/htmlAnswers'; /* importing 
 import { cssQuestionArr } from './questionsAndAnswers/cssQuestions'; /* importing  array from other js file with webpack*/
 import { cssAnswerArr } from './questionsAndAnswers/cssAnswers'; /* importing  array from other js file with webpack*/
 
+import { javascriptAnswerArr } from './questionsAndAnswers/javascriptAnswers'; /* importing  array from other js file with webpack*/
+
+import { javascriptQuestionArr } from './questionsAndAnswers/javascriptQuestions'; /* importing  array from other js file with webpack*/
+
+import { javascriptEs6AnswerArr } from './questionsAndAnswers/javascriptEs6Answers'; /* importing  array from other js file with webpack*/
+
+import { javascriptEs6QuestionArr } from './questionsAndAnswers/javascriptEs6Questions'; /* importing  array from other js file with webpack*/
+
 
 
 var randomValue = Math.floor(Math.random() * htmlQuestionArr.length); /* taking random question from htmlQuestionArr*/
@@ -3886,9 +3894,7 @@ window.cssBtn = cssBtn;/* to make submit global*/
 
 
 
-import { javascriptAnswerArr } from './questionsAndAnswers/javascriptAnswers'; /* importing  array from other js file with webpack*/
 
-import { javascriptQuestionArr } from './questionsAndAnswers/javascriptQuestions'; /* importing  array from other js file with webpack*/
 
 
 
@@ -6481,4 +6487,735 @@ function javascriptBtn() {
     document.getElementById("javascriptShowingAnswer").innerHTML = "";
 }
 window.javascriptBtn = javascriptBtn;/* to make submit global*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var javascriptEs6RandomValue = Math.floor(Math.random() * javascriptEs6QuestionArr.length); /* taking random question from htmlQuestionArr*/
+
+
+function javascriptEs6Submit() { /* function for html submit button*/
+
+    var javascriptEs6InputAnswer = input.value.replace(/\s+/g, ``); /*replace(/\s+/g, `` is removing all spaces. Avoid checking all the spaces to compare text*/
+    var javascriptEs6CorrectValue = document.getElementById("javascriptEs6CheckingAnswer"); /* making getElementById code shorter*/
+    var javascriptEs6IncorrectValue = document.getElementById("javascriptEs6CheckingAnswer");
+    var javascriptEs6DisplayAnswer = document.getElementById("javascriptEs6ShowingAnswer");
+    var javascriptEs6NextButton = document.getElementById("javascriptEs6ElementButton");
+    var javascriptEs6RemoveValue = document.getElementById("javascriptEs6Remove");
+
+    if (javascriptEs6RandomValue == 0 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[0].A0) { /* checking if javascriptEs6RandomValue is 0 and if putting answer the same as javascriptEs6AnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`; /* creating next button with javascriptEs6Btn()function*/
+        javascriptEs6RemoveValue.innerHTML = "";/* removing in html answer*/
+
+
+
+    } else if (javascriptEs6RandomValue == 0 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[0].A0) {/*  if random value not == then giving then display the answere.*/
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let catName;
+let quote;
+function catTalk() {
+    "use strict";
+
+    catName = "Oliver";
+    quote = catName + " says Meow!";
+
+}
+catTalk();
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 1 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[1].A1) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 1 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[1].A1) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">
+function checkScope() {
+    "use strict";
+    let i = "function scope";
+    if (true) {
+        let i = "block scope";
+        console.log("Block scope i is: ", i);
+    }
+    console.log("Function scope i is: ", i);
+    return i;
+}
+          </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 2 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[2].A2) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 2 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[2].A2) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function printManyTimes(str) {
+    "use strict";
+    const SENTENCE = str + " is cool!";
+    for(let i = 0; i < str.length; i+=2) {
+        console.log(SENTENCE);
+    }
+}
+printManyTimes("JabaDabaDuuu");
+          </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 3 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[3].A3) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 3 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[3].A3) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const s = [5, 7, 2];
+function editInPlace() {
+    "use strict";
+    s[0] = 2;
+    s[1] = 5;
+    s[2] = 7;
+}
+editInPlace();
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+        
+
+
+    } else if (javascriptEs6RandomValue == 4 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[4].A4) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 4 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[4].A4) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function freezeObj() {
+    "use strict";
+    const MATH_CONSTANTS = {
+        PI: 3.14
+    };
+
+    Object.freeze(MATH_CONSTANTS);
+    
+    try {
+        MATH_CONSTANTS.PI = 99;
+    } catch( ex ) {
+        console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
+}
+    
+const PI = freezeObj();
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 5 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[5].A5) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 5 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[5].A5) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const magic = () => {
+    "use strict";
+    return new Date();
+};
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 6 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[6].A6) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 6 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[6].A6) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const myConcat = (arr1, arr2) => {
+    "use strict";
+    return arr1.concat(arr2);
+};
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 7 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[7].A7) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 7 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[7].A7) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34];
+const squareList = (arr) => {
+    "use strict";
+    const squaredIntegers = arr.filter(num => Number.isInteger(num)).map(square => square*square);
+    return squaredIntegers;
+};
+const squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);
+
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 8 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[8].A8) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 8 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[8].A8) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const increment = (function() {
+    "use strict";
+    return function increment(number, value = 1) {
+        return number + value;
+    };
+})();
+console.log(increment(5, 2));
+console.log(increment(5));
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 9 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[9].A9) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 9 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[9].A9) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const sum = (function() {
+    "use strict";
+    return function sum(...args) {		
+        return args.reduce((a, b) => a + b, 0);
+    };
+})();
+console.log(sum(0, 1, 2));
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 10 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[10].A10) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 10 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[10].A10) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+arr2 = [...arr1];
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 11 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[11].A11) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 11 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[11].A11) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const AVG_TEMPERATURES = {
+    today: 77.5,
+    tomorrow: 79
+    };
+    function getTempOfTmrw(avgTemperatures) {
+    "use strict";
+    const {tomorrow:tempOfTomorrow} = avgTemperatures;
+    return tempOfTomorrow;
+}
+    
+console.log(getTempOfTmrw(AVG_TEMPERATURES)); 
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 12 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[12].A12) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 12 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[12].A12) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const LOCAL_FORECAST = {
+    today: { min: 72, max: 83 },
+    tomorrow: { min: 73.3, max: 84.6 }
+    };
+    
+    function getMaxOfTmrw(forecast) {
+    "use strict";
+    const { tomorrow : {max: maxOfTomorrow}} = forecast 
+    return maxOfTomorrow;
+}
+    
+console.log(getMaxOfTmrw(LOCAL_FORECAST));
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 13 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[13].A13) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 13 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[13].A13) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let a = 8, b = 6;
+[a,b] = [b,a];
+console.log(a);
+console.log(b);
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 14 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[14].A14) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 14 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[14].A14) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const source = [1,2,3,4,5,6,7,8,9,10];
+const [a, b, ...arr] = source;
+console.log(arr); 
+console.log(source);
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 15 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[15].A15) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 15 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[15].A15) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const stats = {
+    max: 56.78,
+    standard_deviation: 4.34,
+    median: 34.54,
+    mode: 23.87,
+    min: -0.75,
+    average: 35.85
+    };
+    
+    const half = (function() {
+    "use strict";
+    
+    return function half({max, min}) {
+        return (max + min) / 2.0;
+    };
+    
+})();
+console.log(stats);
+console.log(half(stats));
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 16 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[16].A16) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 16 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[16].A16) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const result = {
+    success: ["max-length", "no-amd", "prefer-arrow-functions"],
+    failure: ["no-var", "var-on-top", "linebreak"],
+    skipped: ["id-blacklist", "no-dup-keys"]
+    };
+    function makeList(arr) {
+    "use strict";
+    const resultDisplayArray =
+    ['<li class="text-warning">$ {arr[0]}</li>', 
+    '<li class="text-warning">$ {arr[1]}</li>', 
+    '<li class="text-warning">$ {arr[2]}</li>'];
+    
+    return resultDisplayArray;
+}
+const resultDisplayArray = makeList(result.failure);
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 17 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[17].A17) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 17 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[17].A17) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const createPerson = (name, age, gender) => {
+    "use strict";
+    return {
+        name,
+        age,
+        gender
+    };
+};
+console.log(createPerson("Zodiac Hasbro", 56, "male"));
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 18 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[18].A18) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 18 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[18].A18) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const bicycle = {
+    gear: 2,
+    setGear(newGear) {
+        "use strict";
+        this.gear = newGear;
+    }
+};
+bicycle.setGear(3);
+console.log(bicycle.gear);
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 19 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[19].A19) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 19 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[19].A19) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function makeClass() {
+    "use strict";
+    class Vegetable {
+        constructor(name){
+        this.name = name;
+        }
+    }
+    return Vegetable;
+}
+const Vegetable = makeClass();
+const carrot = new Vegetable('carrot');
+console.log(carrot.name);
+          </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 20 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[20].A20) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 20 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[20].A20) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function makeClass() {
+    "use strict";
+    class Thermostat{
+        constructor(farenheit){
+        this.farenheit = farenheit;
+        }
+        get temperature(){
+        return 5 / 9 * (this.farenheit - 32);
+        }
+        set temperature(celsius){
+        this.farenheit = celsius * 9.0 / 5 + 32;
+        }
+    }
+    return Thermostat;
+}
+const Thermostat = makeClass();
+const thermos = new Thermostat(76); 
+let temp = thermos.temperature; 
+thermos.temperature = 26;
+temp = thermos.temperature;
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 21 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[21].A21) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 21 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[21].A21) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+import { capitalizeString } from 'string_functions';
+capitalizeString("hello!");
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 22 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[22].A22) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 22 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[22].A22) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+"use strict";
+export const foo = "bar";
+export const bar = "foo";
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 23 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[23].A23) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 23 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[23].A23) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+
+    <textarea name="text" class="answer_textarea" id="input">
+"use strict";
+import * as str from "capitalize_strings";
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 24 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[24].A24) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 24 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[24].A24) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+"use strict";
+export default function subtract(x,y) {return x - y;}
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptEs6RandomValue == 25 && javascriptEs6InputAnswer == javascriptEs6AnswerArr[25].A25) {
+        javascriptEs6CorrectValue.innerHTML = "Correct..";
+        javascriptEs6DisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+    } else if (javascriptEs6RandomValue == 25 && javascriptEs6InputAnswer !== javascriptEs6AnswerArr[25].A25) {
+        javascriptEs6DisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+"use strict";
+import subtract from "math_functions";
+subtract(7,4);
+        </textarea>`;
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+
+
+
+    } else {
+        javascriptEs6IncorrectValue.innerHTML = "Incorrect..";
+        javascriptEs6NextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptEs6Btn()>Next</button>`;
+        javascriptEs6RemoveValue.innerHTML = "";
+    }
+
+}
+window.javascriptEs6Submit = javascriptEs6Submit; /* to make submit global*/
+
+function javascriptEs6Button() {
+    javascriptEs6Test = document.getElementById("javascriptEs6AddedQuestion").innerHTML = javascriptEs6QuestionArr[javascriptEs6RandomValue]; /* giving random question to html */
+
+    return javascriptEs6Test;
+}
+window.javascriptEs6Button = javascriptEs6Button;
+
+function javascriptEs6ShowTest() {
+    var javascriptEs6InputBox = document.getElementById("javascriptEs6Remove").style.display = "block";
+    return javascriptEs6InputBox;
+}
+window.javascriptEs6ShowTest = javascriptEs6ShowTest;
+function javascriptEs6Btn() {
+    javascriptEs6RandomValue = Math.floor(Math.random() * javascriptEs6QuestionArr.length); /* buton next in html to make a next random question*/
+    document.getElementById("javascriptEs6AddedQuestion").innerHTML = javascriptEs6QuestionArr[javascriptEs6RandomValue]; /* giving random question to html */
+    document.getElementById("javascriptEs6ElementButton").innerHTML = "";/* to clean javascriptEs6ElementButton*/
+    document.getElementById("javascriptEs6Remove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
+      <button class="answer_submit javascriptColor1" id = "javascriptEs6StartButton" onclick="javascriptEs6Submit()">Submit</button>`;/* to create next text area and Submit button. */
+    document.getElementById("javascriptEs6CheckingAnswer").innerHTML = "";
+    document.getElementById("javascriptEs6ShowingAnswer").innerHTML = "";
+}
+window.javascriptEs6Btn = javascriptEs6Btn;/* to make submit global*/
 

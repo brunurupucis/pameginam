@@ -29,7 +29,8 @@
 
 #remove,
 #cssRemove,
-#javascriptRemove {
+#javascriptRemove,
+#javascriptEs6Remove {
   /* to hide input text area*/
   display: none; }
 
