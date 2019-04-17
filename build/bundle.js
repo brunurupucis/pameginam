@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -5555,6 +5555,434 @@ checkSign(10);`
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptRegExpressAnswerArr; });
+var javascriptRegExpressAnswerArr = [
+  {
+    A0: `let myString = "Hello, World!";
+    let myRegex = /Hello/;
+    let result = myRegex.test(myString);
+  `.replace(/\s+/g, "")
+  },
+
+  {
+    A1: `let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+    let waldoRegex = /Waldo/; 
+    let result = waldoRegex.test(waldoIsHiding);`.replace(/\s+/g, "")
+  },
+
+  { A2: `let petString = "James has a pet cat.";
+  let petRegex = /dog|cat|bird|fish/;
+  let result = petRegex.test(petString);`.replace(/\s+/g, "") },
+
+  {
+    A3: `let myString = "test";
+    let fccRegex = /test/i; 
+    let result = fccRegex.test(myString);
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A4: `let extractStr = "Extract the word 'coding' from this string.";
+    let codingRegex = /coding/; 
+    let result = extractStr.match(codingRegex); `.replace(/\s+/g, "")
+  },
+
+  {
+    A5: `let twinkleStar = "Twinkle, twinkle, little star";
+    let starRegex = /twinkle/gi; 
+    let result = twinkleStar.match(starRegex); 
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A6: `let exampleStr = "Let's have fun with regular expressions!";
+    let unRegex = /.un/; 
+    let result = unRegex.test(exampleStr);
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A7: `let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+    let vowelRegex = /[aeiou]/ig; 
+    let result = quoteSample.match(vowelRegex); 
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A8: `let quoteSample = "The quick brown fox jumps over the lazy dog.";
+    let alphabetRegex = /[a-z]/ig; 
+    let result = quoteSample.match(alphabetRegex); 
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A9: `let quoteSample = "Blueberry 3.141592653s are delicious.";
+    let myRegex = /[h-s2-6]/ig; 
+    let result = quoteSample.match(myRegex); `.replace(/\s+/g, "")
+  },
+
+  {
+    A10: `let quoteSample = "3 blind mice.";
+    let myRegex = /[^aeiou^0-99]/ig; 
+    let result = quoteSample.match(myRegex); `.replace(/\s+/g, "")
+  },
+
+
+  { A11: `let difficultSpelling = "Mississippi";
+  let myRegex = /s+/g;
+  let result = difficultSpelling.match(myRegex);`.replace(/\s+/g, "") },
+
+  
+  { A12: `let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+  let chewieRegex = /A[a]*/; 
+  let result = chewieQuote.match(chewieRegex);`.replace(/\s+/g, "") },
+
+  { A13: `let text = "<h1>Winter is coming</h1>";
+  let myRegex = /<h1>?/; 
+  let result = text.match(myRegex);`.replace(/\s+/g, "") },
+
+  { A14: `let crowd = 'P1P2P3P4P5P6CCCP7P8P9';
+
+  let reCriminals = /C+/; 
+  
+  let matchedCriminals = crowd.match(reCriminals);
+  console.log(matchedCriminals);`.replace(/\s+/g, "") },
+
+  {
+    A15: `let rickyAndCal = "Cal and Ricky both like racing.";
+    let calRegex = /^Cal/; 
+    let result = calRegex.test(rickyAndCal); `.replace(/\s+/g, "")
+  },
+
+  {
+    A16: `let caboose = "The last car on a train is the caboose";
+    let lastRegex = /caboose$/;
+    let result = lastRegex.test(caboose);
+    `.replace(/\s+/g, "")
+  },
+
+  {
+    A17: `let quoteSample = "The five boxing wizards jump quickly."; 
+    let alphabetRegexV2 = /\w/g;
+    let result = quoteSample.match(alphabetRegexV2).length;
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A18: `
+    let quoteSample = "The five boxing wizards jump quickly.";
+    let nonAlphabetRegex = /\W/g;
+    let result = quoteSample.match(nonAlphabetRegex).length;
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A19: `let numString = "Your sandwich will be $5.00";
+    let numRegex = /\d/g; 
+    let result = numString.match(numRegex).length;
+    
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A20: `let numString = "Your sandwich will be $5.00";
+    let noNumRegex = /\D/g;
+    let result = numString.match(noNumRegex).length;
+    `.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A21: `let username = "JackOfAllTrades";
+    let userCheck = /^[a-z]{2,}\d*$/i;
+    let result = userCheck.test(username);`.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A22: `let sample = "Whitespace is important in separating words";
+    let countWhiteSpace = /\s/g;
+    let result = sample.match(countWhiteSpace);
+    `.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A23: `let sample = "Whitespace is important in separating words";
+    let countNonWhiteSpace = /\S/g;
+    let result = sample.match(countNonWhiteSpace);
+    `.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A24: `let ohStr = "Ohhh no";
+    let ohRegex = /Oh{3,6}\sno/;
+    let result = ohRegex.test(ohStr);`.replace(/\s+/g, "")
+  },
+
+  {
+    A25: `let haStr = "Hazzzzah";
+    let haRegex = /Haz{4,30}ah/;
+    let result = haRegex.test(haStr);`.replace(/\s+/g, "")
+  },
+
+  {
+    A26: `let timStr = "Timmmmber";
+    let timRegex = /Tim{4}ber/;
+    let result = timRegex.test(timStr); `.replace(/\s+/g, "")
+  },
+
+  {
+    A27: `
+    let favWord_US = "favorite";
+    let favWord_GB = "favourite";
+    let favRegex = /favou?rite/;
+    let result1 = favRegex.test(favWord_US);
+    let result2 = favRegex.test(favWord_GB);
+    `.replace(/\s+/g, "")
+  },
+
+  {
+    A28: `let sampleWord = "astronaut";
+    let pwRegex = /(?=\w{5,})(?=\D*\d{2})/;
+    let result = pwRegex.test(sampleWord);`.replace(/\s+/g, "")
+  },
+
+  {
+    A29: `let repeatNum = "42 42 42";
+    let reRegex =  /^(\ d+)\ s\ 1\ s\ 1$/;
+    let result = reRegex.test(repeatNum);`.replace(/\s+/g, "")
+  },
+
+  {
+    A30: `let huhText = "This sandwich is good.";
+    let fixRegex = /good/; 
+    let replaceText = "okey-dokey"; 
+    let result = huhText.replace(fixRegex, replaceText);`.replace(/\s+/g, "")
+  },
+
+  {
+    A31: `let hello = "   Hello, World!  ";
+    let wsRegex = /^\s+|\s+$/g; 
+    let result = hello.replace(wsRegex, ''); `.replace(/\s+/g, "")
+  }
+];
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptRegExpressQuestionArr; });
+var javascriptRegExpressQuestionArr = [
+  `0.Apply the regex  myRegex on the string  myString using the .test() method.<br>
+  let myString = "Hello, World!";<br>
+  let myRegex = /Hello/;<br>
+  let result = myRegex; // Change this line`,
+
+  `1.Complete the regex waldoRegex to find "Waldo" in the string waldoIsHiding with a literal match.<br>
+  let waldoIsHiding = "Somewhere Waldo is hiding in this text.";<br>
+  let waldoRegex = /search/; // Change this line<br>
+  let result = waldoRegex.test(waldoIsHiding);`,
+
+  `2.Complete the regex petRegex to match the pets "dog", "cat", "bird", or "fish".<br>
+  let petString = "James has a pet cat.";<br>
+  let petRegex = /change/; // Change this line<br>
+  let result = petRegex.test(petString);`,
+
+  `3.Write a regex fccRegex to match "freeCodeCamp", no matter its case.<br> Your regex should not match any abbreviations or variations with spaces.<br>
+  let myString = "freeCodeCamp";<br>
+  let fccRegex = /change/; // Change this line<br>
+  let result = fccRegex.test(myString);`,
+
+  `4.Apply the .match() method to extract the word coding.<br>
+  let extractStr = "Extract the word 'coding' from this string.";<br>
+  let codingRegex = /change/; // Change this line<br>
+  let result = extractStr; // Change this line
+`,
+
+  `5.Using the regex starRegex, find and extract both "Twinkle" words from the string twinkleStar.<br>
+  Note<br>
+  You can have multiple flags on your regex like /search/gi<br>
+  <br>
+  
+  let twinkleStar = "Twinkle, twinkle, little star";<br>
+  let starRegex = /change/; // Change this line<br>
+  let result = twinkleStar; // Change this line`,
+
+  `6.Complete the regex unRegex so that it matches the strings "run", "sun",<br> "fun", "pun", "nun", and "bun". Your regex should use the wildcard character.<br>
+  <br>
+  let exampleStr = "Let's have fun with regular expressions!";<br>
+  let unRegex = /change/; // Change this line<br>
+  let result = unRegex.test(exampleStr);
+  `,
+
+  `7.Use a character class with vowels (a, e, i, o, u) in your regex vowelRegex to find all the vowels in the string quoteSample.<br>
+  <br>
+  Note<br>
+  Be sure to match both upper- and lowercase vowels.<br>
+  let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";<br>
+  let vowelRegex = /change/; // Change this line<br>
+  let result = vowelRegex; // Change this line
+  
+  `,
+
+  `8.Match all the letters in the string quoteSample.<br>
+  <br>
+  Note<br>
+  Be sure to match both upper- and lowercase letters.<br>
+  let quoteSample = "The quick brown fox jumps over the lazy dog.";<br>
+  let alphabetRegex = /change/; // Change this line<br>
+  let result = alphabetRegex; // Change this line
+`,
+
+  `9.Create a single regex that matches a range of letters between h and s, and a range of numbers between 2 and 6. Remember to include the appropriate flags in the regex.<br>
+  let quoteSample = "Blueberry 3.141592653s are delicious.";<br>
+  let myRegex = /change/; // Change this line<br>
+  let result = myRegex; // Change this line`,
+
+  `10.Create a single regex that matches all characters that are not a number or a vowel.<br> Remember to include the appropriate flags in the regex.<br>
+  let quoteSample = "3 blind mice.";<br>
+  let myRegex = /change/; // Change this line<br>
+  let result = myRegex; // Change this line`,
+
+  
+  `11.You want to find matches when the letter s occurs one or more times in "Mississippi". Write a regex that uses the + sign.<br>
+  let difficultSpelling = "Mississippi";<br>
+  let myRegex = /change/; // Change this line<br>
+  let result = difficultSpelling.match(myRegex);`,
+  
+  `12.Create a regex chewieRegex that uses the * character to match all the upper and lower "a" characters in chewieQuote.<br> Your regex does not need flags, and it should not match any of the other quotes.<br>
+  <br>
+  let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";<br>
+  let chewieRegex = /change/; // Change this line<br>
+  let result = chewieQuote.match(chewieRegex);
+  `,
+
+  `13.Fix the regex /<.*>/ to return the HTML tag &lth1&gt and not the text "&lth1&gt Winter is coming &lt/h1&gt". <br> Remember the wildcard .in a regular expression matches any character.<br>
+  let text = "&lth1&gtWinter is coming &lt/h1&gt";<br>
+  let myRegex = /<.*>/; // Change this line<br>
+  let result = text.match(myRegex);`,
+
+  `14.Write a greedy regex that finds one or more criminals within a group of other people.<br> A criminal is represented by the capital letter C.<br>
+  // example crowd gathering<br>
+  let crowd = 'P1P2P3P4P5P6CCCP7P8P9';<br>
+  <br>
+  let reCriminals = /./; // Change this line<br>
+  <br>
+  let matchedCriminals = crowd.match(reCriminals);<br>
+  console.log(matchedCriminals);
+  `,
+
+  `15.Use the caret character in a regex to find "Cal" only in the beginning of the string rickyAndCal.<br>
+  let rickyAndCal = "Cal and Ricky both like racing.";<br>
+  let calRegex = /change/; // Change this line<br>
+  let result = calRegex.test(rickyAndCal);
+  `,
+
+  `16.Use the anchor character ($) to match the string "caboose" at the end of the string caboose.<br>
+  let caboose = "The last car on a train is the caboose";<br>
+  let lastRegex = /change/; // Change this line<br>
+  let result = lastRegex.test(caboose);
+  `,
+
+  `17.Use the shorthand character class \w to count the number of alphanumeric characters in various quotes and strings.<br>
+  let quoteSample = "The five boxing wizards jump quickly.";<br>
+  let alphabetRegexV2 = /change/; // Change this line<br>
+  let result = quoteSample.match(alphabetRegexV2).length;`,
+
+  `18.Use the shorthand character class \W to count the number of non-alphanumeric characters in various quotes and strings.<br>
+  let quoteSample = "The five boxing wizards jump quickly.";<br>
+  let nonAlphabetRegex = /change/; // Change this line<br>
+  let result = quoteSample.match(nonAlphabetRegex).length;`,
+
+  `19.Use the shorthand character class \d to count how many digits are in movie titles.<br> Written out numbers ("six" instead of 6) do not count.<br>
+  <br>
+  let numString = "Your sandwich will be $5.00";<br>
+  let numRegex = /change/; // Change this line<br>
+  let result = numString.match(numRegex).length;`,
+
+  `20.Use the shorthand character class for non-digits \D to count how many non-digits are in movie titles.<br>
+  let numString = "Your sandwich will be $5.00";<br>
+  let noNumRegex = /change/; // Change this line<br>
+  let result = numString.match(noNumRegex).length;`,
+
+  `21.Change the regex userCheckto fit the constraints listed above.<br>
+  let username = "JackOfAllTrades";<br>
+  let userCheck = /change/; // Change this line<br>
+  let result = userCheck.test(username);
+  `,
+
+  `22.Change the regex countWhiteSpace to look for multiple whitespace characters in a string.<br>
+  let sample = "Whitespace is important in separating words";<br>
+  let countWhiteSpace = /change/; // Change this line<br>
+  let result = sample.match(countWhiteSpace);`,
+
+  `23.Change the regex countNonWhiteSpace to look for multiple non-whitespace characters in a string.<br>
+  let sample = "Whitespace is important in separating words";<br>
+  let countNonWhiteSpace = /change/; // Change this line<br>
+  let result = sample.match(countNonWhiteSpace);
+  `,
+
+  `24.Change the regex ohRegex to match only 3 to 6 letter h 's in the word "Oh no".<br>
+  let ohStr = "Ohhh no";<br>
+  let ohRegex = /change/; // Change this line<br>
+  let result = ohRegex.test(ohStr);
+  `,
+
+  `25.Change the regex haRegex to match the word "Hazzah" only when it has four or more letter z 's.<br>
+  let haStr = "Hazzzzah";<br>
+  let haRegex = /change/; // Change this line<br>
+  let result = haRegex.test(haStr);`,
+
+  `26.Change the regex timRegex to match the word "Timber" only when it has four letter m 's.<br>
+  let timStr = "Timmmmber";<br>
+  let timRegex = /change/; // Change this line<br>
+  let result = timRegex.test(timStr);`,
+
+  `27.Change the regex favRegex to match both the American English (favorite) and the British English (favourite) version of the word.<br>
+  let favWord = "favorite";<br>
+  let favRegex = /change/; // Change this line<br>
+  let result = favRegex.test(favWord);`,
+
+  `28.Use lookaheads in the pwRegex to match passwords that are greater than 5 characters long and have two consecutive digits.<br>
+  let sampleWord = "astronaut";<br>
+  let pwRegex = /change/; // Change this line<br>
+  let result = pwRegex.test(sampleWord);`,
+
+  `29.Use capture groups in reRegex to match numbers that are repeated only three times in a string, each separated by a space.<br>
+  let repeatNum = "42 42 42";<br>
+  let reRegex = /change/; // Change this line<br>
+  let result = reRegex.test(repeatNum);`,
+
+  `30.Write a regex so that it will search for the string "good".<br> Then update the replaceText variable to replace "good" with "okey-dokey".<br>
+  let huhText = "This sandwich is good.";<br>
+  let fixRegex = /change/; // Change this line<br>
+  let replaceText = ""; // Change this line<br>
+  let result = huhText.replace(fixRegex, replaceText);`,
+
+  `31.Write a regex and use the appropriate string methods to remove whitespace at the beginning and end of strings.<br>
+  let hello = "   Hello, World!  ";<br>
+  let wsRegex = /change/; // Change this line<br>
+  let result = hello; // Change this line`
+];
+
+
+/***/ },
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__questionsAndAnswers_htmlQuestions__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__questionsAndAnswers_htmlAnswers__ = __webpack_require__(2);
@@ -5564,6 +5992,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__questionsAndAnswers_javascriptQuestions__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__questionsAndAnswers_javascriptEs6Answers__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__questionsAndAnswers_javascriptEs6Questions__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__questionsAndAnswers_javascriptRegExpressQuestions__ = __webpack_require__(9);
 
 
  /* importing  array from other js file with webpack*/
@@ -5575,6 +6005,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
  /* importing  array from other js file with webpack*/
 
+ /* importing  array from other js file with webpack*/
+
+ /* importing  array from other js file with webpack*/
  /* importing  array from other js file with webpack*/
 
  /* importing  array from other js file with webpack*/
@@ -12786,6 +13219,727 @@ function javascriptEs6Btn() {
 window.javascriptEs6Btn = javascriptEs6Btn;/* to make submit global*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var javascriptRegExpressRandomValue = Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_9__questionsAndAnswers_javascriptRegExpressQuestions__["a" /* javascriptRegExpressQuestionArr */].length); /* taking random question from htmlQuestionArr*/
+
+
+function javascriptRegExpressSubmit() { /* function for html submit button*/
+
+    var javascriptRegExpressInputAnswer = input.value.replace(/\s+/g, ``); /*replace(/\s+/g, `` is removing all spaces. Avoid checking all the spaces to compare text*/
+    var javascriptRegExpressCorrectValue = document.getElementById("javascriptRegExpressCheckingAnswer"); /* making getElementById code shorter*/
+    var javascriptRegExpressIncorrectValue = document.getElementById("javascriptRegExpressCheckingAnswer");
+    var javascriptRegExpressDisplayAnswer = document.getElementById("javascriptRegExpressShowingAnswer");
+    var javascriptRegExpressNextButton = document.getElementById("javascriptRegExpressElementButton");
+    var javascriptRegExpressRemoveValue = document.getElementById("javascriptRegExpressRemove");
+
+    if (javascriptRegExpressRandomValue == 0 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][0].A0) { /* checking if javascriptRegExpressRandomValue is 0 and if putting answer the same as javascriptRegExpressAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`; /* creating next button with javascriptRegExpressBtn()function*/
+        javascriptRegExpressRemoveValue.innerHTML = "";/* removing in html answer*/
+
+
+
+    } else if (javascriptRegExpressRandomValue == 0 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][0].A0) {/*  if random value not == then giving then display the answere.*/
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 1 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][1].A1) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 1 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][1].A1) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; 
+let result = waldoRegex.test(waldoIsHiding);
+          </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 2 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][2].A2) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 2 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][2].A2) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/;
+let result = petRegex.test(petString);
+          </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 3 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][3].A3) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 3 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][3].A3) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let myString = "test";
+let fccRegex = /test/i; 
+let result = fccRegex.test(myString);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+        
+
+
+    } else if (javascriptRegExpressRandomValue == 4 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][4].A4) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 4 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][4].A4) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; 
+let result = extractStr.match(codingRegex); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 5 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][5].A5) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 5 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][5].A5) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/gi; 
+let result = twinkleStar.match(starRegex); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 6 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][6].A6) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 6 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][6].A6) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; 
+let result = unRegex.test(exampleStr);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 7 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][7].A7) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 7 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][7].A7) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/ig; 
+let result = quoteSample.match(vowelRegex); 
+
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 8 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][8].A8) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 8 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][8].A8) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/ig; 
+let result = quoteSample.match(alphabetRegex); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 9 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][9].A9) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 9 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][9].A9) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/ig; 
+let result = quoteSample.match(myRegex); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 10 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][10].A10) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 10 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][10].A10) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou^0-99]/ig; 
+let result = quoteSample.match(myRegex);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 11 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][11].A11) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 11 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][11].A11) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/g;
+let result = difficultSpelling.match(myRegex);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 12 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][12].A12) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 12 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][12].A12) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /A[a]*/; 
+let result = chewieQuote.match(chewieRegex);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 13 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][13].A13) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 13 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][13].A13) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<h1>?/; 
+let result = text.match(myRegex);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 14 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][14].A14) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 14 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][14].A14) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let crowd = 'P1P2P3P4P5P6CCCP7P8P9';
+
+let reCriminals = /C+/; 
+
+let matchedCriminals = crowd.match(reCriminals);
+console.log(matchedCriminals);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 15 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][15].A15) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 15 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][15].A15) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; 
+let result = calRegex.test(rickyAndCal); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 16 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][16].A16) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 16 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][16].A16) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/;
+let result = lastRegex.test(caboose);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 17 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][17].A17) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 17 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][17].A17) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "The five boxing wizards jump quickly."; 
+let alphabetRegexV2 = /\w/g;
+let result = quoteSample.match(alphabetRegexV2).length;
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 18 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][18].A18) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 18 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][18].A18) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g;
+let result = quoteSample.match(nonAlphabetRegex).length;
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 19 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][19].A19) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 19 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][19].A19) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let numString = "Your sandwich will be $5.00";
+let numRegex = /\d/g; 
+let result = numString.match(numRegex).length;
+          </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 20 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][20].A20) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 20 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][20].A20) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let numString = "Your sandwich will be $5.00";
+let noNumRegex = /\D/g;
+let result = numString.match(noNumRegex).length;
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 21 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][21].A21) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 21 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][21].A21) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z]{2,}\d*$/i;
+let result = userCheck.test(username);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 22 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][22].A22) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 22 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][22].A22) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g;
+let result = sample.match(countWhiteSpace);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 23 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][23].A23) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 23 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][23].A23) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+
+    <textarea name="text" class="answer_textarea" id="input">
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g;
+let result = sample.match(countNonWhiteSpace);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 24 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][24].A24) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 24 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][24].A24) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/;
+let result = ohRegex.test(ohStr);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 25 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][25].A25) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 25 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][25].A25) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,30}ah/;
+let result = haRegex.test(haStr);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 26 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][26].A26) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 26 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][26].A26) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/;
+let result = timRegex.test(timStr); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 27 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][27].A27) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 27 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][27].A27) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let favWord_US = "favorite";
+let favWord_GB = "favourite";
+let favRegex = /favou?rite/;
+let result1 = favRegex.test(favWord_US);
+let result2 = favRegex.test(favWord_GB);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 28 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][28].A28) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 28 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][28].A28) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{5,})(?=\D*\d{2})/;
+let result = pwRegex.test(sampleWord);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 29 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][29].A29) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 29 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][29].A29) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let repeatNum = "42 42 42";
+let reRegex =  /^(\ d+)\ s\ 1\ s\ 1$/;
+let result = reRegex.test(repeatNum);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 30 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][30].A30) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 30 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][30].A30) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let huhText = "This sandwich is good.";
+let fixRegex = /good/; 
+let replaceText = "okey-dokey"; 
+let result = huhText.replace(fixRegex, replaceText);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 31 && javascriptRegExpressInputAnswer == __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][31].A31) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 31 && javascriptRegExpressInputAnswer !== __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__["a" /* javascriptRegExpressAnswerArr */][31].A31) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; 
+let result = hello.replace(wsRegex, '');
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else {
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+    }
+
+}
+window.javascriptRegExpressSubmit = javascriptRegExpressSubmit; /* to make submit global*/
+
+function javascriptRegExpressButton() {
+    javascriptRegExpressTest = document.getElementById("javascriptRegExpressAddedQuestion").innerHTML = __WEBPACK_IMPORTED_MODULE_9__questionsAndAnswers_javascriptRegExpressQuestions__["a" /* javascriptRegExpressQuestionArr */][javascriptRegExpressRandomValue]; /* giving random question to html */
+
+    return javascriptRegExpressTest;
+}
+window.javascriptRegExpressButton = javascriptRegExpressButton;
+
+function javascriptRegExpressShowTest() {
+    var javascriptRegExpressInputBox = document.getElementById("javascriptRegExpressRemove").style.display = "block";
+    return javascriptRegExpressInputBox;
+}
+window.javascriptRegExpressShowTest = javascriptRegExpressShowTest;
+
+function javascriptRegExpressBtn() {
+    javascriptRegExpressRandomValue = Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_9__questionsAndAnswers_javascriptRegExpressQuestions__["a" /* javascriptRegExpressQuestionArr */].length); /* buton next in html to make a next random question*/
+    document.getElementById("javascriptRegExpressAddedQuestion").innerHTML = __WEBPACK_IMPORTED_MODULE_9__questionsAndAnswers_javascriptRegExpressQuestions__["a" /* javascriptRegExpressQuestionArr */][javascriptRegExpressRandomValue]; /* giving random question to html */
+    document.getElementById("javascriptRegExpressElementButton").innerHTML = "";/* to clean javascriptRegExpressElementButton*/
+    document.getElementById("javascriptRegExpressRemove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
+      <button class="answer_submit javascriptColor1" id = "javascriptRegExpressStartButton" onclick="javascriptRegExpressSubmit()">Submit</button>`;/* to create next text area and Submit button. */
+    document.getElementById("javascriptRegExpressCheckingAnswer").innerHTML = "";
+    document.getElementById("javascriptRegExpressShowingAnswer").innerHTML = "";
+}
+window.javascriptRegExpressBtn = javascriptRegExpressBtn;/* to make submit global*/
 
 /***/ }
 /******/ ]);

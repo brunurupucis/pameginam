@@ -12,6 +12,9 @@ import { javascriptQuestionArr } from './questionsAndAnswers/javascriptQuestions
 import { javascriptEs6AnswerArr } from './questionsAndAnswers/javascriptEs6Answers'; /* importing  array from other js file with webpack*/
 
 import { javascriptEs6QuestionArr } from './questionsAndAnswers/javascriptEs6Questions'; /* importing  array from other js file with webpack*/
+import { javascriptRegExpressAnswerArr } from './questionsAndAnswers/javascriptRegExpressAnswers'; /* importing  array from other js file with webpack*/
+
+import { javascriptRegExpressQuestionArr } from './questionsAndAnswers/javascriptRegExpressQuestions'; /* importing  array from other js file with webpack*/
 
 
 
@@ -7219,3 +7222,725 @@ function javascriptEs6Btn() {
 }
 window.javascriptEs6Btn = javascriptEs6Btn;/* to make submit global*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var javascriptRegExpressRandomValue = Math.floor(Math.random() * javascriptRegExpressQuestionArr.length); /* taking random question from htmlQuestionArr*/
+
+
+function javascriptRegExpressSubmit() { /* function for html submit button*/
+
+    var javascriptRegExpressInputAnswer = input.value.replace(/\s+/g, ``); /*replace(/\s+/g, `` is removing all spaces. Avoid checking all the spaces to compare text*/
+    var javascriptRegExpressCorrectValue = document.getElementById("javascriptRegExpressCheckingAnswer"); /* making getElementById code shorter*/
+    var javascriptRegExpressIncorrectValue = document.getElementById("javascriptRegExpressCheckingAnswer");
+    var javascriptRegExpressDisplayAnswer = document.getElementById("javascriptRegExpressShowingAnswer");
+    var javascriptRegExpressNextButton = document.getElementById("javascriptRegExpressElementButton");
+    var javascriptRegExpressRemoveValue = document.getElementById("javascriptRegExpressRemove");
+
+    if (javascriptRegExpressRandomValue == 0 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[0].A0) { /* checking if javascriptRegExpressRandomValue is 0 and if putting answer the same as javascriptRegExpressAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`; /* creating next button with javascriptRegExpressBtn()function*/
+        javascriptRegExpressRemoveValue.innerHTML = "";/* removing in html answer*/
+
+
+
+    } else if (javascriptRegExpressRandomValue == 0 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[0].A0) {/*  if random value not == then giving then display the answere.*/
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 1 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[1].A1) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 1 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[1].A1) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; 
+let result = waldoRegex.test(waldoIsHiding);
+          </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 2 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[2].A2) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 2 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[2].A2) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/;
+let result = petRegex.test(petString);
+          </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 3 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[3].A3) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 3 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[3].A3) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let myString = "test";
+let fccRegex = /test/i; 
+let result = fccRegex.test(myString);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+        
+
+
+    } else if (javascriptRegExpressRandomValue == 4 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[4].A4) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 4 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[4].A4) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; 
+let result = extractStr.match(codingRegex); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 5 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[5].A5) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 5 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[5].A5) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/gi; 
+let result = twinkleStar.match(starRegex); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 6 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[6].A6) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 6 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[6].A6) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; 
+let result = unRegex.test(exampleStr);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 7 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[7].A7) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 7 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[7].A7) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/ig; 
+let result = quoteSample.match(vowelRegex); 
+
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 8 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[8].A8) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 8 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[8].A8) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/ig; 
+let result = quoteSample.match(alphabetRegex); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 9 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[9].A9) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 9 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[9].A9) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/ig; 
+let result = quoteSample.match(myRegex); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 10 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[10].A10) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 10 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[10].A10) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou^0-99]/ig; 
+let result = quoteSample.match(myRegex);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 11 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[11].A11) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 11 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[11].A11) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/g;
+let result = difficultSpelling.match(myRegex);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 12 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[12].A12) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 12 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[12].A12) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /A[a]*/; 
+let result = chewieQuote.match(chewieRegex);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 13 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[13].A13) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 13 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[13].A13) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<h1>?/; 
+let result = text.match(myRegex);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 14 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[14].A14) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 14 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[14].A14) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let crowd = 'P1P2P3P4P5P6CCCP7P8P9';
+
+let reCriminals = /C+/; 
+
+let matchedCriminals = crowd.match(reCriminals);
+console.log(matchedCriminals);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 15 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[15].A15) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 15 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[15].A15) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; 
+let result = calRegex.test(rickyAndCal); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 16 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[16].A16) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 16 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[16].A16) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/;
+let result = lastRegex.test(caboose);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 17 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[17].A17) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 17 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[17].A17) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "The five boxing wizards jump quickly."; 
+let alphabetRegexV2 = /\w/g;
+let result = quoteSample.match(alphabetRegexV2).length;
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 18 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[18].A18) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 18 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[18].A18) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g;
+let result = quoteSample.match(nonAlphabetRegex).length;
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 19 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[19].A19) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 19 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[19].A19) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let numString = "Your sandwich will be $5.00";
+let numRegex = /\d/g; 
+let result = numString.match(numRegex).length;
+          </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 20 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[20].A20) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 20 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[20].A20) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let numString = "Your sandwich will be $5.00";
+let noNumRegex = /\D/g;
+let result = numString.match(noNumRegex).length;
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 21 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[21].A21) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 21 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[21].A21) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z]{2,}\d*$/i;
+let result = userCheck.test(username);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 22 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[22].A22) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 22 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[22].A22) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g;
+let result = sample.match(countWhiteSpace);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 23 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[23].A23) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 23 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[23].A23) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+
+    <textarea name="text" class="answer_textarea" id="input">
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g;
+let result = sample.match(countNonWhiteSpace);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 24 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[24].A24) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 24 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[24].A24) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/;
+let result = ohRegex.test(ohStr);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 25 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[25].A25) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 25 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[25].A25) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,30}ah/;
+let result = haRegex.test(haStr);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 26 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[26].A26) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 26 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[26].A26) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/;
+let result = timRegex.test(timStr); 
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 27 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[27].A27) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 27 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[27].A27) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let favWord_US = "favorite";
+let favWord_GB = "favourite";
+let favRegex = /favou?rite/;
+let result1 = favRegex.test(favWord_US);
+let result2 = favRegex.test(favWord_GB);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 28 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[28].A28) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 28 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[28].A28) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{5,})(?=\D*\d{2})/;
+let result = pwRegex.test(sampleWord);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 29 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[29].A29) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 29 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[29].A29) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let repeatNum = "42 42 42";
+let reRegex =  /^(\ d+)\ s\ 1\ s\ 1$/;
+let result = reRegex.test(repeatNum);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 30 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[30].A30) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 30 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[30].A30) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let huhText = "This sandwich is good.";
+let fixRegex = /good/; 
+let replaceText = "okey-dokey"; 
+let result = huhText.replace(fixRegex, replaceText);
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptRegExpressRandomValue == 31 && javascriptRegExpressInputAnswer == javascriptRegExpressAnswerArr[31].A31) {
+        javascriptRegExpressCorrectValue.innerHTML = "Correct..";
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+    } else if (javascriptRegExpressRandomValue == 31 && javascriptRegExpressInputAnswer !== javascriptRegExpressAnswerArr[31].A31) {
+        javascriptRegExpressDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; 
+let result = hello.replace(wsRegex, '');
+        </textarea>`;
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+
+
+
+    } else {
+        javascriptRegExpressIncorrectValue.innerHTML = "Incorrect..";
+        javascriptRegExpressNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptRegExpressBtn()>Next</button>`;
+        javascriptRegExpressRemoveValue.innerHTML = "";
+    }
+
+}
+window.javascriptRegExpressSubmit = javascriptRegExpressSubmit; /* to make submit global*/
+
+function javascriptRegExpressButton() {
+    javascriptRegExpressTest = document.getElementById("javascriptRegExpressAddedQuestion").innerHTML = javascriptRegExpressQuestionArr[javascriptRegExpressRandomValue]; /* giving random question to html */
+
+    return javascriptRegExpressTest;
+}
+window.javascriptRegExpressButton = javascriptRegExpressButton;
+
+function javascriptRegExpressShowTest() {
+    var javascriptRegExpressInputBox = document.getElementById("javascriptRegExpressRemove").style.display = "block";
+    return javascriptRegExpressInputBox;
+}
+window.javascriptRegExpressShowTest = javascriptRegExpressShowTest;
+
+function javascriptRegExpressBtn() {
+    javascriptRegExpressRandomValue = Math.floor(Math.random() * javascriptRegExpressQuestionArr.length); /* buton next in html to make a next random question*/
+    document.getElementById("javascriptRegExpressAddedQuestion").innerHTML = javascriptRegExpressQuestionArr[javascriptRegExpressRandomValue]; /* giving random question to html */
+    document.getElementById("javascriptRegExpressElementButton").innerHTML = "";/* to clean javascriptRegExpressElementButton*/
+    document.getElementById("javascriptRegExpressRemove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
+      <button class="answer_submit javascriptColor1" id = "javascriptRegExpressStartButton" onclick="javascriptRegExpressSubmit()">Submit</button>`;/* to create next text area and Submit button. */
+    document.getElementById("javascriptRegExpressCheckingAnswer").innerHTML = "";
+    document.getElementById("javascriptRegExpressShowingAnswer").innerHTML = "";
+}
+window.javascriptRegExpressBtn = javascriptRegExpressBtn;/* to make submit global*/

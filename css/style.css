@@ -30,7 +30,8 @@
 #remove,
 #cssRemove,
 #javascriptRemove,
-#javascriptEs6Remove {
+#javascriptEs6Remove,
+#javascriptRegExpressRemove {
   /* to hide input text area*/
   display: none; }
 
