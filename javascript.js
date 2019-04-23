@@ -25,6 +25,10 @@ import { javascriptBasicAlgorithmAnswerArr } from './questionsAndAnswers/javascr
 
 import { javascriptBasicAlgorithmQuestionArr } from './questionsAndAnswers/javascriptBasicAlgorithmQuestions'; /* importing  array from other js file with webpack*/
 
+import { javascriptObjOrientProgAnswerArr } from './questionsAndAnswers/javascriptObjOrientProgAnswers'; /* importing  array from other js file with webpack*/
+
+import { javascriptObjOrientProgQuestionArr } from './questionsAndAnswers/javascriptObjOrientProgQuestions'; /* importing  array from other js file with webpack*/
+
 
 
 
@@ -9530,3 +9534,799 @@ function javascriptBasicAlgorithmBtn() {
     document.getElementById("javascriptBasicAlgorithmShowingAnswer").innerHTML = "";
 }
 window.javascriptBasicAlgorithmBtn = javascriptBasicAlgorithmBtn;/* to make submit global*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var javascriptObjOrientProgRandomValue = Math.floor(Math.random() * javascriptObjOrientProgQuestionArr.length); /* taking random question from htmlQuestionArr*/
+
+
+function javascriptObjOrientProgSubmit() { /* function for html submit button*/
+
+    var javascriptObjOrientProgInputAnswer = input.value.replace(/\s+/g, ``); /*replace(/\s+/g, `` is removing all spaces. Avoid checking all the spaces to compare text*/
+    var javascriptObjOrientProgCorrectValue = document.getElementById("javascriptObjOrientProgCheckingAnswer"); /* making getElementById code shorter*/
+    var javascriptObjOrientProgIncorrectValue = document.getElementById("javascriptObjOrientProgCheckingAnswer");
+    var javascriptObjOrientProgDisplayAnswer = document.getElementById("javascriptObjOrientProgShowingAnswer");
+    var javascriptObjOrientProgNextButton = document.getElementById("javascriptObjOrientProgElementButton");
+    var javascriptObjOrientProgRemoveValue = document.getElementById("javascriptObjOrientProgRemove");
+
+    if (javascriptObjOrientProgRandomValue == 0 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[0].A0) { /* checking if javascriptObjOrientProgRandomValue is 0 and if putting answer the same as javascriptObjOrientProgAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`; /* creating next button with javascriptObjOrientProgBtn()function*/
+        javascriptObjOrientProgRemoveValue.innerHTML = "";/* removing in html answer*/
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 0 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[0].A0) {/*  if random value not == then giving then display the answere.*/
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let dog = {
+    name: "George",
+    numLegs: 4
+};
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 1 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[1].A1) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 1 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[1].A1) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">
+let dog = {
+    name: "Spot",
+    numLegs: 4
+};
+console.log(dog.name);
+console.log(dog.numLegs);
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 2 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[2].A2) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 2 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[2].A2) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let dog = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: function() {
+        return "This dog has " + dog.numLegs + " legs.";
+    }
+};
+
+dog.sayLegs();
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 3 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[3].A3) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 3 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[3].A3) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let dog = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+};
+
+dog.sayLegs();
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        
+
+
+    } else if (javascriptObjOrientProgRandomValue == 4 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[4].A4) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 4 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[4].A4) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog() {
+    this.name = "Geogre",
+    this.color = "White",
+    this.numLegs = 4;
+}
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 5 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[5].A5) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 5 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[5].A5) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog() {
+    this.name = "Rupert";
+    this.color = "brown";
+    this.numLegs = 4;
+}
+let hound = new Dog();
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 6 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[6].A6) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 6 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[6].A6) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name, color) {
+    this.name = name;
+    this.color = color;
+    this.numLegs = 4;
+}
+let terrier = new Dog("George","White");
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 7 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[7].A7) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 7 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[7].A7) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function House(numBedrooms) {
+    this.numBedrooms = numBedrooms;
+}
+let myHouse = new House(5);
+myHouse instanceof House;
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 8 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[8].A8) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 8 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[8].A8) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Bird(name) {
+    this.name = name;
+    this.numLegs = 2;
+    }
+    let canary = new Bird("Tweety");
+    let ownProps = [];
+    for(let property in canary) {
+    if(canary.hasOwnProperty(property)) {
+        ownProps.push(property);
+    }
+}
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 9 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[9].A9) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 9 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[9].A9) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy"); 
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 10 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[10].A10) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 10 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[10].A10) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+for (let property in beagle) {
+    if(Dog.hasOwnProperty(property)) {
+        ownProps.push(property)
+    }
+    else {
+        prototypeProps.push(property)
+    }
+}
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 11 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[11].A11) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 11 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[11].A11) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name;
+    }
+    function joinDogFraternity(candidate) {
+    if(candidate.constructor === Dog) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 12 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[12].A12) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 12 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[12].A12) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name; 
+    }
+
+    Dog.prototype = {
+    numLegs: 2,
+    eat(){
+        console.log('nom nom nom');
+    },
+    describe(){
+        console.log("My name is " + this.name);
+    }
+};
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 13 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[13].A13) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 13 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[13].A13) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name; 
+    }
+    Dog.prototype = {
+
+    constructor: Dog, 
+
+    numLegs: 2, 
+    eat: function() {
+        console.log("nom nom nom"); 
+    }, 
+    describe: function() {
+        console.log("My name is " + this.name); 
+    }
+};
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 14 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[14].A14) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 14 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[14].A14) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name;
+}
+let beagle = new Dog("Snoopy");
+Dog.prototype.isPrototypeOf(beagle);
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 15 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[15].A15) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 15 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[15].A15) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name;
+}
+
+let beagle = new Dog("Snoopy");
+
+Dog.prototype.isPrototypeOf(beagle);
+Object.prototype.isPrototypeOf(Dog.prototype); 
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 16 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[16].A16) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 16 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[16].A16) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Cat(name) {
+    this.name = name; 
+};
+
+Cat.prototype = {
+    constructor: Cat
+};
+
+function Bear(name) {
+    this.name = name; 
+};
+
+Bear.prototype = {
+    constructor: Bear
+};
+
+function Animal() { };
+
+Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+        console.log("nom nom nom");
+    }
+};
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 17 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[17].A17) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 17 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[17].A17) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Animal() { }
+
+Animal.prototype = {
+    constructor: Animal, 
+    eat: function() {
+    console.log("nom nom nom");
+    }
+};
+
+let duck = Object.create(Animal.prototype); 
+let beagle = Object.create(Animal.prototype);; 
+
+duck.eat(); 
+beagle.eat();
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 18 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[18].A18) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 18 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[18].A18) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Animal() { }
+
+Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+    console.log("nom nom nom");
+    }
+};
+
+function Dog() { }
+Dog.prototype = Object.create(Animal.prototype);
+
+let beagle = new Dog();
+beagle.eat();
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 19 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[19].A19) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 19 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[19].A19) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Animal() { }
+function Bird() { }
+function Dog() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+Bird.prototype.constructor = Bird;
+Dog.prototype.constructor = Dog;
+
+let duck = new Bird();
+let beagle = new Dog();
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 20 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[20].A20) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 20 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[20].A20) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Animal() { }
+Animal.prototype.eat = function() {     console.log("nom nom nom"); 
+};
+
+function Dog() { }
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+Dog.prototype.bark = function() {
+    console.log("Woof woof!");
+};
+
+let beagle = new Dog();
+
+beagle.eat(); 
+beagle.bark();
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 21 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[21].A21) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 21 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[21].A21) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Bird() { }
+
+Bird.prototype.fly = function() {       return "I am flying!";
+};
+
+function Penguin() { }
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
+Penguin.prototype.fly = function() {
+    return  "Alas, this is a flightless bird.";
+};
+let penguin = new Penguin();
+console.log(penguin.fly());
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 22 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[22].A22) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 22 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[22].A22) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let bird = {
+    name: "Donald",
+    numLegs: 2
+};
+
+let boat = {
+    name: "Warrior",
+    type: "race-boat"
+};
+let glideMixin = function(obj) {
+    obj.glide = function() {
+        console.log("Gliding!");
+    }
+};
+glideMixin(bird);
+glideMixin(boat);
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 23 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[23].A23) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 23 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[23].A23) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Bird() {
+    let weight = 15;
+
+    this.getWeight = function() {
+        return weight;
+    };
+
+}
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 24 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[24].A24) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 24 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[24].A24) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+(function() {
+    console.log("A cozy nest is ready");
+})();
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 25 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[25].A25) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 25 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[25].A25) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let funModule = (function() {
+    return {
+        isCuteMixin: function(obj) {
+            obj.isCute = function() {
+                return true;
+            };
+        },
+        singMixin: function(obj) {
+            obj.sing = function() {
+                console.log("Singing to an awesome tune");
+            };
+        }
+    }
+})();
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else {
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+    }
+
+}
+window.javascriptObjOrientProgSubmit = javascriptObjOrientProgSubmit; /* to make submit global*/
+
+function javascriptObjOrientProgButton() {
+    javascriptObjOrientProgTest = document.getElementById("javascriptObjOrientProgAddedQuestion").innerHTML = javascriptObjOrientProgQuestionArr[javascriptObjOrientProgRandomValue]; /* giving random question to html */
+
+    return javascriptObjOrientProgTest;
+}
+window.javascriptObjOrientProgButton = javascriptObjOrientProgButton;
+
+function javascriptObjOrientProgShowTest() {
+    var javascriptObjOrientProgInputBox = document.getElementById("javascriptObjOrientProgRemove").style.display = "block";
+    return javascriptObjOrientProgInputBox;
+}
+window.javascriptObjOrientProgShowTest = javascriptObjOrientProgShowTest;
+
+function javascriptObjOrientProgBtn() {
+    javascriptObjOrientProgRandomValue = Math.floor(Math.random() * javascriptObjOrientProgQuestionArr.length); /* buton next in html to make a next random question*/
+    document.getElementById("javascriptObjOrientProgAddedQuestion").innerHTML = javascriptObjOrientProgQuestionArr[javascriptObjOrientProgRandomValue]; /* giving random question to html */
+    document.getElementById("javascriptObjOrientProgElementButton").innerHTML = "";/* to clean javascriptObjOrientProgElementButton*/
+    document.getElementById("javascriptObjOrientProgRemove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
+      <button class="answer_submit javascriptColor1" id = "javascriptObjOrientProgStartButton" onclick="javascriptObjOrientProgSubmit()">Submit</button>`;/* to create next text area and Submit button. */
+    document.getElementById("javascriptObjOrientProgCheckingAnswer").innerHTML = "";
+    document.getElementById("javascriptObjOrientProgShowingAnswer").innerHTML = "";
+}
+window.javascriptObjOrientProgBtn = javascriptObjOrientProgBtn;/* to make submit global*/

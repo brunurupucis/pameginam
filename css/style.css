@@ -33,7 +33,8 @@
 #javascriptEs6Remove,
 #javascriptRegExpressRemove,
 #javascriptBasicDataStructureRemove,
-#javascriptBasicAlgorithmRemove {
+#javascriptBasicAlgorithmRemove,
+#javascriptObjOrientProgRemove {
   /* to hide input text area*/
   display: none; }
 

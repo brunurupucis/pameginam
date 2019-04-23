@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -5913,6 +5913,707 @@ var javascriptEs6QuestionArr = [
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptObjOrientProgAnswerArr; });
+var javascriptObjOrientProgAnswerArr = [
+  {
+    A0: `let dog = {
+      name: "George",
+      numLegs: 4
+    };
+  `.replace(/\s+/g, "")
+  },
+
+  {
+    A1: `let dog = {
+      name: "Spot",
+      numLegs: 4
+    };
+    console.log(dog.name);
+    console.log(dog.numLegs);`.replace(/\s+/g, "")
+  },
+
+  { A2: `let dog = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: function() {
+      return "This dog has " + dog.numLegs + " legs.";
+    }
+  };
+  
+  dog.sayLegs();`.replace(/\s+/g, "") },
+
+  {
+    A3: `let dog = {
+      name: "Spot",
+      numLegs: 4,
+      sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+    };
+    
+    dog.sayLegs();
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A4: `function Dog() {
+      this.name = "Geogre",
+      this.color = "White",
+      this.numLegs = 4;
+    }`.replace(/\s+/g, "")
+  },
+
+  {
+    A5: `function Dog() {
+      this.name = "Rupert";
+      this.color = "brown";
+      this.numLegs = 4;
+    }
+    let hound = new Dog();
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A6: `function Dog(name, color) {
+      this.name = name;
+      this.color = color;
+      this.numLegs = 4;
+    }
+    let terrier = new Dog("George","White");
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A7: `
+    function House(numBedrooms) {
+      this.numBedrooms = numBedrooms;
+    }
+    let myHouse = new House(5);
+    myHouse instanceof House;
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A8: `function Bird(name) {
+      this.name = name;
+      this.numLegs = 2;
+    }
+    let canary = new Bird("Tweety");
+    let ownProps = [];
+    for(let property in canary) {
+      if(canary.hasOwnProperty(property)) {
+        ownProps.push(property);
+      }
+    }
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A9: `function Dog(name) {
+      this.name = name;
+    }
+    
+    Dog.prototype.numLegs = 4;
+    
+    let beagle = new Dog("Snoopy");`.replace(/\s+/g, "")
+  },
+
+  {
+    A10: `function Dog(name) {
+      this.name = name;
+    }
+    
+    Dog.prototype.numLegs = 4;
+    
+    let beagle = new Dog("Snoopy");
+    
+    let ownProps = [];
+    let prototypeProps = [];
+    
+    for (let property in beagle) {
+      if(Dog.hasOwnProperty(property)) {
+        ownProps.push(property)
+      }
+      else {
+        prototypeProps.push(property)
+      }
+    }`.replace(/\s+/g, "")
+  },
+
+  { A11: `function Dog(name) {
+    this.name = name;
+  }
+  function joinDogFraternity(candidate) {
+    if(candidate.constructor === Dog) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }`.replace(/\s+/g, "") },
+
+  
+  { A12: `function Dog(name) {
+    this.name = name; 
+  }
+  
+  Dog.prototype = {
+    numLegs: 2,
+    eat(){
+      console.log('nom nom nom');
+    },
+    describe(){
+      console.log("My name is " + this.name);
+    }
+  };`.replace(/\s+/g, "") },
+
+  { A13: `function Dog(name) {
+    this.name = name; 
+  }
+  Dog.prototype = {
+  
+    constructor: Dog, 
+  
+    numLegs: 2, 
+    eat: function() {
+      console.log("nom nom nom"); 
+    }, 
+    describe: function() {
+      console.log("My name is " + this.name); 
+    }
+  };`.replace(/\s+/g, "") },
+
+  { A14: `function Dog(name) {
+    this.name = name;
+  }
+  let beagle = new Dog("Snoopy");
+  Dog.prototype.isPrototypeOf(beagle);
+  `.replace(/\s+/g, "") },
+
+  {
+    A15: `function Dog(name) {
+      this.name = name;
+    }
+    
+    let beagle = new Dog("Snoopy");
+    
+    Dog.prototype.isPrototypeOf(beagle);
+    Object.prototype.isPrototypeOf(Dog.prototype); `.replace(/\s+/g, "")
+  },
+  {
+    A16: `function Cat(name) {
+      this.name = name; 
+    };
+    
+    Cat.prototype = {
+      constructor: Cat
+    };
+    
+    function Bear(name) {
+      this.name = name; 
+    };
+    
+    Bear.prototype = {
+      constructor: Bear
+    };
+    
+    function Animal() { };
+    
+    Animal.prototype = {
+      constructor: Animal,
+      eat: function() {
+        console.log("nom nom nom");
+      }
+    };`.replace(/\s+/g, "")
+  },
+
+  {
+    A17: `function Animal() { }
+
+    Animal.prototype = {
+      constructor: Animal, 
+      eat: function() {
+        console.log("nom nom nom");
+      }
+    };
+    
+    let duck = Object.create(Animal.prototype); 
+    let beagle = Object.create(Animal.prototype);; 
+    
+    duck.eat(); 
+    beagle.eat(); 
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A18: `
+    function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Dog() { }
+Dog.prototype = Object.create(Animal.prototype);
+
+let beagle = new Dog();
+beagle.eat();  
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A19: `function Animal() { }
+    function Bird() { }
+    function Dog() { }
+    
+    Bird.prototype = Object.create(Animal.prototype);
+    Dog.prototype = Object.create(Animal.prototype);
+    Bird.prototype.constructor = Bird;
+    Dog.prototype.constructor = Dog;
+    
+    let duck = new Bird();
+    let beagle = new Dog();
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A20: `function Animal() { }
+    Animal.prototype.eat = function() { console.log("nom nom nom"); };
+    
+    function Dog() { }
+    Dog.prototype = Object.create(Animal.prototype);
+    Dog.prototype.constructor = Dog;
+    Dog.prototype.bark = function() {
+        console.log("Woof woof!");
+    };
+    
+    let beagle = new Dog();
+    
+    beagle.eat(); 
+    beagle.bark(); `.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A21: `function Bird() { }
+
+    Bird.prototype.fly = function() { return "I am flying!"; };
+    
+    function Penguin() { }
+    Penguin.prototype = Object.create(Bird.prototype);
+    Penguin.prototype.constructor = Penguin;
+    Penguin.prototype.fly = function() {
+        return  "Alas, this is a flightless bird.";
+    };
+    let penguin = new Penguin();
+    console.log(penguin.fly());`.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A22: `let bird = {
+      name: "Donald",
+      numLegs: 2
+    };
+    
+    let boat = {
+      name: "Warrior",
+      type: "race-boat"
+    };
+    let glideMixin = function(obj) {
+        obj.glide = function() {
+            console.log("Gliding!");
+        }
+    };
+    glideMixin(bird);
+    glideMixin(boat);`.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A23: `function Bird() {
+      let weight = 15;
+      
+      this.getWeight = function() {
+        return weight;
+      };
+      
+    }`.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A24: `(function() {
+      console.log("A cozy nest is ready");
+    })();`.replace(/\s+/g, "")
+  },
+
+  {
+    A25: `let funModule = (function() {
+      return {
+        isCuteMixin: function(obj) {
+          obj.isCute = function() {
+            return true;
+          };
+        },
+        singMixin: function(obj) {
+          obj.sing = function() {
+             console.log("Singing to an awesome tune");
+          };
+        }
+      }
+    })();`.replace(/\s+/g, "")
+  }
+];
+
+
+/***/ },
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptObjOrientProgQuestionArr; });
+var javascriptObjOrientProgQuestionArr = [
+  `0.Create a dog object with name and numLegs properties, and set them to a string and a number, respectively.<br>
+  let dog = {<br>
+    <br>
+  };`,
+
+  `1.Print both properties of the dog object below to your console.<br>
+  let dog = {<br>
+    name: "Spot",<br>
+    numLegs: 4<br>
+  };<br>
+  // Add your code below this line<br>
+  
+  `,
+
+  `2.Using the dog object, give it a method called sayLegs. The method should return the sentence "This dog has 4 legs."<br>
+  let dog = {<br>
+    name: "Spot",<br>
+    numLegs: 4,<br>
+    <br>
+  };<br>
+  <br>
+  dog.sayLegs();`,
+
+  `3.Modify the dog.sayLegs method to remove any references to dog. Use the duck example for guidance.<br>
+  let dog = {<br>
+    name: "Spot",<br>
+    numLegs: 4,<br>
+    sayLegs: function() {return "This dog has " + dog.numLegs + " legs.";}<br>
+  };<br>
+  <br>
+  dog.sayLegs();`,
+
+  `4.Create a constructor, Dog, with properties name, color, and numLegs that are set to a string, a string, and a number, respectively.<br>
+
+`,
+
+  `5.Use the Dog constructor from the last lesson to create a new instance of Dog, assigning it to a variable hound.<br>
+  function Dog() {<br>
+    this.name = "Rupert";<br>
+    this.color = "brown";<br>
+    this.numLegs = 4;<br>
+  }<br>
+  // Add your code below this line<br>
+  
+  `,
+
+  `6.Create another Dog constructor. This time, set it up to take the parameters name and color, and have the property numLegs fixed at 4. <br>Then create a new Dog saved in a variable terrier. Pass it two strings as arguments for the name and color properties.<br>
+  function Dog() {<br>
+    <br>
+  }<br>
+  
+  
+  `,
+
+  `7.Create a new instance of the House constructor, calling it myHouse and passing a number of bedrooms. <br>Then, use instanceof to verify that it is an instance of House.<br>
+  /* jshint expr: true */<br>
+  <br>
+function House(numBedrooms) {<br>
+  this.numBedrooms = numBedrooms;<br>
+}<br>
+<br>
+// Add your code below this line<br>
+
+  `,
+
+  `8.Add the own properties of canary to the array ownProps.<br>
+  function Bird(name) {<br>
+    this.name = name;<br>
+    this.numLegs = 2;<br>
+  }<br>
+  <br>
+  let canary = new Bird("Tweety");<br>
+  let ownProps = [];<br>
+  // Add your code below this line<br>
+  
+  
+  
+`,
+
+  `9.Add a numLegs property to the prototype of Dog<br>
+  function Dog(name) {<br>
+    this.name = name;<br>
+  }<br>
+  
+  <br>
+  
+  // Add your code above this line<br>
+  let beagle = new Dog("Snoopy");`,
+
+  `10.Add all of the own properties of beagle to the array ownProps.<br> Add all of the prototype properties of Dog to the array prototypeProps.<br>
+  function Dog(name) {<br>
+    this.name = name;<br>
+  }<br>
+  <br>
+  Dog.prototype.numLegs = 4;<br>
+  <br>
+  let beagle = new Dog("Snoopy");<br>
+  <br>
+  let ownProps = [];<br>
+  let prototypeProps = [];<br>
+  <br>
+  // Add your code below this line 
+  `,
+
+  `11.Write a joinDogFraternity function that takes a candidate parameter and, using the constructor property, return true if the candidate is a Dog, otherwise return false.<br>
+  function Dog(name) {<br>
+    this.name = name;<br>
+  }<br>
+  <br>
+  // Add your code below this line<br>
+  function joinDogFraternity(candidate) {<br>
+    <br>
+  }
+  `,
+  
+  `12.Add the property numLegs and the two methods eat() and describe() to the prototype of Dog by setting the prototype to a new object.<br>
+  function Dog(name) {<br>
+    this.name = name; <br>
+  }<br>
+  <br>
+  Dog.prototype = {<br>
+    // Add your code below this line<br>
+    <br>
+  };`,
+
+  `13.Define the constructor property on the Dog prototype.<br>
+  function Dog(name) {<br>
+    this.name = name; <br>
+  }<br>
+  <br>
+  // Modify the code below this line<br>
+  Dog.prototype = {<br>
+    <br>
+    numLegs: 2, <br>
+    eat: function() {<br>
+      console.log("nom nom nom"); <br>
+    }, <br>
+    describe: function() {<br>
+      console.log("My name is " + this.name); <br>
+    }<br>
+  };`,
+
+  `14.Use isPrototypeOf to check the prototype of beagle.<br>
+  function Dog(name) {<br>
+    this.name = name;<br>
+  }<br>
+  <br>
+  let beagle = new Dog("Snoopy");<br>
+  <br>
+  // Add your code below this line<br>
+  
+  `,
+
+  `15.Modify the code to show the correct prototype chain.<br>
+  function Dog(name) {<br>
+    this.name = name;<br>
+  }<br>
+  <br>
+  let beagle = new Dog("Snoopy");<br>
+  <br>
+  Dog.prototype.isPrototypeOf(beagle);  // => true<br>
+  <br>
+  // Fix the code below so that it evaluates to true<br>
+  ???.isPrototypeOf(Dog.prototype);<br>
+  `,
+
+  `16.The eat method is repeated in both Cat and Bear. Edit the code in the spirit of DRY by moving the eat method to the Animal supertype.<br>
+  function Cat(name) {<br>
+    this.name = name; <br>
+  }<br>
+  <br>
+  Cat.prototype = {<br>
+    constructor: Cat, <br>
+    eat: function() {<br>
+      console.log("nom nom nom");<br>
+    }<br>
+  };<br>
+  <br>
+  function Bear(name) {<br>
+    this.name = name; <br>
+  }<br>
+  <br>
+  Bear.prototype = {<br>
+    constructor: Bear, <br>
+    eat: function() {<br>
+      console.log("nom nom nom");<br>
+    }<br>
+  };<br>
+  <br>
+  function Animal() { }<br>
+  <br>
+  Animal.prototype = {<br>
+    constructor: Animal,<br>
+    <br>
+  };`,
+
+  `17.Use Object.create to make two instances of Animal named duck and beagle.<br>
+  function Animal() { }<br>
+  <br>
+Animal.prototype = {<br>
+  constructor: Animal, <br>
+  eat: function() {<br>
+    console.log("nom nom nom");<br>
+  }<br>
+};<br>
+<br>
+// Add your code below this line<br>
+<br>
+let duck; // Change this line<br>
+let beagle; // Change this line<br>
+<br>
+duck.eat(); // Should print "nom nom nom"<br>
+beagle.eat(); // Should print "nom nom nom" `,
+
+  `18.Modify the code so that instances of Dog inherit from Animal.<br>
+  function Animal() { }<br>
+  <br>
+Animal.prototype = {<br>
+  constructor: Animal,<br>
+  eat: function() {<br>
+    console.log("nom nom nom");<br>
+  }<br>
+};<br>
+<br>
+function Dog() { }<br>
+<br>
+// Add your code below this line<br>
+
+<br>
+let beagle = new Dog();<br>
+beagle.eat();  // Should print "nom nom nom"`,
+
+  `19.Fix the code so duck.constructor and beagle.constructor return their respective constructors.<br>
+  function Animal() { }<br>
+function Bird() { }<br>
+function Dog() { }<br>
+<br>
+Bird.prototype = Object.create(Animal.prototype);<br>
+Dog.prototype = Object.create(Animal.prototype);<br>
+<br>
+// Add your code below this line<br>
+<br>
+<br>
+
+let duck = new Bird();<br>
+let beagle = new Dog();`,
+
+  `20.Add all necessary code so the Dog object inherits from Animal and the Dog's prototype constructor is set to Dog. <br> Then add a bark() method to the Dog object so that beagle can both eat() and bark(). <br>The bark() method should print "Woof!" to the console.<br>
+  function Animal() { }<br>
+Animal.prototype.eat = function() { console.log("nom nom nom"); };<br>
+<br>
+function Dog() { }<br>
+<br>
+// Add your code below this line<br>
+
+<br>
+<br>
+
+// Add your code above this line<br>
+<br>
+let beagle = new Dog();<br>
+<br>
+beagle.eat(); // Should print "nom nom nom"<br>
+beagle.bark(); // Should print "Woof!"`,
+
+  `21.Override the fly() method for Penguin so that it returns "Alas, this is a flightless bird."<br>
+  function Bird() { }<br>
+  <br>
+Bird.prototype.fly = function() { return "I am flying!"; };<br>
+<br>
+function Penguin() { }<br>
+Penguin.prototype = Object.create(Bird.prototype);<br>
+Penguin.prototype.constructor = Penguin;<br>
+<br>
+// Add your code below this line<br>
+<br>
+
+<br>
+// Add your code above this line<br>
+<br>
+let penguin = new Penguin();<br>
+console.log(penguin.fly());`,
+
+  `22.Create a mixin named glideMixin that defines a method named glide. <br>Then use the glideMixin to give both bird and boat the ability to glide.<br>
+  let bird = {<br>
+    name: "Donald",<br>
+    numLegs: 2<br>
+  };<br>
+  <br>
+  let boat = {<br>
+    name: "Warrior",<br>
+    type: "race-boat"<br>
+  };<br>
+  <br>
+  // Add your code below this line<br>
+  <br>
+  `,
+
+  `23.Change how weight is declared in the Bird function so it is a private variable.<br> Then, create a method getWeight that returns the value of weight.<br>
+  function Bird() {<br>
+    this.weight = 15;<br>
+    <br>
+    <br>
+  }`,
+
+  `24.Rewrite the function makeNest and remove its call so instead it's an anonymous immediately invoked function expression (IIFE).<br>
+  function makeNest() {<br>
+    console.log("A cozy nest is ready");<br>
+  }<br>
+  <br>
+  makeNest(); `,
+
+  `25.Create a module named funModule to wrap the two mixins isCuteMixin and singMixin. funModule should return an object.<br>
+  let isCuteMixin = function(obj) {<br>
+    obj.isCute = function() {<br>
+      return true;<br>
+    };<br>
+  };<br>
+  let singMixin = function(obj) {<br>
+    obj.sing = function() {<br>
+      console.log("Singing to an awesome tune");<br>
+    };<br>
+  };`
+];
+
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptQuestionArr; });
 var javascriptQuestionArr = [
   `0.Use the var keyword to create a variable called myName.`,
@@ -6932,7 +7633,7 @@ checkSign(10);`
 
 
 /***/ },
-/* 12 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7160,7 +7861,7 @@ var javascriptRegExpressAnswerArr = [
 
 
 /***/ },
-/* 13 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7360,7 +8061,7 @@ var javascriptRegExpressQuestionArr = [
 
 
 /***/ },
-/* 14 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7370,15 +8071,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__questionsAndAnswers_cssQuestions__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__questionsAndAnswers_javascriptQuestions__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__questionsAndAnswers_javascriptQuestions__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__questionsAndAnswers_javascriptEs6Answers__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__questionsAndAnswers_javascriptEs6Questions__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__questionsAndAnswers_javascriptRegExpressQuestions__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__questionsAndAnswers_javascriptRegExpressQuestions__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__questionsAndAnswers_javascriptBasicDataStructureQuestions__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__questionsAndAnswers_javascriptBasicAlgorithmQuestions__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__questionsAndAnswers_javascriptObjOrientProgQuestions__ = __webpack_require__(12);
 
 
  /* importing  array from other js file with webpack*/
@@ -7401,6 +8104,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
  /* importing  array from other js file with webpack*/
 
+
+ /* importing  array from other js file with webpack*/
+
+ /* importing  array from other js file with webpack*/
 
  /* importing  array from other js file with webpack*/
 
@@ -16911,6 +17618,802 @@ function javascriptBasicAlgorithmBtn() {
     document.getElementById("javascriptBasicAlgorithmShowingAnswer").innerHTML = "";
 }
 window.javascriptBasicAlgorithmBtn = javascriptBasicAlgorithmBtn;/* to make submit global*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var javascriptObjOrientProgRandomValue = Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_15__questionsAndAnswers_javascriptObjOrientProgQuestions__["a" /* javascriptObjOrientProgQuestionArr */].length); /* taking random question from htmlQuestionArr*/
+
+
+function javascriptObjOrientProgSubmit() { /* function for html submit button*/
+
+    var javascriptObjOrientProgInputAnswer = input.value.replace(/\s+/g, ``); /*replace(/\s+/g, `` is removing all spaces. Avoid checking all the spaces to compare text*/
+    var javascriptObjOrientProgCorrectValue = document.getElementById("javascriptObjOrientProgCheckingAnswer"); /* making getElementById code shorter*/
+    var javascriptObjOrientProgIncorrectValue = document.getElementById("javascriptObjOrientProgCheckingAnswer");
+    var javascriptObjOrientProgDisplayAnswer = document.getElementById("javascriptObjOrientProgShowingAnswer");
+    var javascriptObjOrientProgNextButton = document.getElementById("javascriptObjOrientProgElementButton");
+    var javascriptObjOrientProgRemoveValue = document.getElementById("javascriptObjOrientProgRemove");
+
+    if (javascriptObjOrientProgRandomValue == 0 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][0].A0) { /* checking if javascriptObjOrientProgRandomValue is 0 and if putting answer the same as javascriptObjOrientProgAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`; /* creating next button with javascriptObjOrientProgBtn()function*/
+        javascriptObjOrientProgRemoveValue.innerHTML = "";/* removing in html answer*/
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 0 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][0].A0) {/*  if random value not == then giving then display the answere.*/
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let dog = {
+    name: "George",
+    numLegs: 4
+};
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 1 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][1].A1) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 1 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][1].A1) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">
+let dog = {
+    name: "Spot",
+    numLegs: 4
+};
+console.log(dog.name);
+console.log(dog.numLegs);
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 2 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][2].A2) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 2 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][2].A2) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let dog = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: function() {
+        return "This dog has " + dog.numLegs + " legs.";
+    }
+};
+
+dog.sayLegs();
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 3 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][3].A3) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 3 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][3].A3) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let dog = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+};
+
+dog.sayLegs();
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        
+
+
+    } else if (javascriptObjOrientProgRandomValue == 4 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][4].A4) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 4 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][4].A4) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog() {
+    this.name = "Geogre",
+    this.color = "White",
+    this.numLegs = 4;
+}
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 5 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][5].A5) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 5 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][5].A5) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog() {
+    this.name = "Rupert";
+    this.color = "brown";
+    this.numLegs = 4;
+}
+let hound = new Dog();
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 6 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][6].A6) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 6 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][6].A6) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name, color) {
+    this.name = name;
+    this.color = color;
+    this.numLegs = 4;
+}
+let terrier = new Dog("George","White");
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 7 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][7].A7) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 7 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][7].A7) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function House(numBedrooms) {
+    this.numBedrooms = numBedrooms;
+}
+let myHouse = new House(5);
+myHouse instanceof House;
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 8 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][8].A8) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 8 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][8].A8) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Bird(name) {
+    this.name = name;
+    this.numLegs = 2;
+    }
+    let canary = new Bird("Tweety");
+    let ownProps = [];
+    for(let property in canary) {
+    if(canary.hasOwnProperty(property)) {
+        ownProps.push(property);
+    }
+}
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 9 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][9].A9) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 9 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][9].A9) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy"); 
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 10 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][10].A10) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 10 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][10].A10) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+for (let property in beagle) {
+    if(Dog.hasOwnProperty(property)) {
+        ownProps.push(property)
+    }
+    else {
+        prototypeProps.push(property)
+    }
+}
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 11 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][11].A11) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 11 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][11].A11) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name;
+    }
+    function joinDogFraternity(candidate) {
+    if(candidate.constructor === Dog) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 12 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][12].A12) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 12 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][12].A12) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name; 
+    }
+
+    Dog.prototype = {
+    numLegs: 2,
+    eat(){
+        console.log('nom nom nom');
+    },
+    describe(){
+        console.log("My name is " + this.name);
+    }
+};
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 13 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][13].A13) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 13 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][13].A13) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name; 
+    }
+    Dog.prototype = {
+
+    constructor: Dog, 
+
+    numLegs: 2, 
+    eat: function() {
+        console.log("nom nom nom"); 
+    }, 
+    describe: function() {
+        console.log("My name is " + this.name); 
+    }
+};
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 14 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][14].A14) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 14 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][14].A14) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name;
+}
+let beagle = new Dog("Snoopy");
+Dog.prototype.isPrototypeOf(beagle);
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 15 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][15].A15) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 15 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][15].A15) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Dog(name) {
+    this.name = name;
+}
+
+let beagle = new Dog("Snoopy");
+
+Dog.prototype.isPrototypeOf(beagle);
+Object.prototype.isPrototypeOf(Dog.prototype); 
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 16 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][16].A16) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 16 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][16].A16) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Cat(name) {
+    this.name = name; 
+};
+
+Cat.prototype = {
+    constructor: Cat
+};
+
+function Bear(name) {
+    this.name = name; 
+};
+
+Bear.prototype = {
+    constructor: Bear
+};
+
+function Animal() { };
+
+Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+        console.log("nom nom nom");
+    }
+};
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 17 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][17].A17) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 17 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][17].A17) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Animal() { }
+
+Animal.prototype = {
+    constructor: Animal, 
+    eat: function() {
+    console.log("nom nom nom");
+    }
+};
+
+let duck = Object.create(Animal.prototype); 
+let beagle = Object.create(Animal.prototype);; 
+
+duck.eat(); 
+beagle.eat();
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 18 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][18].A18) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 18 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][18].A18) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Animal() { }
+
+Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+    console.log("nom nom nom");
+    }
+};
+
+function Dog() { }
+Dog.prototype = Object.create(Animal.prototype);
+
+let beagle = new Dog();
+beagle.eat();
+        </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 19 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][19].A19) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 19 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][19].A19) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Animal() { }
+function Bird() { }
+function Dog() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+Bird.prototype.constructor = Bird;
+Dog.prototype.constructor = Dog;
+
+let duck = new Bird();
+let beagle = new Dog();
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 20 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][20].A20) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 20 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][20].A20) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Animal() { }
+Animal.prototype.eat = function() {     console.log("nom nom nom"); 
+};
+
+function Dog() { }
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+Dog.prototype.bark = function() {
+    console.log("Woof woof!");
+};
+
+let beagle = new Dog();
+
+beagle.eat(); 
+beagle.bark();
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 21 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][21].A21) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 21 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][21].A21) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Bird() { }
+
+Bird.prototype.fly = function() {       return "I am flying!";
+};
+
+function Penguin() { }
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
+Penguin.prototype.fly = function() {
+    return  "Alas, this is a flightless bird.";
+};
+let penguin = new Penguin();
+console.log(penguin.fly());
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 22 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][22].A22) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 22 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][22].A22) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let bird = {
+    name: "Donald",
+    numLegs: 2
+};
+
+let boat = {
+    name: "Warrior",
+    type: "race-boat"
+};
+let glideMixin = function(obj) {
+    obj.glide = function() {
+        console.log("Gliding!");
+    }
+};
+glideMixin(bird);
+glideMixin(boat);
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 23 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][23].A23) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 23 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][23].A23) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function Bird() {
+    let weight = 15;
+
+    this.getWeight = function() {
+        return weight;
+    };
+
+}
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 24 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][24].A24) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 24 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][24].A24) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+(function() {
+    console.log("A cozy nest is ready");
+})();
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptObjOrientProgRandomValue == 25 && javascriptObjOrientProgInputAnswer == __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][25].A25) {
+        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+    } else if (javascriptObjOrientProgRandomValue == 25 && javascriptObjOrientProgInputAnswer !== __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__["a" /* javascriptObjOrientProgAnswerArr */][25].A25) {
+        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let funModule = (function() {
+    return {
+        isCuteMixin: function(obj) {
+            obj.isCute = function() {
+                return true;
+            };
+        },
+        singMixin: function(obj) {
+            obj.sing = function() {
+                console.log("Singing to an awesome tune");
+            };
+        }
+    }
+})();
+          </textarea>`;
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+
+
+
+    } else {
+        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
+        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
+        javascriptObjOrientProgRemoveValue.innerHTML = "";
+    }
+
+}
+window.javascriptObjOrientProgSubmit = javascriptObjOrientProgSubmit; /* to make submit global*/
+
+function javascriptObjOrientProgButton() {
+    javascriptObjOrientProgTest = document.getElementById("javascriptObjOrientProgAddedQuestion").innerHTML = __WEBPACK_IMPORTED_MODULE_15__questionsAndAnswers_javascriptObjOrientProgQuestions__["a" /* javascriptObjOrientProgQuestionArr */][javascriptObjOrientProgRandomValue]; /* giving random question to html */
+
+    return javascriptObjOrientProgTest;
+}
+window.javascriptObjOrientProgButton = javascriptObjOrientProgButton;
+
+function javascriptObjOrientProgShowTest() {
+    var javascriptObjOrientProgInputBox = document.getElementById("javascriptObjOrientProgRemove").style.display = "block";
+    return javascriptObjOrientProgInputBox;
+}
+window.javascriptObjOrientProgShowTest = javascriptObjOrientProgShowTest;
+
+function javascriptObjOrientProgBtn() {
+    javascriptObjOrientProgRandomValue = Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_15__questionsAndAnswers_javascriptObjOrientProgQuestions__["a" /* javascriptObjOrientProgQuestionArr */].length); /* buton next in html to make a next random question*/
+    document.getElementById("javascriptObjOrientProgAddedQuestion").innerHTML = __WEBPACK_IMPORTED_MODULE_15__questionsAndAnswers_javascriptObjOrientProgQuestions__["a" /* javascriptObjOrientProgQuestionArr */][javascriptObjOrientProgRandomValue]; /* giving random question to html */
+    document.getElementById("javascriptObjOrientProgElementButton").innerHTML = "";/* to clean javascriptObjOrientProgElementButton*/
+    document.getElementById("javascriptObjOrientProgRemove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
+      <button class="answer_submit javascriptColor1" id = "javascriptObjOrientProgStartButton" onclick="javascriptObjOrientProgSubmit()">Submit</button>`;/* to create next text area and Submit button. */
+    document.getElementById("javascriptObjOrientProgCheckingAnswer").innerHTML = "";
+    document.getElementById("javascriptObjOrientProgShowingAnswer").innerHTML = "";
+}
+window.javascriptObjOrientProgBtn = javascriptObjOrientProgBtn;/* to make submit global*/
 
 /***/ }
 /******/ ]);
