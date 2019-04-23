@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -3867,6 +3867,1387 @@ checkEqual(1, 2);`.replace(/\s+/g, "")
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptBasicAlgorithmAnswerArr; });
+var javascriptBasicAlgorithmAnswerArr = [
+  {
+    A0: `function convertToF(celsius) {
+      var fahrenheit = (celsius * (9/5)) + 32;
+
+      if ( typeof fahrenheit !== 'undefined' ) {
+      return fahrenheit;
+      } else {
+        return 'fahrenheit not defined';
+      }
+    }
+    convertToF(30);
+  `.replace(/\s+/g, "")
+  },
+
+  {
+    A1: `function reverseString(str) {
+      return str.split('').reverse().join('');
+    }
+    
+    reverseString("hello");`.replace(/\s+/g, "")
+  },
+
+  { A2: `function factorialize(num) {
+    if (num === 0) { return 1; }
+    return num * factorialize(num-1);
+  }
+  
+  factorialize(5);`.replace(/\s+/g, "") },
+
+  {
+    A3: `function findLongestWordLength(str) {
+
+      str = str.split(" ");
+    
+      if(str.length == 1){
+        return str[0].length;
+      }
+    
+      if(str[0].length >= str[1].length){
+        str.splice(1,1);
+        return findLongestWordLength(str.join(" "));
+      }
+    
+      if(str[0].length <= str[1].length){
+       
+        return findLongestWordLength(str.slice(1,str.length).join(" "));
+      }
+    }
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A4: `function findLongestWordLength(s) {
+      return s.split(' ')
+        .reduce(function(x, y) {
+          return Math.max(x, y.length)
+        }, 0);
+    }
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");`.replace(/\s+/g, "")
+  },
+
+  {
+    A5: `function findLongestWordLength(str) {
+      var words = str.split(' ');
+      var maxLength = 0;
+    
+      for (var i = 0; i < words.length; i++) {
+        if (words[i].length > maxLength) {
+          maxLength = words[i].length;
+        }
+      }
+    
+      return maxLength;
+    }
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A6: `function largestOfFour(arr) {
+      return arr.map(Function.apply.bind(Math.max, null));
+    }
+    
+    largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A7: `function largestOfFour(arr) {
+      return arr.map(function(group){
+        return group.reduce(function(prev, current) {
+          return (current > prev) ? current : prev;
+        });
+      });
+    }
+    
+    largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A8: `function largestOfFour(arr) {
+      var results = [];
+      for (var n = 0; n < arr.length; n++) {
+        var largestNumber = arr[n][0];
+        for (var sb = 1; sb < arr[n].length; sb++) {
+          if (arr[n][sb] > largestNumber) {
+            largestNumber = arr[n][sb];
+          }
+        }
+    
+        results[n] = largestNumber;
+      }
+    
+      return results;
+    }
+    
+    largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]); 
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A9: `function confirmEnding(str, target) {
+      return str.slice(str.length - target.length) === target;
+    }
+    
+    confirmEnding("He has to give me a new name", "name");`.replace(/\s+/g, "")
+  },
+
+  {
+    A10: `function repeatStringNumTimes(str, num) {
+      if(num < 0){
+        return "";
+        }
+      if(num === 1){
+        return str;
+      }
+      else{
+        return str + repeatStringNumTimes(str, num - 1);  }
+}
+    
+repeatStringNumTimes("abc", 3); `.replace(/\s+/g, "")
+  },
+
+
+  { A11: `function repeatStringNumTimes(str, num) {
+    var accumulatedStr = '';
+  
+    while (num > 0) {
+      accumulatedStr += str;
+      num--;
+    }
+  
+    return accumulatedStr;
+  }
+  
+  repeatStringNumTimes("abc", 3);`.replace(/\s+/g, "") },
+
+  
+  { A12: `function truncateString(str, num) {
+    if (str.length > num && num > 3) {
+    return str.slice(0, (num)) + '...';
+    } else if (str.length > num && num <= 3) {
+    return str.slice(0, num) + '...';
+    } else {
+    return str;
+    }
+    }
+    
+    truncateString("A-tisket a-tasket A green and yellow basket", 8);`.replace(/\s+/g, "") },
+
+  { A13: `function findElement(arr, func) {
+    let num = 0;
+    
+    for(var i = 0; i < arr.length; i++) {
+      num = arr[i];
+      if (func(num)) {
+        return num;
+      }
+    }
+    
+    return undefined;
+  }
+  
+  findElement([1, 2, 3, 4], num => num % 2 === 0);`.replace(/\s+/g, "") },
+
+  
+  { A14: `function booWho(bool) {
+    return typeof bool === 'boolean';
+  }
+  booWho(null);`.replace(/\s+/g, "") },
+
+  {
+    A15: `function titleCase(str) {
+      return str.toLowerCase().replace(/(^|\s)\S/g, (L) => L.toUpperCase());
+    }
+    
+    titleCase("I'm a little tea pot");`.replace(/\s+/g, "")
+  },
+
+  {
+    A16: `function titleCase(str) {
+      var convertToArray = str.toLowerCase().split(" ");
+      var result = convertToArray.map(function(val){
+          return val.replace(val.charAt(0), val.charAt(0).toUpperCase());
+      });
+      return result.join(" ");
+    }
+    
+    titleCase("I'm a little tea pot");
+    `.replace(/\s+/g, "")
+  },
+
+  {
+    A17: `String.prototype.replaceAt = function(index, character) {
+      return this.substr(0, index) + character + this.substr(index+character.length);
+  };
+  
+  function titleCase(str) {
+      var newTitle = str.split(' ');
+      var updatedTitle = [];
+      for (var st in newTitle) {
+          updatedTitle[st] = newTitle[st].toLowerCase().replaceAt(0, newTitle[st].charAt(0).toUpperCase());
+      }
+      return updatedTitle.join(' ');
+  }
+titleCase("I'm a little tea pot");
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A18: `
+    function frankenSplice(arr1, arr2, n) {
+      let localArray = arr2.slice();
+      for (let i = 0; i < arr1.length; i++) {
+        localArray.splice(n, 0, arr1[i]);
+        n++;
+      }
+      return localArray;
+    }
+    
+    frankenSplice([1, 2, 3], [4, 5, 6], 1);
+    
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A19: `function bouncer(arr) {
+      return arr.filter(Boolean);
+    }
+    
+    bouncer([7, "ate", "", false, 9]);
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A20: `function getIndexToIns(arr, num) {
+
+      return arr.concat(num).sort((a,b) => a-b).indexOf(num);
+      
+      }
+      
+      getIndexToIns([40, 60], 50);
+    `.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A21: `function getIndexToIns(arr, num) {
+      arr.push(num);
+      arr.sort(function(a, b){return a-b});
+      return arr.indexOf(num);
+    }
+    
+    getIndexToIns([40, 60], 50);`.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A22: `function getIndexToIns(arr, num) {
+      var times = arr.length; 
+      var count = 0; 
+      for (var i=0;i<times;i++){
+        if(num>arr[i]){count++;} }
+        return count; 
+    }
+    
+    getIndexToIns([40, 60], 50);
+    `.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A23: `function mutation(arr) {
+      var test = arr[1].toLowerCase();
+      var target = arr[0].toLowerCase();
+      for (var i=0;i<test.length;i++) {
+        if (target.indexOf(test[i]) < 0)
+          return false;
+      }
+      return true;
+     }
+    
+    mutation(["hello", "hey"]);
+    `.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A24: `function mutation(arr) {
+      return arr[1].toLowerCase()
+        .split('')
+        .every(function(letter) {
+          return arr[0].toLowerCase()
+            .indexOf(letter) != -1;
+        });
+    }
+    
+    mutation(["hello", "hey"]);`.replace(/\s+/g, "")
+  },
+
+  {
+    A25: `function chunkArrayInGroups(arr, size) {
+      if (arr.length <= size){
+        return [arr];
+      }
+      else {
+        return [arr.slice(0,size)].concat(chunkArrayInGroups(arr.slice(size),size));
+      }
+    }
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);`.replace(/\s+/g, "")
+  },
+
+  {
+    A26: `function chunkArrayInGroups(arr, size) {
+      var newArr = [];
+      while (arr.length) {
+        newArr.push(arr.splice(0,size));
+      }
+      return newArr;
+    }
+chunkArrayInGroups(["a", "b", "c", "d"], 2);`.replace(/\s+/g, "")
+  },
+
+  {
+    A27: `
+    function chunkArrayInGroups(arr, size) {
+      var arr2 = [];
+      for (var i = 0; i < arr.length; i+=size) {
+    	arr2.push(arr.slice(i , i+size));
+      }
+      return arr2;
+    }
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+    `.replace(/\s+/g, "")
+  },
+
+  {
+    A28: `function chunkArrayInGroups(arr, size) {
+
+      var temp = [];
+      var result = [];
+
+      for (var a = 0; a < arr.length; a++) {
+        if (a % size !== size - 1)
+          temp.push(arr[a]);
+        else {
+          temp.push(arr[a]);
+          result.push(temp);
+          temp = [];
+        }
+      }
+
+      if (temp.length !== 0)
+        result.push(temp);
+      return result;
+    }
+chunkArrayInGroups(["a", "b", "c", "d"], 2);`.replace(/\s+/g, "")
+  }
+];
+
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptBasicAlgorithmQuestionArr; });
+var javascriptBasicAlgorithmQuestionArr = [
+  `0.The algorithm to convert from Celsius to Fahrenheit is the temperature in Celsius times 9/5, plus 32.<br>
+  <br>
+
+  You are given a variable celsius representing a temperature in Celsius. Use the variable fahrenheit already defined and assign it the Fahrenheit temperature equivalent to the given Celsius temperature. <br>
+  Use the algorithm mentioned above to help convert the Celsius temperature to Fahrenheit.<br>
+  <br>
+
+  
+  Don't worry too much about the function and return statements as they will be covered in future challenges. For now, only use operators that you have already learned.<br>
+  <br>
+
+  function convertToF(celsius) {<br>
+    let fahrenheit;<br>
+    return fahrenheit;<br>
+  }<br>
+  <br>
+  convertToF(30);`,
+
+  `1.Reverse the provided string.<br>
+  <br>
+  You may need to turn the string into an array before you can reverse it.<br>
+  <br>
+  Your result must be a string.<br><br>
+  function reverseString(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  reverseString("hello");`,
+
+  `2.Return the factorial of the provided integer.<br>
+  <br>
+  If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.<br>
+  <br>
+  Factorials are often represented with the shorthand notation n!<br>
+  <br>
+  For example: 5! = 1 * 2 * 3 * 4 * 5 = 120<br>
+  <br>
+  Only integers greater than or equal to zero will be supplied to the function.<br><br>
+  function factorialize(num) {<br>
+    return num;<br>
+  }<br>
+  <br>
+  factorialize(5);`,
+
+  `3.Return the length of the longest word in the provided sentence.<br>
+  <br>
+  Your response should be a number.<br><br>
+  function findLongestWordLength(str) {<br>
+    return str.length;<br>
+  }<br>
+  <br>
+  findLongestWordLength("The quick brown fox jumped over the lazy dog");<br>
+ <b> Using recursiveness </b>`,
+
+  `4.Return the length of the longest word in the provided sentence.<br>
+  <br>
+  Your response should be a number.<br><br>
+  function findLongestWordLength(str) {<br>
+    return str.length;<br>
+  }<br>
+  <br>
+  findLongestWordLength("The quick brown fox jumped over the lazy dog");<br>
+  <b>Using .reduce()</b>
+`,
+
+  `5.Return the length of the longest word in the provided sentence.<br>
+  <br>
+  Your response should be a number.<br><br>
+  function findLongestWordLength(str) {<br>
+    return str.length;<br>
+  }<br>
+  <br>
+  findLongestWordLength("The quick brown fox jumped over the lazy dog");<br>
+  <b>Basic solution</b>`,
+
+  `6.Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.<br>
+  <br>
+  Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].<br><br>
+  function largestOfFour(arr) {<br>
+    // You can do this!<br>
+    return arr;<br>
+  }<br>
+  <br>
+  largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);<br>
+  <b>Advanced Declarative approach </b>
+  `,
+
+  `7.Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.<br>
+  <br>
+  Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].<br><br>
+  function largestOfFour(arr) {<br>
+    // You can do this!<br>
+    return arr;<br>
+  }<br>
+  <br>
+  largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);<br>
+  <b>Intermediate Declarative approach </b>
+  
+  `,
+
+  `8.Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.<br>
+  <br>
+  Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].<br><br>
+  function largestOfFour(arr) {<br>
+    // You can do this!<br>
+    return arr;<br>
+  }<br>
+  <br>
+  largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);<br>
+  <b>Basic solution</b>
+`,
+
+  `9.Check if a string (first argument, str) ends with the given target string (second argument, target).<br>
+  <br>
+  This challenge can be solved with the .endsWith() method, which was introduced in ES2015. But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.<br><br>
+  function confirmEnding(str, target) {<br>
+    // "Never give up and good luck will find you."<br>
+    // -- Falcor<br>
+    return str;<br>
+  }<br>
+  <br>
+  confirmEnding("Bastian", "n");`,
+
+  `10.Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number.<br><br>
+  function repeatStringNumTimes(str, num) {<br>
+    // repeat after me<br>
+    return str;<br>
+  }<br>
+  <br>
+  repeatStringNumTimes("abc", 3);<br>
+  <br>
+  <b>Intermediate solution</b>`,
+
+  
+  `11.Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number.<br><br>
+  function repeatStringNumTimes(str, num) {<br>
+    // repeat after me<br>
+    return str;<br>
+  }<br>
+  <br>
+  repeatStringNumTimes("abc", 3);<br>
+  <br>
+  <b>Basic solution</b>`,
+  
+  `12.Truncate a string (first argument) if it is longer than the given maximum string length (second argument). <br>Return the truncated string with a ... ending.<br><br>
+  function truncateString(str, num) {<br>
+    // Clear out that junk in your trunk<br>
+    return str;<br>
+  }<br>
+  <br>
+  truncateString("A-tisket a-tasket A green and yellow basket", 8);
+  `,
+
+  `13.Create a function that looks through an array (first argument) and returns the first element in the array that passes a truth test (second argument). If no element passes the test, return undefined.<br><br>
+  function findElement(arr, func) {<br>
+    let num = 0;<br>
+    return num;<br>
+  }<br>
+  <br>
+  findElement([1, 2, 3, 4], num => num % 2 === 0);
+  `,
+
+  `14.Check if a value is classified as a boolean primitive. Return true or false.<br>
+  <br>
+  Boolean primitives are true and false.<br><br>
+  function booWho(bool) {<br>
+    // What is the new fad diet for ghost developers? The Boolean.<br>
+    return bool;<br>
+  }<br>
+  <br>
+  booWho(null);
+  `,
+
+  `15.Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.<br>
+  <br>
+  For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".<br><br>
+  function titleCase(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  titleCase("I'm a little tea pot");<br>
+  <b>Advanced solution</b>
+  `,
+
+  `16.Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.<br>
+  <br>
+  For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".<br><br>
+  function titleCase(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  titleCase("I'm a little tea pot");<br>
+  <b>Intermediate solution</b>
+  `,
+
+  `17.Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.<br>
+  <br>
+  For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".<br><br>
+  function titleCase(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  titleCase("I'm a little tea pot");<br>
+  <b>Basic solution</b>`,
+
+  `18.You are given two arrays and an index.<br>
+  <br>
+  Use the array methods slice and splice to copy each element of the first array into the second array, in order.<br>
+  <br>
+  Begin inserting elements at index n of the second array.<br>
+  <br>
+  Return the resulting array. The input arrays should remain the same after the function runs.<br><br>
+  function frankenSplice(arr1, arr2, n) {<br>
+    // It's alive. It's alive!<br>
+    return arr2;<br>
+  }<br>
+  <br>
+  frankenSplice([1, 2, 3], [4, 5, 6], 1);`,
+
+  `19.Remove all falsy values from an array.<br>
+  <br>
+  Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.<br>
+  <br>
+  Hint: Try converting each value to a Boolean.<br><br>
+  function bouncer(arr) {<br>
+    // Don't show a false ID to this bouncer.<br>
+    return arr;<br>
+  }<br>
+  <br>
+  bouncer([7, "ate", "", false, 9]);
+  `,
+
+  `20.Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.<br>
+  <br>
+  For example, getIndexToIns([1,2,3,4], 1.5) should return 1 because it is greater than 1 (index 0), but less than 2 (index 1).<br>
+  <br>
+  Likewise, getIndexToIns([20,3,5], 19) should return 2 because once the array has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).<br><br>
+  function getIndexToIns(arr, num) {<br>
+    // Find my place in this sorted array.<br>
+    return num;<br>
+  }<br>
+  <br>
+  getIndexToIns([40, 60], 50);<br>
+  <b>Advanced solution</b>
+  `,
+
+  `21.Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.<br>
+  <br>
+  For example, getIndexToIns([1,2,3,4], 1.5) should return 1 because it is greater than 1 (index 0), but less than 2 (index 1).<br>
+  <br>
+  Likewise, getIndexToIns([20,3,5], 19) should return 2 because once the array has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).<br><br>
+  function getIndexToIns(arr, num) {<br>
+    // Find my place in this sorted array.<br>
+    return num;<br>
+  }<br>
+  <br>
+  getIndexToIns([40, 60], 50);<br>
+  <b>Intermediate solution</b>
+  `,
+
+  `22.Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.<br>
+  <br>
+  For example, getIndexToIns([1,2,3,4], 1.5) should return 1 because it is greater than 1 (index 0), but less than 2 (index 1).<br>
+  <br>
+  Likewise, getIndexToIns([20,3,5], 19) should return 2 because once the array has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).<br><br>
+  function getIndexToIns(arr, num) {<br>
+    // Find my place in this sorted array.<br>
+    return num;<br>
+  }<br>
+  <br>
+  getIndexToIns([40, 60], 50);<br>
+  <b>Basic solution</b>`,
+
+  `23.Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.<br>
+  <br>
+  For example, ["hello", "Hello"], should return true because all of the letters in the second string are present in the first, ignoring case.<br>
+  <br>
+  The arguments ["hello", "hey"] should return false because the string "hello" does not contain a "y".<br>
+  <br>
+  Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".<br><br>
+  function mutation(arr) {<br>
+    return arr;<br>
+  }<br>
+  <br>
+  mutation(["hello", "hey"]);<br>
+  <b>Basic solution</b>
+  `,
+
+  `24.Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.<br>
+  <br>
+  For example, ["hello", "Hello"], should return true because all of the letters in the second string are present in the first, ignoring case.<br>
+  <br>
+  The arguments ["hello", "hey"] should return false because the string "hello" does not contain a "y".<br>
+  <br>
+  Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".<br><br>
+  function mutation(arr) {<br>
+    return arr;<br>
+  }<br>
+  <br>
+  mutation(["hello", "hey"]);<br>
+  <b>Intermediate solution</b>
+  `,
+
+  `25.Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.<br><br>
+  function chunkArrayInGroups(arr, size) {<br>
+    // Break it up.<br>
+    return arr;<br>
+  }<br>
+  <br>
+  chunkArrayInGroups(["a", "b", "c", "d"], 2);<br>
+  <b>Advanced Solution</b>
+  `,
+
+  `26.Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.<br><br>
+  function chunkArrayInGroups(arr, size) {<br>
+    // Break it up.<br>
+    return arr;<br>
+  }<br>
+  <br>
+  chunkArrayInGroups(["a", "b", "c", "d"], 2);<br>
+  <b>Advanced Solution</b>`,
+
+  `27.Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.<br><br>
+  function chunkArrayInGroups(arr, size) {<br>
+    // Break it up.<br>
+    return arr;<br>
+  }<br>
+  <br>
+  chunkArrayInGroups(["a", "b", "c", "d"], 2);<br>
+  <b>Intermediate Solution</b>`,
+
+  `28.Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.<br><br>
+  function chunkArrayInGroups(arr, size) {<br>
+    // Break it up.<br>
+    return arr;<br>
+  }<br>
+  <br>
+  chunkArrayInGroups(["a", "b", "c", "d"], 2);<br>
+  <b>Basic Solution</b>`
+];
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptBasicDataStructureAnswerArr; });
+var javascriptBasicDataStructureAnswerArr = [
+  {
+    A0: `let yourArray = ["a", 2, true, "c", null, {name: "john"}];
+  `.replace(/\s+/g, "")
+  },
+
+  {
+    A1: `let myArray = ["a", "b", "c", "d"];
+    myArray[1] = "anything we want";
+    console.log(myArray);
+    `.replace(/\s+/g, "")
+  },
+
+  { A2: `function mixedNumbers(arr) {
+  arr.unshift('I',2,'three');
+  arr.push(7,'VIII', 9);
+    return arr;
+  }
+  console.log(mixedNumbers(['IV', 5, 'six']));`.replace(/\s+/g, "") },
+
+  {
+    A3: `function popShift(arr) {
+      let popped = arr.pop();
+      let shifted = arr.shift();
+      return [shifted, popped];
+    }
+    
+    console.log(popShift(['challenge', 'is', 'not', 'complete']));
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A4: `function sumOfTen(arr) {
+      arr.splice(1,2);
+      return arr.reduce((a, b) => a + b);
+    }
+    console.log(sumOfTen([2, 5, 1, 5, 2, 1]));`.replace(/\s+/g, "")
+  },
+
+  {
+    A5: `function htmlColorNames(arr) {
+      arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond");
+      return arr;
+    } 
+    console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurqoise', 'FireBrick']));
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A6: `function forecast(arr) {
+      return arr.slice(2,4);
+      }
+      console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A7: `function copyMachine(arr, num) {
+      let newArr = [];
+      while (num >= 1) {
+        newArr.push([...arr]);
+        num--;
+      }
+      return newArr;
+    }
+    console.log(copyMachine([true, false, true], 2));
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A8: `function spreadOut() {
+      let fragment = ['to', 'code'];
+      let sentence = ["learning", ...fragment, "is", "fun"]; 
+      return sentence;
+    }
+    console.log(spreadOut());
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A9: `function quickCheck(arr, elem) {
+      return arr.indexOf(elem) >= 0 ? true : false;
+      }
+      console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms')); `.replace(/\s+/g, "")
+  },
+
+  {
+    A10: `function filteredArray(arr, elem) {
+      let newArr = [];
+     for (let i = 0; i < arr.length; i++) { 
+        if (arr[i].indexOf(elem)==-1){ 
+              newArr.push(arr[i]); 
+                };
+              };
+      return newArr;
+    };
+    console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3)); `.replace(/\s+/g, "")
+  },
+
+
+  { A11: `let myNestedArray = [
+    ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+    ['loop', 'shift', 6, 7, 1000, 'method'],
+    ['concat', false, true, 'spread', 'array',["deep"]],
+    ['mutate', 1327.98, 'splice', 'slice', 'push', [["deeper"]]],
+    ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[["deepest"]]] ]
+  ];`.replace(/\s+/g, "") },
+
+  
+  { A12: `let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28
+  };
+  foods['bananas'] = 13;
+  foods['grapes'] = 35;
+  foods['strawberries'] = 27;
+  console.log(foods);`.replace(/\s+/g, "") },
+
+  { A13: `let userActivity = {
+    id: 23894201352,
+    date: 'January 1, 2017',
+    data: {
+      totalUsers: 51,
+      online: 42
+    }
+  };
+  userActivity.data.online = 45;
+  
+  console.log(userActivity);`.replace(/\s+/g, "") },
+
+  { A14: `let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28,
+    bananas: 13,
+    grapes: 35,
+    strawberries: 27
+  };
+  
+  function checkInventory(scannedItem) {
+    return foods[scannedItem];
+  }
+  console.log(checkInventory("apples"));`.replace(/\s+/g, "") },
+
+  {
+    A15: `let foods = {
+      apples: 25,
+      oranges: 32,
+      plums: 28,
+      bananas: 13,
+      grapes: 35,
+      strawberries: 27
+    };
+    delete foods.oranges;
+    delete foods.plums;
+    delete foods.strawberries;
+    console.log(foods);`.replace(/\s+/g, "")
+  },
+
+  {
+    A16: `let users = {
+      Alan: {
+        age: 27,
+        online: true
+      },
+      Jeff: {
+        age: 32,
+        online: true
+      },
+      Sarah: {
+        age: 48,
+        online: true
+      },
+      Ryan: {
+        age: 19,
+        online: true
+      }
+    };
+    
+    function isEveryoneHere(obj) {
+      return (users.hasOwnProperty('Alan','Jeff','Sarah','Ryan')) ? true : false;
+    }
+    
+    console.log(isEveryoneHere(users));
+    
+    `.replace(/\s+/g, "")
+  },
+
+  {
+    A17: `let users = {
+      Alan: {
+        age: 27,
+        online: false
+      },
+      Jeff: {
+        age: 32,
+        online: true
+      },
+      Sarah: {
+        age: 48,
+        online: false
+      },
+      Ryan: {
+        age: 19,
+        online: true
+      }
+    };
+    
+    function countOnline(obj) {
+      let online = 0;
+      for(let user in obj){
+        if(obj[user].online == true) {
+          online += 1;
+        }
+      }
+      return online;
+    }
+    
+    console.log(countOnline(users));
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A18: `
+    let users = {
+      Alan: {
+        age: 27,
+        online: false
+      },
+      Jeff: {
+        age: 32,
+        online: true
+      },
+      Sarah: {
+        age: 48,
+        online: false
+      },
+      Ryan: {
+        age: 19,
+        online: true
+      }
+    };
+    
+    function getArrayOfUsers(obj) {
+      return Object.keys(users);
+    }
+    
+    console.log(getArrayOfUsers(users));
+    
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A19: `let user = {
+      name: 'Kenneth',
+      age: 28,
+      data: {
+        username: 'kennethCodesAllDay',
+        joinDate: 'March 26, 2016',
+        organization: 'freeCodeCamp',
+        friends: [
+          'Sam',
+          'Kira',
+          'Tomo'
+        ],
+        location: {
+          city: 'San Francisco',
+          state: 'CA',
+          country: 'USA'
+        }
+      }
+    };
+    
+    function addFriend(userObj, friend) { 
+      userObj.data.friends.push(friend);
+      return userObj.data.friends;
+    }
+    
+    console.log(addFriend(user, 'Pete'));
+`.replace(/\s+/g, "")
+  }
+];
+
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptBasicDataStructureQuestionArr; });
+var javascriptBasicDataStructureQuestionArr = [
+  `0.We have defined a variable called yourArray. Complete the statement by assigning an array of at least 5 elements in length to the yourArray variable. Your array should contain at least one string, one number, and one boolean.<br>
+  let yourArray; // change this line
+  
+  `,
+
+  `1.In order to complete this challenge, set the 2nd position (index 1) of myArray to anything you want, besides "b".<br>
+  let myArray = ["a", "b", "c", "d"];<br>
+  // change code below this line<br>
+  <br>
+  //change code above this line<br>
+  console.log(myArray);`,
+
+  `2.We have defined a function, mixedNumbers, which we are passing an array as an argument. Modify the function by using push() and unshift() to add 'I', 2, 'three' to the beginning of the array and 7, 'VIII', 9 to the end so that the returned array contains representations of the numbers 1-9 in order.<br>
+  function mixedNumbers(arr) {<br>
+    // change code below this line<br>
+    <br>
+    // change code above this line<br>
+    return arr;<br>
+  }<br>
+  <br>
+  // do not change code below this line<br>
+  console.log(mixedNumbers(['IV', 5, 'six']));
+  `,
+
+  `3.We have defined a function, popShift, which takes an array as an argument and returns a new array. Modify the function, using pop() and shift(), to remove the first and last elements of the argument array, and assign the removed elements to their corresponding variables, so that the returned array contains their values.<br>
+  function popShift(arr) {<br>
+    let popped; // change this line<br>
+    let shifted; // change this line<br>
+    return [shifted, popped];<br>
+  }<br>
+  <br>
+  // do not change code below this line<br>
+  console.log(popShift(['challenge', 'is', 'not', 'complete']));`,
+
+  `4.We've defined a function, sumOfTen, which takes an array as an argument and returns the sum of that array's elements. Modify the function, using splice(), so that it returns a value of 10.<br>
+  function sumOfTen(arr) {<br>
+    // change code below this line<br>
+    <br>
+    // change code above this line<br>
+    return arr.reduce((a, b) => a + b);<br>
+  }<br>
+  <br>
+  // do not change code below this line<br>
+  console.log(sumOfTen([2, 5, 1, 5, 2, 1]));<br>
+  
+  
+`,
+
+  `5.We have defined a function, htmlColorNames, which takes an array of HTML colors as an argument. Modify the function using splice() to remove the first two elements of the array and add 'DarkSalmon' and 'BlanchedAlmond' in their respective places.<br>
+  function htmlColorNames(arr) {<br>
+    // change code below this line<br>
+    <br>
+    // change code above this line<br>
+    return arr;<br>
+  } <br>
+  <br>
+  // do not change code below this line<br>
+  console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurqoise', 'FireBrick']));<br>
+  
+  `,
+
+  `6.We have defined a function, forecast, that takes an array as an argument. Modify the function using slice() to extract information from the argument array and return a new array that contains the elements 'warm' and 'sunny'.<br>
+  function forecast(arr) {<br>
+    // change code below this line<br>
+    <br>
+    return arr;<br>
+  }<br>
+  <br>
+  // do not change code below this line<br>
+  console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));<br>
+  `,
+
+  `7.We have defined a function, copyMachine which takes arr (an array) and num (a number) as arguments. The function is supposed to return a new array made up of num copies of arr. We have done most of the work for you, but it doesn't work quite right yet. Modify the function using spread syntax so that it works correctly (hint: another method we have already covered might come in handy here!).<br>
+  function copyMachine(arr, num) {<br>
+    let newArr = [];<br>
+    while (num >= 1) {<br>
+      // change code below this line<br>
+      <br>
+      // change code above this line<br>
+      num--;<br>
+    }<br>
+    return newArr;<br>
+  }<br>
+  <br>
+  // change code here to test different cases:<br>
+  console.log(copyMachine([true, false, true], 2));<br>
+  
+  `,
+
+  `8.We have defined a function spreadOut that returns the variable sentence, modify the function using the spread operator so that it returns the array ['learning', 'to', 'code', 'is', 'fun'].<br>
+  function spreadOut() {<br>
+    let fragment = ['to', 'code'];<br>
+    let sentence; // change this line<br>
+    return sentence;<br>
+  }<br>
+  <br>
+  // do not change code below this line<br>
+  console.log(spreadOut());<br>
+  
+  
+`,
+
+  `9.indexOf() can be incredibly useful for quickly checking for the presence of an element on an array. We have defined a function, quickCheck, that takes an array and an element as arguments. Modify the function using indexOf() so that it returns true if the passed element exists on the array, and false if it does not.<br>
+  function quickCheck(arr, elem) {<br>
+    // change code below this line<br>
+    <br>
+    // change code above this line<br>
+  }<br>
+  <br>
+  // change code here to test different cases:<br>
+  console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));<br>
+  
+  `,
+
+  `10.We have defined a function, filteredArray, which takes arr, a nested array, and elem as arguments, and returns a new array. elem represents an element that may or may not be present on one or more of the arrays nested within arr. Modify the function, using a for loop, to return a filtered version of the passed array such that any array nested within arr containing elem has been removed.<br>
+  function filteredArray(arr, elem) {<br>
+    let newArr = [];<br>
+    // change code below this line<br>
+    <br>
+    // change code above this line<br>
+    return newArr;<br>
+  }<br>
+  <br>
+  // change code here to test different cases:<br>
+  console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));<br>
+  `,
+
+  
+  `11.We have defined a variable, myNestedArray, set equal to an array. Modify myNestedArray, using any combination of strings, numbers, and booleans for data elements, so that it has exactly five levels of depth (remember, the outer-most array is level 1). Somewhere on the third level, include the string 'deep', on the fourth level, include the string 'deeper', and on the fifth level, include the string 'deepest'.<br>
+  let myNestedArray = [<br>
+    // change code below this line<br>
+    ['unshift', false, 1, 2, 3, 'complex', 'nested'],<br>
+    ['loop', 'shift', 6, 7, 1000, 'method'],<br>
+    ['concat', false, true, 'spread', 'array'],<br>
+    ['mutate', 1327.98, 'splice', 'slice', 'push'],<br>
+    ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']<br>
+    // change code above this line<br>
+  ];<br>
+  `,
+  
+  `12.Using the same syntax, we can also add new key-value pairs to objects. We've created a foods object with three entries. Add three more entries: bananas with a value of 13, grapes with a value of 35, and strawberries with a value of 27.<br>
+  let foods = {<br>
+    apples: 25,<br>
+    oranges: 32,<br>
+    plums: 28<br>
+  };<br>
+  <br>
+  // change code below this line<br>
+  <br>
+  // change code above this line<br>
+  <br>
+  console.log(foods);<br>
+  
+  `,
+
+  `13.Here we've defined an object, userActivity, which includes another object nested within it. You can modify properties on this nested object in the same way you modified properties in the last challenge. Set the value of the online key to 45.<br>
+  let userActivity = {<br>
+    id: 23894201352,<br>
+    date: 'January 1, 2017',<br>
+    data: {<br>
+      totalUsers: 51,<br>
+      online: 42<br>
+    }<br>
+  };<br>
+  <br>
+  // change code below this line<br>
+  <br>
+  // change code above this line<br>
+  <br>
+  console.log(userActivity);
+  `,
+
+  `14.We've defined a function, checkInventory, which receives a scanned item as an argument. Return the current value of the scannedItem key in the foods object. You can assume that only valid keys will be provided as an argument to checkInventory.<br>
+  let foods = {<br>
+    apples: 25,<br>
+    oranges: 32,<br>
+    plums: 28,<br>
+    bananas: 13,<br>
+    grapes: 35,<br>
+    strawberries: 27<br>
+  };<br>
+  // do not change code above this line<br>
+  <br>
+  function checkInventory(scannedItem) {<br>
+    // change code below this line<br>
+    <br>
+  }<br>
+  <br>
+  // change code below this line to test different cases:<br>
+  console.log(checkInventory("apples"));<br>
+  
+  
+  `,
+
+  `15.Use the delete keyword to remove the oranges, plums, and strawberries keys from the foods object.<br>
+  let foods = {<br>
+    apples: 25,<br>
+    oranges: 32,<br>
+    plums: 28,<br>
+    bananas: 13,<br>
+    grapes: 35,<br>
+    strawberries: 27<br>
+  };<br>
+  <br>
+  // change code below this line<br>
+  <br>
+  // change code above this line<br>
+  <br>
+  console.log(foods);<br>
+  `,
+
+  `16.We've created an object, users, with some users in it and a function isEveryoneHere, which we pass the users object to as an argument. Finish writing this function so that it returns true only if the users object contains all four names, Alan, Jeff, Sarah, and Ryan, as keys, and false otherwise.<br>
+  let users = {<br>
+    Alan: {<br>
+      age: 27,<br>
+      online: true<br>
+    },<br>
+    Jeff: {<br>
+      age: 32,<br>
+      online: true<br>
+    },<br>
+    Sarah: {<br>
+      age: 48,<br>
+      online: true<br>
+    },<br>
+    Ryan: {<br>
+      age: 19,<br>
+      online: true<br>
+    }<br>
+  };<br>
+  <br>
+  function isEveryoneHere(obj) {<br>
+    // change code below this line<br>
+    <br>
+    // change code above this line<br>
+  }<br>
+  <br>
+  console.log(isEveryoneHere(users));<br>
+  <br>
+  `,
+
+  `17.We've defined a function, countOnline; use a for...in statement within this function to loop through the users in the users object and return the number of users whose online property is set to true.<br>
+  let users = {<br>
+    Alan: {<br>
+      age: 27,<br>
+      online: false<br>
+    },<br>
+    Jeff: {<br>
+      age: 32,<br>
+      online: true<br>
+    },<br>
+    Sarah: {<br>
+      age: 48,<br>
+      online: false<br>
+    },<br>
+    Ryan: {<br>
+      age: 19,<br>
+      online: true<br>
+    }<br>
+  };<br>
+  <br>
+  function countOnline(obj) {<br>
+    // change code below this line<br>
+    <br>
+    // change code above this line<br>
+  }<br>
+  <br>
+  console.log(countOnline(users));<br>
+  `,
+
+  `18.Finish writing the getArrayOfUsers function so that it returns an array containing all the properties in the object it receives as an argument.<br>
+  let users = {<br>
+    Alan: {<br>
+      age: 27,<br>
+      online: false<br>
+    },<br>
+    Jeff: {<br>
+      age: 32,<br>
+      online: true<br>
+    },<br>
+    Sarah: {<br>
+      age: 48,<br>
+      online: false<br>
+    },<br>
+    Ryan: {<br>
+      age: 19,<br>
+      online: true<br>
+    }<br>
+  };<br>
+  <br>
+  function getArrayOfUsers(obj) {<br>
+    // change code below this line<br>
+    <br>
+    // change code above this line<br>
+  }<br>
+  <br>
+  console.log(getArrayOfUsers(users));
+  `,
+
+  `19.Take a look at the object we've provided in the code editor. The user object contains three keys. The data key contains five keys, one of which contains an array of friends. From this, you can see how flexible objects are as data structures. We've started writing a function addFriend. Finish writing it so that it takes a user object and adds the name of the friend argument to the array stored in user.data.friends and returns that array.<br>
+  let user = {<br>
+    name: 'Kenneth',<br>
+    age: 28,<br>
+    data: {<br>
+      username: 'kennethCodesAllDay',<br>
+      joinDate: 'March 26, 2016',<br>
+      organization: 'freeCodeCamp',<br>
+      friends: [<br>
+        'Sam',<br>
+        'Kira',<br>
+        'Tomo'<br>
+      ],<br>
+      location: {<br>
+        city: 'San Francisco',<br>
+        state: 'CA',<br>
+        country: 'USA'<br>
+      }<br>
+    }<br>
+  };<br>
+  <br>
+  function addFriend(userObj, friend) {<br>
+    // change code below this line  <br>
+    <br>
+    // change code above this line<br>
+  }<br>
+  <br>
+  console.log(addFriend(user, 'Pete'));<br>
+  
+  `
+];
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptEs6AnswerArr; });
 var javascriptEs6AnswerArr = [
   {
@@ -4181,7 +5562,7 @@ var javascriptEs6AnswerArr = [
 
 
 /***/ },
-/* 6 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4528,7 +5909,7 @@ var javascriptEs6QuestionArr = [
 
 
 /***/ },
-/* 7 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5551,7 +6932,7 @@ checkSign(10);`
 
 
 /***/ },
-/* 8 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5779,7 +7160,7 @@ var javascriptRegExpressAnswerArr = [
 
 
 /***/ },
-/* 9 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5979,7 +7360,7 @@ var javascriptRegExpressQuestionArr = [
 
 
 /***/ },
-/* 10 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5989,11 +7370,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__questionsAndAnswers_cssQuestions__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__questionsAndAnswers_javascriptQuestions__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__questionsAndAnswers_javascriptEs6Answers__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__questionsAndAnswers_javascriptEs6Questions__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__questionsAndAnswers_javascriptRegExpressQuestions__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__questionsAndAnswers_javascriptQuestions__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__questionsAndAnswers_javascriptEs6Answers__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__questionsAndAnswers_javascriptEs6Questions__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__questionsAndAnswers_javascriptRegExpressQuestions__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__questionsAndAnswers_javascriptBasicDataStructureQuestions__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__questionsAndAnswers_javascriptBasicAlgorithmQuestions__ = __webpack_require__(6);
 
 
  /* importing  array from other js file with webpack*/
@@ -6011,6 +7396,28 @@ Object.defineProperty(exports, "__esModule", { value: true });
  /* importing  array from other js file with webpack*/
 
  /* importing  array from other js file with webpack*/
+
+ /* importing  array from other js file with webpack*/
+
+ /* importing  array from other js file with webpack*/
+
+
+ /* importing  array from other js file with webpack*/
+
+ /* importing  array from other js file with webpack*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -13940,6 +15347,1570 @@ function javascriptRegExpressBtn() {
     document.getElementById("javascriptRegExpressShowingAnswer").innerHTML = "";
 }
 window.javascriptRegExpressBtn = javascriptRegExpressBtn;/* to make submit global*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var javascriptBasicDataStructureRandomValue = Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_11__questionsAndAnswers_javascriptBasicDataStructureQuestions__["a" /* javascriptBasicDataStructureQuestionArr */].length); /* taking random question from htmlQuestionArr*/
+
+
+function javascriptBasicDataStructureSubmit() { /* function for html submit button*/
+
+    var javascriptBasicDataStructureInputAnswer = input.value.replace(/\s+/g, ``); /*replace(/\s+/g, `` is removing all spaces. Avoid checking all the spaces to compare text*/
+    var javascriptBasicDataStructureCorrectValue = document.getElementById("javascriptBasicDataStructureCheckingAnswer"); /* making getElementById code shorter*/
+    var javascriptBasicDataStructureIncorrectValue = document.getElementById("javascriptBasicDataStructureCheckingAnswer");
+    var javascriptBasicDataStructureDisplayAnswer = document.getElementById("javascriptBasicDataStructureShowingAnswer");
+    var javascriptBasicDataStructureNextButton = document.getElementById("javascriptBasicDataStructureElementButton");
+    var javascriptBasicDataStructureRemoveValue = document.getElementById("javascriptBasicDataStructureRemove");
+
+    if (javascriptBasicDataStructureRandomValue == 0 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][0].A0) { /* checking if javascriptBasicDataStructureRandomValue is 0 and if putting answer the same as javascriptBasicDataStructureAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`; /* creating next button with javascriptBasicDataStructureBtn()function*/
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";/* removing in html answer*/
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 0 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][0].A0) {/*  if random value not == then giving then display the answere.*/
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let yourArray = ["a", 2, true, "c", null, {name: "john"}];
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 1 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][1].A1) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 1 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][1].A1) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">
+let myArray = ["a", "b", "c", "d"];
+myArray[1] = "anything we want";
+console.log(myArray);
+          </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 2 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][2].A2) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 2 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][2].A2) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function mixedNumbers(arr) {
+    arr.unshift('I',2,'three');
+    arr.push(7,'VIII', 9);
+    return arr;
+}
+console.log(mixedNumbers(['IV', 5, 'six']));
+          </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 3 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][3].A3) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 3 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][3].A3) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function popShift(arr) {
+    let popped = arr.pop();
+    let shifted = arr.shift();
+    return [shifted, popped];
+}
+
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+        
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 4 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][4].A4) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 4 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][4].A4) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function sumOfTen(arr) {
+    arr.splice(1,2);
+    return arr.reduce((a, b) => a + b);
+}
+console.log(sumOfTen([2, 5, 1, 5, 2, 1]));
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 5 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][5].A5) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 5 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][5].A5) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function htmlColorNames(arr) {
+    arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond");
+    return arr;
+} 
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurqoise', 'FireBrick']));
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 6 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][6].A6) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 6 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][6].A6) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function forecast(arr) {
+    return arr.slice(2,4);
+}
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 7 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][7].A7) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 7 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][7].A7) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function copyMachine(arr, num) {
+    let newArr = [];
+    while (num >= 1) {
+        newArr.push([...arr]);
+        num--;
+    }
+    return newArr;
+}
+console.log(copyMachine([true, false, true], 2));
+
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 8 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][8].A8) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 8 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][8].A8) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function spreadOut() {
+    let fragment = ['to', 'code'];
+    let sentence = ["learning", ...fragment, "is", "fun"]; 
+    return sentence;
+}
+console.log(spreadOut());
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 9 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][9].A9) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 9 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][9].A9) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function quickCheck(arr, elem) {
+    return arr.indexOf(elem) >= 0 ? true : false;
+}
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 10 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][10].A10) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 10 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][10].A10) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function filteredArray(arr, elem) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) { 
+        if (arr[i].indexOf(elem)==-1){ 
+            newArr.push(arr[i]); 
+        };
+    };
+    return newArr;
+};
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3)); 
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 11 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][11].A11) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 11 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][11].A11) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let myNestedArray = [
+    ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+    ['loop', 'shift', 6, 7, 1000, 'method'],
+    ['concat', false, true, 'spread', 'array',["deep"]],
+    ['mutate', 1327.98, 'splice', 'slice', 'push', [["deeper"]]],
+    ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[["deepest"]]] ]
+];
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 12 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][12].A12) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 12 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][12].A12) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28
+};
+foods['bananas'] = 13;
+foods['grapes'] = 35;
+foods['strawberries'] = 27;
+console.log(foods);
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 13 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][13].A13) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 13 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][13].A13) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let userActivity = {
+    id: 23894201352,
+    date: 'January 1, 2017',
+    data: {
+        totalUsers: 51,
+        online: 42
+    }
+};
+userActivity.data.online = 45;
+
+console.log(userActivity);
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 14 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][14].A14) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 14 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][14].A14) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28,
+    bananas: 13,
+    grapes: 35,
+    strawberries: 27
+};
+
+function checkInventory(scannedItem) {
+    return foods[scannedItem];
+}
+console.log(checkInventory("apples"));
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 15 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][15].A15) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 15 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][15].A15) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28,
+    bananas: 13,
+    grapes: 35,
+    strawberries: 27
+};
+delete foods.oranges;
+delete foods.plums;
+delete foods.strawberries;
+console.log(foods);
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 16 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][16].A16) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 16 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][16].A16) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let users = {
+    Alan: {
+        age: 27,
+        online: true
+    },
+    Jeff: {
+        age: 32,
+        online: true
+    },
+    Sarah: {
+        age: 48,
+        online: true
+    },
+    Ryan: {
+        age: 19,
+        online: true
+    }
+};
+    
+function isEveryoneHere(obj) {
+    return (users.hasOwnProperty('Alan','Jeff','Sarah','Ryan')) ? true : false;
+}
+
+console.log(isEveryoneHere(users));
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 17 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][17].A17) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 17 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][17].A17) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let users = {
+    Alan: {
+        age: 27,
+        online: false
+    },
+    Jeff: {
+        age: 32,
+        online: true
+    },
+    Sarah: {
+        age: 48,
+        online: false
+    },
+    Ryan: {
+        age: 19,
+        online: true
+    }
+};
+
+function countOnline(obj) {
+    let online = 0;
+    for(let user in obj){
+        if(obj[user].online == true) {
+        online += 1;
+        }
+    }
+    return online;
+}
+
+console.log(countOnline(users));
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 18 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][18].A18) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 18 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][18].A18) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let users = {
+    Alan: {
+        age: 27,
+        online: false
+    },
+    Jeff: {
+        age: 32,
+        online: true
+    },
+    Sarah: {
+        age: 48,
+        online: false
+    },
+    Ryan: {
+        age: 19,
+        online: true
+    }
+};
+
+function getArrayOfUsers(obj) {
+    return Object.keys(users);
+}
+
+console.log(getArrayOfUsers(users));
+        </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicDataStructureRandomValue == 19 && javascriptBasicDataStructureInputAnswer == __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][19].A19) {
+        javascriptBasicDataStructureCorrectValue.innerHTML = "Correct..";
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicDataStructureRandomValue == 19 && javascriptBasicDataStructureInputAnswer !== __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__["a" /* javascriptBasicDataStructureAnswerArr */][19].A19) {
+        javascriptBasicDataStructureDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+let user = {
+    name: 'Kenneth',
+    age: 28,
+    data: {
+        username: 'kennethCodesAllDay',
+        joinDate: 'March 26, 2016',
+        organization: 'freeCodeCamp',
+        friends: [
+        'Sam',
+        'Kira',
+        'Tomo'
+        ],
+        location: {
+        city: 'San Francisco',
+        state: 'CA',
+        country: 'USA'
+        }
+    }
+};
+
+function addFriend(userObj, friend) { 
+    userObj.data.friends.push(friend);
+    return userObj.data.friends;
+}
+
+console.log(addFriend(user, 'Pete'));
+          </textarea>`;
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+
+
+
+    } else {
+        javascriptBasicDataStructureIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicDataStructureNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicDataStructureBtn()>Next</button>`;
+        javascriptBasicDataStructureRemoveValue.innerHTML = "";
+    }
+
+}
+window.javascriptBasicDataStructureSubmit = javascriptBasicDataStructureSubmit; /* to make submit global*/
+
+function javascriptBasicDataStructureButton() {
+    javascriptBasicDataStructureTest = document.getElementById("javascriptBasicDataStructureAddedQuestion").innerHTML = __WEBPACK_IMPORTED_MODULE_11__questionsAndAnswers_javascriptBasicDataStructureQuestions__["a" /* javascriptBasicDataStructureQuestionArr */][javascriptBasicDataStructureRandomValue]; /* giving random question to html */
+
+    return javascriptBasicDataStructureTest;
+}
+window.javascriptBasicDataStructureButton = javascriptBasicDataStructureButton;
+
+function javascriptBasicDataStructureShowTest() {
+    var javascriptBasicDataStructureInputBox = document.getElementById("javascriptBasicDataStructureRemove").style.display = "block";
+    return javascriptBasicDataStructureInputBox;
+}
+window.javascriptBasicDataStructureShowTest = javascriptBasicDataStructureShowTest;
+
+function javascriptBasicDataStructureBtn() {
+    javascriptBasicDataStructureRandomValue = Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_11__questionsAndAnswers_javascriptBasicDataStructureQuestions__["a" /* javascriptBasicDataStructureQuestionArr */].length); /* buton next in html to make a next random question*/
+    document.getElementById("javascriptBasicDataStructureAddedQuestion").innerHTML = __WEBPACK_IMPORTED_MODULE_11__questionsAndAnswers_javascriptBasicDataStructureQuestions__["a" /* javascriptBasicDataStructureQuestionArr */][javascriptBasicDataStructureRandomValue]; /* giving random question to html */
+    document.getElementById("javascriptBasicDataStructureElementButton").innerHTML = "";/* to clean javascriptBasicDataStructureElementButton*/
+    document.getElementById("javascriptBasicDataStructureRemove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
+      <button class="answer_submit javascriptColor1" id = "javascriptBasicDataStructureStartButton" onclick="javascriptBasicDataStructureSubmit()">Submit</button>`;/* to create next text area and Submit button. */
+    document.getElementById("javascriptBasicDataStructureCheckingAnswer").innerHTML = "";
+    document.getElementById("javascriptBasicDataStructureShowingAnswer").innerHTML = "";
+}
+window.javascriptBasicDataStructureBtn = javascriptBasicDataStructureBtn;/* to make submit global*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var javascriptBasicAlgorithmRandomValue = Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_13__questionsAndAnswers_javascriptBasicAlgorithmQuestions__["a" /* javascriptBasicAlgorithmQuestionArr */].length); /* taking random question from htmlQuestionArr*/
+
+
+function javascriptBasicAlgorithmSubmit() { /* function for html submit button*/
+
+    var javascriptBasicAlgorithmInputAnswer = input.value.replace(/\s+/g, ``); /*replace(/\s+/g, `` is removing all spaces. Avoid checking all the spaces to compare text*/
+    var javascriptBasicAlgorithmCorrectValue = document.getElementById("javascriptBasicAlgorithmCheckingAnswer"); /* making getElementById code shorter*/
+    var javascriptBasicAlgorithmIncorrectValue = document.getElementById("javascriptBasicAlgorithmCheckingAnswer");
+    var javascriptBasicAlgorithmDisplayAnswer = document.getElementById("javascriptBasicAlgorithmShowingAnswer");
+    var javascriptBasicAlgorithmNextButton = document.getElementById("javascriptBasicAlgorithmElementButton");
+    var javascriptBasicAlgorithmRemoveValue = document.getElementById("javascriptBasicAlgorithmRemove");
+
+    if (javascriptBasicAlgorithmRandomValue == 0 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][0].A0) { /* checking if javascriptBasicAlgorithmRandomValue is 0 and if putting answer the same as javascriptBasicAlgorithmAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`; /* creating next button with javascriptBasicAlgorithmBtn()function*/
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";/* removing in html answer*/
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 0 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][0].A0) {/*  if random value not == then giving then display the answere.*/
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function convertToF(celsius) {
+    var fahrenheit = (celsius * (9/5)) + 32;
+
+    if ( typeof fahrenheit !== 'undefined' ) {
+    return fahrenheit;
+    } else {
+        return 'fahrenheit not defined';
+    }
+}
+convertToF(30);
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 1 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][1].A1) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 1 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][1].A1) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+reverseString("hello");
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 2 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][2].A2) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 2 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][2].A2) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function factorialize(num) {
+    if (num === 0) { return 1; }
+    return num * factorialize(num-1);
+}
+
+factorialize(5);
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 3 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][3].A3) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 3 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][3].A3) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function findLongestWordLength(str) {
+
+    str = str.split(" ");
+
+    if(str.length == 1){
+        return str[0].length;
+    }
+
+    if(str[0].length >= str[1].length){
+        str.splice(1,1);
+        return findLongestWordLength(str.join(" "));
+    }
+
+    if(str[0].length <= str[1].length){
+        
+        return findLongestWordLength(str.slice(1,str.length).join(" "));
+    }
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+        
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 4 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][4].A4) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 4 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][4].A4) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function findLongestWordLength(s) {
+    return s.split(' ')
+        .reduce(function(x, y) {
+            return Math.max(x, y.length)
+        }, 0);
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 5 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][5].A5) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 5 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][5].A5) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function findLongestWordLength(str) {
+    var words = str.split(' ');
+    var maxLength = 0;
+    
+    for (var i = 0; i < words.length; i++) {
+        if (words[i].length > maxLength) {
+        maxLength = words[i].length;
+        }
+    }
+    
+    return maxLength;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 6 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][6].A6) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 6 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][6].A6) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function largestOfFour(arr) {
+    return arr.map(Function.apply.bind(Math.max, null));
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 7 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][7].A7) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 7 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][7].A7) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function largestOfFour(arr) {
+    return arr.map(function(group){
+        return group.reduce(function(prev, current) {
+        return (current > prev) ? current : prev;
+        });
+    });
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 8 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][8].A8) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 8 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][8].A8) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function largestOfFour(arr) {
+    var results = [];
+    for (var n = 0; n < arr.length; n++) {
+        var largestNumber = arr[n][0];
+        for (var sb = 1; sb < arr[n].length; sb++) {
+            if (arr[n][sb] > largestNumber) {
+                largestNumber = arr[n][sb];
+            }
+    }
+
+    results[n] = largestNumber;
+    }
+
+    return results;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]); 
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 9 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][9].A9) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 9 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][9].A9) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function confirmEnding(str, target) {
+    return str.slice(str.length - target.length) === target;
+}
+
+confirmEnding("He has to give me a new name", "name");
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 10 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][10].A10) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 10 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][10].A10) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function repeatStringNumTimes(str, num) {
+    if(num < 0){
+        return "";
+    }
+    if(num === 1){
+        return str;
+    }
+    else{
+        return str + repeatStringNumTimes(str, num - 1);
+    }
+}
+
+repeatStringNumTimes("abc", 3);
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 11 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][11].A11) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 11 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][11].A11) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function repeatStringNumTimes(str, num) {
+    var accumulatedStr = '';
+
+    while (num > 0) {
+        accumulatedStr += str;
+        num--;
+    }
+
+    return accumulatedStr;
+}
+
+repeatStringNumTimes("abc", 3);
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 12 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][12].A12) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 12 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][12].A12) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function truncateString(str, num) {
+    if (str.length > num && num > 3) {
+        return str.slice(0, (num)) + '...';
+    } else if (str.length > num && num <= 3) {
+        return str.slice(0, num) + '...';
+    } else {
+        return str;
+    }
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 13 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][13].A13) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 13 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][13].A13) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function findElement(arr, func) {
+    let num = 0;
+
+    for(var i = 0; i < arr.length; i++) {
+        num = arr[i];
+        if (func(num)) {
+        return num;
+        }
+    }
+
+    return undefined;
+}
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 14 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][14].A14) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 14 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][14].A14) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function booWho(bool) {
+    return typeof bool === 'boolean';
+}
+booWho(null);
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 15 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][15].A15) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 15 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][15].A15) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function titleCase(str) {
+    return str.toLowerCase().replace(/(^|\s)\S/g, (L) => L.toUpperCase());
+}
+
+titleCase("I'm a little tea pot");
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 16 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][16].A16) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 16 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][16].A16) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function titleCase(str) {
+    var convertToArray = str.toLowerCase().split(" ");
+    var result = convertToArray.map(function(val){
+        return val.replace(val.charAt(0), val.charAt(0).toUpperCase());
+    });
+    return result.join(" ");
+}
+
+titleCase("I'm a little tea pot");
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 17 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][17].A17) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 17 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][17].A17) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+String.prototype.replaceAt = function(index, character) {
+    return this.substr(0, index) + character + this.substr(index+character.length);
+};
+
+function titleCase(str) {
+    var newTitle = str.split(' ');
+    var updatedTitle = [];
+    for (var st in newTitle) {
+        updatedTitle[st] = newTitle[st].toLowerCase().replaceAt(0, newTitle[st].charAt(0).toUpperCase());
+    }
+    return updatedTitle.join(' ');
+}
+titleCase("I'm a little tea pot");
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 18 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][18].A18) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 18 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][18].A18) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function frankenSplice(arr1, arr2, n) {
+    let localArray = arr2.slice();
+    for (let i = 0; i < arr1.length; i++) {
+        localArray.splice(n, 0, arr1[i]);
+        n++;
+    }
+    return localArray;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+        </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptBasicAlgorithmRandomValue == 19 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][19].A19) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 19 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][19].A19) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function bouncer(arr) {
+    return arr.filter(Boolean);
+}
+
+bouncer([7, "ate", "", false, 9]);
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    }else if (javascriptBasicAlgorithmRandomValue == 20 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][20].A20) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 20 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][20].A20) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function getIndexToIns(arr, num) {
+
+    return arr.concat(num).sort((a,b) => a-b).indexOf(num);
+
+}
+
+getIndexToIns([40, 60], 50);
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    }else if (javascriptBasicAlgorithmRandomValue == 21 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][21].A21) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 21 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][21].A21) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function getIndexToIns(arr, num) {
+    arr.push(num);
+    arr.sort(function(a, b){return a-b});
+    return arr.indexOf(num);
+}
+
+getIndexToIns([40, 60], 50);
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    }else if (javascriptBasicAlgorithmRandomValue == 22 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][22].A22) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 22 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][22].A22) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function getIndexToIns(arr, num) {
+    var times = arr.length; 
+    var count = 0; 
+    for (var i=0;i<times;i++){
+        if(num>arr[i]){count++;} 
+    }
+        return count; 
+}
+
+getIndexToIns([40, 60], 50);
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    }else if (javascriptBasicAlgorithmRandomValue == 23 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][23].A23) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 23 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][23].A23) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function mutation(arr) {
+    var test = arr[1].toLowerCase();
+    var target = arr[0].toLowerCase();
+    for (var i=0;i<test.length;i++) {
+        if (target.indexOf(test[i]) < 0)
+        return false;
+    }
+    return true;
+}
+
+mutation(["hello", "hey"]);
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    }else if (javascriptBasicAlgorithmRandomValue == 24 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][24].A24) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 24 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][24].A24) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function mutation(arr) {
+    return arr[1].toLowerCase()
+        .split('')
+        .every(function(letter) {
+        return arr[0].toLowerCase()
+            .indexOf(letter) != -1;
+        });
+}
+
+mutation(["hello", "hey"]);
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    }else if (javascriptBasicAlgorithmRandomValue == 25 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][25].A25) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 25 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][25].A25) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function chunkArrayInGroups(arr, size) {
+    if (arr.length <= size){
+        return [arr];
+    }
+    else {
+        return [arr.slice(0,size)].concat(chunkArrayInGroups(arr.slice(size),size));
+    }
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    }else if (javascriptBasicAlgorithmRandomValue == 26 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][26].A26) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 26 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][26].A26) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function chunkArrayInGroups(arr, size) {
+    var newArr = [];
+    while (arr.length) {
+        newArr.push(arr.splice(0,size));
+    }
+    return newArr;
+}
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    }else if (javascriptBasicAlgorithmRandomValue == 27 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][27].A27) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 27 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][27].A27) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function chunkArrayInGroups(arr, size) {
+    var arr2 = [];
+    for (var i = 0; i < arr.length; i+=size) {
+        arr2.push(arr.slice(i , i+size));
+    }
+    return arr2;
+}
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    }else if (javascriptBasicAlgorithmRandomValue == 28 && javascriptBasicAlgorithmInputAnswer == __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][28].A28) {
+        javascriptBasicAlgorithmCorrectValue.innerHTML = "Correct..";
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+    } else if (javascriptBasicAlgorithmRandomValue == 28 && javascriptBasicAlgorithmInputAnswer !== __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__["a" /* javascriptBasicAlgorithmAnswerArr */][28].A28) {
+        javascriptBasicAlgorithmDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function chunkArrayInGroups(arr, size) {
+
+    var temp = [];
+    var result = [];
+
+    for (var a = 0; a < arr.length; a++) {
+        if (a % size !== size - 1)
+        temp.push(arr[a]);
+        else {
+        temp.push(arr[a]);
+        result.push(temp);
+        temp = [];
+        }
+    }
+
+    if (temp.length !== 0)
+        result.push(temp);
+return result;
+}
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+          </textarea>`;
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+
+
+
+    }else {
+        javascriptBasicAlgorithmIncorrectValue.innerHTML = "Incorrect..";
+        javascriptBasicAlgorithmNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptBasicAlgorithmBtn()>Next</button>`;
+        javascriptBasicAlgorithmRemoveValue.innerHTML = "";
+    }
+
+}
+window.javascriptBasicAlgorithmSubmit = javascriptBasicAlgorithmSubmit; /* to make submit global*/
+
+function javascriptBasicAlgorithmButton() {
+    javascriptBasicAlgorithmTest = document.getElementById("javascriptBasicAlgorithmAddedQuestion").innerHTML = __WEBPACK_IMPORTED_MODULE_13__questionsAndAnswers_javascriptBasicAlgorithmQuestions__["a" /* javascriptBasicAlgorithmQuestionArr */][javascriptBasicAlgorithmRandomValue]; /* giving random question to html */
+
+    return javascriptBasicAlgorithmTest;
+}
+window.javascriptBasicAlgorithmButton = javascriptBasicAlgorithmButton;
+
+function javascriptBasicAlgorithmShowTest() {
+    var javascriptBasicAlgorithmInputBox = document.getElementById("javascriptBasicAlgorithmRemove").style.display = "block";
+    return javascriptBasicAlgorithmInputBox;
+}
+window.javascriptBasicAlgorithmShowTest = javascriptBasicAlgorithmShowTest;
+
+function javascriptBasicAlgorithmBtn() {
+    javascriptBasicAlgorithmRandomValue = Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_13__questionsAndAnswers_javascriptBasicAlgorithmQuestions__["a" /* javascriptBasicAlgorithmQuestionArr */].length); /* buton next in html to make a next random question*/
+    document.getElementById("javascriptBasicAlgorithmAddedQuestion").innerHTML = __WEBPACK_IMPORTED_MODULE_13__questionsAndAnswers_javascriptBasicAlgorithmQuestions__["a" /* javascriptBasicAlgorithmQuestionArr */][javascriptBasicAlgorithmRandomValue]; /* giving random question to html */
+    document.getElementById("javascriptBasicAlgorithmElementButton").innerHTML = "";/* to clean javascriptBasicAlgorithmElementButton*/
+    document.getElementById("javascriptBasicAlgorithmRemove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
+      <button class="answer_submit javascriptColor1" id = "javascriptBasicAlgorithmStartButton" onclick="javascriptBasicAlgorithmSubmit()">Submit</button>`;/* to create next text area and Submit button. */
+    document.getElementById("javascriptBasicAlgorithmCheckingAnswer").innerHTML = "";
+    document.getElementById("javascriptBasicAlgorithmShowingAnswer").innerHTML = "";
+}
+window.javascriptBasicAlgorithmBtn = javascriptBasicAlgorithmBtn;/* to make submit global*/
 
 /***/ }
 /******/ ]);

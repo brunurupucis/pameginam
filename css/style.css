@@ -31,7 +31,9 @@
 #cssRemove,
 #javascriptRemove,
 #javascriptEs6Remove,
-#javascriptRegExpressRemove {
+#javascriptRegExpressRemove,
+#javascriptBasicDataStructureRemove,
+#javascriptBasicAlgorithmRemove {
   /* to hide input text area*/
   display: none; }
 

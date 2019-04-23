@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <title>Random Questions</title>
+</head>
+
+<body id="javascriptBodyBackground">
+  <div class="goHome">
+    <a href="./../index.html"><button class="goHome_button javascriptColor">Go Home</button></a>
+  </div>
+  <p class="checkingAnswer" id="javascriptBasicAlgorithmCheckingAnswer"></p>
+  <div class="flex">
+    <div class="answer">
+      <div id="javascriptBasicAlgorithmRemove">
+        <textarea name="text" class="answer_textarea" id="input"></textarea></br>
+        <button class="answer_submit javascriptColor1" id="javascriptBasicAlgorithmStartButton"
+          onclick="javascriptBasicAlgorithmSubmit()">Submit</button>
+      </div>
+
+      <p class="answer_displayAnswer" id="javascriptBasicAlgorithmShowingAnswer"></p>
+      <p class="answer_nextButton" id="javascriptBasicAlgorithmElementButton"></p>
+    </div>
+
+    <div class="question">
+      <div class="question_display" id="javascriptBasicAlgorithmAddedQuestion"></div>
+    </div>
+  </div>
+  <div class="startButton">
+    <button class="startButton_remove javascriptColor" id="javascriptBasicAlgorithmStart"
+      onclick="[javascriptBasicAlgorithmShowTest()];this.style.visibility= 'hidden';[javascriptBasicAlgorithmButton()];">start</button>
+    <!-- remove start button and start test -->
+  </div>
+
+</body>
+<script src="../build/bundle.js"></script>
+</html>
