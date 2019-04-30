@@ -1,64 +1,64 @@
-var javascriptObjOrientProgRandomValue = Math.floor(Math.random() * javascriptObjOrientProgQuestionArr.length); /* taking random question from htmlQuestionArr*/
+var javascriptFunctionalProgrammingRandomValue = Math.floor(Math.random() * javascriptFunctionalProgrammingQuestionArr.length); /* taking random question from htmlQuestionArr*/
 
 
-function javascriptObjOrientProgSubmit() { /* function for html submit button*/
+function javascriptFunctionalProgrammingSubmit() { /* function for html submit button*/
 
-    var javascriptObjOrientProgInputAnswer = input.value.replace(/\s+/g, ``); /*replace(/\s+/g, `` is removing all spaces. Avoid checking all the spaces to compare text*/
-    var javascriptObjOrientProgCorrectValue = document.getElementById("javascriptObjOrientProgCheckingAnswer"); /* making getElementById code shorter*/
-    var javascriptObjOrientProgIncorrectValue = document.getElementById("javascriptObjOrientProgCheckingAnswer");
-    var javascriptObjOrientProgDisplayAnswer = document.getElementById("javascriptObjOrientProgShowingAnswer");
-    var javascriptObjOrientProgNextButton = document.getElementById("javascriptObjOrientProgElementButton");
-    var javascriptObjOrientProgRemoveValue = document.getElementById("javascriptObjOrientProgRemove");
+    var javascriptFunctionalProgrammingInputAnswer = input.value.replace(/\s+/g, ``); /*replace(/\s+/g, `` is removing all spaces. Avoid checking all the spaces to compare text*/
+    var javascriptFunctionalProgrammingCorrectValue = document.getElementById("javascriptFunctionalProgrammingCheckingAnswer"); /* making getElementById code shorter*/
+    var javascriptFunctionalProgrammingIncorrectValue = document.getElementById("javascriptFunctionalProgrammingCheckingAnswer");
+    var javascriptFunctionalProgrammingDisplayAnswer = document.getElementById("javascriptFunctionalProgrammingShowingAnswer");
+    var javascriptFunctionalProgrammingNextButton = document.getElementById("javascriptFunctionalProgrammingElementButton");
+    var javascriptFunctionalProgrammingRemoveValue = document.getElementById("javascriptFunctionalProgrammingRemove");
 
-    if (javascriptObjOrientProgRandomValue == 0 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[0].A0) { /* checking if javascriptObjOrientProgRandomValue is 0 and if putting answer the same as javascriptObjOrientProgAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    if (javascriptFunctionalProgrammingRandomValue == 0 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[0].A0) { /* checking if javascriptFunctionalProgrammingRandomValue is 0 and if putting answer the same as javascriptFunctionalProgrammingAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`; /* creating next button with javascriptObjOrientProgBtn()function*/
-        javascriptObjOrientProgRemoveValue.innerHTML = "";/* removing in html answer*/
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`; /* creating next button with javascriptFunctionalProgrammingBtn()function*/
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";/* removing in html answer*/
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 0 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[0].A0) {/*  if random value not == then giving then display the answere.*/
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 0 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[0].A0) {/*  if random value not == then giving then display the answere.*/
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 let yourArray = ["a", 2, true, "c", null, {name: "john"}];
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 1 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[1].A1) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 1 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[1].A1) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 1 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[1].A1) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 1 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[1].A1) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">
 let myArray = ["a", "b", "c", "d"];
 myArray[1] = "anything we want";
 console.log(myArray);
           </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 2 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[2].A2) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 2 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[2].A2) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 2 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[2].A2) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 2 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[2].A2) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function mixedNumbers(arr) {
 arr.unshift('I',2,'three');
@@ -67,21 +67,21 @@ arr.push(7,'VIII', 9);
 }
 console.log(mixedNumbers(['IV', 5, 'six']));
           </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 3 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[3].A3) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 3 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[3].A3) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 3 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[3].A3) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 3 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[3].A3) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function popShift(arr) {
     let popped = arr.pop();
@@ -91,21 +91,21 @@ function popShift(arr) {
 
 console.log(popShift(['challenge', 'is', 'not', 'complete']));
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
         
 
 
-    } else if (javascriptObjOrientProgRandomValue == 4 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[4].A4) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 4 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[4].A4) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 4 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[4].A4) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 4 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[4].A4) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function sumOfTen(arr) {
     arr.splice(1,2);
@@ -113,21 +113,21 @@ function sumOfTen(arr) {
 }
 console.log(sumOfTen([2, 5, 1, 5, 2, 1]));
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 5 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[5].A5) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 5 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[5].A5) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 5 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[5].A5) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 5 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[5].A5) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function htmlColorNames(arr) {
     arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond");
@@ -135,42 +135,42 @@ function htmlColorNames(arr) {
 } 
 console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurqoise', 'FireBrick']));
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 6 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[6].A6) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 6 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[6].A6) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 6 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[6].A6) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 6 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[6].A6) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function forecast(arr) {
     return arr.slice(2,4);
 }
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 7 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[7].A7) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 7 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[7].A7) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 7 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[7].A7) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 7 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[7].A7) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function copyMachine(arr, num) {
     let newArr = [];
@@ -183,21 +183,21 @@ function copyMachine(arr, num) {
 console.log(copyMachine([true, false, true], 2));
 
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 8 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[8].A8) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 8 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[8].A8) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 8 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[8].A8) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 8 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[8].A8) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function spreadOut() {
     let fragment = ['to', 'code'];
@@ -206,42 +206,42 @@ function spreadOut() {
 }
 console.log(spreadOut());
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 9 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[9].A9) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 9 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[9].A9) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 9 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[9].A9) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 9 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[9].A9) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function quickCheck(arr, elem) {
     return arr.indexOf(elem) >= 0 ? true : false;
 }
 console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms')); 
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 10 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[10].A10) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 10 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[10].A10) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 10 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[10].A10) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 10 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[10].A10) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function filteredArray(arr, elem) {
     let newArr = [];
@@ -256,21 +256,21 @@ function filteredArray(arr, elem) {
 };
 console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 11 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[11].A11) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 11 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[11].A11) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 11 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[11].A11) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 11 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[11].A11) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 let myNestedArray = [
     ['unshift', false, 1, 2, 3, 'complex', 'nested'],
@@ -280,21 +280,21 @@ let myNestedArray = [
     ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[["deepest"]]] ]
 ];
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 12 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[12].A12) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 12 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[12].A12) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 12 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[12].A12) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 12 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[12].A12) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 let foods = {
     apples: 25,
@@ -306,21 +306,21 @@ foods['grapes'] = 35;
 foods['strawberries'] = 27;
 console.log(foods);
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 13 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[13].A13) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 13 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[13].A13) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 13 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[13].A13) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 13 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[13].A13) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 let userActivity = {
     id: 23894201352,
@@ -334,21 +334,21 @@ userActivity.data.online = 45;
 
 console.log(userActivity);
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 14 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[14].A14) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 14 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[14].A14) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 14 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[14].A14) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 14 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[14].A14) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 let foods = {
     apples: 25,
@@ -364,21 +364,21 @@ function checkInventory(scannedItem) {
 }
 console.log(checkInventory("apples"));
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 15 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[15].A15) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 15 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[15].A15) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 15 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[15].A15) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 15 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[15].A15) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 let foods = {
     apples: 25,
@@ -393,21 +393,21 @@ delete foods.plums;
 delete foods.strawberries;
 console.log(foods);
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 16 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[16].A16) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 16 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[16].A16) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 16 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[16].A16) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 16 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[16].A16) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 let users = {
     Alan: {
@@ -434,21 +434,21 @@ function isEveryoneHere(obj) {
 
 console.log(isEveryoneHere(users));
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 17 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[17].A17) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 17 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[17].A17) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 17 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[17].A17) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 17 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[17].A17) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 let users = {
     Alan: {
@@ -481,21 +481,21 @@ function countOnline(obj) {
 
 console.log(countOnline(users));
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 18 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[18].A18) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 18 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[18].A18) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 18 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[18].A18) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 18 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[18].A18) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 let users = {
     Alan: {
@@ -522,21 +522,21 @@ function getArrayOfUsers(obj) {
 
 console.log(getArrayOfUsers(users));
         </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
-    } else if (javascriptObjOrientProgRandomValue == 19 && javascriptObjOrientProgInputAnswer == javascriptObjOrientProgAnswerArr[19].A19) {
-        javascriptObjOrientProgCorrectValue.innerHTML = "Correct..";
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 19 && javascriptFunctionalProgrammingInputAnswer == javascriptFunctionalProgrammingAnswerArr[19].A19) {
+        javascriptFunctionalProgrammingCorrectValue.innerHTML = "Correct..";
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
-    } else if (javascriptObjOrientProgRandomValue == 19 && javascriptObjOrientProgInputAnswer !== javascriptObjOrientProgAnswerArr[19].A19) {
-        javascriptObjOrientProgDisplayAnswer.innerHTML = `
+    } else if (javascriptFunctionalProgrammingRandomValue == 19 && javascriptFunctionalProgrammingInputAnswer !== javascriptFunctionalProgrammingAnswerArr[19].A19) {
+        javascriptFunctionalProgrammingDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 let user = {
     name: 'Kenneth',
@@ -565,41 +565,41 @@ function addFriend(userObj, friend) {
 
 console.log(addFriend(user, 'Pete'));
           </textarea>`;
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
 
 
 
     } else {
-        javascriptObjOrientProgIncorrectValue.innerHTML = "Incorrect..";
-        javascriptObjOrientProgNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptObjOrientProgBtn()>Next</button>`;
-        javascriptObjOrientProgRemoveValue.innerHTML = "";
+        javascriptFunctionalProgrammingIncorrectValue.innerHTML = "Incorrect..";
+        javascriptFunctionalProgrammingNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptFunctionalProgrammingBtn()>Next</button>`;
+        javascriptFunctionalProgrammingRemoveValue.innerHTML = "";
     }
 
 }
-window.javascriptObjOrientProgSubmit = javascriptObjOrientProgSubmit; /* to make submit global*/
+window.javascriptFunctionalProgrammingSubmit = javascriptFunctionalProgrammingSubmit; /* to make submit global*/
 
-function javascriptObjOrientProgButton() {
-    javascriptObjOrientProgTest = document.getElementById("javascriptObjOrientProgAddedQuestion").innerHTML = javascriptObjOrientProgQuestionArr[javascriptObjOrientProgRandomValue]; /* giving random question to html */
+function javascriptFunctionalProgrammingButton() {
+    javascriptFunctionalProgrammingTest = document.getElementById("javascriptFunctionalProgrammingAddedQuestion").innerHTML = javascriptFunctionalProgrammingQuestionArr[javascriptFunctionalProgrammingRandomValue]; /* giving random question to html */
 
-    return javascriptObjOrientProgTest;
+    return javascriptFunctionalProgrammingTest;
 }
-window.javascriptObjOrientProgButton = javascriptObjOrientProgButton;
+window.javascriptFunctionalProgrammingButton = javascriptFunctionalProgrammingButton;
 
-function javascriptObjOrientProgShowTest() {
-    var javascriptObjOrientProgInputBox = document.getElementById("javascriptObjOrientProgRemove").style.display = "block";
-    return javascriptObjOrientProgInputBox;
+function javascriptFunctionalProgrammingShowTest() {
+    var javascriptFunctionalProgrammingInputBox = document.getElementById("javascriptFunctionalProgrammingRemove").style.display = "block";
+    return javascriptFunctionalProgrammingInputBox;
 }
-window.javascriptObjOrientProgShowTest = javascriptObjOrientProgShowTest;
+window.javascriptFunctionalProgrammingShowTest = javascriptFunctionalProgrammingShowTest;
 
-function javascriptObjOrientProgBtn() {
-    javascriptObjOrientProgRandomValue = Math.floor(Math.random() * javascriptObjOrientProgQuestionArr.length); /* buton next in html to make a next random question*/
-    document.getElementById("javascriptObjOrientProgAddedQuestion").innerHTML = javascriptObjOrientProgQuestionArr[javascriptObjOrientProgRandomValue]; /* giving random question to html */
-    document.getElementById("javascriptObjOrientProgElementButton").innerHTML = "";/* to clean javascriptObjOrientProgElementButton*/
-    document.getElementById("javascriptObjOrientProgRemove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
-      <button class="answer_submit javascriptColor1" id = "javascriptObjOrientProgStartButton" onclick="javascriptObjOrientProgSubmit()">Submit</button>`;/* to create next text area and Submit button. */
-    document.getElementById("javascriptObjOrientProgCheckingAnswer").innerHTML = "";
-    document.getElementById("javascriptObjOrientProgShowingAnswer").innerHTML = "";
+function javascriptFunctionalProgrammingBtn() {
+    javascriptFunctionalProgrammingRandomValue = Math.floor(Math.random() * javascriptFunctionalProgrammingQuestionArr.length); /* buton next in html to make a next random question*/
+    document.getElementById("javascriptFunctionalProgrammingAddedQuestion").innerHTML = javascriptFunctionalProgrammingQuestionArr[javascriptFunctionalProgrammingRandomValue]; /* giving random question to html */
+    document.getElementById("javascriptFunctionalProgrammingElementButton").innerHTML = "";/* to clean javascriptFunctionalProgrammingElementButton*/
+    document.getElementById("javascriptFunctionalProgrammingRemove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
+      <button class="answer_submit javascriptColor1" id = "javascriptFunctionalProgrammingStartButton" onclick="javascriptFunctionalProgrammingSubmit()">Submit</button>`;/* to create next text area and Submit button. */
+    document.getElementById("javascriptFunctionalProgrammingCheckingAnswer").innerHTML = "";
+    document.getElementById("javascriptFunctionalProgrammingShowingAnswer").innerHTML = "";
 }
-window.javascriptObjOrientProgBtn = javascriptObjOrientProgBtn;/* to make submit global*/
+window.javascriptFunctionalProgrammingBtn = javascriptFunctionalProgrammingBtn;/* to make submit global*/

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <title>Random Questions</title>
+</head>
+
+<body id="javascriptBodyBackground">
+  <div class="goHome">
+    <a href="./../index.html"><button class="goHome_button javascriptColor">Go Home</button></a>
+  </div>
+  <p class="checkingAnswer" id="javascriptFunctionalProgrammingCheckingAnswer"></p>
+  <div class="flex">
+    <div class="answer">
+      <div id="javascriptFunctionalProgrammingRemove">
+        <textarea name="text" class="answer_textarea" id="input"></textarea></br>
+        <button class="answer_submit javascriptColor1" id="javascriptFunctionalProgrammingStartButton"
+          onclick="javascriptFunctionalProgrammingSubmit()">Submit</button>
+      </div>
+
+      <p class="answer_displayAnswer" id="javascriptFunctionalProgrammingShowingAnswer"></p>
+      <p class="answer_nextButton" id="javascriptFunctionalProgrammingElementButton"></p>
+    </div>
+
+    <div class="question">
+      <div class="question_display" id="javascriptFunctionalProgrammingAddedQuestion"></div>
+    </div>
+  </div>
+  <div class="startButton">
+    <button class="startButton_remove javascriptColor" id="javascriptFunctionalProgrammingStart"
+      onclick="[javascriptFunctionalProgrammingShowTest()];this.style.visibility= 'hidden';[javascriptFunctionalProgrammingButton()];">start</button>
+    <!-- remove start button and start test -->
+  </div>
+
+</body>
+<script src="../build/bundle.js"></script>
+</html>
