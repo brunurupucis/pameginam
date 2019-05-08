@@ -11351,3 +11351,1745 @@ function javascriptFunctionalProgrammingBtn() {
     document.getElementById("javascriptFunctionalProgrammingShowingAnswer").innerHTML = "";
 }
 window.javascriptFunctionalProgrammingBtn = javascriptFunctionalProgrammingBtn;/* to make submit global*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var javascriptIntermedAlgScrRandomValue = Math.floor(Math.random() * javascriptIntermedAlgScrQuestionArr.length); /* taking random question from htmlQuestionArr*/
+
+
+function javascriptIntermedAlgScrSubmit() { /* function for html submit button*/
+
+    var javascriptIntermedAlgScrInputAnswer = input.value.replace(/\s+/g, ``); /*replace(/\s+/g, `` is removing all spaces. Avoid checking all the spaces to compare text*/
+    var javascriptIntermedAlgScrCorrectValue = document.getElementById("javascriptIntermedAlgScrCheckingAnswer"); /* making getElementById code shorter*/
+    var javascriptIntermedAlgScrIncorrectValue = document.getElementById("javascriptIntermedAlgScrCheckingAnswer");
+    var javascriptIntermedAlgScrDisplayAnswer = document.getElementById("javascriptIntermedAlgScrShowingAnswer");
+    var javascriptIntermedAlgScrNextButton = document.getElementById("javascriptIntermedAlgScrElementButton");
+    var javascriptIntermedAlgScrRemoveValue = document.getElementById("javascriptIntermedAlgScrRemove");
+
+    if (javascriptIntermedAlgScrRandomValue == 0 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[0].A0) { /* checking if javascriptIntermedAlgScrRandomValue is 0 and if putting answer the same as javascriptIntermedAlgScrAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`; /* creating next button with javascriptIntermedAlgScrBtn()function*/
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";/* removing in html answer*/
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 0 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[0].A0) {/*  if random value not == then giving then display the answere.*/
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function sumAll(arr) {
+    var max = Math.max(arr[0], arr[1]);
+    var min = Math.min(arr[0], arr[1]);
+    var temp = 0;
+    for (var i=min; i <= max; i++){
+        temp += i;
+    }
+    return(temp);
+}
+
+sumAll([1, 4]);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 1 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[1].A1) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 1 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[1].A1) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">
+function sumAll(arr) {
+
+    var sortedArr = arr.sort((a,b) => a-b);
+    var firstNum = arr[0];
+    var lastNum = arr[1];
+
+    var sum = (lastNum - firstNum + 1) * (firstNum + lastNum) / 2;
+    return sum;
+}
+          </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 2 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[2].A2) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 2 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[2].A2) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function sumAll(arr) {
+    var sum = 0;
+    for (var i = Math.min(...arr); i <= Math.max(...arr); i++){
+        sum += i;
+    }
+    return sum;
+}
+
+sumAll([1, 4]);
+          </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 3 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[3].A3) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 3 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[3].A3) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function diffArray(arr1, arr2) {
+    var newArr = [];
+
+    function onlyInFirst(first, second) {
+        for (var i=0;i<first.length;i++) {
+            if (second.indexOf(first[i]) === -1) {
+                newArr.push(first[i]);
+            }
+        }
+    }
+
+    onlyInFirst(arr1, arr2);
+    onlyInFirst(arr2, arr1);
+
+    return newArr;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+        
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 4 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[4].A4) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 4 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[4].A4) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function diffArray(arr1, arr2) {
+    return arr1
+        .concat(arr2)
+        .filter(
+            item => !arr1.includes(item) || !arr2.includes(item)
+        )
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 5 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[5].A5) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 5 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[5].A5) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function diffArray(arr1, arr2) {
+    return arr1
+        .filter(el => !arr2.includes(el))
+        .concat(
+        arr2.filter(el => !arr1.includes(el))
+        )
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 6 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[6].A6) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 6 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[6].A6) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function diffArray(arr1, arr2) {
+    return [
+        ...diff(arr1, arr2),
+        ...diff(arr2, arr1)
+    ]
+
+    function diff(a, b) {
+        return a.filter(item => b.indexOf(item) === -1);
+    }
+}
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 7 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[7].A7) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 7 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[7].A7) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function destroyer(arr) {
+    var args = Array.prototype.slice.call(arguments);
+
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < args.length; j++) {
+            if (arr[i] === args[j]) {
+                delete arr[i];
+            }
+        }
+    }
+    return arr.filter(Boolean);
+} 
+
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 8 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[8].A8) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 8 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[8].A8) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function destroyer(arr) {
+    var args = Array.from(arguments).slice(1);
+    return arr.filter(function(val) {
+        return !args.includes(val);
+    });
+}
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 9 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[9].A9) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 9 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[9].A9) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+const destroyer = (arr, ...args) => arr.filter(i => !args.includes(i)); 
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 10 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[10].A10) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 10 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[10].A10) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function whatIsInAName(collection, source) {
+var srcKeys = Object.keys(source);
+
+return collection.filter(function (obj) {
+        for(var i = 0; i < srcKeys.length; i++) {
+            if(!obj.hasOwnProperty(srcKeys[i]) || obj[srcKeys[i]] !== source[srcKeys[i]]) {
+                return false;
+            }
+        }
+        return true;
+    });
+}
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }); 
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 11 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[11].A11) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 11 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[11].A11) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function whatIsInAName(collection, source) {
+    var srcKeys = Object.keys(source);
+
+    return collection.filter(function (obj) {
+        return srcKeys.every(function (key) {
+        return obj.hasOwnProperty(key) && obj[key] === source[key];
+        });
+    });
+}
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 12 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[12].A12) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 12 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[12].A12) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function whatIsInAName(collection, source) {
+    var srcKeys = Object.keys(source);
+
+    return collection.filter(function (obj) {
+        return srcKeys
+        .map(function(key) {
+            return obj.hasOwnProperty(key) && obj[key] === source[key];
+        })
+        .reduce(function(a, b) {
+            return a && b;
+        });
+    });
+}
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 13 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[13].A13) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 13 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[13].A13) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function spinalCase(str) {
+    var regex = /\s+|_+/g;
+
+    str = str.replace(/([a-z])([A-Z])/g, '$1 $2');
+    return str.replace(regex, '-').toLowerCase();
+}
+spinalCase('This Is Spinal Tap');
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 14 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[14].A14) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 14 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[14].A14) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function spinalCase(str) {
+    str = str.replace(/([a-z])([A-Z])/g, '$1 $2');
+    return str.toLowerCase().split(/(?:_| )+/) .join('-');
+}
+spinalCase('This Is Spinal Tap');
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 15 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[15].A15) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 15 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[15].A15) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function spinalCase(str) {
+    return str.split(/\s|_|(?=[A-Z])/).join('-').toLowerCase()
+}
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 16 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[16].A16) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 16 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[16].A16) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function translatePigLatin(str) {
+    var pigLatin = '';
+    var regex = /[aeiou]/gi;
+    if (str[0].match(regex)) {
+        pigLatin = str + 'way';
+
+    } else if(str.match(regex) === null) {
+        pigLatin = str + 'ay';
+    } else {
+        var vowelIndice = str.indexOf(str.match(regex)[0]);
+        pigLatin = str.substr(vowelIndice) + str.substr(0, vowelIndice) + 'ay';
+    }
+
+    return pigLatin;
+}
+translatePigLatin("consonant");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 17 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[17].A17) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 17 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[17].A17) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function myReplace(str, before, after) {
+    var index = str.indexOf(before);
+
+    if (str[index] === str[index].toUpperCase()) {
+        after = after.charAt(0).toUpperCase() + after.slice(1);
+    }
+    str = str.replace(before, after);
+
+    return str;
+}
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 18 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[18].A18) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 18 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[18].A18) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function myReplace(str, before, after) {
+
+    var re = new RegExp(before,"gi");
+
+    if(/[A-Z]/.test(before[0])){
+
+        after = after.charAt(0).toUpperCase()+after.slice(1);
+        }
+    var  newStr =  str.replace(re,after);
+
+    return newStr;
+}
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 19 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[19].A19) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 19 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[19].A19) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function myReplace(str, before, after) {
+
+    function applyCasing(source, target) {
+        var targetArr = target.split("");
+        var sourceArr = source.split("");
+        
+        for (var i = 0; i < Math.min(targetArr.length, sourceArr.length); i++){
+            if (/[A-Z]/.test(sourceArr[i])) {
+                targetArr[i] = targetArr[i].toUpperCase();
+            }
+            
+            else targetArr[i] = targetArr[i].toLowerCase();
+        }
+        return (targetArr.join(""));
+    }
+    return str.replace(before, applyCasing(before, after));
+}
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+          </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 20 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[20].A20) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 20 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[20].A20) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function pairElement(str) {
+
+    var paired = [];
+    var search = function(char) {
+        switch (char) {
+        case 'A':
+            paired.push(['A', 'T']);
+            break;
+        case 'T':
+            paired.push(['T', 'A']);
+            break;
+        case 'C':
+            paired.push(['C', 'G']);
+            break;
+        case 'G':
+            paired.push(['G', 'C']);
+            break;
+        }
+    };
+    for (var i = 0; i < str.length; i++) {
+        search(str[i]);
+    }
+
+    return paired;
+}
+pairElement("GCG");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 21 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[21].A21) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 21 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[21].A21) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function pairElement(str) {
+    var pairs = {
+        "A": "T",
+        "T": "A",
+        "C": "G",
+        "G": "C"
+    }
+    var arr = str.split("");
+    return arr.map(x => [x,pairs[x]]);
+}
+pairElement("GCG");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 22 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[22].A22) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 22 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[22].A22) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function fearNotLetter(str) {
+
+    for(var i = 0; i < str.length; i++) {
+
+        var code = str.charCodeAt(i);
+
+        if (code !== str.charCodeAt(0) + i) {
+        return String.fromCharCode(code - 1);
+        }  
+    }
+    return undefined;
+}
+fearNotLetter("abce");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 23 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[23].A23) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 23 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[23].A23) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+
+    <textarea name="text" class="answer_textarea" id="input">
+
+function fearNotLetter(str) {
+    var compare = str.charCodeAt(0), missing;
+
+    str.split('').map(function(letter,index) {
+        if (str.charCodeAt(index) == compare) {
+        ++compare;
+        } else {
+        missing = String.fromCharCode(compare);
+        }
+    });
+
+    return missing;
+}
+fearNotLetter("abce");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 24 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[24].A24) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 24 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[24].A24) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function fearNotLetter(str) {
+    for (let i = 1; i < str.length; ++i) {
+        if (str.charCodeAt(i) - str.charCodeAt(i-1) > 1) {
+        return String.fromCharCode(str.charCodeAt(i - 1) + 1);
+        }
+    }
+}
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 25 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[25].A25) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 25 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[25].A25) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function fearNotLetter(str) {
+    var allChars = '';
+    var notChars = new RegExp('[^'+str+']','g');
+
+    for (var i = 0; allChars[allChars.length-1] !== str[str.length-1] ; i++)
+        allChars += String.fromCharCode(str[0].charCodeAt(0) + i);
+
+    return allChars.match(notChars) ? allChars.match(notChars).join('') : undefined;
+}
+fearNotLetter("abce");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 26 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[26].A26) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 26 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[26].A26) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function uniteUnique(arr1, arr2, arr3) {
+
+    var finalArray = [];
+
+    for (var i = 0; i < arguments.length; i++) {
+        var arrayArguments = arguments[i];
+
+        for (var j = 0; j < arrayArguments.length; j++) {
+        var indexValue = arrayArguments[j];
+
+            if (finalArray.indexOf(indexValue) < 0) {
+                finalArray.push(indexValue);
+            }
+        }
+    }
+
+    return finalArray;
+}
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]); 
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 27 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[27].A27) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 27 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[27].A27) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function uniteUnique(arr) {
+    var args = [...arguments];
+    var result = [];
+    for(var i = 0; i < args.length; i++) {
+            for(var j = 0; j < args[i].length; j++) {
+                if(!result.includes(args[i][j])) {
+                result.push(args[i][j]);
+            }
+        }
+    }
+    return result;
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 28 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[28].A28) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 28 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[28].A28) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function uniteUnique(arr1, arr2, arr3) {
+    var newArr;
+        var args = Array.prototype.slice.call(arguments);
+        newArr = args.reduce(function(arrA,arrB){
+            return arrA.concat(arrB.filter(function(i){
+                return arrA.indexOf(i) === -1;
+            }));
+        });
+
+    return newArr;                    
+}
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 29 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[29].A29) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 29 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[29].A29) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function uniteUnique(...arrays) {
+
+    const flatArray = [].concat(...arrays);
+
+    return [...new Set(flatArray)];
+}
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 30 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[30].A30) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 30 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[30].A30) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function convertHTML(str) {
+
+    var temp = str.split('');
+
+
+    for (var i = 0; i < temp.length; i++) {
+        switch (temp[i]) {
+        case '<':
+            temp[i] = '&lt;';
+            break;
+        case '&':
+            temp[i] = '&amp;';
+            break;
+        case '>':
+            temp[i] = '&gt;';
+            break;
+        case '"':
+            temp[i] = '&quot;';
+            break;
+        case "'":
+            temp[i] = "&apos;";
+            break;
+        }
+    }
+
+    temp = temp.join('');
+    return temp;
+}
+convertHTML("Dolce & Gabbana");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 31 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[31].A31) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 31 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[31].A31) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function convertHTML(str) {
+
+    str = str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,"&apos;");
+    return str;
+}
+convertHTML("Dolce & Gabbana"); 
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 32 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[32].A32) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 32 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[32].A32) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function sumFibs(num) {
+    var prevNumber = 0;
+    var currNumber = 1;
+    var result = 0;
+    while (currNumber <= num) {
+        if (currNumber % 2 !== 0) {
+            result += currNumber;
+        }
+
+        currNumber += prevNumber;
+        prevNumber = currNumber - prevNumber;
+    }
+
+    return result;
+}
+sumFibs(4); 
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 33 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[33].A33) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 33 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[33].A33) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function sumPrimes(num) {
+    var res = 0;
+
+    function getPrimes(max) {
+        var sieve = [];
+        var i;
+        var j;
+        var primes = [];
+        for (i = 2; i <= max; ++i) {
+            if (!sieve[i]) {
+                primes.push(i);
+                for (j = i << 1; j <= max; j += i) {
+                sieve[j] = true;
+                }
+            }
+        }
+
+        return primes;
+    }
+    var primes = getPrimes(num);
+    for (var p = 0; p < primes.length; p++) {
+        res += primes[p];
+    }
+
+    return res;
+}
+sumPrimes(10);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 34 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[34].A34) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 34 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[34].A34) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function sumPrimes(num) {
+
+    let arr = Array.from({length: num+1}, (v, k) => k).slice(2); 
+
+    let onlyPrimes = arr.filter( (n) => { 
+        let m = n-1;
+        while (m > 1 && m >= Math.sqrt(n)) { 
+        if ((n % m) === 0) 
+            return false;
+            m--;
+        }
+        return true;
+    });
+
+    return onlyPrimes.reduce((a,b) => a+b); 
+}
+sumPrimes(977); 
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 35 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[35].A35) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 35 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[35].A35) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function smallestCommons(arr) {
+    arr.sort(function(a, b) {
+        return b - a;
+    });
+    var newArr = [];
+    for (var i = arr[0]; i >= arr[1]; i--) {
+        newArr.push(i);
+    }
+    var quot = 0;
+    var loop = 1;
+    var n;
+    do {
+        quot = newArr[0] * loop * newArr[1];
+        for (n = 2; n < newArr.length; n++) {
+            if (quot % newArr[n] !== 0) {
+                break;
+            }
+        }
+
+        loop++;
+    } while (n !== newArr.length);
+
+    return quot;
+}
+smallestCommons([1,5]);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 36 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[36].A36) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 36 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[36].A36) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function smallestCommons(arr) {
+    var range = [];
+    for (var i = Math.max(arr[0], arr[1]); i >= Math.min(arr[0], arr[1]); i--) {
+    range.push(i);
+    }
+    var lcm = range[0];
+    for (i = 1; i < range.length; i++) {
+    var GCD = gcd(lcm, range[i]);
+    lcm = (lcm * range[i]) / GCD;
+    }
+    return lcm;
+
+    function gcd(x, y) { 
+    if (y === 0)
+        return x;
+    else
+        return gcd(y, x%y);
+    }
+}
+smallestCommons([1,5]); 
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 37 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[37].A37) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 37 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[37].A37) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function smallestCommons(arr) {
+
+    let min = Math.min.apply(null, arr);
+    let max = Math.max.apply(null, arr);
+
+    let smallestCommon = lcm(min, min + 1);
+
+    while(min < max) {
+        min++;
+        smallestCommon = lcm(smallestCommon, min);
+    }
+
+        return smallestCommon;
+    }
+
+    function gcd(a, b) {
+        while (b > 0) {
+            let tmp = a;
+            a = b;
+            b = tmp % b;
+        }
+        return a;
+    }
+    function lcm(a, b) {
+    return (a * b / gcd(a, b));
+}
+smallestCommons([1,5]); 
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 38 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[38].A38) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 38 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[38].A38) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function dropElements(arr, func) {
+    var times = arr.length;
+    for (var i = 0; i < times; i++) {
+        if (func(arr[0])) {
+            break;
+        } else {
+            arr.shift();
+        }
+    }
+    return arr;
+}
+dropElements([1, 2, 3, 4], function(n) {return n >= 3;});  
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 39 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[39].A39) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 39 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[39].A39) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function dropElements(arr, func) {
+    return arr.slice(arr.findIndex(func) >= 0 ? arr.findIndex(func): arr.length, arr.length);
+}
+dropElements([1, 2, 3, 4], function(n) {return n >= 3;}); 
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 40 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[40].A40) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 40 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[40].A40) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function dropElements(arr, func) {
+    while(arr.length > 0 && !func(arr[0])) {
+        arr.shift();
+    }
+    return arr;
+}
+dropElements([1, 2, 3, 4], function(n) {return n >= 3;}); 
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 41 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[41].A41) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 41 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[41].A41) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function steamrollArray(arr) {
+    var flattenedArray = [];
+
+    var flatten = function(arg) {
+            if (!Array.isArray(arg)) {
+            flattenedArray.push(arg);
+            } else {
+            for (var a in arg) {
+                flatten(arg[a]);
+            }
+        }
+    };
+    arr.forEach(flatten);
+    return flattenedArray;
+}
+steamrollArray([1, [2], [3, [[4]]]]);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 42 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[42].A42) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 42 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[42].A42) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function steamrollArray(arr) {
+return arr.toString()
+    .replace(',,', ',') 
+    .split(',')   
+    .map(function(v) {
+        if (v == '[object Object]') { 
+            return {};
+        } else if (isNaN(v)) { 
+            return v;
+        } else {
+            return parseInt(v); 
+        }
+    });
+}
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 43 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[43].A43) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 43 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[43].A43) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function binaryAgent(str) {
+    str = str.split(' ');
+    var power;
+    var decValue = 0;
+    var sentence = '';
+    for (var s = 0; s < str.length; s++) {
+        for (var t = 0; t < str[s].length; t++) {
+            if (str[s][t] == 1) {
+                power = Math.pow(2, +str[s].length - t - 1);
+                decValue += power;
+            }
+        }
+        sentence += (String.fromCharCode(decValue));
+        decValue = 0;
+    }
+
+    return sentence;
+}
+binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 44 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[44].A44) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 44 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[44].A44) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function binaryAgent(str) {
+    return String.fromCharCode(...str.split(" ").map(function(char){ return parseInt(char, 2); }));
+}
+binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 45 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[45].A45) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 45 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[45].A45) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function truthCheck(collection, pre) {
+    var counter = 0;
+    for (var c in collection) {
+        if (collection[c].hasOwnProperty(pre) && Boolean(collection[c][pre])) {
+        counter++;
+        }
+    }
+    return counter == collection.length;
+}
+truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 46 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[46].A46) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 46 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[46].A46) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function truthCheck(collection, pre) {
+    return collection.every(function (element) {
+        return element.hasOwnProperty(pre) && Boolean(element[pre]);
+    });
+}
+truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 47 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[47].A47) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 47 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[47].A47) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function truthCheck(collection, pre) {
+    return collection.every(obj => obj[pre]);
+}
+
+truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex"); 
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 48 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[48].A48) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 48 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[48].A48) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function addTogether() {
+    var checkNum = function(num) {
+        if (typeof num !== 'number') {
+        return undefined;
+        } else
+        return num;
+    };
+    if (arguments.length > 1) {
+        var a = checkNum(arguments[0]);
+        var b = checkNum(arguments[1]);
+        if (a === undefined || b === undefined) {
+            return undefined;
+        } else {
+            return a + b;
+        }
+    } else {
+        var c = arguments[0];
+        if (checkNum(c)) {
+            return function(arg2) {
+                if (c === undefined || checkNum(arg2) === undefined) {
+                return undefined;
+                } else {
+                return c + arg2;
+                }
+            };
+        }
+    }
+}
+
+addTogether(2,3);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 49 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[49].A49) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 49 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[49].A49) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function addTogether() {
+    var args = Array.from(arguments);
+    return args.some(n => typeof n !== 'number') ? 
+        undefined: 
+        args.length > 1 ?
+        args.reduce((acc, n) => acc += n, 0):
+        (n) => typeof n === "number" ? 
+            n + args[0]:
+            undefined;
+}
+addTogether(2,3);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 50 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[50].A50) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 50 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[50].A50) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+var Person = function(firstAndLast) {
+    var fullName = firstAndLast;
+
+    this.getFirstName = function() {
+        return fullName.split(" ")[0];
+    };
+
+    this.getLastName = function() {
+        return fullName.split(" ")[1];
+    };
+
+    this.getFullName = function() {
+        return fullName;
+    };
+
+    this.setFirstName = function(name) {
+        fullName = name + " " + fullName.split(" ")[1];
+    };
+
+    this.setLastName = function(name) {
+        fullName = fullName.split(" ")[0] + " " + name;
+    };
+
+    this.setFullName = function(name) {
+        fullName = name;
+    };
+};
+
+var bob = new Person('Bob Ross');
+bob.getFullName();
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 51 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[51].A51) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 51 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[51].A51) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function orbitalPeriod(arr) {
+    var GM = 398600.4418;
+    var earthRadius = 6367.4447;
+    var a = 2 * Math.PI;
+    var newArr = [];
+    var getOrbPeriod = function(obj) {
+        var c = Math.pow(earthRadius + obj.avgAlt, 3);
+        var b = Math.sqrt(c / GM);
+        var orbPeriod = Math.round(a * b);
+        delete obj.avgAlt;
+        obj.orbitalPeriod = orbPeriod;
+        return obj;
+    };
+
+    for (var elem in arr) {
+        newArr.push(getOrbPeriod(arr[elem]));
+    }
+
+    return newArr;
+}
+orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else if (javascriptIntermedAlgScrRandomValue == 52 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[52].A52) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 52 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[52].A52) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function orbitalPeriod(arr) {
+    var GM = 398600.4418;
+    var earthRadius = 6367.4447;
+
+    for(var prop in arr) {
+        var orbitalPer = Math.round(2 * Math.PI * Math.sqrt(Math.pow(arr[prop].avgAlt + earthRadius, 3) / GM));
+        delete arr[prop].avgAlt;
+        arr[prop].orbitalPeriod = orbitalPer;
+    }
+
+    return arr;
+}
+orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    }else if (javascriptIntermedAlgScrRandomValue == 53 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[53].A53) {
+        javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+        <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+    } else if (javascriptIntermedAlgScrRandomValue == 53 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[53].A53) {
+        javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
+    <textarea name="text" class="answer_textarea" id="input">
+function orbitalPeriod(arr) {
+    var GM = 398600.4418;
+    var earthRadius = 6367.4447;
+
+    arr.forEach(function(item) {
+        var tmp = Math.round(2 * Math.PI * Math.sqrt(Math.pow(earthRadius + item.avgAlt, 3) / GM));
+        delete item.avgAlt;
+        item.orbitalPeriod = tmp;
+    });
+    return arr;
+}
+orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
+        </textarea>`;
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+
+
+
+    } else {
+        javascriptIntermedAlgScrIncorrectValue.innerHTML = "Incorrect..";
+        javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
+        javascriptIntermedAlgScrRemoveValue.innerHTML = "";
+    }
+
+}
+window.javascriptIntermedAlgScrSubmit = javascriptIntermedAlgScrSubmit; /* to make submit global*/
+
+function javascriptIntermedAlgScrButton() {
+    javascriptIntermedAlgScrTest = document.getElementById("javascriptIntermedAlgScrAddedQuestion").innerHTML = javascriptIntermedAlgScrQuestionArr[javascriptIntermedAlgScrRandomValue]; /* giving random question to html */
+
+    return javascriptIntermedAlgScrTest;
+}
+window.javascriptIntermedAlgScrButton = javascriptIntermedAlgScrButton;
+
+function javascriptIntermedAlgScrShowTest() {
+    var javascriptIntermedAlgScrInputBox = document.getElementById("javascriptIntermedAlgScrRemove").style.display = "block";
+    return javascriptIntermedAlgScrInputBox;
+}
+window.javascriptIntermedAlgScrShowTest = javascriptIntermedAlgScrShowTest;
+
+function javascriptIntermedAlgScrBtn() {
+    javascriptIntermedAlgScrRandomValue = Math.floor(Math.random() * javascriptIntermedAlgScrQuestionArr.length); /* buton next in html to make a next random question*/
+    document.getElementById("javascriptIntermedAlgScrAddedQuestion").innerHTML = javascriptIntermedAlgScrQuestionArr[javascriptIntermedAlgScrRandomValue]; /* giving random question to html */
+    document.getElementById("javascriptIntermedAlgScrElementButton").innerHTML = "";/* to clean javascriptIntermedAlgScrElementButton*/
+    document.getElementById("javascriptIntermedAlgScrRemove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
+      <button class="answer_submit javascriptColor1" id = "javascriptIntermedAlgScrStartButton" onclick="javascriptIntermedAlgScrSubmit()">Submit</button>`;/* to create next text area and Submit button. */
+    document.getElementById("javascriptIntermedAlgScrCheckingAnswer").innerHTML = "";
+    document.getElementById("javascriptIntermedAlgScrShowingAnswer").innerHTML = "";
+}
+window.javascriptIntermedAlgScrBtn = javascriptIntermedAlgScrBtn;/* to make submit global*/
+

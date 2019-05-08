@@ -34,7 +34,9 @@
 #javascriptRegExpressRemove,
 #javascriptBasicDataStructureRemove,
 #javascriptBasicAlgorithmRemove,
-#javascriptObjOrientProgRemove, #javascriptFunctionalProgrammingRemove {
+#javascriptObjOrientProgRemove,
+#javascriptFunctionalProgrammingRemove,
+#javascriptIntermedAlgScrRemove {
   /* to hide input text area*/
   display: none; }
 
