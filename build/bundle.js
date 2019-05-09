@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 18);
+/******/ 	return __webpack_require__(__webpack_require__.s = 22);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -7220,6 +7220,1775 @@ var winterComing = urlSlug(globalTitle); // Should be "winter-is-coming"`,
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptIntermedAlgScrAnswerArr; });
+var javascriptIntermedAlgScrAnswerArr = [
+  {
+    A0: `function sumAll(arr) {
+      var max = Math.max(arr[0], arr[1]);
+      var min = Math.min(arr[0], arr[1]);
+      var temp = 0;
+      for (var i=min; i <= max; i++){
+          temp += i;
+      }
+    return(temp);
+  }
+  
+  sumAll([1, 4]);
+  `.replace(/\s+/g, "")
+  },
+
+  {
+    A1: `function sumAll(arr) {
+
+      var sortedArr = arr.sort((a,b) => a-b);
+      var firstNum = arr[0];
+      var lastNum = arr[1];
+    
+      var sum = (lastNum - firstNum + 1) * (firstNum + lastNum) / 2;
+      return sum;
+    }`.replace(/\s+/g, "")
+  },
+
+  { A2: `function sumAll(arr) {
+    var sum = 0;
+    for (var i = Math.min(...arr); i <= Math.max(...arr); i++){
+        sum += i;
+    }
+  return sum;
+}
+
+sumAll([1, 4]);`.replace(/\s+/g, "") },
+
+  {
+    A3: `function diffArray(arr1, arr2) {
+      var newArr = [];
+
+      function onlyInFirst(first, second) {
+        for (var i=0;i<first.length;i++) {
+          if (second.indexOf(first[i]) === -1) {
+            newArr.push(first[i]);
+          }
+        }
+      }
+
+      onlyInFirst(arr1, arr2);
+      onlyInFirst(arr2, arr1);
+
+      return newArr;
+    }
+
+    diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A4: `function diffArray(arr1, arr2) {
+      return arr1
+        .concat(arr2)
+        .filter(
+            item => !arr1.includes(item) || !arr2.includes(item)
+        )
+    }
+
+    diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]); `.replace(/\s+/g, "")
+  },
+
+  {
+    A5: `function diffArray(arr1, arr2) {
+      return arr1
+        .filter(el => !arr2.includes(el))
+        .concat(
+          arr2.filter(el => !arr1.includes(el))
+        )
+  }
+  
+  diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A6: `function diffArray(arr1, arr2) {
+      return [
+        ...diff(arr1, arr2),
+        ...diff(arr2, arr1)
+      ]
+      
+      function diff(a, b) {
+        return a.filter(item => b.indexOf(item) === -1);
+      }
+    }
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A7: `function destroyer(arr) {
+      var args = Array.prototype.slice.call(arguments);
+    
+      for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < args.length; j++) {
+          if (arr[i] === args[j]) {
+            delete arr[i];
+          }
+        }
+      }
+      return arr.filter(Boolean);
+    } 
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A8: `function destroyer(arr) {
+      var args = Array.from(arguments).slice(1);
+      return arr.filter(function(val) {
+        return !args.includes(val);
+      });
+    }
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A9: `const destroyer = (arr, ...args) => arr.filter(i => !args.includes(i)); `.replace(/\s+/g, "")
+  },
+
+
+  
+  {
+    A10: `function whatIsInAName(collection, source) {
+      var srcKeys = Object.keys(source);
+    
+      return collection.filter(function (obj) {
+        for(var i = 0; i < srcKeys.length; i++) {
+          if(!obj.hasOwnProperty(srcKeys[i]) || obj[srcKeys[i]] !== source[srcKeys[i]]) {
+            return false;
+          }
+        }
+        return true;
+      });
+    }
+    whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }); `.replace(/\s+/g, "")
+  },
+
+
+  { A11: `function whatIsInAName(collection, source) {
+    var srcKeys = Object.keys(source);
+  
+    return collection.filter(function (obj) {
+      return srcKeys.every(function (key) {
+        return obj.hasOwnProperty(key) && obj[key] === source[key];
+      });
+    });
+  }
+  whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });`.replace(/\s+/g, "") },
+
+  
+  { A12: `function whatIsInAName(collection, source) {
+    var srcKeys = Object.keys(source);
+  
+    return collection.filter(function (obj) {
+      return srcKeys
+        .map(function(key) {
+          return obj.hasOwnProperty(key) && obj[key] === source[key];
+        })
+        .reduce(function(a, b) {
+          return a && b;
+        });
+    });
+  }
+  whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });`.replace(/\s+/g, "") },
+
+  { A13: `function spinalCase(str) {
+    var regex = /\s+|_+/g;
+  
+    str = str.replace(/([a-z])([A-Z])/g, '$1 $2');
+    return str.replace(regex, '-').toLowerCase();
+  }
+  spinalCase('This Is Spinal Tap');`.replace(/\s+/g, "") },
+
+  { A14: `function spinalCase(str) {
+    str = str.replace(/([a-z])([A-Z])/g, '$1 $2');
+    return str.toLowerCase().split(/(?:_| )+/) .join('-');
+  }
+  spinalCase('This Is Spinal Tap');`.replace(/\s+/g, "") },
+
+  {
+    A15: `function spinalCase(str) {
+      return str.split(/\s|_|(?=[A-Z])/).join('-').toLowerCase()
+    }`.replace(/\s+/g, "")
+  },
+
+  {
+    A16: `function translatePigLatin(str) {
+      var pigLatin = '';
+      var regex = /[aeiou]/gi;
+      if (str[0].match(regex)) {
+        pigLatin = str + 'way';
+    
+      } else if(str.match(regex) === null) {
+        pigLatin = str + 'ay';
+      } else {
+        var vowelIndice = str.indexOf(str.match(regex)[0]);
+        pigLatin = str.substr(vowelIndice) + str.substr(0, vowelIndice) + 'ay';
+      }
+    
+      return pigLatin;
+    }
+    translatePigLatin("consonant");
+    `.replace(/\s+/g, "")
+  },
+
+  {
+    A17: `function myReplace(str, before, after) {
+      var index = str.indexOf(before);
+    
+      if (str[index] === str[index].toUpperCase()) {
+        after = after.charAt(0).toUpperCase() + after.slice(1);
+      }
+      str = str.replace(before, after);
+    
+      return str;
+    }
+    myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A18: `
+    function myReplace(str, before, after) {
+
+      var re = new RegExp(before,"gi");
+    
+      if(/[A-Z]/.test(before[0])){
+    
+        after = after.charAt(0).toUpperCase()+after.slice(1);
+         }
+      var  newStr =  str.replace(re,after);
+    
+     return newStr;
+    }
+    myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A19: `function myReplace(str, before, after) {
+
+      function applyCasing(source, target) {
+          var targetArr = target.split("");
+          var sourceArr = source.split("");
+         
+          for (var i = 0; i < Math.min(targetArr.length, sourceArr.length); i++){
+              if (/[A-Z]/.test(sourceArr[i])) {
+                  targetArr[i] = targetArr[i].toUpperCase();
+              }
+              
+              else targetArr[i] = targetArr[i].toLowerCase();
+          }
+          return (targetArr.join(""));
+      }
+      return str.replace(before, applyCasing(before, after));
+  }
+  myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+    
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A20: `function pairElement(str) {
+
+      var paired = [];
+      var search = function(char) {
+        switch (char) {
+          case 'A':
+            paired.push(['A', 'T']);
+            break;
+          case 'T':
+            paired.push(['T', 'A']);
+            break;
+          case 'C':
+            paired.push(['C', 'G']);
+            break;
+          case 'G':
+            paired.push(['G', 'C']);
+            break;
+        }
+      };
+      for (var i = 0; i < str.length; i++) {
+        search(str[i]);
+      }
+
+      return paired;
+    }
+    pairElement("GCG");
+    `.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A21: `function pairElement(str) {
+      var pairs = {
+        "A": "T",
+        "T": "A",
+        "C": "G",
+        "G": "C"
+      }
+      var arr = str.split("");
+      return arr.map(x => [x,pairs[x]]);
+    }
+    pairElement("GCG");`.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A22: `function fearNotLetter(str) {
+
+      for(var i = 0; i < str.length; i++) {
+    
+        var code = str.charCodeAt(i);
+    
+        if (code !== str.charCodeAt(0) + i) {
+          return String.fromCharCode(code - 1);
+        }  
+      }
+      return undefined;
+    }
+    fearNotLetter("abce");
+    `.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A23: `
+
+    function fearNotLetter(str) {
+      var compare = str.charCodeAt(0), missing;
+    
+      str.split('').map(function(letter,index) {
+        if (str.charCodeAt(index) == compare) {
+          ++compare;
+        } else {
+          missing = String.fromCharCode(compare);
+        }
+      });
+    
+      return missing;
+    }
+    fearNotLetter("abce");
+    `.replace(
+      /\s+/g,
+      ""
+    )
+  },
+
+  {
+    A24: `function fearNotLetter(str) {
+      for (let i = 1; i < str.length; ++i) {
+        if (str.charCodeAt(i) - str.charCodeAt(i-1) > 1) {
+          return String.fromCharCode(str.charCodeAt(i - 1) + 1);
+        }
+      }
+    }`.replace(/\s+/g, "")
+  },
+
+  {
+    A25: `function fearNotLetter(str) {
+      var allChars = '';
+      var notChars = new RegExp('[^'+str+']','g');
+    
+      for (var i = 0; allChars[allChars.length-1] !== str[str.length-1] ; i++)
+        allChars += String.fromCharCode(str[0].charCodeAt(0) + i);
+    
+      return allChars.match(notChars) ? allChars.match(notChars).join('') : undefined;
+    }
+    fearNotLetter("abce");`.replace(/\s+/g, "")
+  },
+
+  {
+    A26: `function uniteUnique(arr1, arr2, arr3) {
+
+      var finalArray = [];
+    
+      for (var i = 0; i < arguments.length; i++) {
+        var arrayArguments = arguments[i];
+    
+        for (var j = 0; j < arrayArguments.length; j++) {
+          var indexValue = arrayArguments[j];
+    
+          if (finalArray.indexOf(indexValue) < 0) {
+            finalArray.push(indexValue);
+          }
+        }
+      }
+    
+      return finalArray;
+    }
+    uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);`.replace(/\s+/g, "")
+  },
+
+  {
+    A27: `
+    function uniteUnique(arr) {
+      var args = [...arguments];
+      var result = [];
+      for(var i = 0; i < args.length; i++) {
+        for(var j = 0; j < args[i].length; j++) {
+           if(!result.includes(args[i][j])) {
+            result.push(args[i][j]);
+          }
+        }
+      }
+      return result;
+    }
+    
+    uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+    `.replace(/\s+/g, "")
+  },
+
+  {
+    A28: `function uniteUnique(arr1, arr2, arr3) {
+      var newArr;
+       var args = Array.prototype.slice.call(arguments);
+       newArr = args.reduce(function(arrA,arrB){
+         return arrA.concat(arrB.filter(function(i){
+           return arrA.indexOf(i) === -1;
+         }));
+       });
+     
+        return newArr;                    
+     }
+     uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);`.replace(/\s+/g, "")
+  },
+
+  {
+    A29: `
+    function uniteUnique(...arrays) {
+    
+      const flatArray = [].concat(...arrays);
+    
+      return [...new Set(flatArray)];
+    }
+    uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);`.replace(/\s+/g, "")
+  },
+
+  {
+    A30: `  function convertHTML(str) {
+
+      var temp = str.split('');
+
+
+      for (var i = 0; i < temp.length; i++) {
+        switch (temp[i]) {
+          case '<':
+            temp[i] = '&lt;';
+            break;
+          case '&':
+            temp[i] = '&amp;';
+            break;
+          case '>':
+            temp[i] = '&gt;';
+            break;
+          case '"':
+            temp[i] = '&quot;';
+            break;
+          case "'":
+            temp[i] = "&apos;";
+            break;
+        }
+      }
+
+      temp = temp.join('');
+      return temp;
+    }
+    convertHTML("Dolce & Gabbana");`.replace(/\s+/g, "")
+  },
+
+  {
+    A31: `function convertHTML(str) {
+
+      str = str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,"&apos;");
+    return str;
+    }
+    convertHTML("Dolce & Gabbana"); `.replace(/\s+/g, "")
+  },
+
+  {
+    A32: `function sumFibs(num) {
+      var prevNumber = 0;
+      var currNumber = 1;
+      var result = 0;
+      while (currNumber <= num) {
+          if (currNumber % 2 !== 0) {
+              result += currNumber;
+          }
+  
+          currNumber += prevNumber;
+          prevNumber = currNumber - prevNumber;
+      }
+  
+      return result;
+  }
+  sumFibs(4); `.replace(/\s+/g, "")
+  },
+
+  {
+    A33: `function sumPrimes(num) {
+      var res = 0;
+    
+      function getPrimes(max) {
+        var sieve = [];
+        var i;
+        var j;
+        var primes = [];
+        for (i = 2; i <= max; ++i) {
+          if (!sieve[i]) {
+            primes.push(i);
+            for (j = i << 1; j <= max; j += i) {
+              sieve[j] = true;
+            }
+          }
+        }
+    
+        return primes;
+      }
+      var primes = getPrimes(num);
+      for (var p = 0; p < primes.length; p++) {
+        res += primes[p];
+      }
+    
+      return res;
+    }
+    sumPrimes(10); `.replace(/\s+/g, "")
+  },
+
+  {
+    A34: `function sumPrimes(num) {
+
+      let arr = Array.from({length: num+1}, (v, k) => k).slice(2); 
+    
+      let onlyPrimes = arr.filter( (n) => { 
+        let m = n-1;
+        while (m > 1 && m >= Math.sqrt(n)) { 
+          if ((n % m) === 0) 
+            return false;
+            m--;
+        }
+          return true;
+      });
+    
+      return onlyPrimes.reduce((a,b) => a+b); 
+    }
+    sumPrimes(977); `.replace(/\s+/g, "")
+  },
+
+  {
+    A35: `function smallestCommons(arr) {
+      arr.sort(function(a, b) {
+        return b - a;
+      });
+      var newArr = [];
+      for (var i = arr[0]; i >= arr[1]; i--) {
+        newArr.push(i);
+      }
+      var quot = 0;
+      var loop = 1;
+      var n;
+      do {
+        quot = newArr[0] * loop * newArr[1];
+        for (n = 2; n < newArr.length; n++) {
+          if (quot % newArr[n] !== 0) {
+            break;
+          }
+        }
+    
+        loop++;
+      } while (n !== newArr.length);
+    
+      return quot;
+    }
+    smallestCommons([1,5]); `.replace(/\s+/g, "")
+  },
+
+  {
+    A36: `function smallestCommons(arr) {
+      var range = [];
+      for (var i = Math.max(arr[0], arr[1]); i >= Math.min(arr[0], arr[1]); i--) {
+      range.push(i);
+      }
+      var lcm = range[0];
+      for (i = 1; i < range.length; i++) {
+      var GCD = gcd(lcm, range[i]);
+      lcm = (lcm * range[i]) / GCD;
+      }
+      return lcm;
+  
+      function gcd(x, y) { 
+      if (y === 0)
+          return x;
+      else
+          return gcd(y, x%y);
+      }
+  }
+  smallestCommons([1,5]); `.replace(/\s+/g, "")
+  },
+
+  {
+    A37: `function smallestCommons(arr) {
+
+      let min = Math.min.apply(null, arr);
+      let max = Math.max.apply(null, arr);
+    
+      let smallestCommon = lcm(min, min + 1);
+    
+      while(min < max) {
+        min++;
+        smallestCommon = lcm(smallestCommon, min);
+      }
+    
+      return smallestCommon;
+    }
+    
+    function gcd(a, b) {
+      while (b > 0) {
+        let tmp = a;
+        a = b;
+        b = tmp % b;
+      }
+      return a;
+    }
+    function lcm(a, b) {
+      return (a * b / gcd(a, b));
+    }
+    smallestCommons([1,5]);`.replace(/\s+/g, "")
+  },
+
+  {
+    A38: `function dropElements(arr, func) {
+      var times = arr.length;
+      for (var i = 0; i < times; i++) {
+        if (func(arr[0])) {
+          break;
+        } else {
+          arr.shift();
+        }
+      }
+      return arr;
+    }
+    dropElements([1, 2, 3, 4], function(n) {return n >= 3;}); `.replace(/\s+/g, "")
+  },
+
+  {
+    A39: `function dropElements(arr, func) {
+      return arr.slice(arr.findIndex(func) >= 0 ? arr.findIndex(func): arr.length, arr.length);
+    }
+    dropElements([1, 2, 3, 4], function(n) {return n >= 3;}); `.replace(/\s+/g, "")
+  },
+
+  {
+    A40: `function dropElements(arr, func) {
+      while(arr.length > 0 && !func(arr[0])) {
+        arr.shift();
+      }
+      return arr;
+    }
+    dropElements([1, 2, 3, 4], function(n) {return n >= 3;}); `.replace(/\s+/g, "")
+  },
+
+  {
+    A41: `function steamrollArray(arr) {
+      var flattenedArray = [];
+    
+      var flatten = function(arg) {
+        if (!Array.isArray(arg)) {
+          flattenedArray.push(arg);
+        } else {
+          for (var a in arg) {
+            flatten(arg[a]);
+          }
+        }
+      };
+      arr.forEach(flatten);
+      return flattenedArray;
+    }
+    steamrollArray([1, [2], [3, [[4]]]]); `.replace(/\s+/g, "")
+  },
+
+  {
+    A42: `function steamrollArray(arr) {
+      return arr.toString()
+        .replace(',,', ',') 
+        .split(',')   
+        .map(function(v) {
+          if (v == '[object Object]') { 
+            return {};
+          } else if (isNaN(v)) { 
+            return v;
+          } else {
+            return parseInt(v); 
+          }
+        });
+    }`.replace(/\s+/g, "")
+  },
+
+  {
+    A43: `function binaryAgent(str) {
+      str = str.split(' ');
+      var power;
+      var decValue = 0;
+      var sentence = '';
+      for (var s = 0; s < str.length; s++) {
+        for (var t = 0; t < str[s].length; t++) {
+          if (str[s][t] == 1) {
+            power = Math.pow(2, +str[s].length - t - 1);
+            decValue += power;
+          }
+        }
+        sentence += (String.fromCharCode(decValue));
+        decValue = 0;
+      }
+
+      return sentence;
+    }
+    binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"); `.replace(/\s+/g, "")
+  },
+
+  {
+    A44: `function binaryAgent(str) {
+      return String.fromCharCode(...str.split(" ").map(function(char){ return parseInt(char, 2); }));
+    }
+    binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"); `.replace(/\s+/g, "")
+  },
+
+  {
+    A45: `function truthCheck(collection, pre) {
+      var counter = 0;
+      for (var c in collection) {
+        if (collection[c].hasOwnProperty(pre) && Boolean(collection[c][pre])) {
+          counter++;
+        }
+      }
+      return counter == collection.length;
+    }
+    truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex"); `.replace(/\s+/g, "")
+  },
+
+  {
+    A46: `function truthCheck(collection, pre) {
+      return collection.every(function (element) {
+        return element.hasOwnProperty(pre) && Boolean(element[pre]);
+      });
+    }
+    truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");`.replace(/\s+/g, "")
+  },
+
+  {
+    A47: `function truthCheck(collection, pre) {
+      return collection.every(obj => obj[pre]);
+    }
+    
+    truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex"); `.replace(/\s+/g, "")
+  },
+
+  {
+    A48: ` function addTogether() {
+      var checkNum = function(num) {
+        if (typeof num !== 'number') {
+          return undefined;
+        } else
+          return num;
+      };
+      if (arguments.length > 1) {
+        var a = checkNum(arguments[0]);
+        var b = checkNum(arguments[1]);
+        if (a === undefined || b === undefined) {
+          return undefined;
+        } else {
+          return a + b;
+        }
+      } else {
+        var c = arguments[0];
+        if (checkNum(c)) {
+          return function(arg2) {
+            if (c === undefined || checkNum(arg2) === undefined) {
+              return undefined;
+            } else {
+              return c + arg2;
+            }
+          };
+        }
+      }
+    }
+
+    addTogether(2,3);`.replace(/\s+/g, "")
+  },
+
+  {
+    A49: `
+    function addTogether() {
+      var args = Array.from(arguments);
+      return args.some(n => typeof n !== 'number') ? 
+        undefined: 
+        args.length > 1 ?
+          args.reduce((acc, n) => acc += n, 0):
+          (n) => typeof n === "number" ? 
+            n + args[0]:
+            undefined;
+    }
+    addTogether(2,3);`.replace(/\s+/g, "")
+  },
+
+  {
+    A50: `var Person = function(firstAndLast) {
+      var fullName = firstAndLast;
+    
+      this.getFirstName = function() {
+        return fullName.split(" ")[0];
+      };
+    
+      this.getLastName = function() {
+        return fullName.split(" ")[1];
+      };
+    
+      this.getFullName = function() {
+        return fullName;
+      };
+    
+      this.setFirstName = function(name) {
+        fullName = name + " " + fullName.split(" ")[1];
+      };
+    
+      this.setLastName = function(name) {
+        fullName = fullName.split(" ")[0] + " " + name;
+      };
+    
+      this.setFullName = function(name) {
+        fullName = name;
+      };
+    };
+    
+    var bob = new Person('Bob Ross');
+    bob.getFullName();`.replace(/\s+/g, "")
+  },
+
+  {
+    A51: `function orbitalPeriod(arr) {
+      var GM = 398600.4418;
+      var earthRadius = 6367.4447;
+      var a = 2 * Math.PI;
+      var newArr = [];
+      var getOrbPeriod = function(obj) {
+        var c = Math.pow(earthRadius + obj.avgAlt, 3);
+        var b = Math.sqrt(c / GM);
+        var orbPeriod = Math.round(a * b);
+        delete obj.avgAlt;
+        obj.orbitalPeriod = orbPeriod;
+        return obj;
+      };
+    
+      for (var elem in arr) {
+        newArr.push(getOrbPeriod(arr[elem]));
+      }
+    
+      return newArr;
+    }
+    orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]); `.replace(/\s+/g, "")
+  },
+
+  {
+    A52: `function orbitalPeriod(arr) {
+      var GM = 398600.4418;
+      var earthRadius = 6367.4447;
+    
+      for(var prop in arr) {
+        var orbitalPer = Math.round(2 * Math.PI * Math.sqrt(Math.pow(arr[prop].avgAlt + earthRadius, 3) / GM));
+        delete arr[prop].avgAlt;
+        arr[prop].orbitalPeriod = orbitalPer;
+      }
+    
+      return arr;
+    }
+    orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]); `.replace(/\s+/g, "")
+  },
+
+  {
+    A53: `function orbitalPeriod(arr) {
+      var GM = 398600.4418;
+      var earthRadius = 6367.4447;
+    
+      arr.forEach(function(item) {
+        var tmp = Math.round(2 * Math.PI * Math.sqrt(Math.pow(earthRadius + item.avgAlt, 3) / GM));
+        delete item.avgAlt;
+        item.orbitalPeriod = tmp;
+      });
+      return arr;
+    }
+    orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]); `.replace(/\s+/g, "")
+  }
+];
+
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptIntermedAlgScrQuestionArr; });
+var javascriptIntermedAlgScrQuestionArr = [
+  `0.We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them.<br>
+  <br>
+  The lowest number will not always come first.<br>
+  Basic Code Solution.<br><br>
+  function sumAll(arr) {<br>
+    return 1;<br>
+  }<br>
+  <br>
+  sumAll([1, 4]);`,
+
+  `1.We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them.<br>
+  <br>
+  The lowest number will not always come first.<br>
+  Intermediate Code Solution.<br>
+  function sumAll(arr) {<br>
+    return 1;<br>
+  }<br>
+  <br>
+  sumAll([1, 4]);`,
+
+  `2.We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them.<br>
+  <br>
+  The lowest number will not always come first.<br>
+  Advanced Code Solution.<br>
+  function sumAll(arr) {<br>
+    return 1;<br>
+  }<br>
+  <br>
+  sumAll([1, 4]);`,
+
+  `3.Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. <br>In other words, return the symmetric difference of the two arrays.<br>
+  You can return the array with its elements in any order.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function diffArray(arr1, arr2) {<br>
+    var newArr = [];<br>
+    // Same, same; but different.<br>
+    return newArr;<br>
+  }<br>
+  <br>
+  diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);`,
+
+  `4.Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.<br>
+  You can return the array with its elements in any order.<br>
+  <br>
+  Intermediate Code Solution (Declarative Solution).<br>
+  <br>
+  function diffArray(arr1, arr2) {<br>
+    var newArr = [];<br>
+    // Same, same; but different.<br>
+    return newArr;<br>
+  }<br>
+  <br>
+  diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);<br>
+`,
+
+  `5.Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. <br>In other words, return the symmetric difference of the two arrays.<br>
+  You can return the array with its elements in any order.<br>
+  <br>
+  Advanced Code Solution (Declarative Solution).<br>
+  <br>
+  function diffArray(arr1, arr2) {<br>
+    var newArr = [];<br>
+    // Same, same; but different.<br>
+    return newArr;<br>
+  }<br>
+  <br>
+  diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);`,
+
+  `6.Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both.<br>In other words, return the symmetric difference of the two arrays.<br>
+  You can return the array with its elements in any order.<br>
+  <br>
+  Advanced Code Solution 2 (Declarative Solution).<br>
+  <br>
+  function diffArray(arr1, arr2) {<br>
+    var newArr = [];<br>
+    // Same, same; but different.<br>
+    return newArr;<br>
+  }<br>
+  <br>
+  diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);<br>
+  `,
+
+  `7.You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. <br>Remove all elements from the initial array that are of the same value as these arguments.<br>
+  <br>
+  You have to use the arguments object.<br>
+  Basic Code Solution.<br>
+  function destroyer(arr) {<br>
+    // Remove all the values<br>
+    return arr;<br>
+  }<br>
+  <br>
+  destroyer([1, 2, 3, 1, 2, 3], 2, 3);<br>
+
+  `,
+
+  `8.You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. <br>Remove all elements from the initial array that are of the same value as these arguments.<br>
+  <br>
+  You have to use the arguments object.<br>
+  Intermediate Code Solution.<br>
+  function destroyer(arr) {<br>
+    // Remove all the values<br>
+    return arr;<br>
+  }<br>
+  <br>
+  destroyer([1, 2, 3, 1, 2, 3], 2, 3);<br>
+  <br>
+`,
+
+  `9.You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. <br>Remove all elements from the initial array that are of the same value as these arguments.<br>
+  <br>
+  You have to use the arguments object.<br>
+  Advanced Code Solution.<br>
+  function destroyer(arr) {<br>
+    // Remove all the values<br>
+    return arr;<br>
+  }<br>
+  <br>
+  destroyer([1, 2, 3, 1, 2, 3], 2, 3);<br>
+`,
+
+  `10.Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument).<br> Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.<br>
+  <br>
+  For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], and the second argument is { last: "Capulet" }, then you must return the third object from the array (the first argument), because it contains the name and its value, that was passed on as the second argument.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function whatIsInAName(collection, source) {<br>
+    // What's in a name?<br>
+    var arr = [];<br>
+    // Only change code below this line<br>
+    <br>
+    <br>
+    // Only change code above this line<br>
+    return arr;<br>
+  }<br>
+  <br>
+  whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });<br>
+  `,
+
+  
+  `11.Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.<br>
+  <br>
+  For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], and the second argument is { last: "Capulet" }, then you must return the third object from the array (the first argument), because it contains the name and its value, that was passed on as the second argument.<br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  function whatIsInAName(collection, source) {<br>
+    // What's in a name?<br>
+    var arr = [];<br>
+    // Only change code below this line<br>
+    <br><br>
+    
+    // Only change code above this line<br>
+    return arr;<br>
+  }<br>
+  <br>
+  whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });<br>
+  `,
+  
+  `12.Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.<br>
+
+  For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], and the second argument is { last: "Capulet" }, then you must return the third object from the array (the first argument), because it contains the name and its value, that was passed on as the second argument.<br>
+  <br>
+  Advanced Code Solution.<br>
+  <br>
+  function whatIsInAName(collection, source) {<br>
+    // What's in a name?<br>
+    var arr = [];<br>
+    // Only change code below this line<br>
+    <br>
+    <br>
+    // Only change code above this line<br>
+    return arr;<br>
+  }<br>
+  <br>
+  whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });<br>
+  <br>
+  `,
+
+  `13.Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function spinalCase(str) {<br>
+    // "It's such a fine line between stupid, and clever."<br>
+    // --David St. Hubbins<br>
+    return str;<br>
+  }<br>
+  <br>
+  spinalCase('This Is Spinal Tap');`,
+
+  `14.Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.<br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  function spinalCase(str) {<br>
+    // "It's such a fine line between stupid, and clever."<br>
+    // --David St. Hubbins<br>
+    return str;<br>
+  }<br>
+  <br>
+  spinalCase('This Is Spinal Tap');<br>
+  `,
+
+  `15.Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.<br>
+  <br>
+  Advanced Code Solution.<br>
+  <br>
+  function spinalCase(str) {<br>
+    // "It's such a fine line between stupid, and clever."<br>
+    // --David St. Hubbins<br>
+    return str;<br>
+  }<br>
+  <br>
+  spinalCase('This Is Spinal Tap');`,
+
+  `16.Translate the provided string to pig latin.<br>
+  <br>
+  Pig Latin takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay".<br>
+  <br>
+  If a word begins with a vowel you just add "way" to the end.<br>
+  <br>
+  Input strings are guaranteed to be English words in all lowercase.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function translatePigLatin(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  translatePigLatin("consonant");<br>
+  `,
+
+  `17.Perform a search and replace on the sentence using the arguments provided and return the new sentence.<br>
+  <br>
+  First argument is the sentence to perform the search and replace on.<br>
+  <br>
+  Second argument is the word that you will be replacing (before).<br>
+  <br>
+  Third argument is what you will be replacing the second argument with (after).<br>
+  <br>
+  Preserve the case of the first character in the original word when you are replacing it. For example if you mean to replace the word "Book" with the word "dog", it should be replaced as "Dog"<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function myReplace(str, before, after) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");<br>
+  `,
+
+  `18.Perform a search and replace on the sentence using the arguments provided and return the new sentence.<br>
+  <br>
+  First argument is the sentence to perform the search and replace on.<br>
+  <br>
+  Second argument is the word that you will be replacing (before).<br>
+  <br>
+  Third argument is what you will be replacing the second argument with (after).<br>
+  <br>
+  Preserve the case of the first character in the original word when you are replacing it. For example if you mean to replace the word "Book" with the word "dog", it should be replaced as "Dog"<br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  function myReplace(str, before, after) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");`,
+
+  `19.Perform a search and replace on the sentence using the arguments provided and return the new sentence.<br>
+  <br>
+  First argument is the sentence to perform the search and replace on.<br>
+  <br>
+  Second argument is the word that you will be replacing (before).<br>
+  <br>
+  Third argument is what you will be replacing the second argument with (after).<br>
+  <br>
+  Preserve the case of the first character in the original word when you are replacing it. For example if you mean to replace the word "Book" with the word "dog", it should be replaced as "Dog"<br>
+  <br>
+  Advanced Code Solution.<br>
+  <br>
+  function myReplace(str, before, after) {<br>
+    return str;<br>
+    <br>
+  myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");`,
+
+  `20.The DNA strand is missing the pairing element. Take each character, get its pair, and return the results as a 2d array.<br>
+  <br>
+  Base pairs are a pair of AT and CG. Match the missing element to the provided character.<br>
+  <br>
+  Return the provided character as the first element in each array.<br>
+  <br>
+  For example, for the input GCG, return [["G", "C"], ["C","G"],["G", "C"]]<br>
+  <br>
+  The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function pairElement(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  pairElement("GCG");`,
+
+  `21.The DNA strand is missing the pairing element. Take each character, get its pair, and return the results as a 2d array.<br>
+  <br>
+  Base pairs are a pair of AT and CG. Match the missing element to the provided character.<br>
+  <br>
+  Return the provided character as the first element in each array.<br>
+  <br>
+  For example, for the input GCG, return [["G", "C"], ["C","G"],["G", "C"]]<br>
+  <br>
+  The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.<br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  function pairElement(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  pairElement("GCG");<br>
+  `,
+
+  `22.Find the missing letter in the passed letter range and return it.<br>
+  <br>
+  If all letters are present in the range, return undefined.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function fearNotLetter(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  fearNotLetter("abce");`,
+
+  `23.Find the missing letter in the passed letter range and return it.<br>
+  <br>
+  If all letters are present in the range, return undefined.<br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  function fearNotLetter(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  fearNotLetter("abce");<br>
+  `,
+
+  `24.Find the missing letter in the passed letter range and return it.<br>
+  <br>
+  If all letters are present in the range, return undefined.<br>
+  <br>
+  Simplified Advanced Code Solution.<br>
+  <br>
+  function fearNotLetter(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  fearNotLetter("abce");<br>
+  `,
+
+  `25.Find the missing letter in the passed letter range and return it.<br>
+  <br>
+  If all letters are present in the range, return undefined.<br>
+  <br>
+  Advanced Code Solution.<br>
+  <br>
+  function fearNotLetter(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  fearNotLetter("abce");`,
+
+  `26.Write a function that takes two or more arrays and returns a new array of unique values in the order of the original provided arrays.<br>
+  <br>
+  In other words, all values present from all arrays should be included in their original order, but with no duplicates in the final array.<br>
+  <br>
+  The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.<br>
+  <br>
+  Check the assertion tests for examples.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function uniteUnique(arr) {<br>
+    return arr;<br>
+  }<br>
+  <br>
+  uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);`,
+
+  `27.Write a function that takes two or more arrays and returns a new array of unique values in the order of the original provided arrays.<br>
+  <br>
+  In other words, all values present from all arrays should be included in their original order, but with no duplicates in the final array.<br>
+  <br>
+  The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.<br>
+  <br>
+  Check the assertion tests for examples.<br>
+  <br>
+  Alternative Basic Code Solution.<br>
+  <br>
+  function uniteUnique(arr) {<br>
+    return arr;<br>
+  }<br>
+  <br>
+  uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);`,
+
+  `28.Write a function that takes two or more arrays and returns a new array of unique values in the order of the original provided arrays.<br>
+  <br>
+  In other words, all values present from all arrays should be included in their original order, but with no duplicates in the final array.<br>
+  <br>
+  The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.<br>
+  <br>
+  Check the assertion tests for examples.<br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  function uniteUnique(arr) {<br>
+    return arr;<br>
+  }<br>
+  <br>
+  uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);`,
+
+  `29.Write a function that takes two or more arrays and returns a new array of unique values in the order of the original provided arrays.<br>
+  <br>
+  In other words, all values present from all arrays should be included in their original order, but with no duplicates in the final array.<br>
+  <br>
+  The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.<br>
+  <br>
+  Check the assertion tests for examples.<br>
+  <br>
+  Advanced Code Solution using ES2015.<br>
+  <br>
+  function uniteUnique(arr) {<br>
+    return arr;<br>
+  }<br>
+  <br>
+  uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);`,
+
+  `30.Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a string to their corresponding HTML entities.<br>
+  <br>
+  Basic Code Solution<br>
+  <br>
+  function convertHTML(str) {<br>
+    // &colon;&rpar;<br>
+    return str;<br>
+  }<br>
+  <br>
+  convertHTML("Dolce & Gabbana");`,
+
+  `31.Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a string to their corresponding HTML entities.<br>
+  <br>
+  Intermediate Code Solution<br>
+  <br>
+  function convertHTML(str) {<br>
+    // &colon;&rpar;<br>
+    return str;<br>
+  }<br>
+  <br>
+  convertHTML("Dolce & Gabbana");`,
+
+  `32.Given a positive integer num, return the sum of all odd Fibonacci numbers that are less than or equal to num.<br>
+  <br>
+  The first two numbers in the Fibonacci sequence are 1 and 1. Every additional number in the sequence is the sum of the two previous numbers. The first six numbers of the Fibonacci sequence are 1, 1, 2, 3, 5 and 8.<br>
+  <br>
+  For example, sumFibs(10) should return 10 because all odd Fibonacci numbers less than or equal to 10 are 1, 1, 3, and 5.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function sumFibs(num) {<br>
+    return num;<br>
+  }<br>
+  <br>
+  sumFibs(4);<br>
+  `,
+
+  `33.Sum all the prime numbers up to and including the provided number.<br>
+  <br>
+  A prime number is defined as a number greater than one and having only two divisors, one and itself. For example, 2 is a prime number because it's only divisible by one and two.<br>
+  <br>
+  The provided number may not be a prime.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function sumPrimes(num) {<br>
+    return num;<br>
+  }<br>
+  <br>
+  sumPrimes(10);`,
+
+  `34.Sum all the prime numbers up to and including the provided number.<br>
+  <br>
+  A prime number is defined as a number greater than one and having only two divisors, one and itself. For example, 2 is a prime number because it's only divisible by one and two.<br>
+  <br>
+  The provided number may not be a prime.<br>
+  <br>
+  Advanced  Code Solution.<br>
+  <br>
+  function sumPrimes(num) {<br>
+    return num;<br>
+  }<br>
+  <br>
+  sumPrimes(10);`,
+
+  `35.Find the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.<br>
+  <br>
+  The range will be an array of two numbers that will not necessarily be in numerical order.<br>
+  <br>
+  For example, if given 1 and 3, find the smallest common multiple of both 1 and 3 that is also evenly divisible by all numbers between 1 and 3. The answer here would be 6.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function smallestCommons(arr) {<br>
+    return arr;<br>
+  }<br>
+  
+  <br>
+  smallestCommons([1,5]);`,
+
+  `36.Find the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.<br>
+  <br>
+  The range will be an array of two numbers that will not necessarily be in numerical order.<br>
+  <br>
+  For example, if given 1 and 3, find the smallest common multiple of both 1 and 3 that is also evenly divisible by all numbers between 1 and 3. The answer here would be 6.<br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  function smallestCommons(arr) {<br>
+    return arr;<br>
+  }<br>
+  <br>
+  <br>
+  smallestCommons([1,5]);`,
+
+  `37.Find the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.<br>
+  <br>
+  The range will be an array of two numbers that will not necessarily be in numerical order.<br>
+  <br>
+  For example, if given 1 and 3, find the smallest common multiple of both 1 and 3 that is also evenly divisible by all numbers between 1 and 3. The answer here would be 6.<br>
+  <br>
+  Advanced Code Solution.<br>
+  <br>
+  function smallestCommons(arr) {<br>
+    return arr;<br>
+  }<br>
+  <br>
+  <br>
+  smallestCommons([1,5]);`,
+
+  `38.Given the array arr, iterate through and remove each element starting from the first element (the 0 index) until the function func returns true when the iterated element is passed through it.<br>
+  <br>
+  Then return the rest of the array once the condition is satisfied, otherwise, arr should be returned as an empty array.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function dropElements(arr, func) {<br>
+    // Drop them elements.<br>
+    return arr;<br>
+  }<br>
+  <br>
+  dropElements([1, 2, 3], function(n) {return n < 3; });`,
+
+  `39.Given the array arr, iterate through and remove each element starting from the first element (the 0 index) until the function func returns true when the iterated element is passed through it.<br>
+  <br>
+  Then return the rest of the array once the condition is satisfied, otherwise, arr should be returned as an empty array.<br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  function dropElements(arr, func) {<br>
+    // Drop them elements.<br>
+    return arr;<br>
+  }<br>
+  <br>
+  dropElements([1, 2, 3], function(n) {return n < 3; });`,
+
+  `40.Given the array arr, iterate through and remove each element starting from the first element (the 0 index) until the function func returns true when the iterated element is passed through it.<br>
+  <br>
+  Then return the rest of the array once the condition is satisfied, otherwise, arr should be returned as an empty array.<br>
+  <br>
+  Advanced Code Solution.<br>
+  <br>
+  function dropElements(arr, func) {<br>
+    // Drop them elements.<br>
+    return arr;<br>
+  }<br>
+  <br>
+  dropElements([1, 2, 3], function(n) {return n < 3; });`,
+
+  
+  `41.Flatten a nested array. You must account for varying levels of nesting.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function steamrollArray(arr) {<br>
+    // I'm a steamroller, baby<br>
+    return arr;<br>
+  }<br>
+  <br>
+  steamrollArray([1, [2], [3, [[4]]]]);<br>
+  `,
+
+  `42.Flatten a nested array. You must account for varying levels of nesting.<br>
+  <br>
+  Advanced Code Solution.<br>
+  <br>
+  function steamrollArray(arr) {<br>
+    // I'm a steamroller, baby<br>
+    return arr;<br>
+  }<br>
+  <br>
+  steamrollArray([1, [2], [3, [[4]]]]);`,
+
+  `43.Return an English translated sentence of the passed binary string.<br>
+  <br>
+  The binary string will be space separated.<br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  <br>
+  function binaryAgent(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");`,
+
+  `44.Return an English translated sentence of the passed binary string.<br>
+  <br>
+  The binary string will be space separated.<br>
+  <br>
+  Advanced Code Solution.<br>
+  <br>
+  <br>
+  function binaryAgent(str) {<br>
+    return str;<br>
+  }<br>
+  <br>
+  binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");`,
+
+  `45.Check if the predicate (second argument) is truthy on all elements of a collection (first argument).<br>
+  <br>
+  In other words, you are given an array collection of objects. The predicate pre will be an object property and you need to return true if its value is truthy. Otherwise, return false.<br>
+  <br>
+  In JavaScript, truthy values are values that translate to true when evaluated in a Boolean context.<br>
+  <br>
+  Remember, you can access object properties through either dot notation or [] notation.<br>
+  <br>
+  Basic Code Solution. Using for-in loop & hasOwnProperty.<br>
+  <br>
+  <br>
+  function truthCheck(collection, pre) {<br>
+    // Is everyone being true?<br>
+    return pre;<br>
+  }<br>
+  <br>
+  truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
+  
+  `,
+
+  `46.Check if the predicate (second argument) is truthy on all elements of a collection (first argument).<br>
+  <br>
+  In other words, you are given an array collection of objects. The predicate pre will be an object property and you need to return true if its value is truthy. Otherwise, return false.<br>
+  <br>
+  In JavaScript, truthy values are values that translate to true when evaluated in a Boolean context.<br>
+  <br>
+  Remember, you can access object properties through either dot notation or [] notation.<br>
+  <br>
+  Intermediate Code Solution. Using Array.every()<br>
+  <br>
+  <br>
+  function truthCheck(collection, pre) {<br>
+    // Is everyone being true?<br>
+    return pre;<br>
+  }<br>
+  <br>
+  truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
+  `,
+
+  `47.Check if the predicate (second argument) is truthy on all elements of a collection (first argument).<br>
+  <br>
+  In other words, you are given an array collection of objects. The predicate pre will be an object property and you need to return true if its value is truthy. Otherwise, return false.<br>
+  <br>
+  In JavaScript, truthy values are values that translate to true when evaluated in a Boolean context.<br>
+  <br>
+  Remember, you can access object properties through either dot notation or [] notation.<br>
+  <br>
+  Advanced Code Solution.<br>
+  <br><br>
+  function truthCheck(collection, pre) {<br>
+    // Is everyone being true?<br>
+    return pre;<br>
+  }<br>
+  <br>
+  truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");`,
+
+  `48.Create a function that sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.<br>
+  <br>
+  For example, addTogether(2, 3) should return 5, and addTogether(2) should return a function.<br>
+  <br>
+  Calling this returned function with a single argument will then return the sum:<br>
+  <br>
+  var sumTwoAnd = addTogether(2);<br>
+  <br>
+  sumTwoAnd(3) returns 5.<br>
+  <br>
+  If either argument isn't a valid number, return undefined.<br>
+  <br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  <br>
+  function addTogether() {<br>
+    return false;<br>
+  }<br>
+  <br>
+  addTogether(2,3);<br>
+  `,
+
+  `49.Create a function that sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.<br>
+  <br>
+  For example, addTogether(2, 3) should return 5, and addTogether(2) should return a function.<br>
+  <br>
+  Calling this returned function with a single argument will then return the sum:<br>
+  <br>
+  var sumTwoAnd = addTogether(2);<br>
+  <br>
+  sumTwoAnd(3) returns 5.<br>
+  <br>
+  If either argument isn't a valid number, return undefined.<br>
+  <br>
+  <br>
+  Advanced  Code Solution. jshint esversion: 6<br>
+  <br>
+  <br>
+  function addTogether() {<br>
+    return false;<br>
+  }<br>
+  <br>
+  addTogether(2,3);`,
+
+  `50.Fill in the object constructor with the following methods below:<br>
+  <br>
+  getFirstName() getLastName() getFullName() setFirstName(first) setLastName(last) setFullName(firstAndLast)
+  Run the tests to see the expected output for each method.<br>
+  <br>
+  The methods that take an argument must accept only one argument and it has to be a string.<br>
+  <br>
+  These methods must be the only available means of interacting with the object.<br>
+  <br><br>
+  
+  Basic Code Solution.<br>
+  <br>
+  <br>
+  
+  var Person = function(firstAndLast) {<br>
+    // Complete the method below and implement the others similarly<br>
+    this.getFullName = function() {<br>
+      return "";<br>
+    };<br>
+    return firstAndLast;<br>
+  };<br>
+  <br>
+  var bob = new Person('Bob Ross');<br>
+  bob.getFullName();<br>
+  <br>
+  <br>
+  
+  `,
+
+  `51.Return a new array that transforms the elements' average altitude into their orbital periods (in seconds).<br>
+  <br>
+  The array will contain objects in the format {name: 'name', avgAlt: avgAlt}.<br>
+  <br>
+  You can read about orbital periods on Wikipedia.<br>
+  <br>
+  The values should be rounded to the nearest whole number. The body being orbited is Earth.<br>
+  <br>
+  The radius of the earth is 6367.4447 kilometers, and the GM value of earth is 398600.4418 km3s-2.<br>
+  <br>
+  <br>
+  
+  Basic Code Solution. <br>
+  
+  <br>
+  
+  <br>
+  function orbitalPeriod(arr) {<br>
+    var GM = 398600.4418;<br>
+    var earthRadius = 6367.4447;<br>
+    return arr;<br>
+  }<br>
+  <br>
+  orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);`,
+
+  `52.Return a new array that transforms the elements' average altitude into their orbital periods (in seconds).<br>
+  <br>
+  The array will contain objects in the format {name: 'name', avgAlt: avgAlt}.<br>
+  <br>
+  You can read about orbital periods on Wikipedia.<br>
+  <br>
+  The values should be rounded to the nearest whole number. The body being orbited is Earth.<br>
+  <br>
+  The radius of the earth is 6367.4447 kilometers, and the GM value of earth is 398600.4418 km3s-2.<br>
+  <br>
+  <br>
+  
+  Intermediate Code Solution. <br>
+  
+  <br>
+  <br>
+
+  function orbitalPeriod(arr) {<br>
+    var GM = 398600.4418;<br>
+    var earthRadius = 6367.4447;<br>
+    return arr;<br>
+  }<br>
+  
+  orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);`,
+
+  `53.Return a new array that transforms the elements' average altitude into their orbital periods (in seconds).<br>
+  <br>
+  The array will contain objects in the format {name: 'name', avgAlt: avgAlt}.<br>
+  <br>
+  You can read about orbital periods on Wikipedia.<br>
+  <br>
+  The values should be rounded to the nearest whole number. The body being orbited is Earth.<br>
+  <br>
+  The radius of the earth is 6367.4447 kilometers, and the GM value of earth is 398600.4418 km3s-2.<br>
+  <br>
+  
+  <br>
+  Advanced Code Solution. <br>
+  
+  <br>
+  
+  <br>
+  function orbitalPeriod(arr) {<br>
+    var GM = 398600.4418;<br>
+    var earthRadius = 6367.4447;<br>
+    return arr;<br>
+  }<br>
+  <br>
+  orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);`
+];
+
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return javascriptObjOrientProgAnswerArr; });
 var javascriptObjOrientProgAnswerArr = [
   {
@@ -7584,7 +9353,7 @@ beagle.eat();
 
 
 /***/ },
-/* 14 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7917,7 +9686,424 @@ console.log(penguin.fly());`,
 
 
 /***/ },
-/* 15 */
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* unused harmony export javascriptProjectsAnswerArr */
+var javascriptProjectsAnswerArr = [
+  {
+    A0: `function palindrome(str) {
+      return str.replace(/[\W_]/g, '').toLowerCase() ===
+             str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');
+}
+  `.replace(/\s+/g, "")
+  },
+
+  {
+    A1: ` function palindrome(str) {
+      str = str.toLowerCase().replace(/[\W_]/g, '');
+      for(var i = 0, len = str.length - 1; i < len/2; i++) {
+        if(str[i] !== str[len-i]) {
+          return false;
+        }
+      }
+      return true;
+    }`.replace(/\s+/g, "")
+  },
+
+  { A2: ` 
+  function palindrome(str) {
+    let front = 0
+    let back = str.length - 1
+
+    while (back > front) {
+      if ( str[front].match(/[\W_]/) ) {
+        front++
+        continue
+      }
+      if ( str[back].match(/[\W_]/) ) {
+        back--
+        continue
+      }
+      if ( str[front].toLowerCase() !== str[back].toLowerCase() ) return false
+      front++
+      back--
+    }
+    return true
+
+  }`.replace(/\s+/g, "") },
+
+  {
+    A3: `var convertToRoman = function(num) {
+
+      var decimalValue = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
+      var romanNumeral = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
+    
+      var romanized = '';
+    
+      for (var index = 0; index < decimalValue.length; index++) {
+        while (decimalValue[index] <= num) {
+          romanized += romanNumeral[index];
+          num -= decimalValue[index];
+        }
+      }
+    
+      return romanized;
+    }
+    convertToRoman(36);
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A4: `function convertToRoman(num) {
+      var romans = [
+        ["I", "V"], 
+        ["X", "L"], 
+        ["C", "D"], 
+        ["M"] 
+      ],
+          digits = num.toString()
+            .split('')
+            .reverse()
+            .map(function(item, index) {
+              return parseInt(item);
+            }),
+          numeral = "";
+      for (var i=0; i<digits.length; i++) {
+        numeral = romans[i][0].repeat(digits[i]) + numeral;
+        if (romans[i][1]) {
+          numeral = numeral
+            .replace(romans[i][0].repeat(5), romans[i][1])
+            .replace(romans[i][1] + romans[i][0].repeat(4), romans[i][0] + romans[i+1][0])
+            .replace(romans[i][0].repeat(4), romans[i][0] + romans[i][1]);
+        }
+      }
+    
+      return numeral;
+    }
+    convertToRoman(36);
+     `.replace(/\s+/g, "")
+  },
+
+  {
+    A5: `
+    function rot13(str) {
+      var rotCharArray = [];
+      var regEx = /[A-Z]/ ;
+      str = str.split("");
+      for (var x in str) {
+        if (regEx.test(str[x])) {
+          rotCharArray.push((str[x].charCodeAt() - 65 + 13) % 26 + 65);
+        } else {
+          rotCharArray.push(str[x].charCodeAt());
+        }
+      }
+      str = String.fromCharCode.apply(String, rotCharArray);
+      return str;
+    }
+    rot13("LBH QVQ VG!");
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A6: `function rot13(str) { 
+      return str.replace(/[A-Z]/g, L => String.fromCharCode((L.charCodeAt(0) % 26) + 65));
+    }
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A7: `function telephoneCheck(str) {
+      var regex = /^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{4}$/;
+      return regex.test(str);
+   }
+   telephoneCheck("555-555-5555"); 
+`.replace(/\s+/g, "")
+  },
+
+  {
+    A8: `
+    var denom = [
+      { name: 'ONE HUNDRED', val: 100.00},
+      { name: 'TWENTY', val: 20.00},
+      { name: 'TEN', val: 10.00},
+      { name: 'FIVE', val: 5.00},
+      { name: 'ONE', val: 1.00},
+      { name: 'QUARTER', val: 0.25},
+      { name: 'DIME', val: 0.10},
+      { name: 'NICKEL', val: 0.05},
+      { name: 'PENNY', val: 0.01}
+    ];
+    
+    function checkCashRegister(price, cash, cid) {
+      var output = { status: null, change: [] };
+      var change = cash - price;
+      var register = cid.reduce(function(acc, curr) {
+        acc.total += curr[1];
+        acc[curr[0]] = curr[1];
+        return acc;
+      }, { total: 0 });
+
+      if (register.total === change) {
+        output.status = 'CLOSED';
+        output.change = cid;
+        return output;
+      }
+    
+      if (register.total < change) {
+        output.status = 'INSUFFICIENT_FUNDS';
+        return output;
+      }
+    
+      var change_arr = denom.reduce(function(acc, curr) {
+        var value = 0;
+        while (register[curr.name] > 0 && change >= curr.val) {
+          change -= curr.val;
+          register[curr.name] -= curr.val;
+          value += curr.val;
+    
+          change = Math.round(change * 100) / 100;
+        }
+        if (value > 0) {
+            acc.push([ curr.name, value ]);
+        }
+        return acc;
+      }, []); 
+      if (change_arr.length < 1 || change > 0) {
+        output.status = 'INSUFFICIENT_FUNDS';
+        return output;
+      }
+    
+      output.status = 'OPEN';
+      output.change = change_arr;
+      return output;
+    }
+    
+    checkCashRegister(19.50, 20.00, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.10], ["QUARTER", 4.25], ["ONE", 90.00], ["FIVE", 55.00], ["TEN", 20.00], ["TWENTY", 60.00], ["ONE HUNDRED", 100.00]]);
+`.replace(/\s+/g, "")
+  }
+];
+
+
+/***/ },
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* unused harmony export javascriptProjectsQuestionArr */
+var javascriptProjectsQuestionArr = [
+  `0.JavaScript Algorithms and Data Structures Projects: <br>Palindrome Checker<br>
+  Return true if the given string is a palindrome. <br>Otherwise, return false.<br>
+  <br>
+  A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.<br>
+  <br>
+  Note<br>
+  You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.<br>
+  <br>
+  We'll pass strings with varying formats, such as "racecar", "RaceCar", and "race CAR" among others.<br>
+  <br>
+  We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  <br>
+  function palindrome(str) {<br>
+    // Good luck!<br>
+    return true;<br>
+  }<br>
+  
+  <br>
+  <br>
+  palindrome("eye");`,
+
+
+  
+  `1.JavaScript Algorithms and Data Structures Projects:<br> Palindrome Checker<br>
+  Return true if the given string is a palindrome. <br>Otherwise, return false.<br>
+  <br>
+  A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.<br>
+  <br>
+  Note<br>
+  You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.<br>
+  <br>
+  We'll pass strings with varying formats, such as "racecar", "RaceCar", and "race CAR" among others.<br>
+  <br>
+  We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".<br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  <br>
+  function palindrome(str) {<br>
+    // Good luck!<br>
+    return true;<br>
+  }<br>
+  
+  <br>
+  <br>
+  palindrome("eye");`,
+
+  `2.JavaScript Algorithms and Data Structures Projects:<br> Palindrome Checker<br>
+  Return true if the given string is a palindrome. <br>Otherwise, return false.<br>
+  <br>
+  A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.<br>
+  <br>
+  Note<br>
+  You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.<br>
+  <br>
+  We'll pass strings with varying formats, such as "racecar", "RaceCar", and "race CAR" among others.<br>
+  <br>
+  We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".<br>
+  <br>
+  <br>
+  Advanced Code Solution.<br>
+  <br>
+  <br>
+  function palindrome(str) {<br>
+    // Good luck!<br>
+    return true;<br>
+  }<br>
+  <br>
+  <br>
+  <br>
+  palindrome("eye");`,
+
+  `3.JavaScript Algorithms and Data Structures Projects: <br>Roman Numeral Converter<br>
+  Convert the given number into a roman numeral.<br>
+  <br>
+  All roman numerals answers should be provided in upper-case.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function convertToRoman(num) {<br>
+    return num;<br>
+   }<br>
+   <br>
+   convertToRoman(36);`,
+
+  `4.JavaScript Algorithms and Data Structures Projects:<br> Roman Numeral Converter<br>
+  Convert the given number into a roman numeral.<br>
+  <br>
+  All roman numerals answers should be provided in upper-case.<br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  function convertToRoman(num) {<br>
+    return num;<br>
+   }<br>
+   <br>
+   convertToRoman(36);
+`,
+
+  `5.JavaScript Algorithms and Data Structures Projects:<br> Caesars Cipher<br>
+  One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher. In a shift cipher the meanings of the letters are shifted by some set amount.<br>
+  <br>
+  A common modern use is the ROT13 cipher, where the values of the letters are shifted by 13 places. Thus 'A' ↔ 'N', 'B' ↔ 'O' and so on.<br>
+  <br>
+  Write a function which takes a ROT13 encoded string as input and returns a decoded string.<br>
+  <br>
+  All letters will be uppercase. Do not transform any non-alphabetic character (i.e. spaces, punctuation), but do pass them on.<br>
+  <br>
+  <br>
+  Intermediate Code Solution.<br>
+  <br>
+  <br>
+  function rot13(str) { // LBH QVQ VG!<br>
+    <br>
+    return str;<br>
+  }<br>
+  <br>
+  // Change the inputs below to test<br>
+  rot13("SERR PBQR PNZC");`,
+
+  `6.JavaScript Algorithms and Data Structures Projects:<br> Caesars Cipher<br>
+  One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher. In a shift cipher the meanings of the letters are shifted by some set amount.<br>
+  <br>
+  A common modern use is the ROT13 cipher, where the values of the letters are shifted by 13 places. Thus 'A' ↔ 'N', 'B' ↔ 'O' and so on.<br>
+  <br>
+  Write a function which takes a ROT13 encoded string as input and returns a decoded string.<br>
+  <br>
+  All letters will be uppercase. Do not transform any non-alphabetic character (i.e. spaces, punctuation), but do pass them on.<br>
+  <br>
+  <br>
+  Advanced Code Solution.<br>
+  <br>
+  <br>
+  function rot13(str) { // LBH QVQ VG!<br>
+    <br>
+    return str;<br>
+  }<br>
+  <br>
+  // Change the inputs below to test<br>
+  rot13("SERR PBQR PNZC");
+  `,
+
+  `7.JavaScript Algorithms and Data Structures Projects: <br>Telephone Number Validator<br>
+  <br>
+  Return true if the passed string looks like a valid US phone number.<br>
+  <br>
+  The user may fill out the form field any way they choose as long as it has the format of a valid US number. The following are examples of valid formats for US numbers (refer to the tests below for other variants):<br>
+  <br>
+  555-555-5555<br>
+  (555)555-5555<br>
+  (555) 555-5555<br>
+  555 555 5555<br>
+  5555555555<br>
+  1 555 555 5555<br>
+  For this challenge you will be presented with a string such as 800-692-7753 or 8oo-six427676;laskdjf.<br> Your job is to validate or reject the US phone number based on any combination of the formats provided above.<br> The area code is required. If the country code is provided, you must confirm that the country code is 1. Return true if the string is a valid US phone number; otherwise return false.<br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  function telephoneCheck(str) {<br>
+    // Good luck!<br>
+    return true;<br>
+  }<br>
+  <br>
+  telephoneCheck("555-555-5555");<br>
+  `,
+
+  `8.JavaScript Algorithms and Data Structures Projects: <br>Cash Register<br>
+  Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument.<br>
+  <br>
+  cid is a 2D array listing available currency.<br>
+  <br>
+  The checkCashRegister() function should always return an object with a status key and a change key.<br>
+  <br>
+  Return {status: "INSUFFICIENT_FUNDS", change: []} if cash-in-drawer is less than the change due, or if you cannot return the exact change.<br>
+  <br>
+  Return {status: "CLOSED", change: [...]} with cash-in-drawer as the value for the key change if it is equal to the change due.<br>
+  <br>
+  Otherwise, return {status: "OPEN", change: [...]}, with the change due in coins and bills, sorted in highest to lowest order, as the value of the change key.<br>
+  <br>
+  <br>
+  Basic Code Solution.<br>
+  <br>
+  <br>
+  <br>
+  function checkCashRegister(price, cash, cid) {<br>
+    var change;<br>
+    // Here is your change, ma'am.<br>
+    return change;<br>
+  }<br>
+  <br>
+  // Example cash-in-drawer array:<br>
+  // [["PENNY", 1.01],<br>
+  // ["NICKEL", 2.05],<br>
+  // ["DIME", 3.1],<br>
+  // ["QUARTER", 4.25],<br>
+  // ["ONE", 90],<br>
+  // ["FIVE", 55],<br>
+  // ["TEN", 20],<br>
+  // ["TWENTY", 60],<br>
+  // ["ONE HUNDRED", 100]]<br>
+  <br>
+  checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
+`
+];
+
+
+/***/ },
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8940,7 +11126,7 @@ checkSign(10);`
 
 
 /***/ },
-/* 16 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9168,7 +11354,7 @@ var javascriptRegExpressAnswerArr = [
 
 
 /***/ },
-/* 17 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9368,7 +11554,7 @@ var javascriptRegExpressQuestionArr = [
 
 
 /***/ },
-/* 18 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9378,19 +11564,23 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__questionsAndAnswers_cssQuestions__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__questionsAndAnswers_cssAnswers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__questionsAndAnswers_javascriptAnswers__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__questionsAndAnswers_javascriptQuestions__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__questionsAndAnswers_javascriptQuestions__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__questionsAndAnswers_javascriptEs6Answers__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__questionsAndAnswers_javascriptEs6Questions__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__questionsAndAnswers_javascriptRegExpressQuestions__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__questionsAndAnswers_javascriptRegExpressAnswers__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__questionsAndAnswers_javascriptRegExpressQuestions__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__questionsAndAnswers_javascriptBasicDataStructureAnswers__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__questionsAndAnswers_javascriptBasicDataStructureQuestions__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__questionsAndAnswers_javascriptBasicAlgorithmAnswers__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__questionsAndAnswers_javascriptBasicAlgorithmQuestions__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__questionsAndAnswers_javascriptObjOrientProgQuestions__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__questionsAndAnswers_javascriptObjOrientProgAnswers__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__questionsAndAnswers_javascriptObjOrientProgQuestions__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__questionsAndAnswers_javascriptFunctionalProgrammingAnswers__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__questionsAndAnswers_javascriptFunctionalProgrammingQuestions__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__questionsAndAnswers_javascriptIntermedAlgScrQuestions__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__questionsAndAnswers_javascriptProjectsAnswers__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__questionsAndAnswers_javascriptProjectsQuestions__ = __webpack_require__(18);
 
 
  /* importing  array from other js file with webpack*/
@@ -9428,10 +11618,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 
 
+ /* importing  array from other js file with webpack*/
+
+ /* importing  array from other js file with webpack*/
 
 
+ /* importing  array from other js file with webpack*/
 
-
+ /* importing  array from other js file with webpack*/
 
 
 
@@ -20799,7 +22993,7 @@ window.javascriptFunctionalProgrammingBtn = javascriptFunctionalProgrammingBtn;/
 
 
 
-var javascriptIntermedAlgScrRandomValue = Math.floor(Math.random() * javascriptIntermedAlgScrQuestionArr.length); /* taking random question from htmlQuestionArr*/
+var javascriptIntermedAlgScrRandomValue = Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_19__questionsAndAnswers_javascriptIntermedAlgScrQuestions__["a" /* javascriptIntermedAlgScrQuestionArr */].length); /* taking random question from htmlQuestionArr*/
 
 
 function javascriptIntermedAlgScrSubmit() { /* function for html submit button*/
@@ -20811,7 +23005,7 @@ function javascriptIntermedAlgScrSubmit() { /* function for html submit button*/
     var javascriptIntermedAlgScrNextButton = document.getElementById("javascriptIntermedAlgScrElementButton");
     var javascriptIntermedAlgScrRemoveValue = document.getElementById("javascriptIntermedAlgScrRemove");
 
-    if (javascriptIntermedAlgScrRandomValue == 0 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[0].A0) { /* checking if javascriptIntermedAlgScrRandomValue is 0 and if putting answer the same as javascriptIntermedAlgScrAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
+    if (javascriptIntermedAlgScrRandomValue == 0 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][0].A0) { /* checking if javascriptIntermedAlgScrRandomValue is 0 and if putting answer the same as javascriptIntermedAlgScrAnswerArr*//*A0 is just that I can track answer numbers when adding questions and answers*/
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
@@ -20820,7 +23014,7 @@ function javascriptIntermedAlgScrSubmit() { /* function for html submit button*/
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 0 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[0].A0) {/*  if random value not == then giving then display the answere.*/
+    } else if (javascriptIntermedAlgScrRandomValue == 0 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][0].A0) {/*  if random value not == then giving then display the answere.*/
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function sumAll(arr) {
@@ -20841,14 +23035,14 @@ sumAll([1, 4]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 1 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[1].A1) {
+    } else if (javascriptIntermedAlgScrRandomValue == 1 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][1].A1) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 1 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[1].A1) {
+    } else if (javascriptIntermedAlgScrRandomValue == 1 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][1].A1) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">
 function sumAll(arr) {
@@ -20867,14 +23061,14 @@ function sumAll(arr) {
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 2 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[2].A2) {
+    } else if (javascriptIntermedAlgScrRandomValue == 2 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][2].A2) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 2 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[2].A2) {
+    } else if (javascriptIntermedAlgScrRandomValue == 2 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][2].A2) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function sumAll(arr) {
@@ -20893,14 +23087,14 @@ sumAll([1, 4]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 3 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[3].A3) {
+    } else if (javascriptIntermedAlgScrRandomValue == 3 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][3].A3) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 3 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[3].A3) {
+    } else if (javascriptIntermedAlgScrRandomValue == 3 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][3].A3) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function diffArray(arr1, arr2) {
@@ -20929,14 +23123,14 @@ diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
         
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 4 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[4].A4) {
+    } else if (javascriptIntermedAlgScrRandomValue == 4 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][4].A4) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 4 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[4].A4) {
+    } else if (javascriptIntermedAlgScrRandomValue == 4 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][4].A4) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function diffArray(arr1, arr2) {
@@ -20955,14 +23149,14 @@ diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 5 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[5].A5) {
+    } else if (javascriptIntermedAlgScrRandomValue == 5 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][5].A5) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 5 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[5].A5) {
+    } else if (javascriptIntermedAlgScrRandomValue == 5 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][5].A5) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function diffArray(arr1, arr2) {
@@ -20981,14 +23175,14 @@ diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 6 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[6].A6) {
+    } else if (javascriptIntermedAlgScrRandomValue == 6 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][6].A6) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 6 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[6].A6) {
+    } else if (javascriptIntermedAlgScrRandomValue == 6 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][6].A6) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function diffArray(arr1, arr2) {
@@ -21008,14 +23202,14 @@ function diffArray(arr1, arr2) {
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 7 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[7].A7) {
+    } else if (javascriptIntermedAlgScrRandomValue == 7 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][7].A7) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 7 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[7].A7) {
+    } else if (javascriptIntermedAlgScrRandomValue == 7 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][7].A7) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function destroyer(arr) {
@@ -21038,14 +23232,14 @@ function destroyer(arr) {
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 8 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[8].A8) {
+    } else if (javascriptIntermedAlgScrRandomValue == 8 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][8].A8) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 8 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[8].A8) {
+    } else if (javascriptIntermedAlgScrRandomValue == 8 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][8].A8) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function destroyer(arr) {
@@ -21061,14 +23255,14 @@ function destroyer(arr) {
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 9 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[9].A9) {
+    } else if (javascriptIntermedAlgScrRandomValue == 9 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][9].A9) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 9 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[9].A9) {
+    } else if (javascriptIntermedAlgScrRandomValue == 9 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][9].A9) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 const destroyer = (arr, ...args) => arr.filter(i => !args.includes(i)); 
@@ -21079,14 +23273,14 @@ const destroyer = (arr, ...args) => arr.filter(i => !args.includes(i));
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 10 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[10].A10) {
+    } else if (javascriptIntermedAlgScrRandomValue == 10 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][10].A10) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 10 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[10].A10) {
+    } else if (javascriptIntermedAlgScrRandomValue == 10 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][10].A10) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function whatIsInAName(collection, source) {
@@ -21109,14 +23303,14 @@ whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: 
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 11 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[11].A11) {
+    } else if (javascriptIntermedAlgScrRandomValue == 11 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][11].A11) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 11 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[11].A11) {
+    } else if (javascriptIntermedAlgScrRandomValue == 11 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][11].A11) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function whatIsInAName(collection, source) {
@@ -21136,14 +23330,14 @@ whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: 
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 12 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[12].A12) {
+    } else if (javascriptIntermedAlgScrRandomValue == 12 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][12].A12) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 12 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[12].A12) {
+    } else if (javascriptIntermedAlgScrRandomValue == 12 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][12].A12) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function whatIsInAName(collection, source) {
@@ -21167,14 +23361,14 @@ whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: 
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 13 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[13].A13) {
+    } else if (javascriptIntermedAlgScrRandomValue == 13 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][13].A13) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 13 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[13].A13) {
+    } else if (javascriptIntermedAlgScrRandomValue == 13 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][13].A13) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function spinalCase(str) {
@@ -21191,14 +23385,14 @@ spinalCase('This Is Spinal Tap');
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 14 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[14].A14) {
+    } else if (javascriptIntermedAlgScrRandomValue == 14 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][14].A14) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 14 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[14].A14) {
+    } else if (javascriptIntermedAlgScrRandomValue == 14 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][14].A14) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function spinalCase(str) {
@@ -21213,14 +23407,14 @@ spinalCase('This Is Spinal Tap');
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 15 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[15].A15) {
+    } else if (javascriptIntermedAlgScrRandomValue == 15 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][15].A15) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 15 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[15].A15) {
+    } else if (javascriptIntermedAlgScrRandomValue == 15 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][15].A15) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function spinalCase(str) {
@@ -21233,14 +23427,14 @@ function spinalCase(str) {
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 16 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[16].A16) {
+    } else if (javascriptIntermedAlgScrRandomValue == 16 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][16].A16) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 16 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[16].A16) {
+    } else if (javascriptIntermedAlgScrRandomValue == 16 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][16].A16) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function translatePigLatin(str) {
@@ -21266,14 +23460,14 @@ translatePigLatin("consonant");
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 17 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[17].A17) {
+    } else if (javascriptIntermedAlgScrRandomValue == 17 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][17].A17) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 17 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[17].A17) {
+    } else if (javascriptIntermedAlgScrRandomValue == 17 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][17].A17) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function myReplace(str, before, after) {
@@ -21294,14 +23488,14 @@ myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 18 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[18].A18) {
+    } else if (javascriptIntermedAlgScrRandomValue == 18 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][18].A18) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 18 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[18].A18) {
+    } else if (javascriptIntermedAlgScrRandomValue == 18 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][18].A18) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function myReplace(str, before, after) {
@@ -21324,14 +23518,14 @@ myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 19 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[19].A19) {
+    } else if (javascriptIntermedAlgScrRandomValue == 19 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][19].A19) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 19 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[19].A19) {
+    } else if (javascriptIntermedAlgScrRandomValue == 19 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][19].A19) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function myReplace(str, before, after) {
@@ -21359,14 +23553,14 @@ myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 20 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[20].A20) {
+    } else if (javascriptIntermedAlgScrRandomValue == 20 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][20].A20) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 20 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[20].A20) {
+    } else if (javascriptIntermedAlgScrRandomValue == 20 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][20].A20) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function pairElement(str) {
@@ -21402,14 +23596,14 @@ pairElement("GCG");
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 21 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[21].A21) {
+    } else if (javascriptIntermedAlgScrRandomValue == 21 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][21].A21) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 21 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[21].A21) {
+    } else if (javascriptIntermedAlgScrRandomValue == 21 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][21].A21) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function pairElement(str) {
@@ -21430,14 +23624,14 @@ pairElement("GCG");
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 22 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[22].A22) {
+    } else if (javascriptIntermedAlgScrRandomValue == 22 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][22].A22) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 22 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[22].A22) {
+    } else if (javascriptIntermedAlgScrRandomValue == 22 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][22].A22) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function fearNotLetter(str) {
@@ -21460,14 +23654,14 @@ fearNotLetter("abce");
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 23 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[23].A23) {
+    } else if (javascriptIntermedAlgScrRandomValue == 23 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][23].A23) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 23 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[23].A23) {
+    } else if (javascriptIntermedAlgScrRandomValue == 23 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][23].A23) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
 
     <textarea name="text" class="answer_textarea" id="input">
@@ -21493,14 +23687,14 @@ fearNotLetter("abce");
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 24 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[24].A24) {
+    } else if (javascriptIntermedAlgScrRandomValue == 24 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][24].A24) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 24 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[24].A24) {
+    } else if (javascriptIntermedAlgScrRandomValue == 24 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][24].A24) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function fearNotLetter(str) {
@@ -21517,14 +23711,14 @@ function fearNotLetter(str) {
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 25 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[25].A25) {
+    } else if (javascriptIntermedAlgScrRandomValue == 25 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][25].A25) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 25 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[25].A25) {
+    } else if (javascriptIntermedAlgScrRandomValue == 25 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][25].A25) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function fearNotLetter(str) {
@@ -21544,14 +23738,14 @@ fearNotLetter("abce");
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 26 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[26].A26) {
+    } else if (javascriptIntermedAlgScrRandomValue == 26 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][26].A26) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 26 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[26].A26) {
+    } else if (javascriptIntermedAlgScrRandomValue == 26 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][26].A26) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function uniteUnique(arr1, arr2, arr3) {
@@ -21580,14 +23774,14 @@ uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 27 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[27].A27) {
+    } else if (javascriptIntermedAlgScrRandomValue == 27 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][27].A27) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 27 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[27].A27) {
+    } else if (javascriptIntermedAlgScrRandomValue == 27 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][27].A27) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function uniteUnique(arr) {
@@ -21611,14 +23805,14 @@ uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 28 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[28].A28) {
+    } else if (javascriptIntermedAlgScrRandomValue == 28 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][28].A28) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 28 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[28].A28) {
+    } else if (javascriptIntermedAlgScrRandomValue == 28 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][28].A28) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function uniteUnique(arr1, arr2, arr3) {
@@ -21640,14 +23834,14 @@ uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 29 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[29].A29) {
+    } else if (javascriptIntermedAlgScrRandomValue == 29 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][29].A29) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 29 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[29].A29) {
+    } else if (javascriptIntermedAlgScrRandomValue == 29 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][29].A29) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function uniteUnique(...arrays) {
@@ -21664,14 +23858,14 @@ uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 30 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[30].A30) {
+    } else if (javascriptIntermedAlgScrRandomValue == 30 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][30].A30) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 30 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[30].A30) {
+    } else if (javascriptIntermedAlgScrRandomValue == 30 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][30].A30) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function convertHTML(str) {
@@ -21710,14 +23904,14 @@ convertHTML("Dolce & Gabbana");
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 31 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[31].A31) {
+    } else if (javascriptIntermedAlgScrRandomValue == 31 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][31].A31) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 31 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[31].A31) {
+    } else if (javascriptIntermedAlgScrRandomValue == 31 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][31].A31) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function convertHTML(str) {
@@ -21733,14 +23927,14 @@ convertHTML("Dolce & Gabbana");
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 32 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[32].A32) {
+    } else if (javascriptIntermedAlgScrRandomValue == 32 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][32].A32) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 32 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[32].A32) {
+    } else if (javascriptIntermedAlgScrRandomValue == 32 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][32].A32) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function sumFibs(num) {
@@ -21766,14 +23960,14 @@ sumFibs(4);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 33 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[33].A33) {
+    } else if (javascriptIntermedAlgScrRandomValue == 33 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][33].A33) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 33 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[33].A33) {
+    } else if (javascriptIntermedAlgScrRandomValue == 33 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][33].A33) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function sumPrimes(num) {
@@ -21810,14 +24004,14 @@ sumPrimes(10);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 34 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[34].A34) {
+    } else if (javascriptIntermedAlgScrRandomValue == 34 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][34].A34) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 34 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[34].A34) {
+    } else if (javascriptIntermedAlgScrRandomValue == 34 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][34].A34) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function sumPrimes(num) {
@@ -21844,14 +24038,14 @@ sumPrimes(977);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 35 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[35].A35) {
+    } else if (javascriptIntermedAlgScrRandomValue == 35 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][35].A35) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 35 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[35].A35) {
+    } else if (javascriptIntermedAlgScrRandomValue == 35 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][35].A35) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function smallestCommons(arr) {
@@ -21886,14 +24080,14 @@ smallestCommons([1,5]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 36 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[36].A36) {
+    } else if (javascriptIntermedAlgScrRandomValue == 36 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][36].A36) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 36 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[36].A36) {
+    } else if (javascriptIntermedAlgScrRandomValue == 36 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][36].A36) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function smallestCommons(arr) {
@@ -21923,14 +24117,14 @@ smallestCommons([1,5]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 37 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[37].A37) {
+    } else if (javascriptIntermedAlgScrRandomValue == 37 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][37].A37) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 37 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[37].A37) {
+    } else if (javascriptIntermedAlgScrRandomValue == 37 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][37].A37) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function smallestCommons(arr) {
@@ -21967,14 +24161,14 @@ smallestCommons([1,5]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 38 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[38].A38) {
+    } else if (javascriptIntermedAlgScrRandomValue == 38 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][38].A38) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 38 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[38].A38) {
+    } else if (javascriptIntermedAlgScrRandomValue == 38 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][38].A38) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function dropElements(arr, func) {
@@ -21996,14 +24190,14 @@ dropElements([1, 2, 3, 4], function(n) {return n >= 3;});
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 39 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[39].A39) {
+    } else if (javascriptIntermedAlgScrRandomValue == 39 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][39].A39) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 39 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[39].A39) {
+    } else if (javascriptIntermedAlgScrRandomValue == 39 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][39].A39) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function dropElements(arr, func) {
@@ -22017,14 +24211,14 @@ dropElements([1, 2, 3, 4], function(n) {return n >= 3;});
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 40 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[40].A40) {
+    } else if (javascriptIntermedAlgScrRandomValue == 40 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][40].A40) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 40 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[40].A40) {
+    } else if (javascriptIntermedAlgScrRandomValue == 40 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][40].A40) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function dropElements(arr, func) {
@@ -22041,14 +24235,14 @@ dropElements([1, 2, 3, 4], function(n) {return n >= 3;});
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 41 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[41].A41) {
+    } else if (javascriptIntermedAlgScrRandomValue == 41 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][41].A41) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 41 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[41].A41) {
+    } else if (javascriptIntermedAlgScrRandomValue == 41 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][41].A41) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function steamrollArray(arr) {
@@ -22074,14 +24268,14 @@ steamrollArray([1, [2], [3, [[4]]]]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 42 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[42].A42) {
+    } else if (javascriptIntermedAlgScrRandomValue == 42 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][42].A42) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 42 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[42].A42) {
+    } else if (javascriptIntermedAlgScrRandomValue == 42 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][42].A42) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function steamrollArray(arr) {
@@ -22105,14 +24299,14 @@ return arr.toString()
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 43 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[43].A43) {
+    } else if (javascriptIntermedAlgScrRandomValue == 43 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][43].A43) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 43 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[43].A43) {
+    } else if (javascriptIntermedAlgScrRandomValue == 43 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][43].A43) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function binaryAgent(str) {
@@ -22141,14 +24335,14 @@ binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 0110
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 44 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[44].A44) {
+    } else if (javascriptIntermedAlgScrRandomValue == 44 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][44].A44) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 44 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[44].A44) {
+    } else if (javascriptIntermedAlgScrRandomValue == 44 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][44].A44) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function binaryAgent(str) {
@@ -22162,14 +24356,14 @@ binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 0110
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 45 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[45].A45) {
+    } else if (javascriptIntermedAlgScrRandomValue == 45 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][45].A45) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 45 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[45].A45) {
+    } else if (javascriptIntermedAlgScrRandomValue == 45 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][45].A45) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function truthCheck(collection, pre) {
@@ -22189,14 +24383,14 @@ truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "ma
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 46 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[46].A46) {
+    } else if (javascriptIntermedAlgScrRandomValue == 46 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][46].A46) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 46 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[46].A46) {
+    } else if (javascriptIntermedAlgScrRandomValue == 46 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][46].A46) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function truthCheck(collection, pre) {
@@ -22212,14 +24406,14 @@ truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "ma
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 47 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[47].A47) {
+    } else if (javascriptIntermedAlgScrRandomValue == 47 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][47].A47) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 47 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[47].A47) {
+    } else if (javascriptIntermedAlgScrRandomValue == 47 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][47].A47) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function truthCheck(collection, pre) {
@@ -22234,14 +24428,14 @@ truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "ma
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 48 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[48].A48) {
+    } else if (javascriptIntermedAlgScrRandomValue == 48 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][48].A48) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 48 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[48].A48) {
+    } else if (javascriptIntermedAlgScrRandomValue == 48 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][48].A48) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function addTogether() {
@@ -22281,14 +24475,14 @@ addTogether(2,3);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 49 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[49].A49) {
+    } else if (javascriptIntermedAlgScrRandomValue == 49 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][49].A49) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 49 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[49].A49) {
+    } else if (javascriptIntermedAlgScrRandomValue == 49 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][49].A49) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function addTogether() {
@@ -22309,14 +24503,14 @@ addTogether(2,3);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 50 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[50].A50) {
+    } else if (javascriptIntermedAlgScrRandomValue == 50 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][50].A50) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 50 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[50].A50) {
+    } else if (javascriptIntermedAlgScrRandomValue == 50 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][50].A50) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 var Person = function(firstAndLast) {
@@ -22356,14 +24550,14 @@ bob.getFullName();
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 51 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[51].A51) {
+    } else if (javascriptIntermedAlgScrRandomValue == 51 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][51].A51) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 51 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[51].A51) {
+    } else if (javascriptIntermedAlgScrRandomValue == 51 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][51].A51) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function orbitalPeriod(arr) {
@@ -22394,14 +24588,14 @@ orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
 
 
 
-    } else if (javascriptIntermedAlgScrRandomValue == 52 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[52].A52) {
+    } else if (javascriptIntermedAlgScrRandomValue == 52 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][52].A52) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 52 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[52].A52) {
+    } else if (javascriptIntermedAlgScrRandomValue == 52 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][52].A52) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function orbitalPeriod(arr) {
@@ -22424,14 +24618,14 @@ orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
 
 
 
-    }else if (javascriptIntermedAlgScrRandomValue == 53 && javascriptIntermedAlgScrInputAnswer == javascriptIntermedAlgScrAnswerArr[53].A53) {
+    }else if (javascriptIntermedAlgScrRandomValue == 53 && javascriptIntermedAlgScrInputAnswer == __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][53].A53) {
         javascriptIntermedAlgScrCorrectValue.innerHTML = "Correct..";
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
         <textarea name="text" class="answer_textarea" id="input">Good Job :) </textarea>`;
         javascriptIntermedAlgScrNextButton.innerHTML = `<button class="nextButton javascriptColor1" onclick=javascriptIntermedAlgScrBtn()>Next</button>`;
         javascriptIntermedAlgScrRemoveValue.innerHTML = "";
 
-    } else if (javascriptIntermedAlgScrRandomValue == 53 && javascriptIntermedAlgScrInputAnswer !== javascriptIntermedAlgScrAnswerArr[53].A53) {
+    } else if (javascriptIntermedAlgScrRandomValue == 53 && javascriptIntermedAlgScrInputAnswer !== __WEBPACK_IMPORTED_MODULE_18__questionsAndAnswers_javascriptIntermedAlgScrAnswers__["a" /* javascriptIntermedAlgScrAnswerArr */][53].A53) {
         javascriptIntermedAlgScrDisplayAnswer.innerHTML = `
     <textarea name="text" class="answer_textarea" id="input">
 function orbitalPeriod(arr) {
@@ -22463,7 +24657,7 @@ orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
 window.javascriptIntermedAlgScrSubmit = javascriptIntermedAlgScrSubmit; /* to make submit global*/
 
 function javascriptIntermedAlgScrButton() {
-    javascriptIntermedAlgScrTest = document.getElementById("javascriptIntermedAlgScrAddedQuestion").innerHTML = javascriptIntermedAlgScrQuestionArr[javascriptIntermedAlgScrRandomValue]; /* giving random question to html */
+    javascriptIntermedAlgScrTest = document.getElementById("javascriptIntermedAlgScrAddedQuestion").innerHTML = __WEBPACK_IMPORTED_MODULE_19__questionsAndAnswers_javascriptIntermedAlgScrQuestions__["a" /* javascriptIntermedAlgScrQuestionArr */][javascriptIntermedAlgScrRandomValue]; /* giving random question to html */
 
     return javascriptIntermedAlgScrTest;
 }
@@ -22476,8 +24670,8 @@ function javascriptIntermedAlgScrShowTest() {
 window.javascriptIntermedAlgScrShowTest = javascriptIntermedAlgScrShowTest;
 
 function javascriptIntermedAlgScrBtn() {
-    javascriptIntermedAlgScrRandomValue = Math.floor(Math.random() * javascriptIntermedAlgScrQuestionArr.length); /* buton next in html to make a next random question*/
-    document.getElementById("javascriptIntermedAlgScrAddedQuestion").innerHTML = javascriptIntermedAlgScrQuestionArr[javascriptIntermedAlgScrRandomValue]; /* giving random question to html */
+    javascriptIntermedAlgScrRandomValue = Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_19__questionsAndAnswers_javascriptIntermedAlgScrQuestions__["a" /* javascriptIntermedAlgScrQuestionArr */].length); /* buton next in html to make a next random question*/
+    document.getElementById("javascriptIntermedAlgScrAddedQuestion").innerHTML = __WEBPACK_IMPORTED_MODULE_19__questionsAndAnswers_javascriptIntermedAlgScrQuestions__["a" /* javascriptIntermedAlgScrQuestionArr */][javascriptIntermedAlgScrRandomValue]; /* giving random question to html */
     document.getElementById("javascriptIntermedAlgScrElementButton").innerHTML = "";/* to clean javascriptIntermedAlgScrElementButton*/
     document.getElementById("javascriptIntermedAlgScrRemove").innerHTML = `<textarea name="text" class="answer_textarea" id="input"></textarea></br>
       <button class="answer_submit javascriptColor1" id = "javascriptIntermedAlgScrStartButton" onclick="javascriptIntermedAlgScrSubmit()">Submit</button>`;/* to create next text area and Submit button. */

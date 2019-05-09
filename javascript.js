@@ -35,10 +35,14 @@ import { javascriptFunctionalProgrammingQuestionArr } from './questionsAndAnswer
 
 
 
+import { javascriptIntermedAlgScrAnswerArr } from './questionsAndAnswers/javascriptIntermedAlgScrAnswers'; /* importing  array from other js file with webpack*/
+
+import { javascriptIntermedAlgScrQuestionArr } from './questionsAndAnswers/javascriptIntermedAlgScrQuestions'; /* importing  array from other js file with webpack*/
 
 
+import { javascriptProjectsAnswerArr } from './questionsAndAnswers/javascriptProjectsAnswers'; /* importing  array from other js file with webpack*/
 
-
+import { javascriptProjectsQuestionArr } from './questionsAndAnswers/javascriptProjectsQuestions'; /* importing  array from other js file with webpack*/
 
 
 
