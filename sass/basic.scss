@@ -1,6 +1,6 @@
 #htmlBodyBackground {
     /* html background question */
-    background-image: url("../images/questionBackground.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),(url("../images/questionBackground.jpg"));
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -11,7 +11,7 @@
 /*<<<<<<<<<<<<<<<<<<<< background >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 #cssBodyBackground {/* css background question */
-  background-image: url("../images/cssQuestionBackground.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),(url("../images/cssQuestionBackground.jpg"));
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -19,7 +19,7 @@
 }
 
 #javascriptBodyBackground {/* javascript background question */
-  background-image: url("../images/javascriptQuestionBackground.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),(url("../images/javascriptQuestionBackground.jpg"));
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

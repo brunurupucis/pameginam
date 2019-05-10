@@ -138,6 +138,7 @@
     width: 95%;
     height: 20rem;
     font-size: 16px;
+    background: rgb(233, 231, 231);
     @include respond(phone) {
       width: 15rem;
       font-size: 16px;

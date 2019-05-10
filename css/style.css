@@ -1,6 +1,6 @@
 #htmlBodyBackground {
   /* html background question */
-  background-image: url("../images/questionBackground.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/questionBackground.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -13,7 +13,7 @@
 /*<<<<<<<<<<<<<<<<<<<< background >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 #cssBodyBackground {
   /* css background question */
-  background-image: url("../images/cssQuestionBackground.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/cssQuestionBackground.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -21,7 +21,7 @@
 
 #javascriptBodyBackground {
   /* javascript background question */
-  background-image: url("../images/javascriptQuestionBackground.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/javascriptQuestionBackground.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -182,6 +182,7 @@ p,
     width: 95%;
     height: 20rem;
     font-size: 16px;
+    background: #e9e7e7;
     /* mixings for changing screns sizes*/ }
     @media only screen and (max-width: 37.5em) {
       .answer_textarea {
@@ -308,7 +309,7 @@ p,
 #bodyBackground {
   /* background for start*/
   position: relative;
-  background-image: url("../images/background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
@@ -316,13 +317,13 @@ p,
 .index {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 80%;
+  transform: translate(-50%, -30%);
   max-width: 600px; }
   .index_button {
     cursor: pointer;
     margin-left: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     box-sizing: border-box;
     font-size: 2em;
     font-family: Helvetica, Arial, Sans-Serif;
@@ -332,14 +333,15 @@ p,
     line-height: 65px;
     padding: 0 32.5px;
     display: inline-block;
-    width: auto;
+    width: 100%;
     border-radius: 5px;
     top: 0;
     position: relative;
     /* mixings for changing screns sizes*/ }
     @media only screen and (max-width: 37.5em) {
       .index_button {
-        width: 15rem; } }
+        width: 15rem;
+        font-size: 1em; } }
     .index_button::before {
       display: inline-block;
       content: '';
@@ -362,7 +364,7 @@ p,
 .html {
   color: #e34c26;
   text-shadow: 0 -2px 0 #d6421d, 0 1px 1px #ec6847;
-  background: linear-gradient(to bottom, #fc7034 0%, #f0682e 26%, #f35714 100%);
+  background: linear-gradient(to bottom, #fb7136 0%, #f0682e 26%, #f35714 100%);
   border-top: 1px solid #fcbbab;
   border-bottom: 1px solid #f7c8bd; }
   .html:visited {
@@ -427,19 +429,22 @@ p,
   color: #070011;
   font-size: 1.5em;
   background: #a7def5;
+  text-align: center;
+  width: 33rem;
   border-radius: 5px;
   padding: 0.5rem;
   position: absolute;
-  left: 50%;
-  top: 70%;
+  left: 50.5%;
+  top: 20%;
   transform: translate(-50%, -50%);
   /* mixings for changing screns sizes*/ }
   @media only screen and (max-width: 37.5em) {
     .whiteText {
+      padding: 0.5rem;
       width: 14rem;
       font-size: 1em;
-      left: 50%;
-      top: 85%;
+      left: 49.5%;
+      top: 20%;
       transform: translate(-50%, -50%); } }
   .whiteText:hover {
     display: block;
@@ -448,17 +453,19 @@ p,
     background: #070011;
     border-radius: 5px;
     padding: 0.5rem;
+    width: 33rem;
     position: absolute;
-    left: 50%;
-    top: 70%;
+    left: 50.5%;
+    top: 20%;
     transform: translate(-50%, -50%);
     /* mixings for changing screns sizes*/ }
     @media only screen and (max-width: 37.5em) {
       .whiteText:hover {
         width: 14rem;
         font-size: 1em;
-        left: 50%;
-        top: 85%;
+        text-align: center;
+        left: 49.5%;
+        top: 20%;
         transform: translate(-50%, -50%); } }
 
 .htmlColor {
